@@ -1,4 +1,4 @@
-# =====================================================================
+
 # ordem - manipulação, genômica, interações e gráficos 
 library(tidyverse)
 library(GenomicRanges)
@@ -214,7 +214,95 @@ if (length(dados$hic) > 0 && !is.null(dados$hic[[1]])) {
       theme_minimal()
     ggsave(file.path(dir_resultados, "hic_distancias.png"), graf_hic, width = 10, height = 6)}}
 
-# relatorio - data
+if(exists("hic_stats") && nrow(hic_stats) > 0) {
+  # Estatísticas de Hi-C
+  p_hic_stats <- hic_stats %>%
+    ggplot(aes(x = reorder(Arquivo, Total_Interacoes), y = Total_Interacoes)) +
+    geom_col(fill = "steelblue", alpha = 0.7) +
+    coord_flip() +
+    labs(title = "Número Total de Interações Hi-C",
+         x = "Arquivo Hi-C", y = "Número de Interações") +
+    theme_minimal()
+  
+  # Distribuição de distâncias (apenas para o primeiro arquivo)
+  if(length(dados$hic) > 0 && !is.null(dados$hic[[1]])) {
+    gi <- dados$hic[[1]]
+    distancias <- abs(start(anchors(gi, type = "second")) - start(anchors(gi, type = "first")))
+    distancias_df <- tibble(Distancia = distancias) %>% filter(Distancia > 0)
+    
+    p_hic_dist <- ggplot(distancias_df, aes(x = Distancia)) +
+      geom_histogram(fill = "steelblue", alpha = 0.7, bins = 50) +
+      scale_x_log10() +
+      labs(title = paste("Distribuição de Distâncias de Interação -", names(dados$hic)[1]),
+           x = "Distância (bp, escala log)", y = "Frequência") +
+      theme_minimal()
+    
+    ggsave(file.path(dir_resultados, "hic_distancias.png"), p_hic_dist, width = 10, height = 6)
+  }
+  
+  ggsave(file.path(dir_resultados, "hic_estatisticas.png"), p_hic_stats, width = 10, height = 6)
+}
+
+#  correlação entre variaveis
+
+p_correlacao <- estatisticas_gerais %>%
+  ggplot(aes(x = Numero_Regioes, y = Largura_Media, color = Tipo, size = Cobertura_Total)) +
+  geom_point(alpha = 0.7) +
+  geom_smooth(method = "lm", se = FALSE, aes(group = 1), color = "black") +
+  scale_x_log10() +
+  scale_y_log10() +
+  scale_color_manual(values = cores_tipo) +
+  labs(title = "Correlação entre Número de Regiões e Largura Média",
+       x = "Número de Regiões (log)", 
+       y = "Largura Média (bp, log)",
+       size = "Cobertura Total",
+       color = "Tipo") +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+
+ggsave(file.path(dir_resultados, "correlacao_regioes_largura.png"), 
+       p_correlacao, width = 10, height = 8)
+
+# cromossomo
+
+# Extrair informação de cromossomos
+plot_cromossomos <- function(gr, titulo) {
+  if(is.null(gr)) return(NULL)
+  
+  df <- as.data.frame(gr) %>%
+    count(seqnames, name = "Count")
+  
+  ggplot(df, aes(x = seqnames, y = Count, fill = seqnames)) +
+    geom_col(alpha = 0.7) +
+    labs(title = titulo, x = "Cromossomo", y = "Número de Regiões") +
+    theme_minimal() +
+    theme(legend.position = "none",
+          axis.text.x = element_text(angle = 45, hjust = 1))
+}
+
+# plots
+plots_cromossomos <- list()
+
+if(length(dados$smap) > 0) {
+  plots_cromossomos$smap <- plot_cromossomos(dados$smap[[1]], "Distribuição SMAP por Cromossomo")
+}
+
+if(length(dados$nonb) > 0) {
+  plots_cromossomos$nonb <- plot_cromossomos(dados$nonb[[1]], "Distribuição não-B por Cromossomo")
+}
+
+if(length(dados$genes) > 0) {
+  plots_cromossomos$genes <- plot_cromossomos(dados$genes[[1]], "Distribuição de Genes por Cromossomo")
+}
+
+# Combinar plots 
+if(length(plots_cromossomos) > 0) {
+  p_cromossomos <- wrap_plots(plots_cromossomos, ncol = 1)
+  ggsave(file.path(dir_resultados, "distribuicao_cromossomos.png"), 
+         p_cromossomos, width = 10, height = 12)
+}
+
+#data
 relatorio <- list(
   Arquivos = list(SMAP = length(dados$smap), NonB = length(dados$nonb), Genes = length(dados$genes), Expressao = length(dados$expressao), HiC = length(dados$hic)),
   Estatisticas_gerais = estatisticas_gerais,

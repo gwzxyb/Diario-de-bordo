@@ -186,16 +186,13 @@ processar_arquivo <- function(arquivo_nonb){
 # grafico ---------------------------------
 plot_tipo_nonb <- function(dados_tipo, tipo_rotulo){
   
-  # 1) Trabalhar em character, corrigir a categoria
   dados_tipo$Regiao <- as.character(dados_tipo$Regiao)
   dados_tipo$Regiao[dados_tipo$Regiao == "Outro"] <- "Gene_completo"
   
-  # 2) Definir níveis internos na ordem desejada
   ordem <- c("antes_500","antes_250","Inicio","Final",
              "depois_250","depois_500","Gene_completo")
   dados_tipo$Regiao <- factor(dados_tipo$Regiao, levels = ordem)
-  
-  # 3) Labels exibidos no eixo
+
   rotulos_map <- c(
     "antes_500"     = "5' até 500 pb",
     "antes_250"     = "5' até 250 pb",
@@ -203,10 +200,8 @@ plot_tipo_nonb <- function(dados_tipo, tipo_rotulo){
     "Final"         = "Segunda metade",
     "depois_250"    = "3' até 250 pb",
     "depois_500"    = "3' até 500 pb",
-    "Gene_completo" = "Gene completo"
-  )
-  
-  # 4) Garantir y numérico
+    "Gene_completo" = "Gene completo" )
+
   dados_tipo$Fracao_Sobreposicao <- as.numeric(dados_tipo$Fracao_Sobreposicao)
   
   ggplot2::ggplot(dados_tipo, ggplot2::aes(x = Regiao, y = Fracao_Sobreposicao, fill = Regiao)) +

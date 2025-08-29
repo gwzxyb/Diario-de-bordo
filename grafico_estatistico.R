@@ -98,7 +98,7 @@ analisar_nonb <- function(gr, nome) {
       str_detect(Arquivo_Lower, "z.dna|zdna|z_dna") ~ "Z-DNA",
       str_detect(Arquivo_Lower, "g.quad|gquad|g_quad|g-quad") ~ "G-Quadruplex",
       str_detect(Arquivo_Lower, "triplex") ~ "Triplex",
-      str_detect(Arquivo_Lower, "r.loop|rloop|r_loop") ~ "R-loop",
+      str_detect(Arquivo_Lower, "r-loop|rloop|r_loop") ~ "R-loop",
       str_detect(Arquivo_Lower, "cruciform") ~ "Cruciform",
       str_detect(Arquivo_Lower, "a.phase|aphase|a_phase") ~ "A-phased",
       str_detect(Arquivo_Lower, "slipped") ~ "Slipped",
@@ -142,17 +142,6 @@ for (nm_smap in names(dados$smap)) {
 df_sobrep <- bind_rows(lista_sobrep)
 write_csv(df_sobrep, file.path(dir_resultados, "sobreposicoes_smap_nonb.csv"))
 
-# Heatmap
-graf_heat <- df_sobrep %>%
-  ggplot(aes(x = Conjunto1, y = Conjunto2, fill = Percentual_sobreposicao)) +
-  geom_tile() +
-  scale_fill_gradient(low = "white", high = "red", name = "% Sobreposição") +
-  labs(title = "SMAP x Non-B (% com sobreposição)", x = "SMAP", y = "Non-B") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
-
-ggsave(file.path(dir_resultados, "heatmap_sobreposicao.png"), graf_heat, width = 12, height = 10)
-
 # percentuais de ambos lados e medida média de largura
 calc_sobreposicao_detalhe <- function(gr1, gr2, nome1, nome2) {
   if (is.null(gr1) || is.null(gr2)) return(NULL)
@@ -182,7 +171,7 @@ for (nm_smap in names(dados$smap)) {
 
 df_sobrep_det <- bind_rows(lista_sobrep_det)
 write_csv(df_sobrep_det, file.path(dir_resultados, "sobreposicoes_detalhadas.csv"))
-
+# -----------------------------------hi-c-------------------
 # hic por arquivo
 estat_hic <- function(gi, nome) {
   if (is.null(gi)) return(NULL)
@@ -310,3 +299,78 @@ relatorio <- list(
   NonB_estatisticas = estat_nonb)
 
 saveRDS(relatorio, file.path(dir_resultados, "relatorio_analise.rds"))
+
+#-------------------------------------------------------- HI-C E SMAP -------------------------------------------------------
+
+#  unir ancoras 
+unir_ancoras <- function(gi_list) {
+  gr_list <- vector("list", 0L)
+  for (gi in gi_list) {
+    if (is.null(gi)) next
+    # anchors(..., type="first"/"second") 
+    gr_list <- c(gr_list, list(anchors(gi, type = "first")), list(anchors(gi, type = "second")))  }
+  if (length(gr_list) == 0) return(GRanges())
+  do.call(c, gr_list) }
+
+# para “SMAP coberta por qualquer Hi-C
+all_anchors <- unir_ancoras(dados$hic)
+# Calcular cobertura por arquivo SMAP 
+tab_cov <- map_dfr(names(dados$smap), function(sn){
+  gr <- dados$smap[[sn]]
+  if (is.null(gr) || length(gr) == 0) return(NULL)
+  if (length(all_anchors) == 0) {
+    smap_cobertas <- 0L} 
+ else {
+    ov <- findOverlaps(gr, all_anchors)  # query=GRanges, subject=GRanges
+    smap_cobertas <- length(unique(queryHits(ov)))}
+  tibble(
+    Arquivo_SMAP = sn,
+    SMAP_Total = length(gr),
+    SMAP_Cobertas = smap_cobertas,
+    SMAP_NaoCobertas = length(gr) - smap_cobertas )}) %>%
+  mutate(
+    Pct_Cobertas = if_else(SMAP_Total > 0, 100 * SMAP_Cobertas / SMAP_Total, 0),
+    Pct_NaoCobertas = 100 - Pct_Cobertas)
+# Preparar dados para barra 100% empilhada
+tab_long <- tab_cov %>%
+  select(Arquivo_SMAP, Coberta = SMAP_Cobertas, Sem_HiC = SMAP_NaoCobertas) %>%
+  pivot_longer(cols = c(Coberta, Sem_HiC), names_to = "Classe", values_to = "N") %>%
+  group_by(Arquivo_SMAP) %>%
+  mutate(Perc = N / sum(N)) %>%
+  ungroup() %>%
+  mutate(Classe = recode(Classe,
+                         Coberta = "região coberta com hi-c",
+                         Sem_HiC = "região de smap sem hi-c"))
+
+# Plot 100% empilhado com rótulos percentuais
+p_cov <- ggplot(tab_long, aes(x = Arquivo_SMAP, y = Perc, fill = Classe)) +
+  geom_col(color = "white", width = 0.7) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(title = "Cobertura de SMAP por Hi-C",
+       x = NULL, y = NULL, fill = NULL) +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "top", panel.grid.major.x = element_blank()) +
+  scale_fill_manual(values = c("região coberta com hi-c" = "#ff7db3",
+                               "região de smap sem hi-c" = "grey80"))
+
+# Rótulos internos
+tab_labels <- tab_long %>%
+  group_by(Arquivo_SMAP) %>%
+  arrange(desc(Classe == "região coberta com hi-c"), .by_group = TRUE) %>%
+  mutate(ypos = cumsum(Perc) - 0.5 * Perc,
+         label = paste0(round(100 * Perc, 0), "%")) %>%
+  ungroup()
+
+p_cov <- p_cov +
+  geom_text(data = tab_labels, aes(y = ypos, label = label),
+            color = "white", size = 3.6, fontface = "bold")
+
+# Salvar
+ggsave(file.path(dir_resultados, "cobertura_smap_por_hic_100pct.png"),
+       p_cov, width = 7, height = 5, dpi = 300)
+write_csv(tab_cov, file.path(dir_resultados, "cobertura_smap_por_hic_resumo.csv"))
+write_csv(tab_long, file.path(dir_resultados, "cobertura_smap_por_hic_empilhado.csv"))
+
+p_cov
+
+#-----------------------

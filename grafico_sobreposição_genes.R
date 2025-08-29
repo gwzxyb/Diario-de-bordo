@@ -10,7 +10,7 @@ janela_250 <- 250L
 janela_500 <- 500L
 
 # paralelismo -> g4 é grande -> acelera execução
-n_threads <- 8
+n_threads <- 12
 diretorio_dados <- "/home/mcavalcante/igv/modificados"
 diretorio_resultados <- "/home/mcavalcante/sobreposição"
 if (!dir.exists(diretorio_resultados)) dir.create(diretorio_resultados, recursive = TRUE)
@@ -113,77 +113,116 @@ arquivos_nonb <- arquivos[
 
 # overlaps -> classifica -> fração 
 processar_arquivo <- function(arquivo_nonb){
-  nonb_data <- tryCatch({ if (str_detect(arquivo_nonb,regex("\\.bed$",TRUE))) import.bed(arquivo_nonb) else import.gff(arquivo_nonb) }, error=function(e) NULL)
-  nonb_data <- to_GRanges(nonb_data); if (is.null(nonb_data) || length(nonb_data)==0) return(tibble())
+  nonb_data <- tryCatch({
+    if (str_detect(arquivo_nonb, regex("\\.bed$", TRUE))) import.bed(arquivo_nonb) else import.gff(arquivo_nonb)
+  }, error=function(e) NULL)
+  
+  nonb_data <- to_GRanges(nonb_data)
+  if (is.null(nonb_data) || length(nonb_data) == 0) return(tibble())
   
   out <- tibble()
+  crom_genes <- unique(as.character(seqnames(genes)))
+  crom_nonb  <- unique(as.character(seqnames(nonb_data)))
+  comuns <- intersect(crom_genes, crom_nonb)
   
-  crom_genes <- unique(as.character(seqnames(genes))); crom_nonb <- unique(as.character(seqnames(nonb_data))); comuns <- intersect(crom_genes,crom_nonb)
-  if (length(comuns)==0){
+  if (length(comuns) == 0) {
     nonb_map <- mapear_cromossomos(nonb_data)
-    crom_nonb2 <- unique(as.character(seqnames(nonb_map))); comuns2 <- intersect(crom_genes,crom_nonb2)
-    if (length(comuns2)==0) return(out)
-    nonb_filtrado <- nonb_map[seqnames(nonb_map) %in% comuns2]; genes_filtro <- genes[seqnames(genes) %in% comuns2] } 
-  else {
-    nonb_filtrado <- nonb_data[seqnames(nonb_data) %in% comuns]; genes_filtro <- genes[seqnames(genes) %in% comuns] }
+    crom_nonb2 <- unique(as.character(seqnames(nonb_map)))
+    comuns2 <- intersect(crom_genes, crom_nonb2)
+    if (length(comuns2) == 0) return(out)
+    nonb_filtrado <- nonb_map[seqnames(nonb_map) %in% comuns2]
+    genes_filtro  <- genes[seqnames(genes) %in% comuns2]
+  } else {
+    nonb_filtrado <- nonb_data[seqnames(nonb_data) %in% comuns]
+    genes_filtro  <- genes[seqnames(genes) %in% comuns]
+  }
   
-  if (length(nonb_filtrado)==0 || length(genes_filtro)==0) return(out)
+  if (length(nonb_filtrado) == 0 || length(genes_filtro) == 0) return(out)
   
-  ov <- findOverlaps(nonb_filtrado, genes_filtro, ignore.strand=FALSE); if (length(ov)==0) return(out)
+  ov <- findOverlaps(nonb_filtrado, genes_filtro, ignore.strand = FALSE)
+  if (length(ov) == 0) return(out)
   
-  tipo <- extrair_tipo_nonb(arquivo_nonb); nome_arq <- basename(arquivo_nonb)
-  qh <- queryHits(ov); sh <- subjectHits(ov); res <- vector("list", length(qh))
-  for (i in seq_along(qh)){
-    nf <- nonb_filtrado[qh[i]]; gf <- genes_filtro[sh[i]]
-    regiao <- classificar_regiao(nf,gf,win250=janela_250,win500=janela_500)
-    ovseg <- GenomicRanges::intersect(nf,gf); frac <- if (width(nf)>0) sum(width(ovseg))/width(nf) else 0
-    res <- vector("list", length(qh))
-    for (i in seq_along(qh)){
-      nf <- nonb_filtrado[qh[i]]; gf <- genes_filtro[sh[i]]
-      regiao <- classificar_regiao(nf,gf,win250=janela_250,win500=janela_500)
-      ovseg <- GenomicRanges::intersect(nf,gf); frac <- if (width(nf)>0) sum(width(ovseg))/width(nf) else 0
-      res[[i]] <- tibble(Tipo_NonB=tipo, Arquivo=nome_arq, Regiao=regiao, Fracao_Sobreposicao=frac,
-                         Tamanho_NonB=width(nf), Cromossomo=as.character(seqnames(nf)),
-                         Start_NonB=start(nf), End_NonB=end(nf), Start_Gene=start(gf), End_Gene=end(gf),
-                         Strand_Gene=as.character(strand(gf)))
-    }
-    out <- dplyr::bind_rows(res)  # out sempre existe a partir daqui
+  tipo    <- extrair_tipo_nonb(arquivo_nonb)
+  nome_arq <- basename(arquivo_nonb)
+  
+  qh <- queryHits(ov)
+  sh <- subjectHits(ov)
+  res <- vector("list", length(qh))
+  
+  for (i in seq_along(qh)) {
+    nf <- nonb_filtrado[qh[i]]
+    gf <- genes_filtro[sh[i]]
+    regiao <- classificar_regiao(nf, gf, win250 = janela_250, win500 = janela_500)
+    ovseg <- GenomicRanges::intersect(nf, gf)
+    frac  <- if (width(nf) > 0) sum(width(ovseg)) / width(nf) else 0
     
-    if (nrow(out)>0){
-      nome_clean <- gsub("[^A-Za-z0-9]","_",nome_arq)
-      nome_clean <- gsub("\\.(bed|gff3?|gff)$","",nome_clean, ignore.case=TRUE)
-      write.csv(out, file.path(diretorio_resultados, paste0("resultado_",nome_clean,".csv")), row.names=FALSE)
-    }
-    out
- 
+    res[[i]] <- tibble(
+      Tipo_NonB = tipo,
+      Arquivo = nome_arq,
+      Regiao = regiao,
+      Fracao_Sobreposicao = frac,
+      Tamanho_NonB = width(nf),
+      Cromossomo = as.character(seqnames(nf)),
+      Start_NonB = start(nf),
+      End_NonB = end(nf),
+      Start_Gene = start(gf),
+      End_Gene = end(gf),
+      Strand_Gene = as.character(strand(gf))
+    )
+  }
+  
+  out <- dplyr::bind_rows(res)
+  
+  if (nrow(out) > 0) {
+    nome_clean <- gsub("[^A-Za-z0-9]", "_", nome_arq)
+    nome_clean <- gsub("\\.(bed|gff3?|gff)$", "", nome_clean, ignore.case = TRUE)
+    write.csv(out, file.path(diretorio_resultados, paste0("resultado_", nome_clean, ".csv")), row.names = FALSE)
+  }
+  
+  return(out)
+}
+
     
 # grafico ---------------------------------
-    plot_tipo_nonb <- function(dados_tipo, tipo_rotulo){
-      ordem <- c("antes_500","antes_250","Inicio","Final","depois_250","depois_500")
-      dados_tipo$Regiao <- factor(dados_tipo$Regiao, levels=ordem)
-      
-      # tabela base com todos os níveis e n=0
-      todos <- tibble::tibble(Regiao=factor(ordem, levels=ordem), n_base=0L)
-      obs <- dados_tipo %>% dplyr::count(Regiao, name="n_obs")
-      rotulos_tab <- dplyr::left_join(todos, obs, by="Regiao") %>%
-        dplyr::mutate(n = dplyr::coalesce(n_obs, n_base),
-                      lbl = paste0(as.character(Regiao), " (n=", n, ")")) %>%
-        dplyr::select(Regiao, lbl)
-      rotulos_map <- setNames(rotulos_tab$lbl, rotulos_tab$Regiao)  # cobre todos os níveis, sem NULL
-      
-      ggplot2::ggplot(dados_tipo, ggplot2::aes(x=Regiao, y=Fracao_Sobreposicao, fill=Regiao)) +
-        ggplot2::geom_boxplot(width=0.6, size=0.7, color="black", outlier.shape=NA) +
-        ggplot2::scale_x_discrete(drop=FALSE, labels=rotulos_map) +  # não gera NULL
-        ggplot2::labs(title=paste("Distribuição de", tipo_rotulo), x="Região", y="Fração de Sobreposição") +
-        ggplot2::theme_minimal() +
-        ggplot2::theme(axis.text.x=ggplot2::element_text(angle=45, hjust=1), legend.position="none") +
-        ggplot2::scale_fill_brewer(palette="Set2")
-    }
+plot_tipo_nonb <- function(dados_tipo, tipo_rotulo){
+  
+  # 1) Trabalhar em character, corrigir a categoria
+  dados_tipo$Regiao <- as.character(dados_tipo$Regiao)
+  dados_tipo$Regiao[dados_tipo$Regiao == "Outro"] <- "Gene_completo"
+  
+  # 2) Definir níveis internos na ordem desejada
+  ordem <- c("antes_500","antes_250","Inicio","Final",
+             "depois_250","depois_500","Gene_completo")
+  dados_tipo$Regiao <- factor(dados_tipo$Regiao, levels = ordem)
+  
+  # 3) Labels exibidos no eixo
+  rotulos_map <- c(
+    "antes_500"     = "5' até 500 pb",
+    "antes_250"     = "5' até 250 pb",
+    "Inicio"        = "Primeira metade",
+    "Final"         = "Segunda metade",
+    "depois_250"    = "3' até 250 pb",
+    "depois_500"    = "3' até 500 pb",
+    "Gene_completo" = "Gene completo"
+  )
+  
+  # 4) Garantir y numérico
+  dados_tipo$Fracao_Sobreposicao <- as.numeric(dados_tipo$Fracao_Sobreposicao)
+  
+  ggplot2::ggplot(dados_tipo, ggplot2::aes(x = Regiao, y = Fracao_Sobreposicao, fill = Regiao)) +
+    ggplot2::geom_boxplot(width = 0.6, size = 0.7, color = "black", outlier.shape = NA) +
+    ggplot2::scale_x_discrete(drop = FALSE, labels = rotulos_map) +
+    ggplot2::labs(title = paste("Distribuição de", tipo_rotulo), x = "Região", y = "Fração de Sobreposição") +
+    ggplot2::theme_minimal() +
+    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 45, hjust = 1), legend.position = "none") +
+    ggplot2::scale_fill_brewer(palette = "Set2")}
 
-    for (tipo in tipos_unicos){
-      dt <- dplyr::filter(dados_completos, Tipo_NonB==tipo)
-      if (NROW(dt)==0) next  # nada a plotar
-      p <- plot_tipo_nonb(dt, tipo)
-      ggsave(file.path(diretorio_resultados, paste0("boxplot_", gsub("[^A-Za-z0-9]","_", tipo), ".png")),
-             p, width=10, height=6, dpi=300)
-    }
+resultados <- parallel::mclapply(arquivos_nonb, processar_arquivo, mc.cores = n_threads)
+dados_completos <- dplyr::bind_rows(Filter(function(x) nrow(x) > 0, resultados))
+tipos_unicos <- unique(dados_completos$Tipo_NonB)
+for (tipo in tipos_unicos) {
+  dt <- dplyr::filter(dados_completos, Tipo_NonB == tipo)
+  if (NROW(dt) == 0) next
+  p <- plot_tipo_nonb(dt, tipo)
+  ggsave(file.path(diretorio_resultados, paste0("boxplot_", gsub("[^A-Za-z0-9]", "_", tipo), ".png")),
+         p, width = 10, height = 6, dpi = 300)} 

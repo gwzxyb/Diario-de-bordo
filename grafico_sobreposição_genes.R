@@ -5,7 +5,7 @@ library(stringr)
 library(ggplot2)
 library(tibble)
 library(parallel)
-# Janelas -> região próxima ao gene (classificação de vizinhança)
+
 janela_250 <- 250L
 janela_500 <- 500L
 
@@ -21,7 +21,7 @@ to_GRanges <- function(x){
   if (is.data.frame(x) && all(c("seqnames","start","end") %in% names(x)))
     return(GenomicRanges::makeGRangesFromDataFrame(x, keep.extra.columns=TRUE))
   return(NULL)}
-# tem lugar que está "chr1" ou "1" -> mapear para acessões NC_*
+
 mapear_cromossomos <- function(granges_obj) {
   cromossomos <- as.character(seqnames(granges_obj))
   cromossomos_mapeados <- dplyr::case_when(
@@ -51,11 +51,11 @@ extrair_tipo_nonb <- function(caminho_arquivo) {
 
 
 classificar_regiao <- function(nonb, gene, win250 = 250L, win500 = 500L) {
-  # pega fita e coordenadas do gene
-  gstr <- as.character(strand(gene))         # "+" ou "-"
-  gstart <- start(gene)                      # inicio do gene
-  gend   <- end(gene)                        # fim
-  glen   <- width(gene)                      # tamanho
+
+  gstr <- as.character(strand(gene))         
+  gstart <- start(gene)                     
+  gend   <- end(gene)                       
+  glen   <- width(gene)                     
   
   # coordenadas da nonb
   nstart <- start(nonb)

@@ -1,0 +1,278 @@
+# --------------Pacotes-----------------------
+
+library(GenomicRanges)
+library(data.table)
+library(stringr)
+library(ggplot2)
+library(viridis)
+library(dplyr)
+library(InteractionSet)
+library(rtracklayer)
+library(readr)
+
+# ------------- legenda -----------
+# nonb - non-B-form DNA
+# hic  - interações Hi-C (BEDPE -> GInteractions)
+
+# 1) Diretórios e preparação
+data_dir <- "/home/mcavalcante/igv/modificados"
+dir_resultados <- "/home/mcavalcante/hic_nonb_intersections"
+dir_plots <- file.path(dir_resultados, "plots")
+dir.create(dir_plots, showWarnings = FALSE, recursive = TRUE)
+dir.create(dir_resultados, showWarnings = FALSE, recursive = TRUE)
+
+# 2) Seleção de arquivos
+arquivos <- list.files(data_dir, full.names = TRUE)
+# Hi-C (BEDPE)
+arquivos_hic <- arquivos[str_detect(arquivos, regex("bedpe$", ignore_case = TRUE))]
+# Non-B (SEM GQuad/Kim)
+arquivos_nonb <- arquivos[
+  str_detect(arquivos, regex("z-dna|triplex|r-loop|short_tandem_slipped|A-phased|Cruciform",
+                             ignore_case = TRUE)) &
+    str_detect(arquivos, regex("\\.(bed|gff3?)$", ignore_case = TRUE)) &
+    !str_detect(arquivos, regex("_gquad|_kim|gquad|g-quadruplex", ignore_case = TRUE))]
+
+# 3) Classificação de Non-B por nome de arquivo
+classificar_nonb <- function(arquivo) {
+  nome_lower <- tolower(basename(arquivo))
+  if (str_detect(nome_lower, "z-dna|zdna")) return("Z-DNA")
+  if (str_detect(nome_lower, "triplex")) return("Triplex")
+  if (str_detect(nome_lower, "r-loop|rloop")) return("R-loop")
+  if (str_detect(nome_lower, "short_tandem|tandem")) return("Short_tandem")
+  if (str_detect(nome_lower, "a-phased|aphased")) return("A-phased")
+  if (str_detect(nome_lower, "cruciform")) return("Cruciform")
+  return("Outros")}
+
+nonb_classificado <- data.frame(
+  arquivo = arquivos_nonb,
+  nome_arquivo = basename(arquivos_nonb),
+  classe = sapply(arquivos_nonb, classificar_nonb),
+  stringsAsFactors = FALSE)
+write.table(nonb_classificado,
+            file.path(dir_resultados, "nonb_filtrado_classificacao.tsv"),
+            sep = "\t", row.names = FALSE, quote = FALSE)
+
+cat("CLASSIFICAÇÃO NON-B (sem GQuad/Kim):\n")
+print(table(nonb_classificado$classe))
+
+# 4) Funções utilitárias
+# 4.1) Importação -> GRanges
+carregar_granges <- function(arquivo) {
+  if (!file.exists(arquivo)) return(GRanges())
+  extensao <- tools::file_ext(arquivo)
+
+  tryCatch({
+    if (extensao %in% c("bed")) {
+      gr <- import(arquivo, format = "BED")
+    } else if (extensao %in% c("gff", "gff3")) {
+      gr <- import(arquivo, format = "GFF")
+    } else {
+      return(GRanges())}
+    seqlevels(gr) <- gsub("^chr", "", seqlevels(gr))
+    gr
+  }, error = function(e) {
+    warning(paste("Erro ao carregar", basename(arquivo), ":", e$message))
+    GRanges()
+  })}
+
+# 4.2) Leitura BEDPE -> GInteractions
+carregar_hic <- function(arquivo) {
+  tryCatch({
+    hic_df <- read_tsv(arquivo, col_names = FALSE, show_col_types = FALSE)
+    gr1 <- GRanges(seqnames = hic_df$X1, ranges = IRanges(hic_df$X2 + 1, hic_df$X3))
+    gr2 <- GRanges(seqnames = hic_df$X4, ranges = IRanges(hic_df$X5 + 1, hic_df$X6))
+    seqlevels(gr1) <- gsub("^chr", "", seqlevels(gr1))
+    seqlevels(gr2) <- gsub("^chr", "", seqlevels(gr2))
+    GInteractions(gr1, gr2)
+  }, error = function(e) {
+    message("Erro ", basename(arquivo), ": ", e$message)
+    NULL  })}
+# 5) Carregamento de dados (Non-B e Hi-C)
+# 5.1) Non-B
+gr_list_nonb <- list()
+for (i in seq_len(nrow(nonb_classificado))) {
+  arquivo <- nonb_classificado$arquivo[i]
+  nome_arq <- nonb_classificado$nome_arquivo[i]
+  classe <- nonb_classificado$classe[i]
+  gr <- carregar_granges(arquivo)
+  
+if (length(gr) > 0) {
+    mcols(gr)$origem <- nome_arq
+    mcols(gr)$classe <- classe
+    nome_lista <- gsub("\\.(bed|gff|gff3)$", "", nome_arq)
+    gr_list_nonb[[nome_lista]] <- gr
+    cat(" OK, ta certo (", length(gr), "regiões)\n")
+  } else {
+    cat(" VAZIO\n") }}
+gr_list_nonb <- gr_list_nonb[sapply(gr_list_nonb, length) > 0]
+
+# 5.2) Hi-C
+gr_list_hic <- list()
+
+for (hic_file in arquivos_hic) {
+  nome_arq <- basename(hic_file)
+  cat("Hi-C:", nome_arq, "...")
+  hic <- carregar_hic(hic_file)
+
+if (!is.null(hic) && length(hic) > 0) {
+    mcols(hic)$origem <- nome_arq
+    nome_lista <- gsub("\\.bedpe$", "", nome_arq)
+    gr_list_hic[[nome_lista]] <- hic
+    cat(" OK (", length(hic), "interações)\n")
+  } else {
+    cat(" VAZIO\n")}}
+
+# 6) Contagens e tabelas básicas
+contagem_nonb <- data.frame(
+  Arquivo = names(gr_list_nonb),
+  Classe = sapply(gr_list_nonb, function(x) unique(mcols(x)$classe)[1]),
+  Num_Regioes = sapply(gr_list_nonb, length),
+  stringsAsFactors = FALSE)
+
+contagem_hic <- data.frame(
+  Arquivo = names(gr_list_hic),
+  Num_Interacoes = sapply(gr_list_hic, length),
+  stringsAsFactors = FALSE)
+write.table(contagem_nonb, file.path(dir_resultados, "contagem_nonb.tsv"),
+            sep = "\t", row.names = FALSE, quote = FALSE)
+write.table(contagem_hic, file.path(dir_resultados, "contagem_hic.tsv"),
+            sep = "\t", row.names = FALSE, quote = FALSE)
+cat("\nNon-B carregado:", sum(contagem_nonb$Num_Regioes), "regiões\n")
+cat("Hi-C carregado:", sum(contagem_hic$Num_Interacoes), "interações\n")
+
+# 7) Consolidação por classe (Non-B)
+gr_por_classe <- list()
+classes_com_dados <- unique(contagem_nonb$Classe)
+for (classe in classes_com_dados) {
+  arquivos_classe <- contagem_nonb$Arquivo[contagem_nonb$Classe == classe]
+  grs_classe <- gr_list_nonb[arquivos_classe]
+  if (length(grs_classe) > 0) {
+    gr_por_classe[[classe]] <- Reduce(c, grs_classe)
+    cat("Classe", classe, ":", length(gr_por_classe[[classe]]), "regiões\n")}}
+
+# 8) Interseções: âncoras Hi-C vs classes Non-B
+matriz_hic_nonb <- data.frame()
+for (hic_nome in names(gr_list_hic)) {
+  hic <- gr_list_hic[[hic_nome]]
+  anchors1 <- anchors(hic, type = "first")
+  anchors2 <- anchors(hic, type = "second")
+
+  for (classe in names(gr_por_classe)) {
+    nonb <- gr_por_classe[[classe]]
+    ov1 <- findOverlaps(anchors1, nonb, minoverlap = 1)
+    n1 <- length(unique(queryHits(ov1)))
+    ov2 <- findOverlaps(anchors2, nonb, minoverlap = 1)
+    n2 <- length(unique(queryHits(ov2)))
+    matriz_hic_nonb <- rbind(
+      matriz_hic_nonb,
+      data.frame(hic_arquivo = hic_nome, hic_tipo = "anchor1", nonb_classe = classe,
+                 n_interseccoes = n1, total_hic = length(hic), total_nonb = length(nonb)),
+      data.frame(hic_arquivo = hic_nome, hic_tipo = "anchor2", nonb_classe = classe,
+                 n_interseccoes = n2, total_hic = length(hic), total_nonb = length(nonb)))}}
+matriz_hic_nonb <- matriz_hic_nonb %>%
+  mutate(
+    perc_hic = round(n_interseccoes / total_hic * 100, 2),
+    perc_nonb = round(n_interseccoes / total_nonb * 100, 2) )
+write.table(matriz_hic_nonb,
+            file.path(dir_resultados, "matriz_hic_nonb_interseccoes.tsv"),
+            sep = "\t", row.names = FALSE, quote = FALSE)
+
+# 9) Plots principais
+# 9.1) Heatmap facetado por Hi-C
+if (nrow(matriz_hic_nonb) > 0) {
+  heatmap_hic <- ggplot(matriz_hic_nonb, aes(x = hic_tipo, y = nonb_classe, fill = n_interseccoes)) +
+    facet_wrap(~hic_arquivo, scales = "free_y") +
+    geom_tile(color = "white", linewidth = 1) +
+    geom_text(aes(label = ifelse(n_interseccoes > 0, n_interseccoes, "")),
+              color = "black", size = 4, fontface = "bold") +
+    scale_fill_gradient2(low = "#E6F3FF", mid = "#FF9999", high = "#CC0000",
+                         midpoint = median(matriz_hic_nonb$n_interseccoes),
+                         name = "Interseções") +
+    labs(title = "Interseções Hi-C (Âncoras) vs Classes Non-B",
+         subtitle = "Por arquivo Hi-C e tipo de âncora",
+         x = "Âncora", y = "Classe Non-B") +
+    theme_minimal(base_size = 11) +
+    theme(
+      axis.text.x = element_text(angle = 45, hjust = 1, face = "bold"),
+      axis.text.y = element_text(face = "bold"),
+      strip.text = element_text(face = "bold", size = 12),
+      plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
+      legend.position = "right"
+    ) + coord_fixed(ratio = 1)
+  ggsave(file.path(dir_plots, "heatmap_hic_nonb.png"),
+         heatmap_hic, width = 16, height = 10, dpi = 300, bg = "white")}
+
+# 9.2) Top 20 interseções
+top_interseccoes <- matriz_hic_nonb %>%
+  filter(n_interseccoes > 0) %>%
+  arrange(desc(n_interseccoes)) %>%
+  head(20)
+if (nrow(top_interseccoes) > 0) {
+  plot_barras_top <- ggplot(top_interseccoes,
+                            aes(x = reorder(paste(hic_arquivo, hic_tipo, nonb_classe, sep = " | "),
+                                            n_interseccoes),
+                                y = n_interseccoes, fill = nonb_classe)) +
+    geom_bar(stat = "identity", alpha = 0.8) +
+    geom_text(aes(label = n_interseccoes), hjust = -0.1, size = 4, fontface = "bold") +
+    coord_flip() +
+    scale_fill_viridis_d(option = "plasma", name = "Classe Non-B") +
+    labs(title = "TOP 20 Interseções Hi-C vs Non-B",
+         subtitle = "Número de âncoras Hi-C com overlap por classe",
+         x = "Hi-C | Âncora | Classe", y = "Interseções") +
+    theme_minimal(base_size = 12) +
+    theme(legend.position = "bottom",
+          panel.grid.major.y = element_blank())
+
+  ggsave(file.path(dir_plots, "barras_top_interseccoes.png"),
+         plot_barras_top, width = 14, height = 10, dpi = 300, bg = "white")}
+
+# 9.3) Resumo por classe Non-B
+resumo_classes <- matriz_hic_nonb %>%
+  group_by(nonb_classe) %>%
+  summarise(
+    total_interseccoes = sum(n_interseccoes),
+    n_hic_arquivos = n_distinct(hic_arquivo),
+    media_perc_hic = mean(perc_hic),
+    .groups = "drop"
+  ) %>%
+  arrange(desc(total_interseccoes))
+
+plot_resumo_classes <- ggplot(resumo_classes,
+                              aes(x = reorder(nonb_classe, total_interseccoes),
+                                  y = total_interseccoes, fill = nonb_classe)) +
+  geom_bar(stat = "identity", alpha = 0.8) +
+  geom_text(aes(label = paste0(total_interseccoes, "\n(", n_hic_arquivos, " Hi-Cs)")),
+            hjust = -0.1, size = 4, fontface = "bold") +
+  coord_flip() +
+  scale_fill_viridis_d(option = "turbo") +
+  labs(title = "Total de Interseções por Classe Non-B",
+       subtitle = "Soma das interseções em todas as âncoras",
+       x = "Classe Non-B", y = "Total interseções") +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = 0.5, face = "bold", size = 14))
+
+ggsave(file.path(dir_plots, "resumo_classes_nonb.png"),
+       plot_resumo_classes, width = 12, height = 8, dpi = 300, bg = "white")
+
+# 10) Relatório final (txt)
+sink(file.path(dir_resultados, "relatorio_hic_nonb.txt"))
+
+top10 <- matriz_hic_nonb %>% arrange(desc(n_interseccoes)) %>% head(10)
+for (i in 1:nrow(top10)) {
+  cat(sprintf("%d. %s | %s | %s: %d (%.1f%% Hi-C)\n",
+              i, top10$hic_arquivo[i], top10$hic_tipo[i],
+              top10$nonb_classe[i], top10$n_interseccoes[i], top10$perc_hic[i]))}
+
+cat("\nPOR CLASSE Non-B:\n")
+for (i in 1:nrow(resumo_classes)) {
+  cat(sprintf("%s: %d interseções (%d Hi-C arquivos)\n",
+              resumo_classes$nonb_classe[i],
+              resumo_classes$total_interseccoes[i],
+              resumo_classes$n_hic_arquivos[i]))}
+sink()
+
+# 11) Salvar objetos principais
+saveRDS(gr_list_hic, file.path(dir_resultados, "hic_data.rds"))
+saveRDS(gr_list_nonb, file.path(dir_resultados, "nonb_data.rds"))
+saveRDS(matriz_hic_nonb, file.path(dir_resultados, "interseccoes_data.rds"))

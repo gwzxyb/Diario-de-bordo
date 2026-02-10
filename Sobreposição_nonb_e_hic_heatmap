@@ -15,8 +15,8 @@ library(readr)
 # hic  - interações Hi-C (BEDPE -> GInteractions)
 
 # 1) Diretórios e preparação
-data_dir <- "/home/mcavalcante/igv/modificados"
-dir_resultados <- "/home/mcavalcante/hic_nonb_intersections"
+data_dir <- "./igv/modificados"
+dir_resultados <- "./hic_nonb_intersections"
 dir_plots <- file.path(dir_resultados, "plots")
 dir.create(dir_plots, showWarnings = FALSE, recursive = TRUE)
 dir.create(dir_resultados, showWarnings = FALSE, recursive = TRUE)

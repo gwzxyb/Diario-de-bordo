@@ -12,7 +12,7 @@ Plots (em `.../plots/`):
 - `heatmap_classes_melhorado.png` (heatmap com contagens e % do menor conjunto)
 - `violino_gc_por_classe.png` (distribuição do GC por classe, se FASTA disponível)
 
-# Hi-C vs Non-B DNA (interseções) — sem GC
+# Hi-C vs Non-B DNA (interseções)
 
 ## Objetivo
 Calcular sobreposições entre âncoras de interações Hi-C e regiões Não-B DNA, agrupando por classe (Z-DNA, Triplex, R-loop, Short_tandem, A-phased, Cruciform)

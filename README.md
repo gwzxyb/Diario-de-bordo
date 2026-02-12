@@ -1,65 +1,103 @@
-# Non-B DNA — matriz de interseção + GC (script do anexo)
+# Diário de Bordo
 
-## Objetivo
-Classificar arquivos Non-B por tipo, carregar como GRanges e montar uma matriz de interseção entre classes (diagonal = total; fora da diagonal = quantos intervalos de uma classe tocam outra).
+**Autor:** Maria Giovana Cavalcante do Nascimento  
+**Orientador:** Profa Dra Tie Koide  
+**Data:** 12/02/2026  
 
-Arquivos principais:
-- `nonb_classificacao.tsv` (classificação dos arquivos)
-- `contagem_real_predicoes.tsv` (número de predições por arquivo/classe)
-- `matriz_interseccao_completa.tsv` (matriz classe × classe)
+**Dados brutos (BED/GFF/Hi-C/SMAP):** Clone branch `data-raw` → copie para `data/igv/` → volte `main`.
 
-Plots (em `.../plots/`):
-- `heatmap_classes_melhorado.png` (heatmap com contagens e % do menor conjunto)
-- `violino_gc_por_classe.png` (distribuição do GC por classe, se FASTA disponível)
+[![Reprodutível](https://img.shields.io/badge/FAIR-100%25-blue?style=flat-square)] [![R 4.3.0](https://img.shields.io/badge/R-4.3.0-276DC3?style=flat-square&logo=R)](https://cran.r-project.org/)
 
-# Hi-C vs Non-B DNA (interseções)
+## Índice Executivo dos Códigos
 
-## Objetivo
-Calcular sobreposições entre âncoras de interações Hi-C e regiões Não-B DNA, agrupando por classe (Z-DNA, Triplex, R-loop, Short_tandem, A-phased, Cruciform)
+### 1. DNA Não-B — Matriz de Interseção + GC Content
 
-Arquivos principais:
-- `nonb_filtrado_classificacao.tsv` (classificação dos arquivos Non-B)
-- `contagem_nonb.tsv` e `contagem_hic.tsv` (contagens por arquivo)
-- `matriz_hic_nonb_interseccoes.tsv` (interseções por Hi-C, tipo de âncora e classe)
-- `relatorio_hic_nonb.txt` (resumo e TOP interseções)
-- `hic_data.rds`, `nonb_data.rds`, `interseccoes_data.rds` (objetos salvos)
+**Objetivo**  
+Classificar Non-B DNA (Z-DNA, G-quadruplex, Triplex, R-loops, etc.) e montar matriz de interseções entre classes (diagonal=total, off-diagonal=overlap).
 
-Plots (em `.../plots/`):
-- `heatmap_hic_nonb.png`
-- `resumo_classes_nonb.png`
-  
-# Análise SMAP × Genes (sobreposição básica)
+**Saídas Principais** (`results/nonb_matrix/`)  
+- `nonb_classificacao.tsv` — Classificação dos arquivos  
+- `contagem_real_predicoes.tsv` — Número de predições por classe  
+- `matriz_interseccao_completa.tsv` — Matriz N×N classes  
 
-## Objetivo
-- Carregar arquivos de regiões SMAP e anotações de genes como `GRanges`
-- Calcular estatísticas básicas (número de regiões, largura, cobertura) por arquivo
-- Quantificar sobreposições entre SMAP e genes e gerar algumas visualizações resumidas
+**Visualizações** (`results/plots/`)  
+- `heatmap_classes_melhorado.png` — Heatmap com contagens e percentuais  
+- `violino_gc_por_classe.png` — Distribuição de GC por classe  
 
-### Saídas principais
-- Diretório de resultados: `dir_resultados` (no script: `/home/mcavalcante/sobreposição`), com:
-  - `estatisticas_gerais.csv`  
-    - Tabela com, por arquivo:
-      - `Nome`, `Tipo` (SMAP ou Genes), `Regioes`, `Cromossomos`,
-      - `Largura_media`, `Largura_mediana`, `Largura_min`, `Largura_max`, `Cobertura_total`.
-  - `sobreposicoes_smap_genes_detalhadas.csv`  
-    - Para cada par SMAP × Genes:
-      - `Regioes_sobrepostas_gr1` (SMAP), `Regioes_sobrepostas_gr2` (Genes),
-      - `Percentual_gr1`, `Percentual_gr2`,
-      - `Largura_media_sobrepostas_gr1`,
-      - `Razao_gr1_sobre_gr2` (relação dos percentuais).
-  - `relatorio_analise_smap_genes.rds`  
-    - Lista com:
-      - número de arquivos SMAP/Genes/Expressão,
-      - `Estatisticas_gerais`,
-      - `Sobreposicoes_smap_genes`,
-      - lista de arquivos de expressão.
-        
-### Gráficos (em `dir_plots`)
-- `estatisticas_gerais.png`  
-  - Painel com dois gráficos (escala log10 no eixo Y):
-    - Número de regiões por arquivo.
-    - Largura média das regiões por arquivo.
-- `distribuicao_cromossomos.png`  
-  - Distribuição de regiões por cromossomo para:
-    - primeiro arquivo SMAP,
-    - primeiro arquivo de genes.
+**Códigos:** `pipeline_sobreposicoes.R` + `Analise_nonb_contGC.r`
+
+---
+
+### 2. DNA Hi-C vs Não-B (Interseções)
+
+**Objetivo**  
+Calcular sobreposições entre Hi-C anchors e regiões Non-B DNA, agrupado por classe (Z-DNA, Triplex, R-loop, Short_tandem, A-phased, Cruciform).
+
+**Arquivos Principais** (`results/hic_nonb/`)  
+- `nonb_filtrado_classificacao.tsv` — Non-B classificado  
+- `contagem_nonb.tsv` + `contagem_hic.tsv` — Contagens por arquivo  
+- `matriz_hic_nonb_interseccoes.tsv` — Interseções por Hi-C + âncora + classe  
+- `relatorio_hic_nonb.txt` — Resumo e TOP interseções  
+- `hic_data.rds`, `nonb_data.rds`, `intersecoes_data.rds` — Objetos serializados  
+
+**Gráficos** (`results/plots/`)  
+- `heatmap_hic_nonb.png`  
+- `resumo_classes_nonb.png`  
+
+**Códigos:** `Sobreposicao_nonb_e_hic_heatmap` + `pipeline_sobreposicoes.R`
+
+---
+
+### 3. Análise SMAP × Genes (Sobreposição Regulatória)
+
+**Objetivo**  
+Análise completa SMAP1 vs genes H. salinarum: estatísticas de regiões, sobreposições (±1kb promotores), cobertura cromossômica.
+
+**Saídas Principais** (`results/sobreposicao/`)  
+
+**estatisticas_gerais.csv
+├── Por arquivo SMAP/Genes:
+│ ├── Regioes_Totais, Cromossomos_Cobertos
+│ ├── Largura_media/min/max/mediana
+│ └── Cobertura_Genoma_Total_bp
+
+sobreposicoes_smap_genes_detalhadas.csv
+├── SMAP_ID, Gene_ID, Gene_Name
+├── SMAP_chr:start-end, Gene_chr:start-end
+├── Percentual_Sobreposicao_SMAP, Percentual_Sobreposicao_Gene
+├── Distancia_Promotor_bp, Regiao_Regulatoria
+└── Razao_SMAP_Gene
+
+relatorio_analise_smap_genes.rds
+├── stats_gerais, sobreposicoes_resumo
+├── arquivos_expressao_lista
+└── top_10_sobreposicoes**
+
+
+**Visualizações** (`results/plots/`)
+estatisticas_gerais.png
+├── Número de regiões por arquivo (eixo Y log10)
+└── Largura média por arquivo (eixo Y log10)
+
+distribuicao_cromossomos.png
+├── 1º arquivo SMAP por cromossomo
+└── 1º arquivo Genes por cromossomo
+
+sobreposicoes_promotores.png
+└── Histograma distâncias aos promotores
+
+
+---
+
+# 1. Configuração do Ambiente
+```bash
+git clone https://github.com/gwzxyb/Diario-de-bordo.git
+cd Diario-de-bordo
+R -e "renv::restore()"
+
+git checkout data-raw
+mkdir -p ../data/igv/
+cp *.bed *.gff *.bedpe ../data/igv/
+cd .. && git checkout main
+mkdir -p results/{sobreposicao,nonb_matrix,hic_nonb,plots}
+

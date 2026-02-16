@@ -1,0 +1,847 @@
+##gff-version 3
+NC_002607.1	deAlmeida2019	ncRNA	315	525	.	-	.	ID=VNG_as00010_1;Name=VNG_as00010_1;locus_tag=VNG_as00010_1;Note=VNG_RS00010|VNG0001H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	7407	7582	.	+	.	ID=VNG_as00030_5;Name=VNG_as00030_5;locus_tag=VNG_as00030_5;Note=VNG_RS00030|VNG0006G||glutamine--fructose-6-phosphate aminotransferase
+NC_002607.1	deAlmeida2019	ncRNA	11587	11660	.	+	.	ID=VNG_as00050_10;Name=VNG_as00050_10;locus_tag=VNG_as00050_10;Note=VNG_RS00050|VNG0013C||transposase
+NC_002607.1	deAlmeida2019	ncRNA	20791	20878	.	+	.	ID=VNG_as00105_17;Name=VNG_as00105_17;locus_tag=VNG_as00105_17;Note=VNG_RS00105|VNG0026C||transposase
+NC_002607.1	deAlmeida2019	ncRNA	20982	21084	.	+	.	ID=VNG_as00105_18;Name=VNG_as00105_18;locus_tag=VNG_as00105_18;Note=VNG_RS00105|VNG0026C||transposase
+NC_002607.1	deAlmeida2019	ncRNA	21380	21673	.	+	.	ID=VNG_as00105_20;Name=VNG_as00105_20;locus_tag=VNG_as00105_20;Note=VNG_RS00105|VNG0026C||transposase
+NC_002607.1	deAlmeida2019	ncRNA	23440	23522	.	-	.	ID=VNG_as00110_23;Name=VNG_as00110_23;locus_tag=VNG_as00110_23;Note=VNG_RS00110|VNG0028C||transposase
+NC_002607.1	deAlmeida2019	ncRNA	23653	23697	.	-	.	ID=VNG_as00110_24;Name=VNG_as00110_24;locus_tag=VNG_as00110_24;Note=VNG_RS00110|VNG0028C||transposase
+NC_002607.1	deAlmeida2019	ncRNA	24137	24393	.	+	.	ID=VNG_as13180_25;Name=VNG_as13180_25;locus_tag=VNG_as13180_25;Note=VNG_RS13180|VNG0029H,VNG_0029H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	24507	24560	.	+	.	ID=VNG_as13180_28;Name=VNG_as13180_28;locus_tag=VNG_as13180_28;Note=VNG_RS13180|VNG0029H,VNG_0029H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	26828	26920	.	-	.	ID=VNG_as00115_29;Name=VNG_as00115_29;locus_tag=VNG_as00115_29;Note=VNG_RS00115|VNG0031H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	26958	27021	.	-	.	ID=VNG_as00115_30;Name=VNG_as00115_30;locus_tag=VNG_as00115_30;Note=VNG_RS00115|VNG0031H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	27744	27832	.	-	.	ID=VNG_as00115_32;Name=VNG_as00115_32;locus_tag=VNG_as00115_32;Note=VNG_RS00115|VNG0031H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	28009	28060	.	-	.	ID=VNG_as00115_33;Name=VNG_as00115_33;locus_tag=VNG_as00115_33;Note=VNG_RS00115|VNG0031H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	28727	28774	.	-	.	ID=VNG_as00115_34;Name=VNG_as00115_34;locus_tag=VNG_as00115_34;Note=VNG_RS00115|VNG0031H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	29220	29293	.	-	.	ID=VNG_as13190_36;Name=VNG_as13190_36;locus_tag=VNG_as13190_36;Note=VNG_RS13190|VNG0032H,VNG_0032H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	29677	29725	.	+	.	ID=VNG_as13195_38;Name=VNG_as13195_38;locus_tag=VNG_as13195_38;Note=VNG_RS13195|VNG0033H,VNG_0033H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	31432	31603	.	+	.	ID=VNG_as00130_39;Name=VNG_as00130_39;locus_tag=VNG_as00130_39;Note=VNG_RS00130|partial;pseudo||sugar-specific transcriptional regulator TrmB
+NC_002607.1	deAlmeida2019	ncRNA	32063	32107	.	-	.	ID=VNG_as00140_41;Name=VNG_as00140_41;locus_tag=VNG_as00140_41;Note=VNG_RS00140|VNG0038H||type II toxin-antitoxin system HicA family toxin
+NC_002607.1	deAlmeida2019	ncRNA	32986	33006	.	-	.	ID=VNG_as13200_42;Name=VNG_as13200_42;locus_tag=VNG_as13200_42;Note=VNG_RS13200|partial;pseudo||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	35764	35805	.	+	.	ID=VNG_as00160_47;Name=VNG_as00160_47;locus_tag=VNG_as00160_47;Note=VNG_RS00160|VNG0042G||transposase
+NC_002607.1	deAlmeida2019	ncRNA	36469	36538	.	-	.	ID=VNG_as00165_48;Name=VNG_as00165_48;locus_tag=VNG_as00165_48;Note=VNG_RS00165|VNG0043H||IS200/IS605 family transposase ISH1-8
+NC_002607.1	deAlmeida2019	ncRNA	39221	39315	.	-	.	ID=VNG_as00175_49;Name=VNG_as00175_49;locus_tag=VNG_as00175_49;Note=VNG_RS00175|VNG0045C||cell division control protein Cdc6
+NC_002607.1	deAlmeida2019	ncRNA	40418	40532	.	+	.	ID=VNG_as00180_51;Name=VNG_as00180_51;locus_tag=VNG_as00180_51;Note=VNG_RS00180|VNG0046G||UDP-glucose/GDP-mannose dehydrogenase family protein
+NC_002607.1	deAlmeida2019	ncRNA	41428	41560	.	-	.	ID=VNG_as00185_52;Name=VNG_as00185_52;locus_tag=VNG_as00185_52;Note=VNG_RS00185|VNG0047G,VNG0047Gm||UTP--glucose-1-phosphate uridylyltransferase
+NC_002607.1	deAlmeida2019	ncRNA	42188	42354	.	-	.	ID=VNG_as13205_53;Name=VNG_as13205_53;locus_tag=VNG_as13205_53;Note=VNG_RS13205|VNG0049H,VNG_0049H||FkbM family methyltransferase
+NC_002607.1	deAlmeida2019	ncRNA	42549	42568	.	-	.	ID=VNG_as13205_55;Name=VNG_as13205_55;locus_tag=VNG_as13205_55;Note=VNG_RS13205|VNG0049H,VNG_0049H||FkbM family methyltransferase
+NC_002607.1	deAlmeida2019	ncRNA	43137	43253	.	-	.	ID=VNG_as13210_61;Name=VNG_as13210_61;locus_tag=VNG_as13210_61;Note=VNG_RS13210|VNG0050C,VNG_0050C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	43541	43563	.	-	.	ID=VNG_as13210_62;Name=VNG_as13210_62;locus_tag=VNG_as13210_62;Note=VNG_RS13210|VNG0050C,VNG_0050C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	43856	43921	.	-	.	ID=VNG_as13210_64;Name=VNG_as13210_64;locus_tag=VNG_as13210_64;Note=VNG_RS13210|VNG0050C,VNG_0050C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	43983	44061	.	-	.	ID=VNG_as13210_65;Name=VNG_as13210_65;locus_tag=VNG_as13210_65;Note=VNG_RS13210|VNG0050C,VNG_0050C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	44497	44640	.	+	.	ID=VNG_as00195_66;Name=VNG_as00195_66;locus_tag=VNG_as00195_66;Note=VNG_RS00195|VNG0051G||glycosyltransferase family 1 protein
+NC_002607.1	deAlmeida2019	ncRNA	44794	44821	.	+	.	ID=VNG_as00195_67;Name=VNG_as00195_67;locus_tag=VNG_as00195_67;Note=VNG_RS00195|VNG0051G||glycosyltransferase family 1 protein
+NC_002607.1	deAlmeida2019	ncRNA	44871	44966	.	+	.	ID=VNG_as00195_68;Name=VNG_as00195_68;locus_tag=VNG_as00195_68;Note=VNG_RS00195|VNG0051G||glycosyltransferase family 1 protein
+NC_002607.1	deAlmeida2019	ncRNA	44969	44993	.	+	.	ID=VNG_as00195_69;Name=VNG_as00195_69;locus_tag=VNG_as00195_69;Note=VNG_RS00195|VNG0051G||glycosyltransferase family 1 protein
+NC_002607.1	deAlmeida2019	ncRNA	45946	46013	.	+	.	ID=VNG_as00200_70;Name=VNG_as00200_70;locus_tag=VNG_as00200_70;Note=VNG_RS00200|||ISH3 family transposase ISH3C
+NC_002607.1	deAlmeida2019	ncRNA	46431	46575	.	+	.	ID=VNG_as00200_71;Name=VNG_as00200_71;locus_tag=VNG_as00200_71;Note=VNG_RS00200|||ISH3 family transposase ISH3C
+NC_002607.1	deAlmeida2019	ncRNA	47711	47740	.	+	.	ID=VNG_as00205_73;Name=VNG_as00205_73;locus_tag=VNG_as00205_73;Note=VNG_RS00205|VNG0052H||IS4 family transposase ISH8
+NC_002607.1	deAlmeida2019	ncRNA	49400	49525	.	+	.	ID=VNG_as00215_75;Name=VNG_as00215_75;locus_tag=VNG_as00215_75;Note=VNG_RS00215|VNG0054H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	49549	49673	.	+	.	ID=VNG_as00215_76;Name=VNG_as00215_76;locus_tag=VNG_as00215_76;Note=VNG_RS00215|VNG0054H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	49952	49973	.	+	.	ID=VNG_as00215_78;Name=VNG_as00215_78;locus_tag=VNG_as00215_78;Note=VNG_RS00215|VNG0054H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	50160	50206	.	-	.	ID=VNG_as13215_79;Name=VNG_as13215_79;locus_tag=VNG_as13215_79;Note=VNG_RS13215|VNG0055H,VNG_0055H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	51076	51185	.	+	.	ID=VNG_as00220_80;Name=VNG_as00220_80;locus_tag=VNG_as00220_80;Note=VNG_RS00220|VNG0056H||IS66 family transposase ISH10B
+NC_002607.1	deAlmeida2019	ncRNA	52391	52446	.	-	.	ID=VNG_as00225_81;Name=VNG_as00225_81;locus_tag=VNG_as00225_81;Note=VNG_RS00225|||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	52521	52639	.	-	.	ID=VNG_as00225_82;Name=VNG_as00225_82;locus_tag=VNG_as00225_82;Note=VNG_RS00225|||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	52911	52982	.	-	.	ID=VNG_as00230_83;Name=VNG_as00230_83;locus_tag=VNG_as00230_83;Note=VNG_RS00230|||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	53416	53524	.	-	.	ID=VNG_as00235_84;Name=VNG_as00235_84;locus_tag=VNG_as00235_84;Note=VNG_RS00235|VNG0057H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	54069	54152	.	-	.	ID=VNG_as00235_85;Name=VNG_as00235_85;locus_tag=VNG_as00235_85;Note=VNG_RS00235|VNG0057H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	54892	55000	.	+	.	ID=VNG_as00240_86;Name=VNG_as00240_86;locus_tag=VNG_as00240_86;Note=VNG_RS00240|VNG0058H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	56759	56811	.	-	.	ID=VNG_as00245_88;Name=VNG_as00245_88;locus_tag=VNG_as00245_88;Note=VNG_RS00245|VNG0059H||IS4 family transposase ISH8B
+NC_002607.1	deAlmeida2019	ncRNA	56918	57049	.	-	.	ID=VNG_as00245_89;Name=VNG_as00245_89;locus_tag=VNG_as00245_89;Note=VNG_RS00245|VNG0059H||IS4 family transposase ISH8B
+NC_002607.1	deAlmeida2019	ncRNA	58246	58300	.	+	.	ID=VNG_as13220_91;Name=VNG_as13220_91;locus_tag=VNG_as13220_91;Note=VNG_RS13220|VNG0060G,VNG_0060G||glycosyltransferase family 1 protein
+NC_002607.1	deAlmeida2019	ncRNA	59612	59770	.	-	.	ID=VNG_as00250_94;Name=VNG_as00250_94;locus_tag=VNG_as00250_94;Note=VNG_RS00250|VNG0061C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	60067	60171	.	-	.	ID=VNG_as00250_95;Name=VNG_as00250_95;locus_tag=VNG_as00250_95;Note=VNG_RS00250|VNG0061C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	62136	62420	.	+	.	ID=VNG_as00260_97;Name=VNG_as00260_97;locus_tag=VNG_as00260_97;Note=VNG_RS00260|VNG0063G||KR domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	69218	69354	.	-	.	ID=VNG_as13240_102;Name=VNG_as13240_102;locus_tag=VNG_as13240_102;Note=VNG_RS13240|pseudo||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	84173	84248	.	+	.	ID=VNG_as00390_111;Name=VNG_as00390_111;locus_tag=VNG_as00390_111;Note=VNG_RS00390|VNG0099G||50S ribosomal protein L16
+NC_002607.1	deAlmeida2019	ncRNA	84804	84895	.	+	.	ID=VNG_as00395_113;Name=VNG_as00395_113;locus_tag=VNG_as00395_113;Note=VNG_RS00395|VNG0101G||cold-shock protein
+NC_002607.1	deAlmeida2019	ncRNA	89212	89245	.	-	.	ID=VNG_as00420_115;Name=VNG_as00420_115;locus_tag=VNG_as00420_115;Note=VNG_RS00420|VNG0107G||restriction endonuclease subunit S
+NC_002607.1	deAlmeida2019	ncRNA	89450	89575	.	-	.	ID=VNG_as00420_116;Name=VNG_as00420_116;locus_tag=VNG_as00420_116;Note=VNG_RS00420|VNG0107G||restriction endonuclease subunit S
+NC_002607.1	deAlmeida2019	ncRNA	90008	90027	.	-	.	ID=VNG_as00420_121;Name=VNG_as00420_121;locus_tag=VNG_as00420_121;Note=VNG_RS00420|VNG0107G||restriction endonuclease subunit S
+NC_002607.1	deAlmeida2019	ncRNA	90302	90331	.	-	.	ID=VNG_as00420_122;Name=VNG_as00420_122;locus_tag=VNG_as00420_122;Note=VNG_RS00420|VNG0107G||restriction endonuclease subunit S
+NC_002607.1	deAlmeida2019	ncRNA	100386	100450	.	-	.	ID=VNG_as00465_134;Name=VNG_as00465_134;locus_tag=VNG_as00465_134;Note=VNG_RS00465|||ISH3 family transposase ISH3C
+NC_002607.1	deAlmeida2019	ncRNA	101314	101361	.	+	.	ID=VNG_as00470_136;Name=VNG_as00470_136;locus_tag=VNG_as00470_136;Note=VNG_RS00470|VNG0116H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	105394	105639	.	-	.	ID=VNG_as00500_139;Name=VNG_as00500_139;locus_tag=VNG_as00500_139;Note=VNG_RS00500|VNG0123G||ABC transporter ATP-binding protein
+NC_002607.1	deAlmeida2019	ncRNA	108292	108326	.	-	.	ID=VNG_as00520_142;Name=VNG_as00520_142;locus_tag=VNG_as00520_142;Note=VNG_RS00520|VNG0128C||NAD(P)-dependent oxidoreductase
+NC_002607.1	deAlmeida2019	ncRNA	108691	108749	.	-	.	ID=VNG_as00525_143;Name=VNG_as00525_143;locus_tag=VNG_as00525_143;Note=VNG_RS00525|VNG0129G||protease
+NC_002607.1	deAlmeida2019	ncRNA	114689	114905	.	+	.	ID=VNG_as00560_149;Name=VNG_as00560_149;locus_tag=VNG_as00560_149;Note=VNG_RS00560|VNG0137G||tRNA CCA-pyrophosphorylase
+NC_002607.1	deAlmeida2019	ncRNA	116222	116520	.	-	.	ID=VNG_as13245_152;Name=VNG_as13245_152;locus_tag=VNG_as13245_152;Note=VNG_RS13245|VNG0139H,VNG_0139H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	116546	116574	.	-	.	ID=VNG_as13245_153;Name=VNG_as13245_153;locus_tag=VNG_as13245_153;Note=VNG_RS13245|VNG0139H,VNG_0139H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	117559	117715	.	+	.	ID=VNG_as00585_154;Name=VNG_as00585_154;locus_tag=VNG_as00585_154;Note=VNG_RS00585|VNG0141H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	127340	127418	.	+	.	ID=VNG_as00635_163;Name=VNG_as00635_163;locus_tag=VNG_as00635_163;Note=VNG_RS00635|VNG0154G||NAD(P)/FAD-dependent oxidoreductase
+NC_002607.1	deAlmeida2019	ncRNA	132607	132734	.	-	.	ID=VNG_as00660_164;Name=VNG_as00660_164;locus_tag=VNG_as00660_164;Note=VNG_RS00660|VNG0160G||PAS domain S-box protein
+NC_002607.1	deAlmeida2019	ncRNA	133200	133301	.	-	.	ID=VNG_as00660_165;Name=VNG_as00660_165;locus_tag=VNG_as00660_165;Note=VNG_RS00660|VNG0160G||PAS domain S-box protein
+NC_002607.1	deAlmeida2019	ncRNA	135786	135808	.	-	.	ID=VNG_as00665_167;Name=VNG_as00665_167;locus_tag=VNG_as00665_167;Note=VNG_RS00665|VNG0161G||glutamate dehydrogenase
+NC_002607.1	deAlmeida2019	ncRNA	146436	146457	.	+	.	ID=VNG_as00710_172;Name=VNG_as00710_172;locus_tag=VNG_as00710_172;Note=VNG_RS00710|VNG0172G||DNA mismatch repair protein MutS
+NC_002607.1	deAlmeida2019	ncRNA	149998	150054	.	-	.	ID=VNG_as00715_173;Name=VNG_as00715_173;locus_tag=VNG_as00715_173;Note=VNG_RS00715|VNG0174G||amino acid permease
+NC_002607.1	deAlmeida2019	ncRNA	151347	151449	.	-	.	ID=VNG_as00720_174;Name=VNG_as00720_174;locus_tag=VNG_as00720_174;Note=VNG_RS00720|VNG0175G||TrkA family potassium uptake protein
+NC_002607.1	deAlmeida2019	ncRNA	155806	155906	.	+	.	ID=VNG_as00745_175;Name=VNG_as00745_175;locus_tag=VNG_as00745_175;Note=VNG_RS00745|VNG0180G||halorhodopsin
+NC_002607.1	deAlmeida2019	ncRNA	162658	162694	.	-	.	ID=VNG_as00780_178;Name=VNG_as00780_178;locus_tag=VNG_as00780_178;Note=VNG_RS00780|VNG0189C||HD domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	166683	166961	.	+	.	ID=VNG_as00800_179;Name=VNG_as00800_179;locus_tag=VNG_as00800_179;Note=VNG_RS00800|VNG0195H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	175268	175301	.	-	.	ID=VNG_as00860_181;Name=VNG_as00860_181;locus_tag=VNG_as00860_181;Note=VNG_RS00860|VNG0207H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	175616	175736	.	-	.	ID=VNG_as13260_183;Name=VNG_as13260_183;locus_tag=VNG_as13260_183;Note=VNG_RS13260|VNG0208H,VNG_0208H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	176459	176574	.	-	.	ID=VNG_as00870_184;Name=VNG_as00870_184;locus_tag=VNG_as00870_184;Note=VNG_RS00870|VNG0209H||integrase
+NC_002607.1	deAlmeida2019	ncRNA	176725	176809	.	-	.	ID=VNG_as00870_185;Name=VNG_as00870_185;locus_tag=VNG_as00870_185;Note=VNG_RS00870|VNG0209H||integrase
+NC_002607.1	deAlmeida2019	ncRNA	177255	177282	.	+	.	ID=VNG_as7224R_186;Name=VNG_as7224R_186;locus_tag=VNG_as7224R_186;Note=VNG_OE7224R|OE7224R (OE7224R) insertion element protein (ISH2)
+NC_002607.1	deAlmeida2019	ncRNA	177719	177819	.	-	.	ID=VNG_as13265_187;Name=VNG_as13265_187;locus_tag=VNG_as13265_187;Note=VNG_RS13265|VNG0212H,VNG_0212H||DUF4352 domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	177924	177962	.	-	.	ID=VNG_as13265_188;Name=VNG_as13265_188;locus_tag=VNG_as13265_188;Note=VNG_RS13265|VNG0212H,VNG_0212H||DUF4352 domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	182124	182166	.	+	.	ID=VNG_as00880_196;Name=VNG_as00880_196;locus_tag=VNG_as00880_196;Note=VNG_RS00880|VNG0215C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	182271	182291	.	+	.	ID=VNG_as00880_197;Name=VNG_as00880_197;locus_tag=VNG_as00880_197;Note=VNG_RS00880|VNG0215C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	182935	183067	.	+	.	ID=VNG_as00880_200;Name=VNG_as00880_200;locus_tag=VNG_as00880_200;Note=VNG_RS00880|VNG0215C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	184534	184560	.	-	.	ID=VNG_as00885_203;Name=VNG_as00885_203;locus_tag=VNG_as00885_203;Note=VNG_RS00885|VNG0217H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	197207	197257	.	+	.	ID=VNG_as00970_207;Name=VNG_as00970_207;locus_tag=VNG_as00970_207;Note=VNG_RS00970|VNG0239C||50S ribosomal protein L37Ae
+NC_002607.1	deAlmeida2019	ncRNA	197624	197644	.	-	.	ID=VNG_as00975_208;Name=VNG_as00975_208;locus_tag=VNG_as00975_208;Note=VNG_RS00975|VNG0238H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	203327	203462	.	+	.	ID=VNG_as01015_211;Name=VNG_as01015_211;locus_tag=VNG_as01015_211;Note=VNG_RS01015|VNG0249G||DUF5059 domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	207945	208004	.	+	.	ID=VNG_as01030_212;Name=VNG_as01030_212;locus_tag=VNG_as01030_212;Note=VNG_RS01030|VNG0252C||geranylgeranylglyceryl/heptaprenylglyceryl phosphate synthase
+NC_002607.1	deAlmeida2019	ncRNA	211537	211623	.	-	.	ID=VNG_as01055_214;Name=VNG_as01055_214;locus_tag=VNG_as01055_214;Note=VNG_RS01055|VNG0259G||inorganic pyrophosphatase
+NC_002607.1	deAlmeida2019	ncRNA	213582	213699	.	-	.	ID=VNG_as01065_215;Name=VNG_as01065_215;locus_tag=VNG_as01065_215;Note=VNG_RS01065|VNG0264H||nucleotide pyrophosphatase
+NC_002607.1	deAlmeida2019	ncRNA	229047	229078	.	-	.	ID=VNG_as01140_224;Name=VNG_as01140_224;locus_tag=VNG_as01140_224;Note=VNG_RS01140|VNG0285C||IS200/IS605 family transposase ISH22
+NC_002607.1	deAlmeida2019	ncRNA	238323	238370	.	-	.	ID=VNG_as01200_231;Name=VNG_as01200_231;locus_tag=VNG_as01200_231;Note=VNG_RS01200|VNG0303G||ATP-dependent protease LonB
+NC_002607.1	deAlmeida2019	ncRNA	239700	239784	.	-	.	ID=VNG_as01200_233;Name=VNG_as01200_233;locus_tag=VNG_as01200_233;Note=VNG_RS01200|VNG0303G||ATP-dependent protease LonB
+NC_002607.1	deAlmeida2019	ncRNA	241027	241128	.	-	.	ID=VNG_as01210_234;Name=VNG_as01210_234;locus_tag=VNG_as01210_234;Note=VNG_RS01210|VNG0305G||indole-3-glycerol-phosphate synthase
+NC_002607.1	deAlmeida2019	ncRNA	246182	246222	.	+	.	ID=VNG_as01240_239;Name=VNG_as01240_239;locus_tag=VNG_as01240_239;Note=VNG_RS01240|VNG0312H||zinc ribbon domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	250288	250410	.	+	.	ID=VNG_as01260_241;Name=VNG_as01260_241;locus_tag=VNG_as01260_241;Note=VNG_RS01260|VNG0318G||glycosyl transferase
+NC_002607.1	deAlmeida2019	ncRNA	252428	252521	.	+	.	ID=VNG_as01275_243;Name=VNG_as01275_243;locus_tag=VNG_as01275_243;Note=VNG_RS01275|VNG0321G||SPFH/Band 7/PHB domain protein
+NC_002607.1	deAlmeida2019	ncRNA	253797	253834	.	+	.	ID=VNG_as1494R_245;Name=VNG_as1494R_245;locus_tag=VNG_as1494R_245;Note=VNG_OE1494R|(OE1494R) conserved hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	254916	255094	.	+	.	ID=VNG_as01285_246;Name=VNG_as01285_246;locus_tag=VNG_as01285_246;Note=VNG_RS01285|VNG0324G||pyruvate kinase
+NC_002607.1	deAlmeida2019	ncRNA	266107	266237	.	+	.	ID=VNG_as01330_250;Name=VNG_as01330_250;locus_tag=VNG_as01330_250;Note=VNG_RS01330|VNG0337H||IS4 family transposase ISH8B
+NC_002607.1	deAlmeida2019	ncRNA	266345	266397	.	+	.	ID=VNG_as01330_251;Name=VNG_as01330_251;locus_tag=VNG_as01330_251;Note=VNG_RS01330|VNG0337H||IS4 family transposase ISH8B
+NC_002607.1	deAlmeida2019	ncRNA	277690	277803	.	-	.	ID=VNG_as01375_256;Name=VNG_as01375_256;locus_tag=VNG_as01375_256;Note=VNG_RS01375|VNG0349G,VNG0349Gm||DNA topoisomerase I
+NC_002607.1	deAlmeida2019	ncRNA	284267	284287	.	-	.	ID=VNG_as01415_264;Name=VNG_as01415_264;locus_tag=VNG_as01415_264;Note=VNG_RS01415|VNG0361C||rhomboid family intramembrane serine protease
+NC_002607.1	deAlmeida2019	ncRNA	291658	291717	.	-	.	ID=VNG_as01460_267;Name=VNG_as01460_267;locus_tag=VNG_as01460_267;Note=VNG_RS01460|VNG0373H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	293729	293844	.	+	.	ID=VNG_as01475_269;Name=VNG_as01475_269;locus_tag=VNG_as01475_269;Note=VNG_RS01475|VNG0376G||cell division protein FtsZ
+NC_002607.1	deAlmeida2019	ncRNA	295337	295612	.	+	.	ID=VNG_as01485_270;Name=VNG_as01485_270;locus_tag=VNG_as01485_270;Note=VNG_RS01485|VNG0380G||cation transporter
+NC_002607.1	deAlmeida2019	ncRNA	313644	313760	.	-	.	ID=VNG_as01580_283;Name=VNG_as01580_283;locus_tag=VNG_as01580_283;Note=VNG_RS01580|VNG0406C||glycerol-1-phosphate dehydrogenase
+NC_002607.1	deAlmeida2019	ncRNA	314041	314088	.	-	.	ID=VNG_as01580_285;Name=VNG_as01580_285;locus_tag=VNG_as01580_285;Note=VNG_RS01580|VNG0406C||glycerol-1-phosphate dehydrogenase
+NC_002607.1	deAlmeida2019	ncRNA	316337	316620	.	+	.	ID=VNG_as01595_287;Name=VNG_as01595_287;locus_tag=VNG_as01595_287;Note=VNG_RS01595|VNG0409C||S9 family peptidase
+NC_002607.1	deAlmeida2019	ncRNA	325054	325149	.	-	.	ID=VNG_as01620_291;Name=VNG_as01620_291;locus_tag=VNG_as01620_291;Note=VNG_RS01620|VNG0417H||metallophosphoesterase
+NC_002607.1	deAlmeida2019	ncRNA	326999	327074	.	+	.	ID=VNG_as01640_293;Name=VNG_as01640_293;locus_tag=VNG_as01640_293;Note=VNG_RS01640|VNG0422G||cytochrome P450
+NC_002607.1	deAlmeida2019	ncRNA	329918	329995	.	+	.	ID=VNG_as01655_294;Name=VNG_as01655_294;locus_tag=VNG_as01655_294;Note=VNG_RS01655|VNG0426G||transcription factor S
+NC_002607.1	deAlmeida2019	ncRNA	335327	335413	.	+	.	ID=VNG_as01695_296;Name=VNG_as01695_296;locus_tag=VNG_as01695_296;Note=VNG_RS01695|VNG0436G||sodium:proton antiporter
+NC_002607.1	deAlmeida2019	ncRNA	336589	336636	.	+	.	ID=VNG_as01695_297;Name=VNG_as01695_297;locus_tag=VNG_as01695_297;Note=VNG_RS01695|VNG0436G||sodium:proton antiporter
+NC_002607.1	deAlmeida2019	ncRNA	357487	357520	.	+	.	ID=VNG_as01800_312;Name=VNG_as01800_312;locus_tag=VNG_as01800_312;Note=VNG_RS01800|VNG0463C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	374046	374124	.	+	.	ID=VNG_as01885_319;Name=VNG_as01885_319;locus_tag=VNG_as01885_319;Note=VNG_RS01885|VNG0483C||outer membrane lipoprotein carrier protein LolA
+NC_002607.1	deAlmeida2019	ncRNA	380299	380392	.	+	.	ID=VNG_as01915_322;Name=VNG_as01915_322;locus_tag=VNG_as01915_322;Note=VNG_RS01915|VNG0489G||molecular chaperone DnaJ
+NC_002607.1	deAlmeida2019	ncRNA	383738	383778	.	+	.	ID=VNG_as01930_323;Name=VNG_as01930_323;locus_tag=VNG_as01930_323;Note=VNG_RS01930|VNG0494G||nucleotide exchange factor GrpE
+NC_002607.1	deAlmeida2019	ncRNA	384622	384851	.	+	.	ID=VNG_as01940_324;Name=VNG_as01940_324;locus_tag=VNG_as01940_324;Note=VNG_RS01940|VNG0498C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	405436	405477	.	-	.	ID=VNG_as02045_333;Name=VNG_as02045_333;locus_tag=VNG_as02045_333;Note=VNG_RS02045|VNG0524G||ABC transporter ATP-binding protein
+NC_002607.1	deAlmeida2019	ncRNA	426576	426646	.	+	.	ID=VNG_as02175_340;Name=VNG_as02175_340;locus_tag=VNG_as02175_340;Note=VNG_RS02175|VNG0555C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	435625	435672	.	+	.	ID=VNG_as02210_346;Name=VNG_as02210_346;locus_tag=VNG_as02210_346;Note=VNG_RS02210|VNG0563G||monovalent cation/H+ antiporter subunit D family protein
+NC_002607.1	deAlmeida2019	ncRNA	447007	447119	.	+	.	ID=VNG_as02295_360;Name=VNG_as02295_360;locus_tag=VNG_as02295_360;Note=VNG_RS02295|VNG0583G||cytochrome bc complex cytochrome b subunit
+NC_002607.1	deAlmeida2019	ncRNA	447123	447301	.	+	.	ID=VNG_as02295_361;Name=VNG_as02295_361;locus_tag=VNG_as02295_361;Note=VNG_RS02295|VNG0583G||cytochrome bc complex cytochrome b subunit
+NC_002607.1	deAlmeida2019	ncRNA	447545	447576	.	+	.	ID=VNG_as02300_362;Name=VNG_as02300_362;locus_tag=VNG_as02300_362;Note=VNG_RS02300|VNG0584H||cytochrome b
+NC_002607.1	deAlmeida2019	ncRNA	447598	447699	.	+	.	ID=VNG_as02300_363;Name=VNG_as02300_363;locus_tag=VNG_as02300_363;Note=VNG_RS02300|VNG0584H||cytochrome b
+NC_002607.1	deAlmeida2019	ncRNA	448372	448432	.	+	.	ID=VNG_as02305_364;Name=VNG_as02305_364;locus_tag=VNG_as02305_364;Note=VNG_RS02305|VNG0585H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	464519	464574	.	-	.	ID=VNG_as02420_373;Name=VNG_as02420_373;locus_tag=VNG_as02420_373;Note=VNG_RS02420|VNG0611H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	469658	469783	.	+	.	ID=VNG_as02440_374;Name=VNG_as02440_374;locus_tag=VNG_as02440_374;Note=VNG_RS02440|VNG0614G||methyl-accepting chemotaxis protein
+NC_002607.1	deAlmeida2019	ncRNA	471769	471865	.	+	.	ID=VNG_as02450_377;Name=VNG_as02450_377;locus_tag=VNG_as02450_377;Note=VNG_RS02450|VNG0617H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	487367	487446	.	-	.	ID=VNG_as02525_381;Name=VNG_as02525_381;locus_tag=VNG_as02525_381;Note=VNG_RS02525|VNG0637G||NADH-quinone oxidoreductase subunit NuoD
+NC_002607.1	deAlmeida2019	ncRNA	488839	489032	.	-	.	ID=VNG_as02530_382;Name=VNG_as02530_382;locus_tag=VNG_as02530_382;Note=VNG_RS02530|VNG0639G||NADH dehydrogenase
+NC_002607.1	deAlmeida2019	ncRNA	491432	491465	.	-	.	ID=VNG_as02555_385;Name=VNG_as02555_385;locus_tag=VNG_as02555_385;Note=VNG_RS02555|VNG0646G||NADH-quinone oxidoreductase subunit L
+NC_002607.1	deAlmeida2019	ncRNA	493387	493484	.	-	.	ID=VNG_as02560_388;Name=VNG_as02560_388;locus_tag=VNG_as02560_388;Note=VNG_RS02560|VNG0647G||oxidoreductase
+NC_002607.1	deAlmeida2019	ncRNA	494411	494481	.	-	.	ID=VNG_as02565_390;Name=VNG_as02565_390;locus_tag=VNG_as02565_390;Note=VNG_RS02565|VNG0648G||oxidoreductase
+NC_002607.1	deAlmeida2019	ncRNA	500789	500879	.	+	.	ID=VNG_as02590_394;Name=VNG_as02590_394;locus_tag=VNG_as02590_394;Note=VNG_RS02590|VNG0656H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	501791	501918	.	+	.	ID=VNG_as02595_395;Name=VNG_as02595_395;locus_tag=VNG_as02595_395;Note=VNG_RS02595|VNG0657G||cytochrome-c oxidase
+NC_002607.1	deAlmeida2019	ncRNA	502052	502159	.	+	.	ID=VNG_as02595_396;Name=VNG_as02595_396;locus_tag=VNG_as02595_396;Note=VNG_RS02595|VNG0657G||cytochrome-c oxidase
+NC_002607.1	deAlmeida2019	ncRNA	503040	503192	.	+	.	ID=VNG_as02595_398;Name=VNG_as02595_398;locus_tag=VNG_as02595_398;Note=VNG_RS02595|VNG0657G||cytochrome-c oxidase
+NC_002607.1	deAlmeida2019	ncRNA	505190	505237	.	-	.	ID=VNG_as02615_401;Name=VNG_as02615_401;locus_tag=VNG_as02615_401;Note=VNG_RS02615|VNG0664G||biotin--[acetyl-CoA-carboxylase] ligase
+NC_002607.1	deAlmeida2019	ncRNA	522712	522842	.	-	.	ID=VNG_as02720_412;Name=VNG_as02720_412;locus_tag=VNG_as02720_412;Note=VNG_RS02720|VNG0688H||ArsR family transcriptional regulator
+NC_002607.1	deAlmeida2019	ncRNA	528483	528537	.	+	.	ID=VNG_as02745_416;Name=VNG_as02745_416;locus_tag=VNG_as02745_416;Note=VNG_RS02745|VNG0698H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	535490	535531	.	-	.	ID=VNG_as02785_419;Name=VNG_as02785_419;locus_tag=VNG_as02785_419;Note=VNG_RS02785|VNG0709C||MBL fold hydrolase
+NC_002607.1	deAlmeida2019	ncRNA	552716	552746	.	+	.	ID=VNG_as02870_434;Name=VNG_as02870_434;locus_tag=VNG_as02870_434;Note=VNG_RS02870|VNG0732G||RNA 3'-phosphate cyclase
+NC_002607.1	deAlmeida2019	ncRNA	560889	560951	.	+	.	ID=VNG_as02925_441;Name=VNG_as02925_441;locus_tag=VNG_as02925_441;Note=VNG_RS02925|VNG0745G||AbrB family transcriptional regulator
+NC_002607.1	deAlmeida2019	ncRNA	575153	575200	.	-	.	ID=VNG_as02990_446;Name=VNG_as02990_446;locus_tag=VNG_as02990_446;Note=VNG_RS02990|VNG0761G||competence/damage-inducible protein A
+NC_002607.1	deAlmeida2019	ncRNA	589367	589446	.	+	.	ID=VNG_as03065_453;Name=VNG_as03065_453;locus_tag=VNG_as03065_453;Note=VNG_RS03065|VNG0782H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	590240	590364	.	+	.	ID=VNG_as03070_455;Name=VNG_as03070_455;locus_tag=VNG_as03070_455;Note=VNG_RS03070|VNG0784G||phosphatidylcholine/phosphatidylserine synthase
+NC_002607.1	deAlmeida2019	ncRNA	608556	608829	.	-	.	ID=VNG_as03165_461;Name=VNG_as03165_461;locus_tag=VNG_as03165_461;Note=VNG_RS03165|VNG0810H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	624844	624869	.	+	.	ID=VNG_as03225_467;Name=VNG_as03225_467;locus_tag=VNG_as03225_467;Note=VNG_RS03225|VNG0823G||type II secretion system protein
+NC_002607.1	deAlmeida2019	ncRNA	628076	628134	.	-	.	ID=VNG_as03250_469;Name=VNG_as03250_469;locus_tag=VNG_as03250_469;Note=VNG_RS03250|VNG0829G||dimethylsulfoxide reductase
+NC_002607.1	deAlmeida2019	ncRNA	632930	633098	.	-	.	ID=VNG_as03270_470;Name=VNG_as03270_470;locus_tag=VNG_as03270_470;Note=VNG_RS03270|VNG0834C||DUF106 domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	635755	635794	.	-	.	ID=VNG_as13290_473;Name=VNG_as13290_473;locus_tag=VNG_as13290_473;Note=VNG_RS13290|VNG0836H,VNG_0836H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	635845	635924	.	-	.	ID=VNG_as13290_474;Name=VNG_as13290_474;locus_tag=VNG_as13290_474;Note=VNG_RS13290|VNG0836H,VNG_0836H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	638832	638882	.	+	.	ID=VNG_as03300_478;Name=VNG_as03300_478;locus_tag=VNG_as03300_478;Note=VNG_RS03300|pseudo||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	644256	644388	.	+	.	ID=VNG_as03325_481;Name=VNG_as03325_481;locus_tag=VNG_as03325_481;Note=VNG_RS03325|VNG0849C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	661828	661920	.	-	.	ID=VNG_as03420_489;Name=VNG_as03420_489;locus_tag=VNG_as03420_489;Note=VNG_RS03420|VNG0875Cm||Zn-dependent protease
+NC_002607.1	deAlmeida2019	ncRNA	675391	675425	.	-	.	ID=VNG_as03475_500;Name=VNG_as03475_500;locus_tag=VNG_as03475_500;Note=VNG_RS03475|VNG0889G||DNA gyrase subunit A
+NC_002607.1	deAlmeida2019	ncRNA	678428	678490	.	-	.	ID=VNG_as2309F_501;Name=VNG_as2309F_501;locus_tag=VNG_as2309F_501;Note=VNG_OE2309F|(OE2309F) conserved hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	689229	689307	.	-	.	ID=VNG_as03535_505;Name=VNG_as03535_505;locus_tag=VNG_as03535_505;Note=VNG_RS03535|VNG0908G||sodium/proline symporter
+NC_002607.1	deAlmeida2019	ncRNA	699748	699784	.	+	.	ID=VNG_as03585_512;Name=VNG_as03585_512;locus_tag=VNG_as03585_512;Note=VNG_RS03585|VNG0920H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	718619	718717	.	-	.	ID=VNG_as03660_524;Name=VNG_as03660_524;locus_tag=VNG_as03660_524;Note=VNG_RS03660|VNG0940G,VNG0940Gm||CoA-binding protein
+NC_002607.1	deAlmeida2019	ncRNA	720502	720582	.	-	.	ID=VNG_as03675_527;Name=VNG_as03675_527;locus_tag=VNG_as03675_527;Note=VNG_RS03675|VNG0943C||ArsR family transcriptional regulator
+NC_002607.1	deAlmeida2019	ncRNA	720645	720809	.	-	.	ID=VNG_as03680_529;Name=VNG_as03680_529;locus_tag=VNG_as03680_529;Note=VNG_RS03680|VNG0945H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	726913	726966	.	+	.	ID=VNG_as03705_536;Name=VNG_as03705_536;locus_tag=VNG_as03705_536;Note=VNG_RS03705|VNG0950a||flagellar protein G
+NC_002607.1	deAlmeida2019	ncRNA	728048	728089	.	+	.	ID=VNG_as03715_537;Name=VNG_as03715_537;locus_tag=VNG_as03715_537;Note=VNG_RS03715|VNG0954C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	728621	728710	.	+	.	ID=VNG_as03715_538;Name=VNG_as03715_538;locus_tag=VNG_as03715_538;Note=VNG_RS03715|VNG0954C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	728729	728849	.	+	.	ID=VNG_as03715_539;Name=VNG_as03715_539;locus_tag=VNG_as03715_539;Note=VNG_RS03715|VNG0954C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	731397	731464	.	+	.	ID=VNG_as03730_540;Name=VNG_as03730_540;locus_tag=VNG_as03730_540;Note=VNG_RS03730|VNG0959H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	731820	731900	.	-	.	ID=VNG_as03735_541;Name=VNG_as03735_541;locus_tag=VNG_as03735_541;Note=VNG_RS03735|VNG0960G||flagellin
+NC_002607.1	deAlmeida2019	ncRNA	732413	732493	.	-	.	ID=VNG_as03740_542;Name=VNG_as03740_542;locus_tag=VNG_as03740_542;Note=VNG_RS03740|VNG0961G||flagellin
+NC_002607.1	deAlmeida2019	ncRNA	732962	733095	.	-	.	ID=VNG_as03745_544;Name=VNG_as03745_544;locus_tag=VNG_as03745_544;Note=VNG_RS03745|VNG0962G||flagellin
+NC_002607.1	deAlmeida2019	ncRNA	733213	733241	.	-	.	ID=VNG_as03745_545;Name=VNG_as03745_545;locus_tag=VNG_as03745_545;Note=VNG_RS03745|VNG0962G||flagellin
+NC_002607.1	deAlmeida2019	ncRNA	735025	735057	.	-	.	ID=VNG_as03755_547;Name=VNG_as03755_547;locus_tag=VNG_as03755_547;Note=VNG_RS03755|VNG0964C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	737020	737153	.	+	.	ID=VNG_as03765_549;Name=VNG_as03765_549;locus_tag=VNG_as03765_549;Note=VNG_RS03765|VNG0966G||chemotaxis protein CheR
+NC_002607.1	deAlmeida2019	ncRNA	739274	739376	.	+	.	ID=VNG_as03780_551;Name=VNG_as03780_551;locus_tag=VNG_as03780_551;Note=VNG_RS03780|VNG0970G||chemotaxis protein
+NC_002607.1	deAlmeida2019	ncRNA	740489	740574	.	+	.	ID=VNG_as03785_552;Name=VNG_as03785_552;locus_tag=VNG_as03785_552;Note=VNG_RS03785|VNG0971G||chemotaxis protein CheA
+NC_002607.1	deAlmeida2019	ncRNA	743301	743326	.	+	.	ID=VNG_as03800_554;Name=VNG_as03800_554;locus_tag=VNG_as03800_554;Note=VNG_RS03800|VNG0976G||chemotaxis protein CheW
+NC_002607.1	deAlmeida2019	ncRNA	750402	750449	.	-	.	ID=VNG_as03835_564;Name=VNG_as03835_564;locus_tag=VNG_as03835_564;Note=VNG_RS03835|VNG0985H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	752428	752505	.	-	.	ID=VNG_as03845_566;Name=VNG_as03845_566;locus_tag=VNG_as03845_566;Note=VNG_RS03845|VNG0986H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	753121	753166	.	-	.	ID=VNG_as13295_567;Name=VNG_as13295_567;locus_tag=VNG_as13295_567;Note=VNG_RS13295|VNG0987H,VNG_0987H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	753793	753847	.	-	.	ID=VNG_as2436B1F_568;Name=VNG_as2436B1F_568;locus_tag=VNG_as2436B1F_568;Note=VNG_OE2436B1F|(OE2436B1F) small CPxCG-related zinc finger protein
+NC_002607.1	deAlmeida2019	ncRNA	754013	754043	.	-	.	ID=VNG_as13300_569;Name=VNG_as13300_569;locus_tag=VNG_as13300_569;Note=VNG_RS13300|||DUF2085 domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	754287	754356	.	-	.	ID=VNG_as13300_570;Name=VNG_as13300_570;locus_tag=VNG_as13300_570;Note=VNG_RS13300|||DUF2085 domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	754854	754918	.	+	.	ID=VNG_as03850_571;Name=VNG_as03850_571;locus_tag=VNG_as03850_571;Note=VNG_RS03850|VNG0989C||integrase
+NC_002607.1	deAlmeida2019	ncRNA	757975	757993	.	+	.	ID=VNG_as03860_572;Name=VNG_as03860_572;locus_tag=VNG_as03860_572;Note=VNG_RS03860|VNG0992H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	759086	759211	.	-	.	ID=VNG_as03865_573;Name=VNG_as03865_573;locus_tag=VNG_as03865_573;Note=VNG_RS03865|VNG0993H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	774831	774883	.	-	.	ID=VNG_as03945_587;Name=VNG_as03945_587;locus_tag=VNG_as03945_587;Note=VNG_RS03945|VNG1011C,VNG1011Cm||GTP cyclohydrolase IIa
+NC_002607.1	deAlmeida2019	ncRNA	799542	799657	.	+	.	ID=VNG_as04095_601;Name=VNG_as04095_601;locus_tag=VNG_as04095_601;Note=VNG_RS04095|VNG1053G||TIGR04182 family glycosyltransferase
+NC_002607.1	deAlmeida2019	ncRNA	799675	799778	.	+	.	ID=VNG_as04095_602;Name=VNG_as04095_602;locus_tag=VNG_as04095_602;Note=VNG_RS04095|VNG1053G||TIGR04182 family glycosyltransferase
+NC_002607.1	deAlmeida2019	ncRNA	801051	801296	.	-	.	ID=VNG_as04100_605;Name=VNG_as04100_605;locus_tag=VNG_as04100_605;Note=VNG_RS04100|VNG1054G||polysaccharide biosynthesis protein
+NC_002607.1	deAlmeida2019	ncRNA	801551	801581	.	-	.	ID=VNG_as04100_607;Name=VNG_as04100_607;locus_tag=VNG_as04100_607;Note=VNG_RS04100|VNG1054G||polysaccharide biosynthesis protein
+NC_002607.1	deAlmeida2019	ncRNA	802748	802814	.	-	.	ID=VNG_as04110_609;Name=VNG_as04110_609;locus_tag=VNG_as04110_609;Note=VNG_RS04110|VNG1056C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	803031	803056	.	-	.	ID=VNG_as04110_610;Name=VNG_as04110_610;locus_tag=VNG_as04110_610;Note=VNG_RS04110|VNG1056C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	804277	804432	.	+	.	ID=VNG_as04115_616;Name=VNG_as04115_616;locus_tag=VNG_as04115_616;Note=VNG_RS04115|VNG1057C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	804697	804797	.	+	.	ID=VNG_as04115_617;Name=VNG_as04115_617;locus_tag=VNG_as04115_617;Note=VNG_RS04115|VNG1057C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	805056	805107	.	+	.	ID=VNG_as04115_618;Name=VNG_as04115_618;locus_tag=VNG_as04115_618;Note=VNG_RS04115|VNG1057C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	805808	806000	.	-	.	ID=VNG_as04120_620;Name=VNG_as04120_620;locus_tag=VNG_as04120_620;Note=VNG_RS04120|VNG1058H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	807864	807971	.	-	.	ID=VNG_as04130_623;Name=VNG_as04130_623;locus_tag=VNG_as04130_623;Note=VNG_RS04130|VNG1060H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	808025	808079	.	-	.	ID=VNG_as04130_624;Name=VNG_as04130_624;locus_tag=VNG_as04130_624;Note=VNG_RS04130|VNG1060H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	812608	812646	.	-	.	ID=VNG_as04150_629;Name=VNG_as04150_629;locus_tag=VNG_as04150_629;Note=VNG_RS04150|VNG1065C||FkbM family methyltransferase
+NC_002607.1	deAlmeida2019	ncRNA	812997	813166	.	-	.	ID=VNG_as04150_631;Name=VNG_as04150_631;locus_tag=VNG_as04150_631;Note=VNG_RS04150|VNG1065C||FkbM family methyltransferase
+NC_002607.1	deAlmeida2019	ncRNA	813231	813421	.	-	.	ID=VNG_as04155_632;Name=VNG_as04155_632;locus_tag=VNG_as04155_632;Note=VNG_RS04155|VNG1066C||glycosyl transferase
+NC_002607.1	deAlmeida2019	ncRNA	813459	813551	.	-	.	ID=VNG_as04155_635;Name=VNG_as04155_635;locus_tag=VNG_as04155_635;Note=VNG_RS04155|VNG1066C||glycosyl transferase
+NC_002607.1	deAlmeida2019	ncRNA	815330	815438	.	-	.	ID=VNG_as04165_637;Name=VNG_as04165_637;locus_tag=VNG_as04165_637;Note=VNG_RS04165|VNG1068G||oligosaccharyl transferase, archaeosortase A system-associated
+NC_002607.1	deAlmeida2019	ncRNA	815986	816164	.	-	.	ID=VNG_as04165_638;Name=VNG_as04165_638;locus_tag=VNG_as04165_638;Note=VNG_RS04165|VNG1068G||oligosaccharyl transferase, archaeosortase A system-associated
+NC_002607.1	deAlmeida2019	ncRNA	831699	831739	.	-	.	ID=VNG_as04230_645;Name=VNG_as04230_645;locus_tag=VNG_as04230_645;Note=VNG_RS04230|VNG1086C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	845383	845406	.	+	.	ID=VNG_as04305_653;Name=VNG_as04305_653;locus_tag=VNG_as04305_653;Note=VNG_RS04305|VNG1103G||50S ribosomal protein P1
+NC_002607.1	deAlmeida2019	ncRNA	847089	847176	.	+	.	ID=VNG_as04315_654;Name=VNG_as04315_654;locus_tag=VNG_as04315_654;Note=VNG_RS04315|VNG1105G||50S ribosomal protein L1
+NC_002607.1	deAlmeida2019	ncRNA	860587	860616	.	-	.	ID=VNG_as04410_660;Name=VNG_as04410_660;locus_tag=VNG_as04410_660;Note=VNG_RS04410|VNG1132G||30S ribosomal protein S13
+NC_002607.1	deAlmeida2019	ncRNA	860768	860876	.	-	.	ID=VNG_as04415_661;Name=VNG_as04415_661;locus_tag=VNG_as04415_661;Note=VNG_RS04415|VNG1133G||30S ribosomal protein S4
+NC_002607.1	deAlmeida2019	ncRNA	863354	863476	.	-	.	ID=VNG_as04445_662;Name=VNG_as04445_662;locus_tag=VNG_as04445_662;Note=VNG_RS04445|VNG1139G,VNG1139Gm||30S ribosomal protein S9
+NC_002607.1	deAlmeida2019	ncRNA	863972	864057	.	-	.	ID=VNG_as04450_663;Name=VNG_as04450_663;locus_tag=VNG_as04450_663;Note=VNG_RS04450|VNG1140G||DNA-directed RNA polymerase subunit N
+NC_002607.1	deAlmeida2019	ncRNA	864120	864214	.	-	.	ID=VNG_as04455_664;Name=VNG_as04455_664;locus_tag=VNG_as04455_664;Note=VNG_RS04455|VNG1141G|rpoK|DNA-directed RNA polymerase subunit K
+NC_002607.1	deAlmeida2019	ncRNA	867125	867211	.	-	.	ID=VNG_as04475_666;Name=VNG_as04475_666;locus_tag=VNG_as04475_666;Note=VNG_RS04475|VNG1145G||mevalonate kinase
+NC_002607.1	deAlmeida2019	ncRNA	869157	869237	.	-	.	ID=VNG_as04485_667;Name=VNG_as04485_667;locus_tag=VNG_as04485_667;Note=VNG_RS04485|VNG1149C,VNG1149Cm||ribonuclease J
+NC_002607.1	deAlmeida2019	ncRNA	872269	872436	.	-	.	ID=VNG_as04500_668;Name=VNG_as04500_668;locus_tag=VNG_as04500_668;Note=VNG_RS04500|VNG1153G||glutamate--tRNA ligase
+NC_002607.1	deAlmeida2019	ncRNA	872953	872994	.	-	.	ID=VNG_as04500_669;Name=VNG_as04500_669;locus_tag=VNG_as04500_669;Note=VNG_RS04500|VNG1153G||glutamate--tRNA ligase
+NC_002607.1	deAlmeida2019	ncRNA	881004	881024	.	+	.	ID=VNG_as04550_674;Name=VNG_as04550_674;locus_tag=VNG_as04550_674;Note=VNG_RS04550|VNG1165G|ksgA|dimethyladenosine transferase
+NC_002607.1	deAlmeida2019	ncRNA	882157	882333	.	+	.	ID=VNG_as04560_675;Name=VNG_as04560_675;locus_tag=VNG_as04560_675;Note=VNG_RS04560|VNG1169C||DNA-directed RNA polymerase subunit F
+NC_002607.1	deAlmeida2019	ncRNA	900620	900754	.	+	.	ID=VNG_as04680_693;Name=VNG_as04680_693;locus_tag=VNG_as04680_693;Note=VNG_RS04680|VNG1197G||peroxiredoxin
+NC_002607.1	deAlmeida2019	ncRNA	920898	920983	.	-	.	ID=VNG_as04790_701;Name=VNG_as04790_701;locus_tag=VNG_as04790_701;Note=VNG_RS04790|VNG1224G||cell division control protein Cdc6
+NC_002607.1	deAlmeida2019	ncRNA	922519	922636	.	+	.	ID=VNG_as04795_705;Name=VNG_as04795_705;locus_tag=VNG_as04795_705;Note=VNG_RS04795|VNG1227H||DUF2064 domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	929413	929508	.	+	.	ID=VNG_as04830_709;Name=VNG_as04830_709;locus_tag=VNG_as04830_709;Note=VNG_RS04830|VNG1234C||PAS domain S-box protein
+NC_002607.1	deAlmeida2019	ncRNA	938769	938814	.	+	.	ID=VNG_as04895_713;Name=VNG_as04895_713;locus_tag=VNG_as04895_713;Note=VNG_RS04895|VNG1249C||ABC transporter
+NC_002607.1	deAlmeida2019	ncRNA	938873	938953	.	+	.	ID=VNG_as04895_714;Name=VNG_as04895_714;locus_tag=VNG_as04895_714;Note=VNG_RS04895|VNG1249C||ABC transporter
+NC_002607.1	deAlmeida2019	ncRNA	950681	950742	.	-	.	ID=VNG_as04955_722;Name=VNG_as04955_722;locus_tag=VNG_as04955_722;Note=VNG_RS04955|VNG1263C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	951285	951330	.	+	.	ID=VNG_as04960_723;Name=VNG_as04960_723;locus_tag=VNG_as04960_723;Note=VNG_RS04960|VNG1264C||DUF555 domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	954749	954784	.	-	.	ID=VNG_as04975_729;Name=VNG_as04975_729;locus_tag=VNG_as04975_729;Note=VNG_RS04975|VNG1271H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	954934	954980	.	-	.	ID=VNG_as04975_731;Name=VNG_as04975_731;locus_tag=VNG_as04975_731;Note=VNG_RS04975|VNG1271H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	958849	958886	.	+	.	ID=VNG_as04995_734;Name=VNG_as04995_734;locus_tag=VNG_as04995_734;Note=VNG_RS04995|VNG1276C||ribosome assembly factor SBDS
+NC_002607.1	deAlmeida2019	ncRNA	959429	959465	.	+	.	ID=VNG_as04995_735;Name=VNG_as04995_735;locus_tag=VNG_as04995_735;Note=VNG_RS04995|VNG1276C||ribosome assembly factor SBDS
+NC_002607.1	deAlmeida2019	ncRNA	963063	963215	.	+	.	ID=VNG_as05025_737;Name=VNG_as05025_737;locus_tag=VNG_as05025_737;Note=VNG_RS05025|VNG1284G||TrkH family potassium uptake protein
+NC_002607.1	deAlmeida2019	ncRNA	963893	963915	.	+	.	ID=VNG_as05025_738;Name=VNG_as05025_738;locus_tag=VNG_as05025_738;Note=VNG_RS05025|VNG1284G||TrkH family potassium uptake protein
+NC_002607.1	deAlmeida2019	ncRNA	965431	965464	.	+	.	ID=VNG_as05040_740;Name=VNG_as05040_740;locus_tag=VNG_as05040_740;Note=VNG_RS05040|VNG1289H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	967447	967529	.	+	.	ID=VNG_as05050_741;Name=VNG_as05050_741;locus_tag=VNG_as05050_741;Note=VNG_RS05050|VNG1294G||peptidylprolyl isomerase
+NC_002607.1	deAlmeida2019	ncRNA	967910	967977	.	-	.	ID=VNG_as05060_742;Name=VNG_as05060_742;locus_tag=VNG_as05060_742;Note=VNG_RS05060|VNG1296C||class IV adenylate cyclase
+NC_002607.1	deAlmeida2019	ncRNA	978669	978776	.	+	.	ID=VNG_as05105_751;Name=VNG_as05105_751;locus_tag=VNG_as05105_751;Note=VNG_RS05105|VNG1308G||succinate dehydrogenase/fumarate reductase iron-sulfur subunit
+NC_002607.1	deAlmeida2019	ncRNA	979989	980061	.	+	.	ID=VNG_as05115_753;Name=VNG_as05115_753;locus_tag=VNG_as05115_753;Note=VNG_RS05115|VNG1310G||succinate dehydrogenase
+NC_002607.1	deAlmeida2019	ncRNA	992981	993016	.	+	.	ID=VNG_as05190_762;Name=VNG_as05190_762;locus_tag=VNG_as05190_762;Note=VNG_RS05190|VNG1329H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1003354	1003411	.	+	.	ID=VNG_as05245_768;Name=VNG_as05245_768;locus_tag=VNG_as05245_768;Note=VNG_RS05245|VNG1344G||dihydropteroate synthase
+NC_002607.1	deAlmeida2019	ncRNA	1026736	1026763	.	+	.	ID=VNG_as2967R_775;Name=VNG_as2967R_775;locus_tag=VNG_as2967R_775;Note=VNG_OE2967R|(OE2967R) conserved hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1035323	1035584	.	+	.	ID=VNG_as05420_780;Name=VNG_as05420_780;locus_tag=VNG_as05420_780;Note=VNG_RS05420|VNG1389C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1035598	1035617	.	+	.	ID=VNG_as05420_781;Name=VNG_as05420_781;locus_tag=VNG_as05420_781;Note=VNG_RS05420|VNG1389C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1050100	1050153	.	+	.	ID=VNG_as05505_790;Name=VNG_as05505_790;locus_tag=VNG_as05505_790;Note=VNG_RS05505|||bacteriocin biosynthesis protein SagD
+NC_002607.1	deAlmeida2019	ncRNA	1051912	1052022	.	+	.	ID=VNG_as05510_791;Name=VNG_as05510_791;locus_tag=VNG_as05510_791;Note=VNG_RS05510|VNG1412H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1066376	1066479	.	-	.	ID=VNG_as05590_805;Name=VNG_as05590_805;locus_tag=VNG_as05590_805;Note=VNG_RS05590|VNG1435G||aspartate-semialdehyde dehydrogenase
+NC_002607.1	deAlmeida2019	ncRNA	1067511	1067604	.	+	.	ID=VNG_as05595_808;Name=VNG_as05595_808;locus_tag=VNG_as05595_808;Note=VNG_RS05595|VNG1437G||D-2-hydroxyacid dehydrogenase
+NC_002607.1	deAlmeida2019	ncRNA	1068925	1069083	.	+	.	ID=VNG_as05605_810;Name=VNG_as05605_810;locus_tag=VNG_as05605_810;Note=VNG_RS05605|VNG1440H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1089545	1089615	.	-	.	ID=VNG_as05715_824;Name=VNG_as05715_824;locus_tag=VNG_as05715_824;Note=VNG_RS05715|VNG1467G||rhodopsin
+NC_002607.1	deAlmeida2019	ncRNA	1091399	1091515	.	-	.	ID=VNG_as05725_825;Name=VNG_as05725_825;locus_tag=VNG_as05725_825;Note=VNG_RS05725|VNG1470G||DNA primase catalytic subunit PriS
+NC_002607.1	deAlmeida2019	ncRNA	1096135	1096298	.	-	.	ID=VNG_as05750_826;Name=VNG_as05750_826;locus_tag=VNG_as05750_826;Note=VNG_RS05750|VNG1475C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1099811	1099916	.	-	.	ID=VNG_as05755_828;Name=VNG_as05755_828;locus_tag=VNG_as05755_828;Note=VNG_RS05755|VNG1476C||RND transporter
+NC_002607.1	deAlmeida2019	ncRNA	1106537	1106633	.	-	.	ID=VNG_as05800_830;Name=VNG_as05800_830;locus_tag=VNG_as05800_830;Note=VNG_RS05800|VNG1488G||DNA-binding protein
+NC_002607.1	deAlmeida2019	ncRNA	1113568	1113617	.	+	.	ID=VNG_as05845_834;Name=VNG_as05845_834;locus_tag=VNG_as05845_834;Note=VNG_RS05845|VNG1500H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1114080	1114246	.	-	.	ID=VNG_as05850_835;Name=VNG_as05850_835;locus_tag=VNG_as05850_835;Note=VNG_RS05850|VNG1501G||Dna2/Cas4 domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	1121782	1121870	.	+	.	ID=VNG_as05870_837;Name=VNG_as05870_837;locus_tag=VNG_as05870_837;Note=VNG_RS05870|VNG1508C||DUF814 domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	1122703	1122803	.	+	.	ID=VNG_as05875_838;Name=VNG_as05875_838;locus_tag=VNG_as05875_838;Note=VNG_RS05875|VNG1510C||tRNA uridine(34) 5-carboxymethylaminomethyl modification radical SAM/GNAT enzyme Elp3
+NC_002607.1	deAlmeida2019	ncRNA	1125759	1125816	.	+	.	ID=VNG_as05885_839;Name=VNG_as05885_839;locus_tag=VNG_as05885_839;Note=VNG_RS05885|VNG1513H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1126818	1126845	.	+	.	ID=VNG_as05895_840;Name=VNG_as05895_840;locus_tag=VNG_as05895_840;Note=VNG_RS05895|VNG1515G||thymidine kinase
+NC_002607.1	deAlmeida2019	ncRNA	1129224	1129324	.	-	.	ID=VNG_as05915_841;Name=VNG_as05915_841;locus_tag=VNG_as05915_841;Note=VNG_RS05915|||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1132725	1132785	.	+	.	ID=VNG_as05925_847;Name=VNG_as05925_847;locus_tag=VNG_as05925_847;Note=VNG_RS05925|VNG1524C||aspartate aminotransferase family protein
+NC_002607.1	deAlmeida2019	ncRNA	1135403	1135503	.	-	.	ID=VNG_as05935_848;Name=VNG_as05935_848;locus_tag=VNG_as05935_848;Note=VNG_RS05935|VNG1526G||sodium-dependent transporter
+NC_002607.1	deAlmeida2019	ncRNA	1143042	1143242	.	-	.	ID=VNG_as05960_853;Name=VNG_as05960_853;locus_tag=VNG_as05960_853;Note=VNG_RS05960|VNG1533H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1143424	1143483	.	-	.	ID=VNG_as05960_854;Name=VNG_as05960_854;locus_tag=VNG_as05960_854;Note=VNG_RS05960|VNG1533H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1183402	1183496	.	+	.	ID=VNG_as06165_867;Name=VNG_as06165_867;locus_tag=VNG_as06165_867;Note=VNG_RS06165|VNG1585C,VNG1585Cm||DUF262 domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	1183904	1183937	.	+	.	ID=VNG_as06165_869;Name=VNG_as06165_869;locus_tag=VNG_as06165_869;Note=VNG_RS06165|VNG1585C,VNG1585Cm||DUF262 domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	1184506	1184527	.	+	.	ID=VNG_as06165_870;Name=VNG_as06165_870;locus_tag=VNG_as06165_870;Note=VNG_RS06165|VNG1585C,VNG1585Cm||DUF262 domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	1185210	1185252	.	-	.	ID=VNG_as06170_872;Name=VNG_as06170_872;locus_tag=VNG_as06170_872;Note=VNG_RS06170|VNG1587H||IS5 family transposase ISH11
+NC_002607.1	deAlmeida2019	ncRNA	1186738	1186804	.	+	.	ID=VNG_as06175_873;Name=VNG_as06175_873;locus_tag=VNG_as06175_873;Note=VNG_RS06175|||ISH3 family transposase ISH3C
+NC_002607.1	deAlmeida2019	ncRNA	1187223	1187366	.	+	.	ID=VNG_as06175_874;Name=VNG_as06175_874;locus_tag=VNG_as06175_874;Note=VNG_RS06175|||ISH3 family transposase ISH3C
+NC_002607.1	deAlmeida2019	ncRNA	1188539	1188663	.	-	.	ID=VNG_as06185_878;Name=VNG_as06185_878;locus_tag=VNG_as06185_878;Note=VNG_RS06185|VNG1589C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1188760	1188848	.	-	.	ID=VNG_as06185_880;Name=VNG_as06185_880;locus_tag=VNG_as06185_880;Note=VNG_RS06185|VNG1589C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1189582	1189687	.	+	.	ID=VNG_as06190_882;Name=VNG_as06190_882;locus_tag=VNG_as06190_882;Note=VNG_RS06190|partial;pseudo;VNG1590H||transposase
+NC_002607.1	deAlmeida2019	ncRNA	1189718	1189773	.	+	.	ID=VNG_as06190_883;Name=VNG_as06190_883;locus_tag=VNG_as06190_883;Note=VNG_RS06190|partial;pseudo;VNG1590H||transposase
+NC_002607.1	deAlmeida2019	ncRNA	1194808	1195175	.	+	.	ID=VNG_as06215_888;Name=VNG_as06215_888;locus_tag=VNG_as06215_888;Note=VNG_RS06215|VNG1603G||glycine dehydrogenase
+NC_002607.1	deAlmeida2019	ncRNA	1200606	1200661	.	-	.	ID=VNG_as06255_892;Name=VNG_as06255_892;locus_tag=VNG_as06255_892;Note=VNG_RS06255|||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1209136	1209382	.	+	.	ID=VNG_as06295_899;Name=VNG_as06295_899;locus_tag=VNG_as06295_899;Note=VNG_RS06295|VNG1623G||heme A synthase
+NC_002607.1	deAlmeida2019	ncRNA	1217295	1217364	.	+	.	ID=VNG_as06340_906;Name=VNG_as06340_906;locus_tag=VNG_as06340_906;Note=VNG_RS06340|VNG1635G||cobalt transporter CbiM
+NC_002607.1	deAlmeida2019	ncRNA	1218168	1218214	.	-	.	ID=VNG_as06345_908;Name=VNG_as06345_908;locus_tag=VNG_as06345_908;Note=VNG_RS06345|VNG1637G||halocyanin
+NC_002607.1	deAlmeida2019	ncRNA	1223525	1223641	.	+	.	ID=VNG_as06370_912;Name=VNG_as06370_912;locus_tag=VNG_as06370_912;Note=VNG_RS06370|VNG1644G||ribonucleoside-diphosphate reductase, adenosylcobalamin-dependent
+NC_002607.1	deAlmeida2019	ncRNA	1223963	1224117	.	+	.	ID=VNG_as06370_913;Name=VNG_as06370_913;locus_tag=VNG_as06370_913;Note=VNG_RS06370|VNG1644G||ribonucleoside-diphosphate reductase, adenosylcobalamin-dependent
+NC_002607.1	deAlmeida2019	ncRNA	1229758	1229779	.	+	.	ID=VNG_as06405_919;Name=VNG_as06405_919;locus_tag=VNG_as06405_919;Note=VNG_RS06405|VNG1650H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1232858	1232880	.	+	.	ID=VNG_as13355_920;Name=VNG_as13355_920;locus_tag=VNG_as13355_920;Note=VNG_RS13355|VNG1654G,VNG_1654G||ATP-binding protein
+NC_002607.1	deAlmeida2019	ncRNA	1233360	1233454	.	+	.	ID=VNG_as13355_921;Name=VNG_as13355_921;locus_tag=VNG_as13355_921;Note=VNG_RS13355|VNG1654G,VNG_1654G||ATP-binding protein
+NC_002607.1	deAlmeida2019	ncRNA	1233545	1233683	.	+	.	ID=VNG_as13355_922;Name=VNG_as13355_922;locus_tag=VNG_as13355_922;Note=VNG_RS13355|VNG1654G,VNG_1654G||ATP-binding protein
+NC_002607.1	deAlmeida2019	ncRNA	1242592	1242670	.	-	.	ID=VNG_as06465_925;Name=VNG_as06465_925;locus_tag=VNG_as06465_925;Note=VNG_RS06465|VNG1667G||ATPase
+NC_002607.1	deAlmeida2019	ncRNA	1242680	1242750	.	-	.	ID=VNG_as06465_926;Name=VNG_as06465_926;locus_tag=VNG_as06465_926;Note=VNG_RS06465|VNG1667G||ATPase
+NC_002607.1	deAlmeida2019	ncRNA	1244713	1244801	.	-	.	ID=VNG_as06465_927;Name=VNG_as06465_927;locus_tag=VNG_as06465_927;Note=VNG_RS06465|VNG1667G||ATPase
+NC_002607.1	deAlmeida2019	ncRNA	1248604	1248823	.	-	.	ID=VNG_as06500_928;Name=VNG_as06500_928;locus_tag=VNG_as06500_928;Note=VNG_RS06500|VNG1676G||GTP-binding protein
+NC_002607.1	deAlmeida2019	ncRNA	1253766	1253829	.	+	.	ID=VNG_as06525_931;Name=VNG_as06525_931;locus_tag=VNG_as06525_931;Note=VNG_RS06525|VNG1682C||prenyltransferase
+NC_002607.1	deAlmeida2019	ncRNA	1260898	1260951	.	-	.	ID=VNG_as06565_933;Name=VNG_as06565_933;locus_tag=VNG_as06565_933;Note=VNG_RS06565|VNG1691G||50S ribosomal protein L23
+NC_002607.1	deAlmeida2019	ncRNA	1267447	1267527	.	-	.	ID=VNG_as06635_937;Name=VNG_as06635_937;locus_tag=VNG_as06635_937;Note=VNG_RS06635|VNG1709G||50S ribosomal protein L6
+NC_002607.1	deAlmeida2019	ncRNA	1268699	1268722	.	-	.	ID=VNG_as06645_939;Name=VNG_as06645_939;locus_tag=VNG_as06645_939;Note=VNG_RS06645|VNG1713G||50S ribosomal protein L19e
+NC_002607.1	deAlmeida2019	ncRNA	1277689	1277762	.	-	.	ID=VNG_as06705_946;Name=VNG_as06705_946;locus_tag=VNG_as06705_946;Note=VNG_RS06705|VNG1727G||cytidylate kinase
+NC_002607.1	deAlmeida2019	ncRNA	1280722	1281067	.	+	.	ID=VNG_as06720_948;Name=VNG_as06720_948;locus_tag=VNG_as06720_948;Note=VNG_RS06720|VNG1732C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1284251	1284370	.	-	.	ID=VNG_as06735_950;Name=VNG_as06735_950;locus_tag=VNG_as06735_950;Note=VNG_RS06735|VNG1735C||MOSC domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	1292440	1292502	.	+	.	ID=VNG_as06785_962;Name=VNG_as06785_962;locus_tag=VNG_as06785_962;Note=VNG_RS06785|VNG1751H||PAS domain S-box protein
+NC_002607.1	deAlmeida2019	ncRNA	1296499	1296526	.	-	.	ID=VNG_as06805_965;Name=VNG_as06805_965;locus_tag=VNG_as06805_965;Note=VNG_RS06805|VNG1756G||translation initiation factor 1A 2
+NC_002607.1	deAlmeida2019	ncRNA	1303618	1303664	.	+	.	ID=VNG_as3479R_967;Name=VNG_as3479R_967;locus_tag=VNG_as3479R_967;Note=VNG_OE3479R|(OE3479R) hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1311911	1311967	.	+	.	ID=VNG_as06860_969;Name=VNG_as06860_969;locus_tag=VNG_as06860_969;Note=VNG_RS06860|VNG1770C||AarF/ABC1/UbiB kinase family protein
+NC_002607.1	deAlmeida2019	ncRNA	1315458	1315500	.	+	.	ID=VNG_as06890_971;Name=VNG_as06890_971;locus_tag=VNG_as06890_971;Note=VNG_RS06890|VNG1776G||Lrp/AsnC family transcriptional regulator
+NC_002607.1	deAlmeida2019	ncRNA	1319499	1319563	.	-	.	ID=VNG_as06910_974;Name=VNG_as06910_974;locus_tag=VNG_as06910_974;Note=VNG_RS06910|VNG1782C||DUF92 domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	1329440	1329534	.	+	.	ID=VNG_as06960_987;Name=VNG_as06960_987;locus_tag=VNG_as06960_987;Note=VNG_RS06960|VNG1794C||nuclease
+NC_002607.1	deAlmeida2019	ncRNA	1333096	1333149	.	+	.	ID=VNG_as06985_990;Name=VNG_as06985_990;locus_tag=VNG_as06985_990;Note=VNG_RS06985|VNG1798H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1351120	1351139	.	+	.	ID=VNG_as07090_999;Name=VNG_as07090_999;locus_tag=VNG_as07090_999;Note=VNG_RS07090|VNG1830G||CTP synthetase
+NC_002607.1	deAlmeida2019	ncRNA	1353362	1353444	.	-	.	ID=VNG_as07105_1003;Name=VNG_as07105_1003;locus_tag=VNG_as07105_1003;Note=VNG_RS07105|VNG1834G||HyrA
+NC_002607.1	deAlmeida2019	ncRNA	1355915	1356041	.	+	.	ID=VNG_as07110_1007;Name=VNG_as07110_1007;locus_tag=VNG_as07110_1007;Note=VNG_RS07110|VNG1835G||threonine--tRNA ligase
+NC_002607.1	deAlmeida2019	ncRNA	1356236	1356275	.	-	.	ID=VNG_as07115_1008;Name=VNG_as07115_1008;locus_tag=VNG_as07115_1008;Note=VNG_RS07115|VNG1836G||cold-shock protein
+NC_002607.1	deAlmeida2019	ncRNA	1380198	1380288	.	+	.	ID=VNG_as07245_1015;Name=VNG_as07245_1015;locus_tag=VNG_as07245_1015;Note=VNG_RS07245|VNG1868G||ABC transporter permease
+NC_002607.1	deAlmeida2019	ncRNA	1386869	1386983	.	+	.	ID=VNG_as07275_1022;Name=VNG_as07275_1022;locus_tag=VNG_as07275_1022;Note=VNG_RS07275|VNG1875G||3-hydroxy-3-methylglutaryl-CoA reductase
+NC_002607.1	deAlmeida2019	ncRNA	1387964	1388083	.	-	.	ID=VNG_as07285_1023;Name=VNG_as07285_1023;locus_tag=VNG_as07285_1023;Note=VNG_RS07285|VNG1879G||thiamine ABC transporter substrate-binding protein
+NC_002607.1	deAlmeida2019	ncRNA	1388671	1388768	.	-	.	ID=VNG_as07285_1024;Name=VNG_as07285_1024;locus_tag=VNG_as07285_1024;Note=VNG_RS07285|VNG1879G||thiamine ABC transporter substrate-binding protein
+NC_002607.1	deAlmeida2019	ncRNA	1397562	1397616	.	+	.	ID=VNG_as13360_1027;Name=VNG_as13360_1027;locus_tag=VNG_as13360_1027;Note=VNG_RS13360|VNG1890H,VNG_1890H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1397768	1397834	.	+	.	ID=VNG_as13360_1028;Name=VNG_as13360_1028;locus_tag=VNG_as13360_1028;Note=VNG_RS13360|VNG1890H,VNG_1890H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1453510	1453655	.	-	.	ID=VNG_as07635_1061;Name=VNG_as07635_1061;locus_tag=VNG_as07635_1061;Note=VNG_RS07635|VNG1969G||anaerobic glycerol-3-phosphate dehydrogenase subunit A
+NC_002607.1	deAlmeida2019	ncRNA	1456611	1456861	.	-	.	ID=VNG_as07645_1062;Name=VNG_as07645_1062;locus_tag=VNG_as07645_1062;Note=VNG_RS07645|VNG1972G||anaerobic glycerol-3-phosphate dehydrogenase subunit C
+NC_002607.1	deAlmeida2019	ncRNA	1458857	1459031	.	-	.	ID=VNG_as13370_1067;Name=VNG_as13370_1067;locus_tag=VNG_as13370_1067;Note=VNG_RS13370|VNG1977H,VNG_1977H||ATP-binding protein
+NC_002607.1	deAlmeida2019	ncRNA	1462233	1462315	.	+	.	ID=VNG_as07675_1071;Name=VNG_as07675_1071;locus_tag=VNG_as07675_1071;Note=VNG_RS07675|VNG1983H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1465933	1465953	.	+	.	ID=VNG_as07690_1074;Name=VNG_as07690_1074;locus_tag=VNG_as07690_1074;Note=VNG_RS07690|VNG1985C||sodium:proton antiporter
+NC_002607.1	deAlmeida2019	ncRNA	1466647	1466717	.	+	.	ID=VNG_as07690_1075;Name=VNG_as07690_1075;locus_tag=VNG_as07690_1075;Note=VNG_RS07690|VNG1985C||sodium:proton antiporter
+NC_002607.1	deAlmeida2019	ncRNA	1467324	1467348	.	-	.	ID=VNG_as07695_1076;Name=VNG_as07695_1076;locus_tag=VNG_as07695_1076;Note=VNG_RS07695|VNG1986C||endonuclease NucS
+NC_002607.1	deAlmeida2019	ncRNA	1471283	1471341	.	+	.	ID=VNG_as07715_1080;Name=VNG_as07715_1080;locus_tag=VNG_as07715_1080;Note=VNG_RS07715|VNG1991H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1494216	1494270	.	-	.	ID=VNG_as07830_1096;Name=VNG_as07830_1096;locus_tag=VNG_as07830_1096;Note=VNG_RS07830|VNG2021C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1495464	1495551	.	+	.	ID=VNG_as07835_1097;Name=VNG_as07835_1097;locus_tag=VNG_as07835_1097;Note=VNG_RS07835|VNG2023G||aldo/keto reductase
+NC_002607.1	deAlmeida2019	ncRNA	1506405	1506427	.	+	.	ID=VNG_as07910_1102;Name=VNG_as07910_1102;locus_tag=VNG_as07910_1102;Note=VNG_RS07910|VNG2043G||non-canonical purine NTP pyrophosphatase, RdgB/HAM1 family
+NC_002607.1	deAlmeida2019	ncRNA	1516471	1516582	.	+	.	ID=VNG_as07975_1106;Name=VNG_as07975_1106;locus_tag=VNG_as07975_1106;Note=VNG_RS07975|VNG2064H||TIGR03663 family protein
+NC_002607.1	deAlmeida2019	ncRNA	1525471	1525501	.	-	.	ID=VNG_as08010_1115;Name=VNG_as08010_1115;locus_tag=VNG_as08010_1115;Note=VNG_RS08010|VNG2072G||serine--tRNA ligase
+NC_002607.1	deAlmeida2019	ncRNA	1530856	1531056	.	+	.	ID=VNG_as08060_1121;Name=VNG_as08060_1121;locus_tag=VNG_as08060_1121;Note=VNG_RS08060|VNG2084G||phosphonate ABC transporter, permease protein PhnE
+NC_002607.1	deAlmeida2019	ncRNA	1535292	1535479	.	-	.	ID=VNG_as08085_1123;Name=VNG_as08085_1123;locus_tag=VNG_as08085_1123;Note=VNG_RS08085|VNG2088G||tRNA (guanine(10)-N(2))-dimethyltransferase
+NC_002607.1	deAlmeida2019	ncRNA	1535596	1535742	.	-	.	ID=VNG_as08090_1124;Name=VNG_as08090_1124;locus_tag=VNG_as08090_1124;Note=VNG_RS08090|VNG2089H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1540651	1540726	.	+	.	ID=VNG_as08110_1130;Name=VNG_as08110_1130;locus_tag=VNG_as08110_1130;Note=VNG_RS08110|VNG2096G||thermosome subunit
+NC_002607.1	deAlmeida2019	ncRNA	1544954	1544981	.	+	.	ID=VNG_as08145_1133;Name=VNG_as08145_1133;locus_tag=VNG_as08145_1133;Note=VNG_RS08145|VNG2102G||citrate (Si)-synthase
+NC_002607.1	deAlmeida2019	ncRNA	1555263	1555364	.	+	.	ID=VNG_as08195_1143;Name=VNG_as08195_1143;locus_tag=VNG_as08195_1143;Note=VNG_RS08195|VNG2116C||NCS2 family permease
+NC_002607.1	deAlmeida2019	ncRNA	1562691	1562912	.	+	.	ID=VNG_as08235_1147;Name=VNG_as08235_1147;locus_tag=VNG_as08235_1147;Note=VNG_RS08235|VNG2124C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1567136	1567177	.	-	.	ID=VNG_as08260_1149;Name=VNG_as08260_1149;locus_tag=VNG_as08260_1149;Note=VNG_RS08260|VNG2131G||peptide chain release factor 1
+NC_002607.1	deAlmeida2019	ncRNA	1567871	1568044	.	-	.	ID=VNG_as08260_1150;Name=VNG_as08260_1150;locus_tag=VNG_as08260_1150;Note=VNG_RS08260|VNG2131G||peptide chain release factor 1
+NC_002607.1	deAlmeida2019	ncRNA	1569916	1569988	.	+	.	ID=VNG_as08275_1151;Name=VNG_as08275_1151;locus_tag=VNG_as08275_1151;Note=VNG_RS08275|VNG2135G||V-type ATP synthase subunit D
+NC_002607.1	deAlmeida2019	ncRNA	1577882	1577975	.	+	.	ID=VNG_as08320_1154;Name=VNG_as08320_1154;locus_tag=VNG_as08320_1154;Note=VNG_RS08320|VNG2144G||ATP synthase subunit I
+NC_002607.1	deAlmeida2019	ncRNA	1578655	1578824	.	+	.	ID=VNG_as08320_1156;Name=VNG_as08320_1156;locus_tag=VNG_as08320_1156;Note=VNG_RS08320|VNG2144G||ATP synthase subunit I
+NC_002607.1	deAlmeida2019	ncRNA	1580321	1580384	.	-	.	ID=VNG_as08330_1158;Name=VNG_as08330_1158;locus_tag=VNG_as08330_1158;Note=VNG_RS08330|VNG2147G||SAM-dependent methyltransferase
+NC_002607.1	deAlmeida2019	ncRNA	1594774	1594995	.	-	.	ID=VNG_as08400_1169;Name=VNG_as08400_1169;locus_tag=VNG_as08400_1169;Note=VNG_RS08400|VNG2160C||replication protein A
+NC_002607.1	deAlmeida2019	ncRNA	1608661	1608717	.	-	.	ID=VNG_as08470_1176;Name=VNG_as08470_1176;locus_tag=VNG_as08470_1176;Note=VNG_RS08470|VNG2175H||IS4 family transposase ISH8B
+NC_002607.1	deAlmeida2019	ncRNA	1608824	1608955	.	-	.	ID=VNG_as08470_1177;Name=VNG_as08470_1177;locus_tag=VNG_as08470_1177;Note=VNG_RS08470|VNG2175H||IS4 family transposase ISH8B
+NC_002607.1	deAlmeida2019	ncRNA	1610283	1610345	.	+	.	ID=VNG_as13385_1180;Name=VNG_as13385_1180;locus_tag=VNG_as13385_1180;Note=VNG_RS13385|VNG2177H,VNG_2177H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1610539	1610559	.	+	.	ID=VNG_as4045R_1181;Name=VNG_as4045R_1181;locus_tag=VNG_as4045R_1181;Note=VNG_OE4045R|(OE4045R) hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1610797	1610976	.	+	.	ID=VNG_as08475_1182;Name=VNG_as08475_1182;locus_tag=VNG_as08475_1182;Note=VNG_RS08475|VNG2178H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1611323	1611555	.	-	.	ID=VNG_as08485_1183;Name=VNG_as08485_1183;locus_tag=VNG_as08485_1183;Note=VNG_RS08485|VNG2179H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1620457	1620671	.	+	.	ID=VNG_as08530_1190;Name=VNG_as08530_1190;locus_tag=VNG_as08530_1190;Note=VNG_RS08530|VNG2187H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1621346	1621451	.	-	.	ID=VNG_as08540_1191;Name=VNG_as08540_1191;locus_tag=VNG_as08540_1191;Note=VNG_RS08540|VNG2190G||isoleucine--tRNA ligase
+NC_002607.1	deAlmeida2019	ncRNA	1627093	1627376	.	+	.	ID=VNG_as08560_1197;Name=VNG_as08560_1197;locus_tag=VNG_as08560_1197;Note=VNG_RS08560|VNG2196G||halocyanin domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	1627520	1627541	.	+	.	ID=VNG_as08560_1198;Name=VNG_as08560_1198;locus_tag=VNG_as08560_1198;Note=VNG_RS08560|VNG2196G||halocyanin domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	1629200	1629275	.	-	.	ID=VNG_as08575_1199;Name=VNG_as08575_1199;locus_tag=VNG_as08575_1199;Note=VNG_RS08575|VNG2201G||heavy metal translocating P-type ATPase
+NC_002607.1	deAlmeida2019	ncRNA	1635170	1635237	.	-	.	ID=VNG_as08595_1201;Name=VNG_as08595_1201;locus_tag=VNG_as08595_1201;Note=VNG_RS08595|VNG2205H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1638843	1638886	.	+	.	ID=VNG_as08610_1205;Name=VNG_as08610_1205;locus_tag=VNG_as08610_1205;Note=VNG_RS08610|VNG2208G||tryptophan--tRNA ligase
+NC_002607.1	deAlmeida2019	ncRNA	1638888	1639052	.	+	.	ID=VNG_as08610_1206;Name=VNG_as08610_1206;locus_tag=VNG_as08610_1206;Note=VNG_RS08610|VNG2208G||tryptophan--tRNA ligase
+NC_002607.1	deAlmeida2019	ncRNA	1643905	1643973	.	+	.	ID=VNG_as08630_1210;Name=VNG_as08630_1210;locus_tag=VNG_as08630_1210;Note=VNG_RS08630|VNG2214G||MATE family efflux transporter
+NC_002607.1	deAlmeida2019	ncRNA	1646127	1646210	.	-	.	ID=VNG_as08640_1214;Name=VNG_as08640_1214;locus_tag=VNG_as08640_1214;Note=VNG_RS08640|VNG2217G||pyruvate dehydrogenase (acetyl-transferring) E1 component subunit alpha
+NC_002607.1	deAlmeida2019	ncRNA	1654026	1654062	.	+	.	ID=VNG_as08665_1217;Name=VNG_as08665_1217;locus_tag=VNG_as08665_1217;Note=VNG_RS08665|VNG2223G||leucine--tRNA ligase
+NC_002607.1	deAlmeida2019	ncRNA	1657956	1657979	.	+	.	ID=VNG_as08680_1220;Name=VNG_as08680_1220;locus_tag=VNG_as08680_1220;Note=VNG_RS08680|VNG2227C||RNA-processing protein
+NC_002607.1	deAlmeida2019	ncRNA	1661793	1661856	.	+	.	ID=VNG_as08695_1223;Name=VNG_as08695_1223;locus_tag=VNG_as08695_1223;Note=VNG_RS08695|VNG2232G||tryptophan--tRNA ligase
+NC_002607.1	deAlmeida2019	ncRNA	1668260	1668282	.	-	.	ID=VNG_as08730_1225;Name=VNG_as08730_1225;locus_tag=VNG_as08730_1225;Note=VNG_RS08730|VNG2240G||ATPase AAA
+NC_002607.1	deAlmeida2019	ncRNA	1669198	1669292	.	-	.	ID=VNG_as08735_1228;Name=VNG_as08735_1228;locus_tag=VNG_as08735_1228;Note=VNG_RS08735|VNG2241H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1672372	1672498	.	+	.	ID=VNG_as08760_1231;Name=VNG_as08760_1231;locus_tag=VNG_as08760_1231;Note=VNG_RS08760|VNG2247G||ATP phosphoribosyltransferase
+NC_002607.1	deAlmeida2019	ncRNA	1675859	1675916	.	-	.	ID=VNG_as08775_1234;Name=VNG_as08775_1234;locus_tag=VNG_as08775_1234;Note=VNG_RS08775|VNG2251G||S-adenosyl-L-homocysteine hydrolase
+NC_002607.1	deAlmeida2019	ncRNA	1678625	1678693	.	+	.	ID=VNG_as08800_1237;Name=VNG_as08800_1237;locus_tag=VNG_as08800_1237;Note=VNG_RS08800|VNG2256G||DNA polymerase III sliding clamp
+NC_002607.1	deAlmeida2019	ncRNA	1678735	1678816	.	+	.	ID=VNG_as08800_1238;Name=VNG_as08800_1238;locus_tag=VNG_as08800_1238;Note=VNG_RS08800|VNG2256G||DNA polymerase III sliding clamp
+NC_002607.1	deAlmeida2019	ncRNA	1688513	1688843	.	-	.	ID=VNG_as08850_1243;Name=VNG_as08850_1243;locus_tag=VNG_as08850_1243;Note=VNG_RS08850|VNG2269G||preprotein translocase subunit TatC
+NC_002607.1	deAlmeida2019	ncRNA	1691486	1691559	.	-	.	ID=VNG_as08860_1247;Name=VNG_as08860_1247;locus_tag=VNG_as08860_1247;Note=VNG_RS08860|VNG2271G|cdc6|ATPase AAA
+NC_002607.1	deAlmeida2019	ncRNA	1698097	1698136	.	+	.	ID=VNG_as08900_1254;Name=VNG_as08900_1254;locus_tag=VNG_as08900_1254;Note=VNG_RS08900|VNG2281C||glutathione S-transferase family protein
+NC_002607.1	deAlmeida2019	ncRNA	1699116	1699230	.	-	.	ID=VNG_as08910_1255;Name=VNG_as08910_1255;locus_tag=VNG_as08910_1255;Note=VNG_RS08910|VNG2283G||alanine--tRNA ligase
+NC_002607.1	deAlmeida2019	ncRNA	1699801	1699846	.	-	.	ID=VNG_as08910_1257;Name=VNG_as08910_1257;locus_tag=VNG_as08910_1257;Note=VNG_RS08910|VNG2283G||alanine--tRNA ligase
+NC_002607.1	deAlmeida2019	ncRNA	1706865	1706999	.	-	.	ID=VNG_as08940_1260;Name=VNG_as08940_1260;locus_tag=VNG_as08940_1260;Note=VNG_RS08940|VNG2290G||MaoC family dehydratase
+NC_002607.1	deAlmeida2019	ncRNA	1710126	1710221	.	+	.	ID=VNG_as08950_1261;Name=VNG_as08950_1261;locus_tag=VNG_as08950_1261;Note=VNG_RS08950|VNG2292H||DUF2029 domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	1713838	1713863	.	+	.	ID=VNG_as08980_1265;Name=VNG_as08980_1265;locus_tag=VNG_as08980_1265;Note=VNG_RS08980|||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1724967	1725021	.	+	.	ID=VNG_as09050_1275;Name=VNG_as09050_1275;locus_tag=VNG_as09050_1275;Note=VNG_RS09050|VNG2313H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1749619	1749687	.	+	.	ID=VNG_as09160_1292;Name=VNG_as09160_1292;locus_tag=VNG_as09160_1292;Note=VNG_RS09160|VNG2338G||intein-containing DNA polymerase II large subunit
+NC_002607.1	deAlmeida2019	ncRNA	1752134	1752224	.	+	.	ID=VNG_as09180_1294;Name=VNG_as09180_1294;locus_tag=VNG_as09180_1294;Note=VNG_RS09180|VNG2342H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1755120	1755252	.	+	.	ID=VNG_as09195_1297;Name=VNG_as09195_1297;locus_tag=VNG_as09195_1297;Note=VNG_RS09195|VNG2346G||ABC transporter permease
+NC_002607.1	deAlmeida2019	ncRNA	1758298	1758377	.	+	.	ID=VNG_as09205_1298;Name=VNG_as09205_1298;locus_tag=VNG_as09205_1298;Note=VNG_RS09205|VNG2349G||peptide ABC transporter substrate-binding protein
+NC_002607.1	deAlmeida2019	ncRNA	1763425	1763444	.	-	.	ID=VNG_as09225_1300;Name=VNG_as09225_1300;locus_tag=VNG_as09225_1300;Note=VNG_RS09225|VNG2356G||Hef nuclease
+NC_002607.1	deAlmeida2019	ncRNA	1766501	1766534	.	-	.	ID=VNG_as09230_1301;Name=VNG_as09230_1301;locus_tag=VNG_as09230_1301;Note=VNG_RS09230|VNG2358G||peptide-binding protein
+NC_002607.1	deAlmeida2019	ncRNA	1769192	1769287	.	-	.	ID=VNG_as09240_1302;Name=VNG_as09240_1302;locus_tag=VNG_as09240_1302;Note=VNG_RS09240|VNG2361G||ABC transporter permease
+NC_002607.1	deAlmeida2019	ncRNA	1769374	1769511	.	-	.	ID=VNG_as09240_1304;Name=VNG_as09240_1304;locus_tag=VNG_as09240_1304;Note=VNG_RS09240|VNG2361G||ABC transporter permease
+NC_002607.1	deAlmeida2019	ncRNA	1772647	1772731	.	-	.	ID=VNG_as09260_1306;Name=VNG_as09260_1306;locus_tag=VNG_as09260_1306;Note=VNG_RS09260|VNG2367G||malate dehydrogenase
+NC_002607.1	deAlmeida2019	ncRNA	1781793	1782014	.	+	.	ID=VNG_as09310_1314;Name=VNG_as09310_1314;locus_tag=VNG_as09310_1314;Note=VNG_RS09310|VNG2377G||copper ABC transporter permease
+NC_002607.1	deAlmeida2019	ncRNA	1787101	1787259	.	+	.	ID=VNG_as09335_1321;Name=VNG_as09335_1321;locus_tag=VNG_as09335_1321;Note=VNG_RS09335|VNG2383G||ribonucleotide-diphosphate reductase subunit beta
+NC_002607.1	deAlmeida2019	ncRNA	1788778	1788868	.	+	.	ID=VNG_as09340_1322;Name=VNG_as09340_1322;locus_tag=VNG_as09340_1322;Note=VNG_RS09340|VNG2384G||ribonucleoside-diphosphate reductase subunit alpha
+NC_002607.1	deAlmeida2019	ncRNA	1790781	1790826	.	+	.	ID=VNG_as09350_1324;Name=VNG_as09350_1324;locus_tag=VNG_as09350_1324;Note=VNG_RS09350|||sulfite exporter TauE/SafE family protein
+NC_002607.1	deAlmeida2019	ncRNA	1791160	1791209	.	+	.	ID=VNG_as09350_1325;Name=VNG_as09350_1325;locus_tag=VNG_as09350_1325;Note=VNG_RS09350|||sulfite exporter TauE/SafE family protein
+NC_002607.1	deAlmeida2019	ncRNA	1793458	1793542	.	+	.	ID=VNG_as09355_1327;Name=VNG_as09355_1327;locus_tag=VNG_as09355_1327;Note=VNG_RS09355|VNG2390G||excinuclease ABC subunit B
+NC_002607.1	deAlmeida2019	ncRNA	1794709	1794755	.	+	.	ID=VNG_as09365_1328;Name=VNG_as09365_1328;locus_tag=VNG_as09365_1328;Note=VNG_RS09365|VNG2393G||sulfurtransferase
+NC_002607.1	deAlmeida2019	ncRNA	1795886	1796147	.	-	.	ID=VNG_as09370_1331;Name=VNG_as09370_1331;locus_tag=VNG_as09370_1331;Note=VNG_RS09370|VNG2394G||sulfurtransferase
+NC_002607.1	deAlmeida2019	ncRNA	1797030	1797097	.	-	.	ID=VNG_as09375_1332;Name=VNG_as09375_1332;locus_tag=VNG_as09375_1332;Note=VNG_RS09375|VNG2395C||thiamine ABC transporter substrate-binding protein
+NC_002607.1	deAlmeida2019	ncRNA	1801802	1801917	.	-	.	ID=VNG_as09400_1335;Name=VNG_as09400_1335;locus_tag=VNG_as09400_1335;Note=VNG_RS09400|VNG2400H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1812017	1812109	.	-	.	ID=VNG_as09460_1344;Name=VNG_as09460_1344;locus_tag=VNG_as09460_1344;Note=VNG_RS09460|VNG2417G||DNA polymerase II
+NC_002607.1	deAlmeida2019	ncRNA	1828255	1828415	.	+	.	ID=VNG_as09530_1347;Name=VNG_as09530_1347;locus_tag=VNG_as09530_1347;Note=VNG_RS09530|VNG2436G||argininosuccinate lyase
+NC_002607.1	deAlmeida2019	ncRNA	1838336	1838390	.	-	.	ID=VNG_as4440F_1353;Name=VNG_as4440F_1353;locus_tag=VNG_as4440F_1353;Note=VNG_OE4440F|(OE4440F) small CPxCG-related zinc finger protein
+NC_002607.1	deAlmeida2019	ncRNA	1839610	1839697	.	-	.	ID=VNG_as09590_1355;Name=VNG_as09590_1355;locus_tag=VNG_as09590_1355;Note=VNG_RS09590|VNG2454C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1857204	1857382	.	+	.	ID=VNG_as09700_1370;Name=VNG_as09700_1370;locus_tag=VNG_as09700_1370;Note=VNG_RS09700|VNG2482G||phosphate ABC transporter ATP-binding protein
+NC_002607.1	deAlmeida2019	ncRNA	1857815	1857902	.	+	.	ID=VNG_as09705_1371;Name=VNG_as09705_1371;locus_tag=VNG_as09705_1371;Note=VNG_RS09705|VNG2483G||phosphate ABC transporter, permease protein PstA
+NC_002607.1	deAlmeida2019	ncRNA	1865641	1865669	.	-	.	ID=VNG_as09745_1378;Name=VNG_as09745_1378;locus_tag=VNG_as09745_1378;Note=VNG_RS09745|VNG2497H||cupin domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	1870901	1871009	.	-	.	ID=VNG_as09770_1380;Name=VNG_as09770_1380;locus_tag=VNG_as09770_1380;Note=VNG_RS09770|VNG2504G||phenylalanine--tRNA ligase subunit alpha
+NC_002607.1	deAlmeida2019	ncRNA	1876307	1876331	.	-	.	ID=VNG_as09790_1384;Name=VNG_as09790_1384;locus_tag=VNG_as09790_1384;Note=VNG_RS09790|VNGr02||16S ribosomal RNA
+NC_002607.1	deAlmeida2019	ncRNA	1899090	1899189	.	-	.	ID=VNG_as09915_1409;Name=VNG_as09915_1409;locus_tag=VNG_as09915_1409;Note=VNG_RS09915|VNG2532H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1909933	1910090	.	+	.	ID=VNG_as09965_1414;Name=VNG_as09965_1414;locus_tag=VNG_as09965_1414;Note=VNG_RS09965|VNG2547G||valine--tRNA ligase
+NC_002607.1	deAlmeida2019	ncRNA	1915563	1915654	.	-	.	ID=VNG_as09985_1417;Name=VNG_as09985_1417;locus_tag=VNG_as09985_1417;Note=VNG_RS09985|VNG2553G||NADP-dependent phosphogluconate dehydrogenase
+NC_002607.1	deAlmeida2019	ncRNA	1916922	1916979	.	-	.	ID=VNG_as09995_1420;Name=VNG_as09995_1420;locus_tag=VNG_as09995_1420;Note=VNG_RS09995|VNG2555C||(2Fe-2S)-binding protein
+NC_002607.1	deAlmeida2019	ncRNA	1923892	1924043	.	-	.	ID=VNG_as4600F_1426;Name=VNG_as4600F_1426;locus_tag=VNG_as4600F_1426;Note=VNG_OE4600F|(OE4600F) hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1926207	1926248	.	-	.	ID=VNG_as10035_1434;Name=VNG_as10035_1434;locus_tag=VNG_as10035_1434;Note=VNG_RS10035|VNG2566H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1930457	1930516	.	-	.	ID=VNG_as10065_1437;Name=VNG_as10065_1437;locus_tag=VNG_as10065_1437;Note=VNG_RS10065|VNG2574G||aconitate hydratase
+NC_002607.1	deAlmeida2019	ncRNA	1940799	1940880	.	+	.	ID=VNG_as10140_1438;Name=VNG_as10140_1438;locus_tag=VNG_as10140_1438;Note=VNG_RS10140|VNG2595G||GTP-binding protein
+NC_002607.1	deAlmeida2019	ncRNA	1944527	1944627	.	-	.	ID=VNG_as10175_1439;Name=VNG_as10175_1439;locus_tag=VNG_as10175_1439;Note=VNG_RS10175|VNG2602G||SLC13 family permease
+NC_002607.1	deAlmeida2019	ncRNA	1961419	1961440	.	-	.	ID=VNG_as10250_1462;Name=VNG_as10250_1462;locus_tag=VNG_as10250_1462;Note=VNG_RS10250|VNG2620G||ATP-dependent helicase
+NC_002607.1	deAlmeida2019	ncRNA	1962278	1962402	.	-	.	ID=VNG_as10250_1463;Name=VNG_as10250_1463;locus_tag=VNG_as10250_1463;Note=VNG_RS10250|VNG2620G||ATP-dependent helicase
+NC_002607.1	deAlmeida2019	ncRNA	1965570	1965638	.	+	.	ID=VNG_as10270_1469;Name=VNG_as10270_1469;locus_tag=VNG_as10270_1469;Note=VNG_RS10270|VNG2625C||PrsW family intramembrane metalloprotease
+NC_002607.1	deAlmeida2019	ncRNA	1973386	1973430	.	-	.	ID=VNG_as10310_1474;Name=VNG_as10310_1474;locus_tag=VNG_as10310_1474;Note=VNG_RS10310|VNG2636G||excinuclease ABC subunit UvrA
+NC_002607.1	deAlmeida2019	ncRNA	1977642	1977758	.	+	.	ID=VNG_as10325_1478;Name=VNG_as10325_1478;locus_tag=VNG_as10325_1478;Note=VNG_RS10325|VNG2639G||UDP-N-acetyl glucosamine 2-epimerase
+NC_002607.1	deAlmeida2019	ncRNA	1985799	1985864	.	+	.	ID=VNG_as10385_1482;Name=VNG_as10385_1482;locus_tag=VNG_as10385_1482;Note=VNG_RS10385|VNG2649G||elongation factor 1-alpha
+NC_002607.1	deAlmeida2019	ncRNA	1986141	1986188	.	+	.	ID=VNG_as10390_1483;Name=VNG_as10390_1483;locus_tag=VNG_as10390_1483;Note=VNG_RS10390|VNG2650G||homoserine dehydrogenase
+NC_002607.1	deAlmeida2019	ncRNA	1988182	1988206	.	+	.	ID=VNG_as10400_1484;Name=VNG_as10400_1484;locus_tag=VNG_as10400_1484;Note=VNG_RS10400|VNG2652H||transposase
+NC_002607.1	deAlmeida2019	ncRNA	1988304	1988452	.	+	.	ID=VNG_as10400_1485;Name=VNG_as10400_1485;locus_tag=VNG_as10400_1485;Note=VNG_RS10400|VNG2652H||transposase
+NC_002607.1	deAlmeida2019	ncRNA	1988511	1988558	.	+	.	ID=VNG_as10400_1486;Name=VNG_as10400_1486;locus_tag=VNG_as10400_1486;Note=VNG_RS10400|VNG2652H||transposase
+NC_002607.1	deAlmeida2019	ncRNA	1989174	1989204	.	+	.	ID=VNG_as10400_1488;Name=VNG_as10400_1488;locus_tag=VNG_as10400_1488;Note=VNG_RS10400|VNG2652H||transposase
+NC_002607.1	deAlmeida2019	ncRNA	1991283	1991338	.	+	.	ID=VNG_as10410_1490;Name=VNG_as10410_1490;locus_tag=VNG_as10410_1490;Note=VNG_RS10410|VNG2654G,VNG2654Gm||elongation factor EF-2
+NC_002607.1	deAlmeida2019	ncRNA	1995311	1995394	.	+	.	ID=VNG_as10435_1494;Name=VNG_as10435_1494;locus_tag=VNG_as10435_1494;Note=VNG_RS10435|VNG2662G||DNA-directed RNA polymerase subunit A''
+NC_002607.1	deAlmeida2019	ncRNA	1996668	1996688	.	+	.	ID=VNG_as10440_1495;Name=VNG_as10440_1495;locus_tag=VNG_as10440_1495;Note=VNG_RS10440|VNG2664G,VNG2664Gm||DNA-directed RNA polymerase subunit A'
+NC_002607.1	deAlmeida2019	ncRNA	1998685	1998730	.	+	.	ID=VNG_as10445_1497;Name=VNG_as10445_1497;locus_tag=VNG_as10445_1497;Note=VNG_RS10445|VNG2665G||DNA-directed RNA polymerase subunit B'
+NC_002607.1	deAlmeida2019	ncRNA	1998732	1998765	.	+	.	ID=VNG_as10445_1498;Name=VNG_as10445_1498;locus_tag=VNG_as10445_1498;Note=VNG_RS10445|VNG2665G||DNA-directed RNA polymerase subunit B'
+NC_002607.1	deAlmeida2019	ncRNA	2000489	2000563	.	+	.	ID=VNG_as10450_1499;Name=VNG_as10450_1499;locus_tag=VNG_as10450_1499;Note=VNG_RS10450|pseudo;VNG2666G||DNA-directed RNA polymerase subunit B''
+NC_002607.1	deAlmeida2019	ncRNA	2002022	2002043	.	+	.	ID=VNG_as10450_1500;Name=VNG_as10450_1500;locus_tag=VNG_as10450_1500;Note=VNG_RS10450|pseudo;VNG2666G||DNA-directed RNA polymerase subunit B''
+NC_002607.1	deAlmeida2019	ncRNA	2004162	2004224	.	-	.	ID=VNG_as10470_1502;Name=VNG_as10470_1502;locus_tag=VNG_as10470_1502;Note=VNG_RS10470|||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	2004482	2004549	.	+	.	ID=VNG_as10475_1503;Name=VNG_as10475_1503;locus_tag=VNG_as10475_1503;Note=VNG_RS10475|||ISH3 family transposase ISH3C
+NC_002607.1	deAlmeida2019	ncRNA	2005837	2005883	.	-	.	ID=VNG_as10480_1510;Name=VNG_as10480_1510;locus_tag=VNG_as10480_1510;Note=VNG_RS10480|||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	2006552	2006664	.	+	.	ID=VNG_as10485_1512;Name=VNG_as10485_1512;locus_tag=VNG_as10485_1512;Note=VNG_RS10485|VNG2674H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	2007535	2007556	.	+	.	ID=VNG_as10490_1513;Name=VNG_as10490_1513;locus_tag=VNG_as10490_1513;Note=VNG_RS10490|VNG2675C||TetR/AcrR family transcriptional regulator
+NC_002607.1	deAlmeida2019	ncRNA	2007959	2008085	.	-	.	ID=VNG_as10495_1514;Name=VNG_as10495_1514;locus_tag=VNG_as10495_1514;Note=VNG_RS10495|VNG2677H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	2010559	2010741	.	+	.	ID=VNG_as10500_1522;Name=VNG_as10500_1522;locus_tag=VNG_as10500_1522;Note=VNG_RS10500|VNG2678H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	2010790	2010819	.	+	.	ID=VNG_as10500_1523;Name=VNG_as10500_1523;locus_tag=VNG_as10500_1523;Note=VNG_RS10500|VNG2678H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	2010879	2010955	.	+	.	ID=VNG_as10500_1524;Name=VNG_as10500_1524;locus_tag=VNG_as10500_1524;Note=VNG_RS10500|VNG2678H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	2011811	2011836	.	-	.	ID=VNG_as10505_1525;Name=VNG_as10505_1525;locus_tag=VNG_as10505_1525;Note=VNG_RS10505|VNG2679G||major cell surface glycoprotein
+NC_002607.1	deAlmeida2019	ncRNA	2011939	2012052	.	-	.	ID=VNG_as10505_1526;Name=VNG_as10505_1526;locus_tag=VNG_as10505_1526;Note=VNG_RS10505|VNG2679G||major cell surface glycoprotein
+NC_002607.1	deAlmeida2019	ncRNA	2012225	2012277	.	-	.	ID=VNG_as10505_1527;Name=VNG_as10505_1527;locus_tag=VNG_as10505_1527;Note=VNG_RS10505|VNG2679G||major cell surface glycoprotein
+NC_002607.1	deAlmeida2019	ncRNA	2012563	2012667	.	-	.	ID=VNG_as10505_1528;Name=VNG_as10505_1528;locus_tag=VNG_as10505_1528;Note=VNG_RS10505|VNG2679G||major cell surface glycoprotein
+NC_002607.1	deAlmeida2019	ncRNA	2013356	2013579	.	-	.	ID=VNG_as10505_1530;Name=VNG_as10505_1530;locus_tag=VNG_as10505_1530;Note=VNG_RS10505|VNG2679G||major cell surface glycoprotein
+NC_001869.1	deAlmeida2019	ncRNA	2048	2152	.	+	.	ID=VNG_as12220_1531;Name=VNG_as12220_1531;locus_tag=VNG_as12220_1531;Note=VNG_RS12220|VNG7005||ISNCY family transposase ISH7A
+NC_001869.1	deAlmeida2019	ncRNA	2549	2655	.	+	.	ID=VNG_as12220_1532;Name=VNG_as12220_1532;locus_tag=VNG_as12220_1532;Note=VNG_RS12220|VNG7005||ISNCY family transposase ISH7A
+NC_001869.1	deAlmeida2019	ncRNA	3715	3762	.	+	.	ID=VNG_as12220_1533;Name=VNG_as12220_1533;locus_tag=VNG_as12220_1533;Note=VNG_RS12220|VNG7005||ISNCY family transposase ISH7A
+NC_001869.1	deAlmeida2019	ncRNA	6189	6325	.	+	.	ID=VNG_as13745_1534;Name=VNG_as13745_1534;locus_tag=VNG_as13745_1534;Note=VNG_RS13745|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	6549	6603	.	+	.	ID=VNG_as13745_1535;Name=VNG_as13745_1535;locus_tag=VNG_as13745_1535;Note=VNG_RS13745|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	6661	6690	.	+	.	ID=VNG_as13745_1536;Name=VNG_as13745_1536;locus_tag=VNG_as13745_1536;Note=VNG_RS13745|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	7004	7040	.	+	.	ID=VNG_as13745_1537;Name=VNG_as13745_1537;locus_tag=VNG_as13745_1537;Note=VNG_RS13745|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	7602	7699	.	+	.	ID=VNG_as13745_1538;Name=VNG_as13745_1538;locus_tag=VNG_as13745_1538;Note=VNG_RS13745|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	9222	9312	.	-	.	ID=VNG_as13755_1539;Name=VNG_as13755_1539;locus_tag=VNG_as13755_1539;Note=VNG_RS13755|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	9687	9739	.	-	.	ID=VNG_as13755_1540;Name=VNG_as13755_1540;locus_tag=VNG_as13755_1540;Note=VNG_RS13755|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	9912	9971	.	-	.	ID=VNG_as13755_1541;Name=VNG_as13755_1541;locus_tag=VNG_as13755_1541;Note=VNG_RS13755|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	10507	10595	.	-	.	ID=VNG_as13755_1542;Name=VNG_as13755_1542;locus_tag=VNG_as13755_1542;Note=VNG_RS13755|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	11017	11043	.	-	.	ID=VNG_as13755_1544;Name=VNG_as13755_1544;locus_tag=VNG_as13755_1544;Note=VNG_RS13755|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	15040	15070	.	-	.	ID=VNG_as12265_1550;Name=VNG_as12265_1550;locus_tag=VNG_as12265_1550;Note=VNG_RS12265|VNG7012||IS4 family transposase ISH8
+NC_001869.1	deAlmeida2019	ncRNA	16743	16863	.	+	.	ID=VNG_as12280_1555;Name=VNG_as12280_1555;locus_tag=VNG_as12280_1555;Note=VNG_RS12280|VNG7016||protein gvpL
+NC_001869.1	deAlmeida2019	ncRNA	17055	17138	.	+	.	ID=VNG_as12280_1556;Name=VNG_as12280_1556;locus_tag=VNG_as12280_1556;Note=VNG_RS12280|VNG7016||protein gvpL
+NC_001869.1	deAlmeida2019	ncRNA	18092	18168	.	+	.	ID=VNG_as12290_1557;Name=VNG_as12290_1557;locus_tag=VNG_as12290_1557;Note=VNG_RS12290|VNG7018||gas vesicle protein GvpJ
+NC_001869.1	deAlmeida2019	ncRNA	18390	18428	.	+	.	ID=VNG_as13760_1558;Name=VNG_as13760_1558;locus_tag=VNG_as13760_1558;Note=VNG_RS13760|||protein gvpI
+NC_001869.1	deAlmeida2019	ncRNA	18615	18643	.	+	.	ID=VNG_as13760_1559;Name=VNG_as13760_1559;locus_tag=VNG_as13760_1559;Note=VNG_RS13760|||protein gvpI
+NC_001869.1	deAlmeida2019	ncRNA	18698	18722	.	+	.	ID=VNG_as12295_1560;Name=VNG_as12295_1560;locus_tag=VNG_as12295_1560;Note=VNG_RS12295|VNG7020||protein gvpH 1
+NC_001869.1	deAlmeida2019	ncRNA	20495	20596	.	+	.	ID=VNG_as12310_1564;Name=VNG_as12310_1564;locus_tag=VNG_as12310_1564;Note=VNG_RS12310|VNG7023||transcriptional regulator
+NC_001869.1	deAlmeida2019	ncRNA	21000	21165	.	+	.	ID=VNG_as12315_1565;Name=VNG_as12315_1565;locus_tag=VNG_as12315_1565;Note=VNG_RS12315|VNG7024||protein gvpD
+NC_001869.1	deAlmeida2019	ncRNA	22084	22106	.	+	.	ID=VNG_as12315_1567;Name=VNG_as12315_1567;locus_tag=VNG_as12315_1567;Note=VNG_RS12315|VNG7024||protein gvpD
+NC_001869.1	deAlmeida2019	ncRNA	22128	22292	.	+	.	ID=VNG_as12315_1568;Name=VNG_as12315_1568;locus_tag=VNG_as12315_1568;Note=VNG_RS12315|VNG7024||protein gvpD
+NC_001869.1	deAlmeida2019	ncRNA	22865	22964	.	-	.	ID=VNG_as12325_1569;Name=VNG_as12325_1569;locus_tag=VNG_as12325_1569;Note=VNG_RS12325|VNG7026||gas vesicle protein GvpC
+NC_001869.1	deAlmeida2019	ncRNA	23888	23940	.	-	.	ID=VNG_as12325_1570;Name=VNG_as12325_1570;locus_tag=VNG_as12325_1570;Note=VNG_RS12325|VNG7026||gas vesicle protein GvpC
+NC_001869.1	deAlmeida2019	ncRNA	25528	25593	.	-	.	ID=VNG_as12340_1573;Name=VNG_as12340_1573;locus_tag=VNG_as12340_1573;Note=VNG_RS12340|VNG7029||ParA family protein
+NC_001869.1	deAlmeida2019	ncRNA	25931	25997	.	-	.	ID=VNG_as12340_1575;Name=VNG_as12340_1575;locus_tag=VNG_as12340_1575;Note=VNG_RS12340|VNG7029||ParA family protein
+NC_001869.1	deAlmeida2019	ncRNA	29264	29351	.	+	.	ID=VNG_as12345_1577;Name=VNG_as12345_1577;locus_tag=VNG_as12345_1577;Note=VNG_RS12345|VNG7030||PAS domain S-box protein
+NC_001869.1	deAlmeida2019	ncRNA	30624	30673	.	+	.	ID=VNG_as12355_1579;Name=VNG_as12355_1579;locus_tag=VNG_as12355_1579;Note=VNG_RS12355|VNG7032||IS4 family transposase ISH8A
+NC_001869.1	deAlmeida2019	ncRNA	31134	31179	.	+	.	ID=VNG_as12355_1581;Name=VNG_as12355_1581;locus_tag=VNG_as12355_1581;Note=VNG_RS12355|VNG7032||IS4 family transposase ISH8A
+NC_001869.1	deAlmeida2019	ncRNA	32084	32113	.	-	.	ID=VNG_as12360_1583;Name=VNG_as12360_1583;locus_tag=VNG_as12360_1583;Note=VNG_RS12360|||ISH3 family transposase ISH3C
+NC_001869.1	deAlmeida2019	ncRNA	32540	32680	.	-	.	ID=VNG_as12360_1584;Name=VNG_as12360_1584;locus_tag=VNG_as12360_1584;Note=VNG_RS12360|||ISH3 family transposase ISH3C
+NC_001869.1	deAlmeida2019	ncRNA	33101	33165	.	-	.	ID=VNG_as12360_1585;Name=VNG_as12360_1585;locus_tag=VNG_as12360_1585;Note=VNG_RS12360|||ISH3 family transposase ISH3C
+NC_001869.1	deAlmeida2019	ncRNA	33423	33534	.	+	.	ID=VNG_as12365_1586;Name=VNG_as12365_1586;locus_tag=VNG_as12365_1586;Note=VNG_RS12365|VNG7033||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	33671	33709	.	+	.	ID=VNG_as12365_1587;Name=VNG_as12365_1587;locus_tag=VNG_as12365_1587;Note=VNG_RS12365|VNG7033||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	33896	33958	.	+	.	ID=VNG_as12365_1589;Name=VNG_as12365_1589;locus_tag=VNG_as12365_1589;Note=VNG_RS12365|VNG7033||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	34439	34503	.	+	.	ID=VNG_as12365_1590;Name=VNG_as12365_1590;locus_tag=VNG_as12365_1590;Note=VNG_RS12365|VNG7033||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	34515	34554	.	-	.	ID=VNG_as12370_1591;Name=VNG_as12370_1591;locus_tag=VNG_as12370_1591;Note=VNG_RS12370|VNG7034||IS5 family transposase ISH28
+NC_001869.1	deAlmeida2019	ncRNA	34804	34924	.	-	.	ID=VNG_as12370_1592;Name=VNG_as12370_1592;locus_tag=VNG_as12370_1592;Note=VNG_RS12370|VNG7034||IS5 family transposase ISH28
+NC_001869.1	deAlmeida2019	ncRNA	35601	35676	.	+	.	ID=VNG_as12375_1594;Name=VNG_as12375_1594;locus_tag=VNG_as12375_1594;Note=VNG_RS12375|partial;pseudo||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	36810	36837	.	-	.	ID=VNG_as12385_1598;Name=VNG_as12385_1598;locus_tag=VNG_as12385_1598;Note=VNG_RS12385|VNG7036||IS5 family transposase ISH11
+NC_001869.1	deAlmeida2019	ncRNA	37262	37304	.	-	.	ID=VNG_as12385_1599;Name=VNG_as12385_1599;locus_tag=VNG_as12385_1599;Note=VNG_RS12385|VNG7036||IS5 family transposase ISH11
+NC_001869.1	deAlmeida2019	ncRNA	38299	38360	.	+	.	ID=VNG_as12395_1601;Name=VNG_as12395_1601;locus_tag=VNG_as12395_1601;Note=VNG_RS12395|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	38497	38521	.	+	.	ID=VNG_as12395_1602;Name=VNG_as12395_1602;locus_tag=VNG_as12395_1602;Note=VNG_RS12395|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	40952	40971	.	+	.	ID=VNG_as12420_1604;Name=VNG_as12420_1604;locus_tag=VNG_as12420_1604;Note=VNG_RS12420|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	40976	41100	.	+	.	ID=VNG_as12420_1605;Name=VNG_as12420_1605;locus_tag=VNG_as12420_1605;Note=VNG_RS12420|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	42265	42335	.	-	.	ID=VNG_as12425_1606;Name=VNG_as12425_1606;locus_tag=VNG_as12425_1606;Note=VNG_RS12425|VNG7039||cytochrome ubiquinol oxidase subunit I
+NC_001869.1	deAlmeida2019	ncRNA	42417	42446	.	-	.	ID=VNG_as12425_1607;Name=VNG_as12425_1607;locus_tag=VNG_as12425_1607;Note=VNG_RS12425|VNG7039||cytochrome ubiquinol oxidase subunit I
+NC_001869.1	deAlmeida2019	ncRNA	42934	43040	.	-	.	ID=VNG_as12425_1609;Name=VNG_as12425_1609;locus_tag=VNG_as12425_1609;Note=VNG_RS12425|VNG7039||cytochrome ubiquinol oxidase subunit I
+NC_001869.1	deAlmeida2019	ncRNA	47441	47619	.	-	.	ID=VNG_as12455_1613;Name=VNG_as12455_1613;locus_tag=VNG_as12455_1613;Note=VNG_RS12455|VNG7046||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	48736	48862	.	-	.	ID=VNG_as12460_1615;Name=VNG_as12460_1615;locus_tag=VNG_as12460_1615;Note=VNG_RS12460|VNG7047||inorganic phosphate transporter
+NC_001869.1	deAlmeida2019	ncRNA	49130	49167	.	-	.	ID=VNG_as12460_1616;Name=VNG_as12460_1616;locus_tag=VNG_as12460_1616;Note=VNG_RS12460|VNG7047||inorganic phosphate transporter
+NC_001869.1	deAlmeida2019	ncRNA	50085	50115	.	-	.	ID=VNG_as12470_1618;Name=VNG_as12470_1618;locus_tag=VNG_as12470_1618;Note=VNG_RS12470|VNG7049||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	51627	51714	.	-	.	ID=VNG_as12475_1619;Name=VNG_as12475_1619;locus_tag=VNG_as12475_1619;Note=VNG_RS12475|VNG7051||MFS transporter
+NC_001869.1	deAlmeida2019	ncRNA	51840	51904	.	-	.	ID=VNG_as12475_1620;Name=VNG_as12475_1620;locus_tag=VNG_as12475_1620;Note=VNG_RS12475|VNG7051||MFS transporter
+NC_001869.1	deAlmeida2019	ncRNA	54264	54295	.	-	.	ID=VNG_as12485_1621;Name=VNG_as12485_1621;locus_tag=VNG_as12485_1621;Note=VNG_RS12485|VNG7053||transcriptional regulator
+NC_001869.1	deAlmeida2019	ncRNA	58011	58178	.	-	.	ID=VNG_as13770_1624;Name=VNG_as13770_1624;locus_tag=VNG_as13770_1624;Note=VNG_RS13770|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	59248	59379	.	-	.	ID=VNG_as12515_1626;Name=VNG_as12515_1626;locus_tag=VNG_as12515_1626;Note=VNG_RS12515|VNG7059||IS4 family transposase ISH8B
+NC_001869.1	deAlmeida2019	ncRNA	61999	62045	.	-	.	ID=VNG_as12525_1629;Name=VNG_as12525_1629;locus_tag=VNG_as12525_1629;Note=VNG_RS12525|VNG7061||ArsR family transcriptional regulator
+NC_001869.1	deAlmeida2019	ncRNA	62486	62538	.	-	.	ID=VNG_as13775_1632;Name=VNG_as13775_1632;locus_tag=VNG_as13775_1632;Note=VNG_RS13775|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	63361	63383	.	-	.	ID=VNG_as12530_1633;Name=VNG_as12530_1633;locus_tag=VNG_as12530_1633;Note=VNG_RS12530|VNG7063||transposase
+NC_001869.1	deAlmeida2019	ncRNA	64914	64941	.	+	.	ID=VNG_as12535_1635;Name=VNG_as12535_1635;locus_tag=VNG_as12535_1635;Note=VNG_RS12535|VNG7064||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	65168	65246	.	+	.	ID=VNG_as12535_1637;Name=VNG_as12535_1637;locus_tag=VNG_as12535_1637;Note=VNG_RS12535|VNG7064||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	66008	66212	.	+	.	ID=VNG_as12540_1638;Name=VNG_as12540_1638;locus_tag=VNG_as12540_1638;Note=VNG_RS12540|VNG7065||ParA family protein
+NC_001869.1	deAlmeida2019	ncRNA	66762	66823	.	+	.	ID=VNG_as12545_1639;Name=VNG_as12545_1639;locus_tag=VNG_as12545_1639;Note=VNG_RS12545|VNG7066||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	66858	66968	.	+	.	ID=VNG_as12545_1641;Name=VNG_as12545_1641;locus_tag=VNG_as12545_1641;Note=VNG_RS12545|VNG7066||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	67508	67595	.	+	.	ID=VNG_as12550_1644;Name=VNG_as12550_1644;locus_tag=VNG_as12550_1644;Note=VNG_RS12550|VNG7067||transcriptional regulator
+NC_001869.1	deAlmeida2019	ncRNA	68422	68534	.	+	.	ID=VNG_as13780_1646;Name=VNG_as13780_1646;locus_tag=VNG_as13780_1646;Note=VNG_RS13780|||deoxyribonuclease
+NC_001869.1	deAlmeida2019	ncRNA	68642	68701	.	+	.	ID=VNG_as13780_1647;Name=VNG_as13780_1647;locus_tag=VNG_as13780_1647;Note=VNG_RS13780|||deoxyribonuclease
+NC_001869.1	deAlmeida2019	ncRNA	69071	69111	.	-	.	ID=VNG_as12560_1649;Name=VNG_as12560_1649;locus_tag=VNG_as12560_1649;Note=VNG_RS12560|VNG7070||cell division control protein Cdc6
+NC_001869.1	deAlmeida2019	ncRNA	69694	69795	.	-	.	ID=VNG_as12560_1650;Name=VNG_as12560_1650;locus_tag=VNG_as12560_1650;Note=VNG_RS12560|VNG7070||cell division control protein Cdc6
+NC_001869.1	deAlmeida2019	ncRNA	74020	74045	.	+	.	ID=VNG_as12575_1654;Name=VNG_as12575_1654;locus_tag=VNG_as12575_1654;Note=VNG_RS12575|VNG7073||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	74216	74309	.	+	.	ID=VNG_as12575_1655;Name=VNG_as12575_1655;locus_tag=VNG_as12575_1655;Note=VNG_RS12575|VNG7073||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	75945	75992	.	+	.	ID=VNG_as13165_1660;Name=VNG_as13165_1660;locus_tag=VNG_as13165_1660;Note=VNG_RS13165|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	76551	76640	.	+	.	ID=VNG_as13165_1663;Name=VNG_as13165_1663;locus_tag=VNG_as13165_1663;Note=VNG_RS13165|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	77215	77281	.	+	.	ID=VNG_as12595_1664;Name=VNG_as12595_1664;locus_tag=VNG_as12595_1664;Note=VNG_RS12595|VNG7076||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	78135	78199	.	+	.	ID=VNG_as12595_1665;Name=VNG_as12595_1665;locus_tag=VNG_as12595_1665;Note=VNG_RS12595|VNG7076||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	78386	78405	.	+	.	ID=VNG_as12595_1667;Name=VNG_as12595_1667;locus_tag=VNG_as12595_1667;Note=VNG_RS12595|VNG7076||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	81517	81545	.	+	.	ID=VNG_as13795_1668;Name=VNG_as13795_1668;locus_tag=VNG_as13795_1668;Note=VNG_RS13795|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	82481	82618	.	-	.	ID=VNG_as12625_1671;Name=VNG_as12625_1671;locus_tag=VNG_as12625_1671;Note=VNG_RS12625|||ISH3 family transposase ISH3B
+NC_001869.1	deAlmeida2019	ncRNA	92507	92578	.	-	.	ID=VNG_as13805_1681;Name=VNG_as13805_1681;locus_tag=VNG_as13805_1681;Note=VNG_RS13805|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	93696	93745	.	-	.	ID=VNG_as12685_1682;Name=VNG_as12685_1682;locus_tag=VNG_as12685_1682;Note=VNG_RS12685|VNG7091||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	93850	93948	.	-	.	ID=VNG_as12685_1683;Name=VNG_as12685_1683;locus_tag=VNG_as12685_1683;Note=VNG_RS12685|VNG7091||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	94606	94780	.	+	.	ID=VNG_as12690_1686;Name=VNG_as12690_1686;locus_tag=VNG_as12690_1686;Note=VNG_RS12690|VNG7092||DUF790 domain-containing protein
+NC_001869.1	deAlmeida2019	ncRNA	94805	94868	.	+	.	ID=VNG_as12690_1687;Name=VNG_as12690_1687;locus_tag=VNG_as12690_1687;Note=VNG_RS12690|VNG7092||DUF790 domain-containing protein
+NC_001869.1	deAlmeida2019	ncRNA	95286	95312	.	+	.	ID=VNG_as12690_1688;Name=VNG_as12690_1688;locus_tag=VNG_as12690_1688;Note=VNG_RS12690|VNG7092||DUF790 domain-containing protein
+NC_001869.1	deAlmeida2019	ncRNA	95683	95709	.	+	.	ID=VNG_as12695_1689;Name=VNG_as12695_1689;locus_tag=VNG_as12695_1689;Note=VNG_RS12695|VNG7093||ATP-dependent helicase
+NC_001869.1	deAlmeida2019	ncRNA	98947	99085	.	-	.	ID=VNG_as12705_1694;Name=VNG_as12705_1694;locus_tag=VNG_as12705_1694;Note=VNG_RS12705|VNG7095||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	99296	99480	.	-	.	ID=VNG_as12705_1695;Name=VNG_as12705_1695;locus_tag=VNG_as12705_1695;Note=VNG_RS12705|VNG7095||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	101483	101511	.	-	.	ID=VNG_as12710_1697;Name=VNG_as12710_1697;locus_tag=VNG_as12710_1697;Note=VNG_RS12710|||ISH3-like element ISH27-3 family transposase
+NC_001869.1	deAlmeida2019	ncRNA	102402	102448	.	-	.	ID=VNG_as12710_1700;Name=VNG_as12710_1700;locus_tag=VNG_as12710_1700;Note=VNG_RS12710|||ISH3-like element ISH27-3 family transposase
+NC_001869.1	deAlmeida2019	ncRNA	102499	102563	.	-	.	ID=VNG_as12710_1701;Name=VNG_as12710_1701;locus_tag=VNG_as12710_1701;Note=VNG_RS12710|||ISH3-like element ISH27-3 family transposase
+NC_001869.1	deAlmeida2019	ncRNA	103434	103465	.	-	.	ID=VNG_as13810_1702;Name=VNG_as13810_1702;locus_tag=VNG_as13810_1702;Note=VNG_RS13810|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	103972	104066	.	-	.	ID=VNG_as12715_1703;Name=VNG_as12715_1703;locus_tag=VNG_as12715_1703;Note=VNG_RS12715|VNG7096||class I SAM-dependent DNA methyltransferase
+NC_001869.1	deAlmeida2019	ncRNA	106637	106692	.	-	.	ID=VNG_as12720_1711;Name=VNG_as12720_1711;locus_tag=VNG_as12720_1711;Note=VNG_RS12720|||ISH3 family transposase ISH27-2
+NC_001869.1	deAlmeida2019	ncRNA	107036	107111	.	-	.	ID=VNG_as12725_1712;Name=VNG_as12725_1712;locus_tag=VNG_as12725_1712;Note=VNG_RS12725|VNG7097||class I SAM-dependent DNA methyltransferase
+NC_001869.1	deAlmeida2019	ncRNA	107314	107343	.	-	.	ID=VNG_as12725_1714;Name=VNG_as12725_1714;locus_tag=VNG_as12725_1714;Note=VNG_RS12725|VNG7097||class I SAM-dependent DNA methyltransferase
+NC_001869.1	deAlmeida2019	ncRNA	107907	107932	.	-	.	ID=VNG_as12725_1716;Name=VNG_as12725_1716;locus_tag=VNG_as12725_1716;Note=VNG_RS12725|VNG7097||class I SAM-dependent DNA methyltransferase
+NC_001869.1	deAlmeida2019	ncRNA	109883	109956	.	-	.	ID=VNG_as12730_1721;Name=VNG_as12730_1721;locus_tag=VNG_as12730_1721;Note=VNG_RS12730|VNG7099||helicase
+NC_001869.1	deAlmeida2019	ncRNA	110566	110592	.	-	.	ID=VNG_as12730_1722;Name=VNG_as12730_1722;locus_tag=VNG_as12730_1722;Note=VNG_RS12730|VNG7099||helicase
+NC_001869.1	deAlmeida2019	ncRNA	112125	112145	.	-	.	ID=VNG_as12735_1725;Name=VNG_as12735_1725;locus_tag=VNG_as12735_1725;Note=VNG_RS12735|VNG7100||transcription factor
+NC_001869.1	deAlmeida2019	ncRNA	113836	113863	.	-	.	ID=VNG_as12740_1729;Name=VNG_as12740_1729;locus_tag=VNG_as12740_1729;Note=VNG_RS12740|VNG7101||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	115202	115294	.	+	.	ID=VNG_as12750_1730;Name=VNG_as12750_1730;locus_tag=VNG_as12750_1730;Note=VNG_RS12750|VNG7103||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	116080	116119	.	-	.	ID=VNG_as12755_1731;Name=VNG_as12755_1731;locus_tag=VNG_as12755_1731;Note=VNG_RS12755|VNG7104||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	116186	116336	.	-	.	ID=VNG_as12755_1732;Name=VNG_as12755_1732;locus_tag=VNG_as12755_1732;Note=VNG_RS12755|VNG7104||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	118968	119131	.	-	.	ID=VNG_as12760_1733;Name=VNG_as12760_1733;locus_tag=VNG_as12760_1733;Note=VNG_RS12760|VNG7105||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	121406	121488	.	-	.	ID=VNG_as12765_1735;Name=VNG_as12765_1735;locus_tag=VNG_as12765_1735;Note=VNG_RS12765|VNG7106||site-specific integrase
+NC_001869.1	deAlmeida2019	ncRNA	121637	121696	.	-	.	ID=VNG_as12765_1736;Name=VNG_as12765_1736;locus_tag=VNG_as12765_1736;Note=VNG_RS12765|VNG7106||site-specific integrase
+NC_001869.1	deAlmeida2019	ncRNA	121933	122008	.	-	.	ID=VNG_as12765_1740;Name=VNG_as12765_1740;locus_tag=VNG_as12765_1740;Note=VNG_RS12765|VNG7106||site-specific integrase
+NC_001869.1	deAlmeida2019	ncRNA	122034	122117	.	-	.	ID=VNG_as12765_1741;Name=VNG_as12765_1741;locus_tag=VNG_as12765_1741;Note=VNG_RS12765|VNG7106||site-specific integrase
+NC_001869.1	deAlmeida2019	ncRNA	125653	125673	.	-	.	ID=VNG_as13815_1747;Name=VNG_as13815_1747;locus_tag=VNG_as13815_1747;Note=VNG_RS13815|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	125730	125887	.	-	.	ID=VNG_as13815_1748;Name=VNG_as13815_1748;locus_tag=VNG_as13815_1748;Note=VNG_RS13815|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	126029	126060	.	-	.	ID=VNG_as13815_1749;Name=VNG_as13815_1749;locus_tag=VNG_as13815_1749;Note=VNG_RS13815|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	126400	126541	.	-	.	ID=VNG_as12790_1750;Name=VNG_as12790_1750;locus_tag=VNG_as12790_1750;Note=VNG_RS12790|VNG7112||MarR family transcriptional regulator
+NC_001869.1	deAlmeida2019	ncRNA	129179	129208	.	-	.	ID=VNG_as12800_1757;Name=VNG_as12800_1757;locus_tag=VNG_as12800_1757;Note=VNG_RS12800|VNG7115||HD family hydrolase
+NC_001869.1	deAlmeida2019	ncRNA	129745	129786	.	-	.	ID=VNG_as12800_1759;Name=VNG_as12800_1759;locus_tag=VNG_as12800_1759;Note=VNG_RS12800|VNG7115||HD family hydrolase
+NC_001869.1	deAlmeida2019	ncRNA	131212	131244	.	+	.	ID=VNG_as12815_1761;Name=VNG_as12815_1761;locus_tag=VNG_as12815_1761;Note=VNG_RS12815|||pyridoxamine 5'-phosphate oxidase family protein
+NC_001869.1	deAlmeida2019	ncRNA	131430	131454	.	+	.	ID=VNG_as12815_1762;Name=VNG_as12815_1762;locus_tag=VNG_as12815_1762;Note=VNG_RS12815|||pyridoxamine 5'-phosphate oxidase family protein
+NC_001869.1	deAlmeida2019	ncRNA	131481	131543	.	+	.	ID=VNG_as12815_1763;Name=VNG_as12815_1763;locus_tag=VNG_as12815_1763;Note=VNG_RS12815|||pyridoxamine 5'-phosphate oxidase family protein
+NC_001869.1	deAlmeida2019	ncRNA	131785	131892	.	-	.	ID=VNG_as12820_1764;Name=VNG_as12820_1764;locus_tag=VNG_as12820_1764;Note=VNG_RS12820|VNG7118||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	132866	132914	.	+	.	ID=VNG_as12825_1766;Name=VNG_as12825_1766;locus_tag=VNG_as12825_1766;Note=VNG_RS12825|VNG7119||IS4 family transposase ISH8C
+NC_001869.1	deAlmeida2019	ncRNA	133138	133253	.	+	.	ID=VNG_as12825_1767;Name=VNG_as12825_1767;locus_tag=VNG_as12825_1767;Note=VNG_RS12825|VNG7119||IS4 family transposase ISH8C
+NC_001869.1	deAlmeida2019	ncRNA	134184	134213	.	-	.	ID=VNG_as12830_1768;Name=VNG_as12830_1768;locus_tag=VNG_as12830_1768;Note=VNG_RS12830|VNG7120||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	134724	134788	.	-	.	ID=VNG_as12830_1770;Name=VNG_as12830_1770;locus_tag=VNG_as12830_1770;Note=VNG_RS12830|VNG7120||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	134944	135092	.	-	.	ID=VNG_as12830_1771;Name=VNG_as12830_1771;locus_tag=VNG_as12830_1771;Note=VNG_RS12830|VNG7120||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	136198	136291	.	+	.	ID=VNG_as12835_1773;Name=VNG_as12835_1773;locus_tag=VNG_as12835_1773;Note=VNG_RS12835|VNG7121||methyltransferase domain-containing protein
+NC_001869.1	deAlmeida2019	ncRNA	138139	138221	.	+	.	ID=VNG_as12855_1774;Name=VNG_as12855_1774;locus_tag=VNG_as12855_1774;Note=VNG_RS12855|VNG7123||arsenic-transporting ATPase
+NC_001869.1	deAlmeida2019	ncRNA	138359	138394	.	+	.	ID=VNG_as12855_1775;Name=VNG_as12855_1775;locus_tag=VNG_as12855_1775;Note=VNG_RS12855|VNG7123||arsenic-transporting ATPase
+NC_001869.1	deAlmeida2019	ncRNA	139727	139820	.	+	.	ID=VNG_as12860_1776;Name=VNG_as12860_1776;locus_tag=VNG_as12860_1776;Note=VNG_RS12860|VNG7124||arsenical resistance operon transcriptional repressor ArsD
+NC_001869.1	deAlmeida2019	ncRNA	140535	140586	.	-	.	ID=VNG_as13830_1777;Name=VNG_as13830_1777;locus_tag=VNG_as13830_1777;Note=VNG_RS13830|||transcriptional regulator
+NC_001869.1	deAlmeida2019	ncRNA	141824	141891	.	-	.	ID=VNG_as12870_1778;Name=VNG_as12870_1778;locus_tag=VNG_as12870_1778;Note=VNG_RS12870|VNG7127||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	142789	142853	.	+	.	ID=VNG_as12875_1779;Name=VNG_as12875_1779;locus_tag=VNG_as12875_1779;Note=VNG_RS12875|||ISH3-like element ISH27-3 family transposase
+NC_001869.1	deAlmeida2019	ncRNA	142904	142976	.	+	.	ID=VNG_as12875_1780;Name=VNG_as12875_1780;locus_tag=VNG_as12875_1780;Note=VNG_RS12875|||ISH3-like element ISH27-3 family transposase
+NC_001869.1	deAlmeida2019	ncRNA	145449	145468	.	-	.	ID=VNG_as12895_1785;Name=VNG_as12895_1785;locus_tag=VNG_as12895_1785;Note=VNG_RS12895|VNG7130||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	145706	145794	.	-	.	ID=VNG_as12900_1786;Name=VNG_as12900_1786;locus_tag=VNG_as12900_1786;Note=VNG_RS12900|VNG7131||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	147572	147699	.	-	.	ID=VNG_as12910_1790;Name=VNG_as12910_1790;locus_tag=VNG_as12910_1790;Note=VNG_RS12910|VNG7134||DNA-binding protein
+NC_001869.1	deAlmeida2019	ncRNA	148425	148451	.	-	.	ID=VNG_as13840_1794;Name=VNG_as13840_1794;locus_tag=VNG_as13840_1794;Note=VNG_RS13840|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	149108	149210	.	-	.	ID=VNG_as12920_1798;Name=VNG_as12920_1798;locus_tag=VNG_as12920_1798;Note=VNG_RS12920|VNG7136||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	149532	149573	.	-	.	ID=VNG_as12920_1801;Name=VNG_as12920_1801;locus_tag=VNG_as12920_1801;Note=VNG_RS12920|VNG7136||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	149745	149890	.	-	.	ID=VNG_as12920_1803;Name=VNG_as12920_1803;locus_tag=VNG_as12920_1803;Note=VNG_RS12920|VNG7136||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	150004	150183	.	-	.	ID=VNG_as12920_1804;Name=VNG_as12920_1804;locus_tag=VNG_as12920_1804;Note=VNG_RS12920|VNG7136||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	150918	150946	.	-	.	ID=VNG_as12925_1806;Name=VNG_as12925_1806;locus_tag=VNG_as12925_1806;Note=VNG_RS12925|||ISH3 family transposase ISH27-2
+NC_001869.1	deAlmeida2019	ncRNA	151373	151513	.	-	.	ID=VNG_as12925_1807;Name=VNG_as12925_1807;locus_tag=VNG_as12925_1807;Note=VNG_RS12925|||ISH3 family transposase ISH27-2
+NC_001869.1	deAlmeida2019	ncRNA	151934	151998	.	-	.	ID=VNG_as12925_1808;Name=VNG_as12925_1808;locus_tag=VNG_as12925_1808;Note=VNG_RS12925|||ISH3 family transposase ISH27-2
+NC_001869.1	deAlmeida2019	ncRNA	153063	153135	.	+	.	ID=VNG_as13850_1810;Name=VNG_as13850_1810;locus_tag=VNG_as13850_1810;Note=VNG_RS13850|partial;pseudo||AAA family ATPase
+NC_001869.1	deAlmeida2019	ncRNA	154278	154317	.	+	.	ID=VNG_as12935_1811;Name=VNG_as12935_1811;locus_tag=VNG_as12935_1811;Note=VNG_RS12935|partial;pseudo;VNG7139||AAA family ATPase
+NC_001869.1	deAlmeida2019	ncRNA	154688	154747	.	-	.	ID=VNG_as13855_1813;Name=VNG_as13855_1813;locus_tag=VNG_as13855_1813;Note=VNG_RS13855|||deoxyribonuclease
+NC_001869.1	deAlmeida2019	ncRNA	154871	154967	.	-	.	ID=VNG_as13855_1814;Name=VNG_as13855_1814;locus_tag=VNG_as13855_1814;Note=VNG_RS13855|||deoxyribonuclease
+NC_001869.1	deAlmeida2019	ncRNA	155794	155881	.	-	.	ID=VNG_as12945_1816;Name=VNG_as12945_1816;locus_tag=VNG_as12945_1816;Note=VNG_RS12945|VNG7142||transcriptional regulator
+NC_001869.1	deAlmeida2019	ncRNA	156421	156531	.	-	.	ID=VNG_as12950_1818;Name=VNG_as12950_1818;locus_tag=VNG_as12950_1818;Note=VNG_RS12950|VNG7143||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	156565	156627	.	-	.	ID=VNG_as12950_1820;Name=VNG_as12950_1820;locus_tag=VNG_as12950_1820;Note=VNG_RS12950|VNG7143||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	156645	156689	.	-	.	ID=VNG_as12950_1821;Name=VNG_as12950_1821;locus_tag=VNG_as12950_1821;Note=VNG_RS12950|VNG7143||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	157194	157381	.	-	.	ID=VNG_as12955_1823;Name=VNG_as12955_1823;locus_tag=VNG_as12955_1823;Note=VNG_RS12955|VNG7144||ParA family protein
+NC_001869.1	deAlmeida2019	ncRNA	158143	158221	.	-	.	ID=VNG_as12960_1824;Name=VNG_as12960_1824;locus_tag=VNG_as12960_1824;Note=VNG_RS12960|VNG7145||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	158448	158475	.	-	.	ID=VNG_as12960_1827;Name=VNG_as12960_1827;locus_tag=VNG_as12960_1827;Note=VNG_RS12960|VNG7145||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	158729	158855	.	+	.	ID=VNG_as12965_1828;Name=VNG_as12965_1828;locus_tag=VNG_as12965_1828;Note=VNG_RS12965|VNG7146||transposase
+NC_001869.1	deAlmeida2019	ncRNA	160006	160028	.	+	.	ID=VNG_as12965_1829;Name=VNG_as12965_1829;locus_tag=VNG_as12965_1829;Note=VNG_RS12965|VNG7146||transposase
+NC_001869.1	deAlmeida2019	ncRNA	160851	160903	.	+	.	ID=VNG_as13860_1830;Name=VNG_as13860_1830;locus_tag=VNG_as13860_1830;Note=VNG_RS13860|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	161344	161388	.	+	.	ID=VNG_as12970_1832;Name=VNG_as12970_1832;locus_tag=VNG_as12970_1832;Note=VNG_RS12970|VNG7148||ArsR family transcriptional regulator
+NC_001869.1	deAlmeida2019	ncRNA	164010	164140	.	+	.	ID=VNG_as12980_1834;Name=VNG_as12980_1834;locus_tag=VNG_as12980_1834;Note=VNG_RS12980|VNG7150||IS4 family transposase ISH8B
+NC_001869.1	deAlmeida2019	ncRNA	164248	164323	.	+	.	ID=VNG_as12980_1835;Name=VNG_as12980_1835;locus_tag=VNG_as12980_1835;Note=VNG_RS12980|VNG7150||IS4 family transposase ISH8B
+NC_001869.1	deAlmeida2019	ncRNA	165211	165305	.	+	.	ID=VNG_as13865_1836;Name=VNG_as13865_1836;locus_tag=VNG_as13865_1836;Note=VNG_RS13865|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	169094	169123	.	+	.	ID=VNG_as13010_1840;Name=VNG_as13010_1840;locus_tag=VNG_as13010_1840;Note=VNG_RS13010|VNG7156||transcriptional regulator
+NC_001869.1	deAlmeida2019	ncRNA	171675	171760	.	+	.	ID=VNG_as13020_1842;Name=VNG_as13020_1842;locus_tag=VNG_as13020_1842;Note=VNG_RS13020|VNG7158||MFS transporter
+NC_001869.1	deAlmeida2019	ncRNA	173274	173323	.	+	.	ID=VNG_as13025_1844;Name=VNG_as13025_1844;locus_tag=VNG_as13025_1844;Note=VNG_RS13025|VNG7160||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	174527	174652	.	+	.	ID=VNG_as13035_1845;Name=VNG_as13035_1845;locus_tag=VNG_as13035_1845;Note=VNG_RS13035|VNG7162||inorganic phosphate transporter
+NC_001869.1	deAlmeida2019	ncRNA	175770	175948	.	+	.	ID=VNG_as13040_1847;Name=VNG_as13040_1847;locus_tag=VNG_as13040_1847;Note=VNG_RS13040|VNG7164||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	180349	180454	.	+	.	ID=VNG_as13070_1851;Name=VNG_as13070_1851;locus_tag=VNG_as13070_1851;Note=VNG_RS13070|VNG7170||cytochrome ubiquinol oxidase subunit I
+NC_001869.1	deAlmeida2019	ncRNA	181054	181125	.	+	.	ID=VNG_as13070_1854;Name=VNG_as13070_1854;locus_tag=VNG_as13070_1854;Note=VNG_RS13070|VNG7170||cytochrome ubiquinol oxidase subunit I
+NC_001869.1	deAlmeida2019	ncRNA	182418	182437	.	-	.	ID=VNG_as13075_1856;Name=VNG_as13075_1856;locus_tag=VNG_as13075_1856;Note=VNG_RS13075|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	183633	183659	.	+	.	ID=VNG_as13085_1857;Name=VNG_as13085_1857;locus_tag=VNG_as13085_1857;Note=VNG_RS13085|||PadR family transcriptional regulator
+NC_001869.1	deAlmeida2019	ncRNA	184868	184892	.	-	.	ID=VNG_as13100_1858;Name=VNG_as13100_1858;locus_tag=VNG_as13100_1858;Note=VNG_RS13100|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	186085	186127	.	+	.	ID=VNG_as13110_1860;Name=VNG_as13110_1860;locus_tag=VNG_as13110_1860;Note=VNG_RS13110|VNG7173||IS5 family transposase ISH11
+NC_001869.1	deAlmeida2019	ncRNA	186552	186576	.	+	.	ID=VNG_as13110_1861;Name=VNG_as13110_1861;locus_tag=VNG_as13110_1861;Note=VNG_RS13110|VNG7173||IS5 family transposase ISH11
+NC_001869.1	deAlmeida2019	ncRNA	187749	187788	.	-	.	ID=VNG_as13120_1864;Name=VNG_as13120_1864;locus_tag=VNG_as13120_1864;Note=VNG_RS13120|partial;pseudo||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	188886	188950	.	-	.	ID=VNG_as13880_1868;Name=VNG_as13880_1868;locus_tag=VNG_as13880_1868;Note=VNG_RS13880|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	189428	189493	.	-	.	ID=VNG_as13880_1869;Name=VNG_as13880_1869;locus_tag=VNG_as13880_1869;Note=VNG_RS13880|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	189855	189966	.	-	.	ID=VNG_as13880_1871;Name=VNG_as13880_1871;locus_tag=VNG_as13880_1871;Note=VNG_RS13880|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	190224	190288	.	+	.	ID=VNG_as13145_1872;Name=VNG_as13145_1872;locus_tag=VNG_as13145_1872;Note=VNG_RS13145|||ISH3-like element ISH27-2 family transposase
+NC_002608.1	deAlmeida2019	ncRNA	12583	12611	.	-	.	ID=VNG_as7015F_1875;Name=VNG_as7015F_1875;locus_tag=VNG_as7015F_1875;Note=VNG_OE7015F|(OE7015F) conserved hypothetical protein (nonfunctional)
+NC_002608.1	deAlmeida2019	ncRNA	59924	59997	.	-	.	ID=VNG_as7092B1F_1877;Name=VNG_as7092B1F_1877;locus_tag=VNG_as7092B1F_1877;Note=VNG_OE7092B1F|(OE7092B1F) hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	116377	116400	.	+	.	ID=VNG_as11050_1882;Name=VNG_as11050_1882;locus_tag=VNG_as11050_1882;Note=VNG_RS11050|VNG6143H||ATP-binding protein
+NC_002608.1	deAlmeida2019	ncRNA	118166	118240	.	+	.	ID=VNG_as11055_1883;Name=VNG_as11055_1883;locus_tag=VNG_as11055_1883;Note=VNG_RS11055|VNG6144G||transferase
+NC_002608.1	deAlmeida2019	ncRNA	118690	118715	.	+	.	ID=VNG_as11055_1884;Name=VNG_as11055_1884;locus_tag=VNG_as11055_1884;Note=VNG_RS11055|VNG6144G||transferase
+NC_002608.1	deAlmeida2019	ncRNA	122816	122898	.	-	.	ID=VNG_as11070_1886;Name=VNG_as11070_1886;locus_tag=VNG_as11070_1886;Note=VNG_RS11070|VNG6147H||IS4 family transposase ISH8B
+NC_002608.1	deAlmeida2019	ncRNA	123005	123136	.	-	.	ID=VNG_as11070_1887;Name=VNG_as11070_1887;locus_tag=VNG_as11070_1887;Note=VNG_RS11070|VNG6147H||IS4 family transposase ISH8B
+NC_002608.1	deAlmeida2019	ncRNA	124161	124232	.	+	.	ID=VNG_as11075_1888;Name=VNG_as11075_1888;locus_tag=VNG_as11075_1888;Note=VNG_RS11075|VNG6148H||IS4 family transposase ISH32
+NC_002608.1	deAlmeida2019	ncRNA	125062	125096	.	+	.	ID=VNG_as11075_1891;Name=VNG_as11075_1891;locus_tag=VNG_as11075_1891;Note=VNG_RS11075|VNG6148H||IS4 family transposase ISH32
+NC_002608.1	deAlmeida2019	ncRNA	125824	126053	.	+	.	ID=VNG_as11080_1893;Name=VNG_as11080_1893;locus_tag=VNG_as11080_1893;Note=VNG_RS11080|VNG6149H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	126552	126579	.	+	.	ID=VNG_as11080_1894;Name=VNG_as11080_1894;locus_tag=VNG_as11080_1894;Note=VNG_RS11080|VNG6149H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	126765	126847	.	+	.	ID=VNG_as11080_1895;Name=VNG_as11080_1895;locus_tag=VNG_as11080_1895;Note=VNG_RS11080|VNG6149H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	127196	127215	.	+	.	ID=VNG_as11080_1896;Name=VNG_as11080_1896;locus_tag=VNG_as11080_1896;Note=VNG_RS11080|VNG6149H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	127433	127477	.	+	.	ID=VNG_as11080_1897;Name=VNG_as11080_1897;locus_tag=VNG_as11080_1897;Note=VNG_RS11080|VNG6149H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	127488	127523	.	+	.	ID=VNG_as11080_1898;Name=VNG_as11080_1898;locus_tag=VNG_as11080_1898;Note=VNG_RS11080|VNG6149H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	127633	127654	.	+	.	ID=VNG_as11080_1899;Name=VNG_as11080_1899;locus_tag=VNG_as11080_1899;Note=VNG_RS11080|VNG6149H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	127811	127859	.	+	.	ID=VNG_as11080_1901;Name=VNG_as11080_1901;locus_tag=VNG_as11080_1901;Note=VNG_RS11080|VNG6149H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	128073	128137	.	+	.	ID=VNG_as11085_1902;Name=VNG_as11085_1902;locus_tag=VNG_as11085_1902;Note=VNG_RS11085|||ISH3 family transposase ISH27-2
+NC_002608.1	deAlmeida2019	ncRNA	129125	129151	.	+	.	ID=VNG_as11085_1904;Name=VNG_as11085_1904;locus_tag=VNG_as11085_1904;Note=VNG_RS11085|||ISH3 family transposase ISH27-2
+NC_002608.1	deAlmeida2019	ncRNA	129370	129467	.	-	.	ID=VNG_as11090_1905;Name=VNG_as11090_1905;locus_tag=VNG_as11090_1905;Note=VNG_RS11090|VNG6150G||orc / cell division control protein 6
+NC_002608.1	deAlmeida2019	ncRNA	133752	133816	.	+	.	ID=VNG_as11105_1908;Name=VNG_as11105_1908;locus_tag=VNG_as11105_1908;Note=VNG_RS11105|||ISH3 family transposase ISH3C
+NC_002608.1	deAlmeida2019	ncRNA	134804	134831	.	+	.	ID=VNG_as11105_1910;Name=VNG_as11105_1910;locus_tag=VNG_as11105_1910;Note=VNG_RS11105|||ISH3 family transposase ISH3C
+NC_002608.1	deAlmeida2019	ncRNA	135844	135920	.	+	.	ID=VNG_as13495_1913;Name=VNG_as13495_1913;locus_tag=VNG_as13495_1913;Note=VNG_RS13495|VNG6157H,VNG_6157H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	136646	136718	.	+	.	ID=VNG_as5032R_1914;Name=VNG_as5032R_1914;locus_tag=VNG_as5032R_1914;Note=VNG_OE5032R|(OE5032R) hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	136945	136974	.	+	.	ID=VNG_as11110_1915;Name=VNG_as11110_1915;locus_tag=VNG_as11110_1915;Note=VNG_RS11110|VNG6160H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	138843	138932	.	+	.	ID=VNG_as11120_1916;Name=VNG_as11120_1916;locus_tag=VNG_as11120_1916;Note=VNG_RS11120|VNG6162H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	141238	141257	.	+	.	ID=VNG_as11135_1918;Name=VNG_as11135_1918;locus_tag=VNG_as11135_1918;Note=VNG_RS11135|VNG6165H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	142332	142358	.	+	.	ID=VNG_as11150_1921;Name=VNG_as11150_1921;locus_tag=VNG_as11150_1921;Note=VNG_RS11150|VNG6168H||AbrB family transcriptional regulator
+NC_002608.1	deAlmeida2019	ncRNA	145025	145051	.	-	.	ID=VNG_as11165_1922;Name=VNG_as11165_1922;locus_tag=VNG_as11165_1922;Note=VNG_RS11165|VNG6173C||chromosome segregation protein SMC
+NC_002608.1	deAlmeida2019	ncRNA	146035	146057	.	-	.	ID=VNG_as11165_1923;Name=VNG_as11165_1923;locus_tag=VNG_as11165_1923;Note=VNG_RS11165|VNG6173C||chromosome segregation protein SMC
+NC_002608.1	deAlmeida2019	ncRNA	147583	147637	.	-	.	ID=VNG_as11180_1927;Name=VNG_as11180_1927;locus_tag=VNG_as11180_1927;Note=VNG_RS11180|VNG6176G||potassium-transporting ATPase subunit KdpA
+NC_002608.1	deAlmeida2019	ncRNA	150451	150470	.	-	.	ID=VNG_as11185_1932;Name=VNG_as11185_1932;locus_tag=VNG_as11185_1932;Note=VNG_RS11185|VNG6177G||potassium-transporting ATPase subunit B
+NC_002608.1	deAlmeida2019	ncRNA	151177	151196	.	-	.	ID=VNG_as11185_1933;Name=VNG_as11185_1933;locus_tag=VNG_as11185_1933;Note=VNG_RS11185|VNG6177G||potassium-transporting ATPase subunit B
+NC_002608.1	deAlmeida2019	ncRNA	151334	151357	.	-	.	ID=VNG_as11185_1934;Name=VNG_as11185_1934;locus_tag=VNG_as11185_1934;Note=VNG_RS11185|VNG6177G||potassium-transporting ATPase subunit B
+NC_002608.1	deAlmeida2019	ncRNA	154397	154490	.	+	.	ID=VNG_as11205_1936;Name=VNG_as11205_1936;locus_tag=VNG_as11205_1936;Note=VNG_RS11205|VNG6181H||transposase
+NC_002608.1	deAlmeida2019	ncRNA	154801	154875	.	+	.	ID=VNG_as11205_1937;Name=VNG_as11205_1937;locus_tag=VNG_as11205_1937;Note=VNG_RS11205|VNG6181H||transposase
+NC_002608.1	deAlmeida2019	ncRNA	157354	157381	.	+	.	ID=VNG_as11215_1942;Name=VNG_as11215_1942;locus_tag=VNG_as11215_1942;Note=VNG_RS11215|VNG6183C||bifunctional oligoribonuclease/PAP phosphatase NrnA
+NC_002608.1	deAlmeida2019	ncRNA	158054	158126	.	+	.	ID=VNG_as11220_1943;Name=VNG_as11220_1943;locus_tag=VNG_as11220_1943;Note=VNG_RS11220|VNG6184G||universal stress protein
+NC_002608.1	deAlmeida2019	ncRNA	158252	158272	.	+	.	ID=VNG_as11220_1944;Name=VNG_as11220_1944;locus_tag=VNG_as11220_1944;Note=VNG_RS11220|VNG6184G||universal stress protein
+NC_002608.1	deAlmeida2019	ncRNA	161745	161807	.	+	.	ID=VNG_as11240_1948;Name=VNG_as11240_1948;locus_tag=VNG_as11240_1948;Note=VNG_RS11240|VNG6193H||type II toxin-antitoxin system Phd/YefM family antitoxin
+NC_002608.1	deAlmeida2019	ncRNA	162139	162183	.	-	.	ID=VNG_as5075F_1949;Name=VNG_as5075F_1949;locus_tag=VNG_as5075F_1949;Note=VNG_OE5075F|(OE5075F) conserved hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	163061	163118	.	-	.	ID=VNG_as11245_1950;Name=VNG_as11245_1950;locus_tag=VNG_as11245_1950;Note=VNG_RS11245|VNG6196G||inorganic phosphate transporter
+NC_002608.1	deAlmeida2019	ncRNA	180934	181061	.	+	.	ID=VNG_as11315_1957;Name=VNG_as11315_1957;locus_tag=VNG_as11315_1957;Note=VNG_RS11315|VNG6220G||amino acid permease
+NC_002608.1	deAlmeida2019	ncRNA	182010	182043	.	+	.	ID=VNG_as11320_1958;Name=VNG_as11320_1958;locus_tag=VNG_as11320_1958;Note=VNG_RS11320|VNG6221H||transposase
+NC_002608.1	deAlmeida2019	ncRNA	183182	183318	.	+	.	ID=VNG_as11325_1960;Name=VNG_as11325_1960;locus_tag=VNG_as11325_1960;Note=VNG_RS11325|pseudo||IS200/IS605 family transposase
+NC_002608.1	deAlmeida2019	ncRNA	184127	184196	.	-	.	ID=VNG_as11330_1962;Name=VNG_as11330_1962;locus_tag=VNG_as11330_1962;Note=VNG_RS11330|VNG6223C||TrkA family potassium uptake protein
+NC_002608.1	deAlmeida2019	ncRNA	192229	192296	.	-	.	ID=VNG_as11400_1968;Name=VNG_as11400_1968;locus_tag=VNG_as11400_1968;Note=VNG_RS11400|VNG6242G||gas vesicle protein GvpC
+NC_002608.1	deAlmeida2019	ncRNA	200961	201127	.	-	.	ID=VNG_as11455_1979;Name=VNG_as11455_1979;locus_tag=VNG_as11455_1979;Note=VNG_RS11455|VNG6261G||sodium-dependent transporter
+NC_002608.1	deAlmeida2019	ncRNA	203645	203955	.	+	.	ID=VNG_as11465_1986;Name=VNG_as11465_1986;locus_tag=VNG_as11465_1986;Note=VNG_RS11465|VNG6264G||metal ABC transporter ATP-binding protein
+NC_002608.1	deAlmeida2019	ncRNA	204287	204376	.	+	.	ID=VNG_as11470_1987;Name=VNG_as11470_1987;locus_tag=VNG_as11470_1987;Note=VNG_RS11470|VNG6265G||adhesin
+NC_002608.1	deAlmeida2019	ncRNA	205589	205704	.	+	.	ID=VNG_as13545_1989;Name=VNG_as13545_1989;locus_tag=VNG_as13545_1989;Note=VNG_RS13545|VNG6266H,VNG_6266H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	209720	209755	.	-	.	ID=VNG_as11485_1994;Name=VNG_as11485_1994;locus_tag=VNG_as11485_1994;Note=VNG_RS11485|VNG6270G||glycerol dehydrogenase
+NC_002608.1	deAlmeida2019	ncRNA	211260	211290	.	+	.	ID=VNG_as11490_1996;Name=VNG_as11490_1996;locus_tag=VNG_as11490_1996;Note=VNG_RS11490|VNG6272G||DUF815 domain-containing protein
+NC_002608.1	deAlmeida2019	ncRNA	211464	211503	.	+	.	ID=VNG_as11490_1997;Name=VNG_as11490_1997;locus_tag=VNG_as11490_1997;Note=VNG_RS11490|VNG6272G||DUF815 domain-containing protein
+NC_002608.1	deAlmeida2019	ncRNA	215683	215750	.	-	.	ID=VNG_as11510_1998;Name=VNG_as11510_1998;locus_tag=VNG_as11510_1998;Note=VNG_RS11510|VNG6280G||carbohydrate ABC transporter permease
+NC_002608.1	deAlmeida2019	ncRNA	216354	216428	.	-	.	ID=VNG_as11515_1999;Name=VNG_as11515_1999;locus_tag=VNG_as11515_1999;Note=VNG_RS11515|VNG6281G||ABC transporter ATP-binding protein
+NC_002608.1	deAlmeida2019	ncRNA	216480	216657	.	-	.	ID=VNG_as11515_2000;Name=VNG_as11515_2000;locus_tag=VNG_as11515_2000;Note=VNG_RS11515|VNG6281G||ABC transporter ATP-binding protein
+NC_002608.1	deAlmeida2019	ncRNA	218544	218605	.	+	.	ID=VNG_as11520_2002;Name=VNG_as11520_2002;locus_tag=VNG_as11520_2002;Note=VNG_RS11520|VNG6283H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	220018	220082	.	-	.	ID=VNG_as13550_2005;Name=VNG_as13550_2005;locus_tag=VNG_as13550_2005;Note=VNG_RS13550|VNG6287H,VNG_6287H||ArsR family transcriptional regulator
+NC_002608.1	deAlmeida2019	ncRNA	222277	222416	.	-	.	ID=VNG_as11545_2008;Name=VNG_as11545_2008;locus_tag=VNG_as11545_2008;Note=VNG_RS11545|pseudo||transposase
+NC_002608.1	deAlmeida2019	ncRNA	226231	226318	.	+	.	ID=VNG_as11555_2011;Name=VNG_as11555_2011;locus_tag=VNG_as11555_2011;Note=VNG_RS11555|VNG6294G||catalase-peroxidase
+NC_002608.1	deAlmeida2019	ncRNA	228292	228316	.	+	.	ID=VNG_as11560_2012;Name=VNG_as11560_2012;locus_tag=VNG_as11560_2012;Note=VNG_RS11560|VNG6296C||alpha/beta hydrolase
+NC_002608.1	deAlmeida2019	ncRNA	228654	228767	.	-	.	ID=VNG_as13565_2013;Name=VNG_as13565_2013;locus_tag=VNG_as13565_2013;Note=VNG_RS13565|VNG6297C,VNG_6297C||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	228802	228901	.	-	.	ID=VNG_as13565_2014;Name=VNG_as13565_2014;locus_tag=VNG_as13565_2014;Note=VNG_RS13565|VNG6297C,VNG_6297C||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	229272	229313	.	-	.	ID=VNG_as13565_2016;Name=VNG_as13565_2016;locus_tag=VNG_as13565_2016;Note=VNG_RS13565|VNG6297C,VNG_6297C||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	233361	233409	.	+	.	ID=VNG_as11575_2019;Name=VNG_as11575_2019;locus_tag=VNG_as11575_2019;Note=VNG_RS11575|VNG6301G||alkaline phosphatase
+NC_002608.1	deAlmeida2019	ncRNA	241885	242155	.	-	.	ID=VNG_as11615_2023;Name=VNG_as11615_2023;locus_tag=VNG_as11615_2023;Note=VNG_RS11615|VNG6312G||arginine--tRNA ligase
+NC_002608.1	deAlmeida2019	ncRNA	243375	243502	.	+	.	ID=VNG_as11620_2026;Name=VNG_as11620_2026;locus_tag=VNG_as11620_2026;Note=VNG_RS11620|VNG6313G||arginine:ornithine antiporter
+NC_002608.1	deAlmeida2019	ncRNA	243864	243966	.	+	.	ID=VNG_as11620_2027;Name=VNG_as11620_2027;locus_tag=VNG_as11620_2027;Note=VNG_RS11620|VNG6313G||arginine:ornithine antiporter
+NC_002608.1	deAlmeida2019	ncRNA	244181	244213	.	+	.	ID=VNG_as11620_2028;Name=VNG_as11620_2028;locus_tag=VNG_as11620_2028;Note=VNG_RS11620|VNG6313G||arginine:ornithine antiporter
+NC_002608.1	deAlmeida2019	ncRNA	244307	244389	.	+	.	ID=VNG_as11620_2029;Name=VNG_as11620_2029;locus_tag=VNG_as11620_2029;Note=VNG_RS11620|VNG6313G||arginine:ornithine antiporter
+NC_002608.1	deAlmeida2019	ncRNA	244830	244854	.	+	.	ID=VNG_as11625_2031;Name=VNG_as11625_2031;locus_tag=VNG_as11625_2031;Note=VNG_RS11625|VNG6315G||ornithine carbamoyltransferase
+NC_002608.1	deAlmeida2019	ncRNA	245313	245365	.	+	.	ID=VNG_as11625_2032;Name=VNG_as11625_2032;locus_tag=VNG_as11625_2032;Note=VNG_RS11625|VNG6315G||ornithine carbamoyltransferase
+NC_002608.1	deAlmeida2019	ncRNA	247064	247087	.	+	.	ID=VNG_as11635_2033;Name=VNG_as11635_2033;locus_tag=VNG_as11635_2033;Note=VNG_RS11635|VNG6317G||arginine deiminase
+NC_002608.1	deAlmeida2019	ncRNA	247197	247218	.	+	.	ID=VNG_as11635_2034;Name=VNG_as11635_2034;locus_tag=VNG_as11635_2034;Note=VNG_RS11635|VNG6317G||arginine deiminase
+NC_002608.1	deAlmeida2019	ncRNA	249024	249046	.	+	.	ID=VNG_as11640_2038;Name=VNG_as11640_2038;locus_tag=VNG_as11640_2038;Note=VNG_RS11640|VNG6318G||transcriptional regulator
+NC_002608.1	deAlmeida2019	ncRNA	253189	253242	.	+	.	ID=VNG_as11655_2041;Name=VNG_as11655_2041;locus_tag=VNG_as11655_2041;Note=VNG_RS11655|||recombinase
+NC_002608.1	deAlmeida2019	ncRNA	253439	253529	.	+	.	ID=VNG_as11655_2043;Name=VNG_as11655_2043;locus_tag=VNG_as11655_2043;Note=VNG_RS11655|||recombinase
+NC_002608.1	deAlmeida2019	ncRNA	256764	256823	.	-	.	ID=VNG_as11670_2046;Name=VNG_as11670_2046;locus_tag=VNG_as11670_2046;Note=VNG_RS11670|partial;pseudo||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	259477	259595	.	+	.	ID=VNG_as11680_2047;Name=VNG_as11680_2047;locus_tag=VNG_as11680_2047;Note=VNG_RS11680|VNG6327H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	260064	260085	.	+	.	ID=VNG_as11680_2048;Name=VNG_as11680_2048;locus_tag=VNG_as11680_2048;Note=VNG_RS11680|VNG6327H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	260438	260470	.	-	.	ID=VNG_as13585_2049;Name=VNG_as13585_2049;locus_tag=VNG_as13585_2049;Note=VNG_RS13585|pseudo||plasmid stabilization protein
+NC_002608.1	deAlmeida2019	ncRNA	260890	260991	.	+	.	ID=VNG_as13590_2050;Name=VNG_as13590_2050;locus_tag=VNG_as13590_2050;Note=VNG_RS13590|||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	261266	261295	.	-	.	ID=VNG_as11685_2052;Name=VNG_as11685_2052;locus_tag=VNG_as11685_2052;Note=VNG_RS11685|||ISH3 family transposase ISH3C
+NC_002608.1	deAlmeida2019	ncRNA	261725	261862	.	-	.	ID=VNG_as11685_2053;Name=VNG_as11685_2053;locus_tag=VNG_as11685_2053;Note=VNG_RS11685|||ISH3 family transposase ISH3C
+NC_002608.1	deAlmeida2019	ncRNA	262283	262347	.	-	.	ID=VNG_as11685_2054;Name=VNG_as11685_2054;locus_tag=VNG_as11685_2054;Note=VNG_RS11685|||ISH3 family transposase ISH3C
+NC_002608.1	deAlmeida2019	ncRNA	263165	263246	.	-	.	ID=VNG_as11690_2056;Name=VNG_as11690_2056;locus_tag=VNG_as11690_2056;Note=VNG_RS11690|||IS4 family transposase ISH30
+NC_002608.1	deAlmeida2019	ncRNA	264284	264305	.	+	.	ID=VNG_as13595_2057;Name=VNG_as13595_2057;locus_tag=VNG_as13595_2057;Note=VNG_RS13595|VNG6329H,VNG_6329H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	264613	264708	.	+	.	ID=VNG_as13595_2059;Name=VNG_as13595_2059;locus_tag=VNG_as13595_2059;Note=VNG_RS13595|VNG6329H,VNG_6329H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	265062	265128	.	-	.	ID=VNG_as11695_2060;Name=VNG_as11695_2060;locus_tag=VNG_as11695_2060;Note=VNG_RS11695|VNG6330H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	265963	265987	.	+	.	ID=VNG_as11700_2064;Name=VNG_as11700_2064;locus_tag=VNG_as11700_2064;Note=VNG_RS11700|VNG6331H||IS4 family transposase ISH8C
+NC_002608.1	deAlmeida2019	ncRNA	266235	266407	.	+	.	ID=VNG_as11700_2065;Name=VNG_as11700_2065;locus_tag=VNG_as11700_2065;Note=VNG_RS11700|VNG6331H||IS4 family transposase ISH8C
+NC_002608.1	deAlmeida2019	ncRNA	267515	267594	.	-	.	ID=VNG_as13600_2066;Name=VNG_as13600_2066;locus_tag=VNG_as13600_2066;Note=VNG_RS13600|VNG6334H,VNG_6334H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	270153	270358	.	+	.	ID=VNG_as11725_2068;Name=VNG_as11725_2068;locus_tag=VNG_as11725_2068;Note=VNG_RS11725|VNG6340H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	270400	270426	.	+	.	ID=VNG_as11725_2069;Name=VNG_as11725_2069;locus_tag=VNG_as11725_2069;Note=VNG_RS11725|VNG6340H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	273225	273289	.	+	.	ID=VNG_as11735_2072;Name=VNG_as11735_2072;locus_tag=VNG_as11735_2072;Note=VNG_RS11735|||ISH3 family transposase ISH3C
+NC_002608.1	deAlmeida2019	ncRNA	274277	274304	.	+	.	ID=VNG_as11735_2074;Name=VNG_as11735_2074;locus_tag=VNG_as11735_2074;Note=VNG_RS11735|||ISH3 family transposase ISH3C
+NC_002608.1	deAlmeida2019	ncRNA	275554	275617	.	+	.	ID=VNG_as11740_2076;Name=VNG_as11740_2076;locus_tag=VNG_as11740_2076;Note=VNG_RS11740|VNG6343H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	276159	276193	.	+	.	ID=VNG_as13620_2078;Name=VNG_as13620_2078;locus_tag=VNG_as13620_2078;Note=VNG_RS13620|||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	279336	279359	.	+	.	ID=VNG_as11755_2080;Name=VNG_as11755_2080;locus_tag=VNG_as11755_2080;Note=VNG_RS11755|VNG6348H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	279408	279456	.	+	.	ID=VNG_as11755_2081;Name=VNG_as11755_2081;locus_tag=VNG_as11755_2081;Note=VNG_RS11755|VNG6348H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	280221	280255	.	+	.	ID=VNG_as6022A1R_2083;Name=VNG_as6022A1R_2083;locus_tag=VNG_as6022A1R_2083;Note=VNG_OE6022A1R|(OE6022A1R) small CPxCG-related zinc finger protein
+NC_002608.1	deAlmeida2019	ncRNA	281594	281620	.	+	.	ID=VNG_as11760_2085;Name=VNG_as11760_2085;locus_tag=VNG_as11760_2085;Note=VNG_RS11760|VNG6349C||Fic family protein
+NC_002608.1	deAlmeida2019	ncRNA	282155	282224	.	+	.	ID=VNG_as11765_2086;Name=VNG_as11765_2086;locus_tag=VNG_as11765_2086;Note=VNG_RS11765|VNG6351G||transcription initiation factor IIB 2
+NC_002608.1	deAlmeida2019	ncRNA	282546	282590	.	+	.	ID=VNG_as11765_2088;Name=VNG_as11765_2088;locus_tag=VNG_as11765_2088;Note=VNG_RS11765|VNG6351G||transcription initiation factor IIB 2
+NC_002608.1	deAlmeida2019	ncRNA	283799	283819	.	+	.	ID=VNG_as11775_2090;Name=VNG_as11775_2090;locus_tag=VNG_as11775_2090;Note=VNG_RS11775|VNG6354G||competence protein
+NC_002608.1	deAlmeida2019	ncRNA	285417	285443	.	+	.	ID=VNG_as13635_2092;Name=VNG_as13635_2092;locus_tag=VNG_as13635_2092;Note=VNG_RS13635|VNG6355H,VNG_6355H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	287028	287101	.	-	.	ID=VNG_as11795_2093;Name=VNG_as11795_2093;locus_tag=VNG_as11795_2093;Note=VNG_RS11795|||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	288558	288580	.	-	.	ID=VNG_as11800_2096;Name=VNG_as11800_2096;locus_tag=VNG_as11800_2096;Note=VNG_RS11800|VNG6361G||IS200/IS605 family transposase
+NC_002608.1	deAlmeida2019	ncRNA	288631	288663	.	-	.	ID=VNG_as11800_2097;Name=VNG_as11800_2097;locus_tag=VNG_as11800_2097;Note=VNG_RS11800|VNG6361G||IS200/IS605 family transposase
+NC_002608.1	deAlmeida2019	ncRNA	291046	291240	.	-	.	ID=VNG_as11805_2100;Name=VNG_as11805_2100;locus_tag=VNG_as11805_2100;Note=VNG_RS11805|VNG6362G||DNA polymerase I
+NC_002608.1	deAlmeida2019	ncRNA	291618	291662	.	+	.	ID=VNG_as11810_2101;Name=VNG_as11810_2101;locus_tag=VNG_as11810_2101;Note=VNG_RS11810|VNG6363G||cell division control protein Cdc6
+NC_002608.1	deAlmeida2019	ncRNA	293399	293420	.	+	.	ID=VNG_as13645_2103;Name=VNG_as13645_2103;locus_tag=VNG_as13645_2103;Note=VNG_RS13645|VNG6364H,VNG_6364H||HNH endonuclease
+NC_002608.1	deAlmeida2019	ncRNA	293809	293864	.	+	.	ID=VNG_as13645_2104;Name=VNG_as13645_2104;locus_tag=VNG_as13645_2104;Note=VNG_RS13645|VNG6364H,VNG_6364H||HNH endonuclease
+NC_002608.1	deAlmeida2019	ncRNA	295462	295510	.	+	.	ID=VNG_as11820_2106;Name=VNG_as11820_2106;locus_tag=VNG_as11820_2106;Note=VNG_RS11820|partial;pseudo||ISH3 family transposase
+NC_002608.1	deAlmeida2019	ncRNA	297929	298035	.	-	.	ID=VNG_as11845_2109;Name=VNG_as11845_2109;locus_tag=VNG_as11845_2109;Note=VNG_RS11845|VNG6371G||restriction endonuclease
+NC_002608.1	deAlmeida2019	ncRNA	300289	300371	.	+	.	ID=VNG_as11860_2113;Name=VNG_as11860_2113;locus_tag=VNG_as11860_2113;Note=VNG_RS11860|VNG6375H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	301914	301971	.	+	.	ID=VNG_as11875_2114;Name=VNG_as11875_2114;locus_tag=VNG_as11875_2114;Note=VNG_RS11875|VNG6379C||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	305407	305517	.	-	.	ID=VNG_as11885_2117;Name=VNG_as11885_2117;locus_tag=VNG_as11885_2117;Note=VNG_RS11885|VNG6383G||L-lactate permease
+NC_002608.1	deAlmeida2019	ncRNA	307244	307277	.	+	.	ID=VNG_as11895_2118;Name=VNG_as11895_2118;locus_tag=VNG_as11895_2118;Note=VNG_RS11895|VNG6387H||AbrB/MazE/SpoVT family DNA-binding domain-containing protein
+NC_002608.1	deAlmeida2019	ncRNA	310338	310368	.	+	.	ID=VNG_as11910_2119;Name=VNG_as11910_2119;locus_tag=VNG_as11910_2119;Note=VNG_RS11910|VNG6395H||IS4 family transposase ISH8
+NC_002608.1	deAlmeida2019	ncRNA	311348	311412	.	-	.	ID=VNG_as11915_2120;Name=VNG_as11915_2120;locus_tag=VNG_as11915_2120;Note=VNG_RS11915|VNG6396H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	312828	312880	.	+	.	ID=VNG_as11925_2122;Name=VNG_as11925_2122;locus_tag=VNG_as11925_2122;Note=VNG_RS11925|VNG6400H||SWIM zinc finger domain-containing protein
+NC_002608.1	deAlmeida2019	ncRNA	320629	320932	.	-	.	ID=VNG_as11975_2126;Name=VNG_as11975_2126;locus_tag=VNG_as11975_2126;Note=VNG_RS11975|||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	322918	322976	.	+	.	ID=VNG_as11990_2129;Name=VNG_as11990_2129;locus_tag=VNG_as11990_2129;Note=VNG_RS11990|VNG6420H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	323848	323890	.	+	.	ID=VNG_as11995_2131;Name=VNG_as11995_2131;locus_tag=VNG_as11995_2131;Note=VNG_RS11995|VNG6421H||IS5 family transposase ISH11
+NC_002608.1	deAlmeida2019	ncRNA	324542	324711	.	-	.	ID=VNG_as6108B1F_2133;Name=VNG_as6108B1F_2133;locus_tag=VNG_as6108B1F_2133;Note=VNG_OE6108B1F|(OE6108B1F) conserved hypothetical protein (nonfunctional)
+NC_002608.1	deAlmeida2019	ncRNA	326528	326664	.	+	.	ID=VNG_as13675_2135;Name=VNG_as13675_2135;locus_tag=VNG_as13675_2135;Note=VNG_RS13675|VNG6429H,VNG_6429H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	327531	327596	.	-	.	ID=VNG_as13680_2139;Name=VNG_as13680_2139;locus_tag=VNG_as13680_2139;Note=VNG_RS13680|VNG6430C,VNG_6430C||IS6 family transposase ISH29
+NC_002608.1	deAlmeida2019	ncRNA	327772	327810	.	+	.	ID=VNG_as13685_2140;Name=VNG_as13685_2140;locus_tag=VNG_as13685_2140;Note=VNG_RS13685|VNG6431H,VNG_6431H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	328251	328345	.	-	.	ID=VNG_as13690_2141;Name=VNG_as13690_2141;locus_tag=VNG_as13690_2141;Note=VNG_RS13690|VNG6432H,VNG_6432H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	331986	332032	.	-	.	ID=VNG_as12020_2145;Name=VNG_as12020_2145;locus_tag=VNG_as12020_2145;Note=VNG_RS12020|VNG6441H||type IV pilin
+NC_002608.1	deAlmeida2019	ncRNA	332808	332934	.	+	.	ID=VNG_as12025_2146;Name=VNG_as12025_2146;locus_tag=VNG_as12025_2146;Note=VNG_RS12025|VNG6442H||transposase
+NC_002607.1	deAlmeida2019	ncRNA	17572	17723	.	-	.	ID=VNG_da00080_2;Name=VNG_da00080_2;locus_tag=VNG_da00080_2;Note=VNG_RS00080|VNG0021H||transposase
+NC_002607.1	deAlmeida2019	ncRNA	32283	32400	.	-	.	ID=VNG_da00140_3;Name=VNG_da00140_3;locus_tag=VNG_da00140_3;Note=VNG_RS00140|VNG0038H||type II toxin-antitoxin system HicA family toxin
+NC_002607.1	deAlmeida2019	ncRNA	32416	32592	.	+	.	ID=VNG_da00145_4;Name=VNG_da00145_4;locus_tag=VNG_da00145_4;Note=VNG_RS00145|VNG0039H||MarR family transcriptional regulator
+NC_002607.1	deAlmeida2019	ncRNA	47153	47271	.	+	.	ID=VNG_da00205_5;Name=VNG_da00205_5;locus_tag=VNG_da00205_5;Note=VNG_RS00205|VNG0052H||IS4 family transposase ISH8
+NC_002607.1	deAlmeida2019	ncRNA	49189	49326	.	-	.	ID=VNG_da00210_6;Name=VNG_da00210_6;locus_tag=VNG_da00210_6;Note=VNG_RS00210|VNG0053H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	54653	54731	.	+	.	ID=VNG_da00240_7;Name=VNG_da00240_7;locus_tag=VNG_da00240_7;Note=VNG_RS00240|VNG0058H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	57659	57697	.	+	.	ID=VNG_da13220_8;Name=VNG_da13220_8;locus_tag=VNG_da13220_8;Note=VNG_RS13220|VNG0060G,VNG_0060G||glycosyltransferase family 1 protein
+NC_002607.1	deAlmeida2019	ncRNA	64740	64870	.	-	.	ID=VNG_da00270_9;Name=VNG_da00270_9;locus_tag=VNG_da00270_9;Note=VNG_RS00270|VNG0065G||GDP-mannose 4,6-dehydratase
+NC_002607.1	deAlmeida2019	ncRNA	68470	68570	.	-	.	ID=VNG_da00310_10;Name=VNG_da00310_10;locus_tag=VNG_da00310_10;Note=VNG_RS00310|VNG0075H||ArsR family transcriptional regulator
+NC_002607.1	deAlmeida2019	ncRNA	102730	102914	.	+	.	ID=VNG_da1197R_11;Name=VNG_da1197R_11;locus_tag=VNG_da1197R_11;Note=VNG_OE1197R|(OE1197R) hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	115158	115258	.	-	.	ID=VNG_da00565_12;Name=VNG_da00565_12;locus_tag=VNG_da00565_12;Note=VNG_RS00565|VNGt04||tRNA-Asn
+NC_002607.1	deAlmeida2019	ncRNA	115950	116187	.	-	.	ID=VNG_da00580_13;Name=VNG_da00580_13;locus_tag=VNG_da00580_13;Note=VNG_RS00580|partial;pseudo;VNG0138H||MarR family transcriptional regulator
+NC_002607.1	deAlmeida2019	ncRNA	151791	151903	.	+	.	ID=VNG_da00725_14;Name=VNG_da00725_14;locus_tag=VNG_da00725_14;Note=VNG_RS00725|VNG0176H||N-acetyltransferase
+NC_002607.1	deAlmeida2019	ncRNA	179171	179322	.	-	.	ID=VNG_da00875_15;Name=VNG_da00875_15;locus_tag=VNG_da00875_15;Note=VNG_RS00875|VNG0213H||IS5 family transposase ISH11
+NC_002607.1	deAlmeida2019	ncRNA	196697	196810	.	+	.	ID=VNG_da00960_16;Name=VNG_da00960_16;locus_tag=VNG_da00960_16;Note=VNG_RS00960|||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	257868	257915	.	+	.	ID=VNG_da01295_17;Name=VNG_da01295_17;locus_tag=VNG_da01295_17;Note=VNG_RS01295|VNG0327G||tyrosine decarboxylase MfnA
+NC_002607.1	deAlmeida2019	ncRNA	311134	311319	.	-	.	ID=VNG_da01565_18;Name=VNG_da01565_18;locus_tag=VNG_da01565_18;Note=VNG_RS01565|VNG0403G||proline--tRNA ligase
+NC_002607.1	deAlmeida2019	ncRNA	384482	384528	.	+	.	ID=VNG_da01940_19;Name=VNG_da01940_19;locus_tag=VNG_da01940_19;Note=VNG_RS01940|VNG0498C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	449394	449612	.	+	.	ID=VNG_da02315_21;Name=VNG_da02315_21;locus_tag=VNG_da02315_21;Note=VNG_RS02315|VNG0587H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	579679	579785	.	-	.	ID=VNG_da03020_22;Name=VNG_da03020_22;locus_tag=VNG_da03020_22;Note=VNG_RS03020|VNG0768H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	591161	591281	.	-	.	ID=VNG_da03075_23;Name=VNG_da03075_23;locus_tag=VNG_da03075_23;Note=VNG_RS03075|VNG0786G||halocyanin
+NC_002607.1	deAlmeida2019	ncRNA	697046	697208	.	+	.	ID=VNG_da03575_25;Name=VNG_da03575_25;locus_tag=VNG_da03575_25;Note=VNG_RS03575|VNG0918H||IS1595 family transposase ISH4
+NC_002607.1	deAlmeida2019	ncRNA	748766	748896	.	-	.	ID=VNG_da03830_26;Name=VNG_da03830_26;locus_tag=VNG_da03830_26;Note=VNG_RS03830|VNGt14||tRNA-Lys
+NC_002607.1	deAlmeida2019	ncRNA	756547	756749	.	+	.	ID=VNG_da03855_27;Name=VNG_da03855_27;locus_tag=VNG_da03855_27;Note=VNG_RS03855|VNG0991H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	811031	811179	.	+	.	ID=VNG_da04145_28;Name=VNG_da04145_28;locus_tag=VNG_da04145_28;Note=VNG_RS04145|VNG1064H||ISH6 family transposase ISH6
+NC_002607.1	deAlmeida2019	ncRNA	831575	831596	.	-	.	ID=VNG_da04225_29;Name=VNG_da04225_29;locus_tag=VNG_da04225_29;Note=VNG_RS04225|VNG1085H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	860107	860265	.	-	.	ID=VNG_da04405_30;Name=VNG_da04405_30;locus_tag=VNG_da04405_30;Note=VNG_RS04405|VNGt17||tRNA-Ser
+NC_002607.1	deAlmeida2019	ncRNA	963988	964021	.	+	.	ID=VNG_da05030_32;Name=VNG_da05030_32;locus_tag=VNG_da05030_32;Note=VNG_RS05030|VNG1285G||HTH domain-containing protein
+NC_002607.1	deAlmeida2019	ncRNA	1078824	1078902	.	+	.	ID=VNG_da05660_35;Name=VNG_da05660_35;locus_tag=VNG_da05660_35;Note=VNG_RS05660|VNG1455H||DoxX family protein
+NC_002607.1	deAlmeida2019	ncRNA	1088797	1089100	.	-	.	ID=VNG_da3105F_36;Name=VNG_da3105F_36;locus_tag=VNG_da3105F_36;Note=VNG_OE3105F|brb (OE3105F) bacteriorhodopsin-regulating basic protein
+NC_002607.1	deAlmeida2019	ncRNA	1097753	1097950	.	-	.	ID=VNG_da05750_37;Name=VNG_da05750_37;locus_tag=VNG_da05750_37;Note=VNG_RS05750|VNG1475C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1185609	1185760	.	-	.	ID=VNG_da06170_39;Name=VNG_da06170_39;locus_tag=VNG_da06170_39;Note=VNG_RS06170|VNG1587H||IS5 family transposase ISH11
+NC_002607.1	deAlmeida2019	ncRNA	1189453	1189536	.	+	.	ID=VNG_da06190_40;Name=VNG_da06190_40;locus_tag=VNG_da06190_40;Note=VNG_RS06190|partial;pseudo;VNG1590H||transposase
+NC_002607.1	deAlmeida2019	ncRNA	1246241	1246307	.	-	.	ID=VNG_da06480_41;Name=VNG_da06480_41;locus_tag=VNG_da06480_41;Note=VNG_RS06480|VNG1672H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1281670	1281889	.	+	.	ID=VNG_da06725_42;Name=VNG_da06725_42;locus_tag=VNG_da06725_42;Note=VNG_RS06725|VNG1733G||methyl-accepting chemotaxis protein
+NC_002607.1	deAlmeida2019	ncRNA	1303545	1303613	.	+	.	ID=VNG_da3479R_43;Name=VNG_da3479R_43;locus_tag=VNG_da3479R_43;Note=VNG_OE3479R|(OE3479R) hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1307217	1307423	.	+	.	ID=VNG_da06840_44;Name=VNG_da06840_44;locus_tag=VNG_da06840_44;Note=VNG_RS06840|VNG1766C||Nif3-like dinuclear metal center hexameric protein
+NC_002607.1	deAlmeida2019	ncRNA	1309301	1309496	.	+	.	ID=VNG_da06855_45;Name=VNG_da06855_45;locus_tag=VNG_da06855_45;Note=VNG_RS06855|VNG1769C,VNG1769Cm||amidase
+NC_002607.1	deAlmeida2019	ncRNA	1313380	1313492	.	+	.	ID=VNG_da06880_46;Name=VNG_da06880_46;locus_tag=VNG_da06880_46;Note=VNG_RS06880|VNG1774G||glutamyl-tRNA reductase
+NC_002607.1	deAlmeida2019	ncRNA	1333436	1333550	.	+	.	ID=VNG_da06990_47;Name=VNG_da06990_47;locus_tag=VNG_da06990_47;Note=VNG_RS06990|VNG1800H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1397366	1397457	.	+	.	ID=VNG_da13360_48;Name=VNG_da13360_48;locus_tag=VNG_da13360_48;Note=VNG_RS13360|VNG1890H,VNG_1890H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1553841	1554209	.	+	.	ID=VNG_da08195_49;Name=VNG_da08195_49;locus_tag=VNG_da08195_49;Note=VNG_RS08195|VNG2116C||NCS2 family permease
+NC_002607.1	deAlmeida2019	ncRNA	1565954	1566054	.	+	.	ID=VNG_da3970R_50;Name=VNG_da3970R_50;locus_tag=VNG_da3970R_50;Note=VNG_OE3970R|(OE3970R) conserved hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1583930	1584052	.	-	.	ID=VNG_da08345_51;Name=VNG_da08345_51;locus_tag=VNG_da08345_51;Note=VNG_RS08345|VNG2149H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1658519	1658678	.	+	.	ID=VNG_da08685_52;Name=VNG_da08685_52;locus_tag=VNG_da08685_52;Note=VNG_RS08685|VNG2230H||transcriptional regulator
+NC_002607.1	deAlmeida2019	ncRNA	1804650	1804741	.	+	.	ID=VNG_da09415_54;Name=VNG_da09415_54;locus_tag=VNG_da09415_54;Note=VNG_RS09415|VNG2406C||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1853362	1853597	.	+	.	ID=VNG_da09685_55;Name=VNG_da09685_55;locus_tag=VNG_da09685_55;Note=VNG_RS09685|VNG2476C||ATP-dependent DNA helicase
+NC_002607.1	deAlmeida2019	ncRNA	1921264	1921460	.	+	.	ID=VNG_da10025_57;Name=VNG_da10025_57;locus_tag=VNG_da10025_57;Note=VNG_RS10025|VNG2563H||hypothetical protein
+NC_002607.1	deAlmeida2019	ncRNA	1932392	1932493	.	-	.	ID=VNG_da10065_58;Name=VNG_da10065_58;locus_tag=VNG_da10065_58;Note=VNG_RS10065|VNG2574G||aconitate hydratase
+NC_002607.1	deAlmeida2019	ncRNA	1943385	1943436	.	+	.	ID=VNG_da10165_59;Name=VNG_da10165_59;locus_tag=VNG_da10165_59;Note=VNG_RS10165|VNG2599H||preprotein translocase subunit Sec61beta
+NC_002607.1	deAlmeida2019	ncRNA	1952651	1952727	.	+	.	ID=VNG_da10220_60;Name=VNG_da10220_60;locus_tag=VNG_da10220_60;Note=VNG_RS10220|VNG2612G||ribosome biogenesis/translation initiation ATPase RLI
+NC_001869.1	deAlmeida2019	ncRNA	26619	26739	.	+	.	ID=VNG_da12345_62;Name=VNG_da12345_62;locus_tag=VNG_da12345_62;Note=VNG_RS12345|VNG7030||PAS domain S-box protein
+NC_001869.1	deAlmeida2019	ncRNA	30074	30467	.	-	.	ID=VNG_da12350_63;Name=VNG_da12350_63;locus_tag=VNG_da12350_63;Note=VNG_RS12350|VNG7031||transcription initiation factor IID
+NC_001869.1	deAlmeida2019	ncRNA	37661	37812	.	-	.	ID=VNG_da12385_64;Name=VNG_da12385_64;locus_tag=VNG_da12385_64;Note=VNG_RS12385|VNG7036||IS5 family transposase ISH11
+NC_001869.1	deAlmeida2019	ncRNA	39730	39837	.	-	.	ID=VNG_da12410_65;Name=VNG_da12410_65;locus_tag=VNG_da12410_65;Note=VNG_RS12410|||PadR family transcriptional regulator
+NC_001869.1	deAlmeida2019	ncRNA	52360	52472	.	-	.	ID=VNG_da12475_66;Name=VNG_da12475_66;locus_tag=VNG_da12475_66;Note=VNG_RS12475|VNG7051||MFS transporter
+NC_001869.1	deAlmeida2019	ncRNA	89012	89154	.	+	.	ID=VNG_da12655_67;Name=VNG_da12655_67;locus_tag=VNG_da12655_67;Note=VNG_RS12655|||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	114999	115176	.	+	.	ID=VNG_da12750_68;Name=VNG_da12750_68;locus_tag=VNG_da12750_68;Note=VNG_RS12750|VNG7103||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	122748	122910	.	+	.	ID=VNG_da12770_69;Name=VNG_da12770_69;locus_tag=VNG_da12770_69;Note=VNG_RS12770|VNG7107||IS1595 family transposase ISH4
+NC_001869.1	deAlmeida2019	ncRNA	135823	135891	.	+	.	ID=VNG_da12835_70;Name=VNG_da12835_70;locus_tag=VNG_da12835_70;Note=VNG_RS12835|VNG7121||methyltransferase domain-containing protein
+NC_001869.1	deAlmeida2019	ncRNA	140764	140807	.	-	.	ID=VNG_da13830_71;Name=VNG_da13830_71;locus_tag=VNG_da13830_71;Note=VNG_RS13830|||transcriptional regulator
+NC_001869.1	deAlmeida2019	ncRNA	146781	147096	.	-	.	ID=VNG_da13835_72;Name=VNG_da13835_72;locus_tag=VNG_da13835_72;Note=VNG_RS13835|partial;pseudo||hypothetical protein
+NC_001869.1	deAlmeida2019	ncRNA	170917	171029	.	+	.	ID=VNG_da13020_73;Name=VNG_da13020_73;locus_tag=VNG_da13020_73;Note=VNG_RS13020|VNG7158||MFS transporter
+NC_001869.1	deAlmeida2019	ncRNA	183552	183632	.	+	.	ID=VNG_da13085_74;Name=VNG_da13085_74;locus_tag=VNG_da13085_74;Note=VNG_RS13085|||PadR family transcriptional regulator
+NC_001869.1	deAlmeida2019	ncRNA	185577	185728	.	+	.	ID=VNG_da13110_75;Name=VNG_da13110_75;locus_tag=VNG_da13110_75;Note=VNG_RS13110|VNG7173||IS5 family transposase ISH11
+NC_002608.1	deAlmeida2019	ncRNA	29718	29846	.	-	.	ID=VNG_da7043A1F_76;Name=VNG_da7043A1F_76;locus_tag=VNG_da7043A1F_76;Note=VNG_OE7043A1F|(OE7043A1F) small CPxCG-related zinc finger protein
+NC_002608.1	deAlmeida2019	ncRNA	92169	92381	.	-	.	ID=VNG_da8006A1F_77;Name=VNG_da8006A1F_77;locus_tag=VNG_da8006A1F_77;Note=VNG_OE8006A1F|(OE8006A1F) ISH3-type transposase ISH3 (nonfunctional)
+NC_002608.1	deAlmeida2019	ncRNA	125274	125375	.	+	.	ID=VNG_da11080_78;Name=VNG_da11080_78;locus_tag=VNG_da11080_78;Note=VNG_RS11080|VNG6149H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	144294	144371	.	-	.	ID=VNG_da13500_79;Name=VNG_da13500_79;locus_tag=VNG_da13500_79;Note=VNG_RS13500|VNG6171H,VNG_6171H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	159923	160034	.	+	.	ID=VNG_da5069A1R_80;Name=VNG_da5069A1R_80;locus_tag=VNG_da5069A1R_80;Note=VNG_OE5069A1R|(OE5069A1R) conserved hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	169129	169287	.	-	.	ID=VNG_da11270_81;Name=VNG_da11270_81;locus_tag=VNG_da11270_81;Note=VNG_RS11270|VNG6206H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	205330	205407	.	+	.	ID=VNG_da13545_82;Name=VNG_da13545_82;locus_tag=VNG_da13545_82;Note=VNG_RS13545|VNG6266H,VNG_6266H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	219368	219577	.	+	.	ID=VNG_da11530_83;Name=VNG_da11530_83;locus_tag=VNG_da11530_83;Note=VNG_RS11530|VNG6286H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	222463	222510	.	-	.	ID=VNG_da11545_84;Name=VNG_da11545_84;locus_tag=VNG_da11545_84;Note=VNG_RS11545|pseudo||transposase
+NC_002608.1	deAlmeida2019	ncRNA	254497	254702	.	+	.	ID=VNG_da13575_85;Name=VNG_da13575_85;locus_tag=VNG_da13575_85;Note=VNG_RS13575|VNG6322H,VNG_6322H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	260722	260805	.	+	.	ID=VNG_da13590_86;Name=VNG_da13590_86;locus_tag=VNG_da13590_86;Note=VNG_RS13590|||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	268330	268435	.	+	.	ID=VNG_da11710_87;Name=VNG_da11710_87;locus_tag=VNG_da11710_87;Note=VNG_RS11710|VNG6335H||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	272862	272967	.	-	.	ID=VNG_da13610_88;Name=VNG_da13610_88;locus_tag=VNG_da13610_88;Note=VNG_RS13610|partial;pseudo||hypothetical protein
+NC_002608.1	deAlmeida2019	ncRNA	306589	306806	.	+	.	ID=VNG_da11890_90;Name=VNG_da11890_90;locus_tag=VNG_da11890_90;Note=VNG_RS11890|VNG6385H||PIN domain-containing protein
+NC_002608.1	deAlmeida2019	ncRNA	319831	319883	.	+	.	ID=VNG_da11970_91;Name=VNG_da11970_91;locus_tag=VNG_da11970_91;Note=VNG_RS11970|VNG6413H||hypothetical protein

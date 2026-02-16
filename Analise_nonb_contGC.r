@@ -18,21 +18,16 @@ library(grid)
 # nonb - non-B-form DNA
 
 # 1) Diretórios e preparação
-
 # Defição dos pontos de entrada e saída 
-data_dir <- "/home/mcavalcante/igv/modificados"
-dir_resultados <- "/home/mcavalcante/igv/sobreposição"
+data_dir <- "/./modificados"
+dir_resultados <- "/./sobreposição"
 dir_plots <- file.path(dir_resultados, "plots")
-
 # Criação de diretórios para os resutados.
 dir.create(dir_plots, showWarnings = FALSE, recursive = TRUE)
 dir.create(dir_resultados, showWarnings = FALSE, recursive = TRUE)
 
-
-# 2) Genoma de referência (para GC)
-
+# 2) Genoma de referência (para o GC)
 # Se o genoma não estiver disponível, o pipeline segue sem a etapa de GC
-
 fa_path <- "/home/mcavalcante/dados_brutos/Hsalinarum.fa"
 if (file.exists(fa_path)) {
   fa <- readDNAStringSet(fa_path)
@@ -41,19 +36,15 @@ if (file.exists(fa_path)) {
   warning("Arquivo não encontrado.")
   fa <- NULL}
 
-
 # 3) Seleção de arquivos Non-B
 # filtra por arquivos por meio de : 
 ## a)palavras-chave no nome do arquivo (classe/tipo)
 ## b) extensões suportadas (BED/GFF/GFF3)
 arquivos <- list.files(data_dir, full.names = TRUE)
-
 arquivos_nonb <- arquivos[
   str_detect(arquivos, regex("z-dna|nonb|triplex|r-loop|short_tandem|A-phased|G-quadruplex|Cruciform",
                              ignore_case = TRUE)) &
     str_detect(arquivos, regex("\\.(bed|gff3?)$", ignore_case = TRUE))]
-
-
 # 4) Classificação por classe de DNA alternativo
 # feita a partir do nome do arquivo 
 # define os agrupamentos e afeta todo o processo 
@@ -68,24 +59,20 @@ classificar_nonb <- function(arquivo) {
   if (str_detect(nome_lower, "short_tandem|tandem")) return("Short_tandem")
   if (str_detect(nome_lower, "a-phased|aphased")) return("A-phased")
   if (str_detect(nome_lower, "cruciform")) return("Cruciform")
-  
   # arquivos fora das regras caem em "Outros".
-  return("Outros")}
+return("Outros")}
 
 nonb_classificado <- data.frame(
   arquivo = arquivos_nonb,
   nome_arquivo = basename(arquivos_nonb),
   classe = sapply(arquivos_nonb, classificar_nonb),
   stringsAsFactors = FALSE)
-
 # Salva a tabela de classificação
 write.table(nonb_classificado,
             file.path(dir_resultados, "nonb_classificacao.tsv"),
             sep = "\t", row.names = FALSE, quote = FALSE)
-
 # Mostra quantos arquivos existem por classe
 print(table(nonb_classificado$classe))
-cat("\n")
 
 # 5) Importação -> GRanges 
 # Encapsula a importação e padronização de seqnames.
@@ -94,9 +81,7 @@ carregar_granges <- function(arquivo) {
   if (!file.exists(arquivo)) {
     warning(paste("Arquivo não encontrado:", arquivo))
     return(GRanges())}
-  
   extensao <- tools::file_ext(arquivo)
-  
   tryCatch({
     if (extensao %in% c("bed", "bedgraph")) {
       gr <- import(arquivo, format = "BED")
@@ -105,53 +90,42 @@ carregar_granges <- function(arquivo) {
     } else {
       warning(paste("Formato não suportado:", arquivo))
       return(GRanges()) }
-    
     #  remove "chr" para compatibilizar seqnames entre fontes.
     seqlevels(gr) <- gsub("^chr", "", seqlevels(gr))
     return(gr)
   }, error = function(e) {
     warning(paste("Erro", ":", e$message))
     return(GRanges())})}
-
-
 # 6) Carregamento de dados
 #cada GRanges recebe dados p/ rastrear origem e classe 
 gr_list <- list()
-
 for (i in seq_len(nrow(nonb_classificado))) {
   arquivo <- nonb_classificado$arquivo[i]
   nome_arq <- nonb_classificado$nome_arquivo[i]
   classe <- nonb_classificado$classe[i]
-  
   cat("Carregando:", nome_arq, "...")
   gr <- carregar_granges(arquivo)
-  
   if (length(gr) > 0) {
     mcols(gr)$origem <- nome_arq
     mcols(gr)$classe <- classe
     mcols(gr)$arquivo_id <- i
-    
     #Nome da lista: sem extensão 
     nome_lista <- gsub("\\.(bed|gff|gff3)$", "", nome_arq)
     gr_list[[nome_lista]] <- gr
     cat(" OK (", length(gr), " elementos)\n")
   } else {
     cat(" VAZIO ou ERRO\n")}}
-
 # Remoção de entradas vazias; se tudo falhar, interrompe aqui
 gr_list <- gr_list[sapply(gr_list, length) > 0]
 if (length(gr_list) == 0) {
-  stop("Nenhum arquivo Non-B foi carregado com sucesso.")}
-
+  stop("Nenhum arquivo Non-B foi carregado")}
 
 # 7) Contagem por arquivo -> dado para fazer o grafico de quantidade de predições 
-
 contagem_real <- data.frame(
   Arquivo = names(gr_list),
   Classe = sapply(gr_list, function(x) unique(mcols(x)$classe)[1]),
   Num_Predicoes = sapply(gr_list, length),
   stringsAsFactors = FALSE)
-
 write.table(contagem_real,
             file.path(dir_resultados, "contagem_real_predicoes.tsv"),
             sep = "\t", row.names = FALSE, quote = FALSE)
@@ -161,21 +135,17 @@ write.table(contagem_real,
 #-----> Reduce(c, ...) concatena; NÃO faz "reduce()" (não funde intervalos).
 gr_por_classe <- list()
 classes_com_dados <- unique(contagem_real$Classe)
-
 for (classe in classes_com_dados) {
   arquivos_classe <- contagem_real$Arquivo[contagem_real$Classe == classe]
   grs_classe <- gr_list[arquivos_classe]
-  
   if (length(grs_classe) > 0) {
     gr_por_classe[[classe]] <- Reduce(c, grs_classe)
     cat("Classe", classe, ":", length(gr_por_classe[[classe]]), "elementos\n")}}
 
 # 9)Matriz de interseção completa
-
 # Inclui todas as classes (mesmo sem dados) para manter matriz completa
 classes_todas <- unique(nonb_classificado$classe)
 n_todas <- length(classes_todas)
-
 matriz_completa <- matrix(0, nrow = n_todas, ncol = n_todas,
                           dimnames = list(classes_todas, classes_todas))
 
@@ -183,7 +153,6 @@ matriz_completa <- matrix(0, nrow = n_todas, ncol = n_todas,
 for (classe in classes_todas) {
   if (classe %in% names(gr_por_classe)) {
     matriz_completa[classe, classe] <- length(gr_por_classe[[classe]])}}
-
 # Fora da diagonal -> interseções segundo definição:
 #   conta quantos intervalos da classe_i tocam pelo menos um intervalo da classe_j
 for (i in 1:n_todas) {
@@ -191,37 +160,30 @@ for (i in 1:n_todas) {
     if (i != j) {
       classe_i <- classes_todas[i]
       classe_j <- classes_todas[j]
-      
       if (classe_i %in% names(gr_por_classe) && classe_j %in% names(gr_por_classe)) {
         if (length(gr_por_classe[[classe_i]]) > 0 && length(gr_por_classe[[classe_j]]) > 0) {
           inter <- findOverlaps(gr_por_classe[[classe_i]],
                                 gr_por_classe[[classe_j]],
                                 minoverlap = 1)
-          
           #-------> unique(queryHits) -> conta intervalos únicos de classe_i que possuem pelo menos um overlap com classe_j.
           matriz_completa[i, j] <- length(unique(queryHits(inter)))}}}}}
-
 matriz_classes <- matriz_completa
 n_classes <- n_todas
 classes_validas <- classes_todas
-
 write.table(matriz_classes,
             file.path(dir_resultados, "matriz_interseccao_completa.tsv"),
             sep = "\t", quote = FALSE)
 
 # 10) Visualização: heatmap com contagens e % do menor conjunto
-
 # Converte matriz para formato longo para ggplot2.
 matriz_melt <- melt(matriz_classes)
 colnames(matriz_melt) <- c("Classe1", "Classe2", "Interseccao")
-
 #   Para classes diferentes, usa Interseccao / min(total Classe1, total Classe2).
 #   quanto do menor conjunto é coberto
 matriz_melt$Porcentagem <- NA
 for (i in 1:nrow(matriz_melt)) {
   total1 <- matriz_classes[matriz_melt$Classe1[i], matriz_melt$Classe1[i]]
   total2 <- matriz_classes[matriz_melt$Classe2[i], matriz_melt$Classe2[i]]
-  
   if (matriz_melt$Classe1[i] == matriz_melt$Classe2[i]) {
     matriz_melt$Porcentagem[i] <- 100
   } else if (total1 > 0 && total2 > 0) {
@@ -265,7 +227,6 @@ heatmap_classes <- ggplot(matriz_melt, aes(x = Classe1, y = Classe2, fill = Inte
   ) + coord_fixed(ratio = 1) +
   scale_x_discrete(expand = c(0, 0)) +
   scale_y_discrete(expand = c(0, 0))
-
 ggsave(file.path(dir_plots, "heatmap_classes_melhorado.png"),
        heatmap_classes,
        width = max(10, n_classes * 1.2),
@@ -289,23 +250,17 @@ calcular_gc_real <- function(gr, fa_reference) {
       total <- sum(af[c("A", "C", "G", "T")])
       if (total > 0) return((af["C"] + af["G"]) / total)
       return(NA) })
-    
     ## Remove NAs (intervalos fora do FASTA / problemas de seqname).
     return(gc_values[!is.na(gc_values)])
   }, error = function(e) {
     cat("Erro ao calcular GC:", e$message, "\n")
     return(NA)  })}
-
-# Empilha GC em formato “tidy”: uma linha por intervalo 
 gc_violin_data <- data.frame()
-
 for (nome_arq in names(gr_list)) {
   gr <- gr_list[[nome_arq]]
   classe <- unique(mcols(gr)$classe)[1]
-  
   if (!is.null(fa)) {
     gc_vals <- calcular_gc_real(gr, fa)
-    
     if (!all(is.na(gc_vals)) && length(gc_vals) > 0) {
       temp_df <- data.frame(
         Classe = classe,
@@ -313,12 +268,9 @@ for (nome_arq in names(gr_list)) {
         GC = gc_vals,
         stringsAsFactors = FALSE )
       gc_violin_data <- rbind(gc_violin_data, temp_df)}}}
-
 gc_violin_data <- gc_violin_data[!is.na(gc_violin_data$GC), ]
-
 if (nrow(gc_violin_data) > 0) {
-  cat("gerando plot de violino para conteúdo GC...\n")
-  
+  cat("gerando plot de violino para GC...\n")
   # Ordenação de classes e anotação de mediana e n.
   stats_gc <- gc_violin_data %>%
     group_by(Classe) %>%
@@ -330,9 +282,7 @@ if (nrow(gc_violin_data) > 0) {
       n = n(),
       .groups = "drop"
     ) %>% arrange(Mediana)
-  
   gc_violin_data$Classe <- factor(gc_violin_data$Classe, levels = stats_gc$Classe)
-  
   #Violino + boxplot
   plot_violino <- ggplot(gc_violin_data, aes(x = Classe, y = GC, fill = Classe)) +
     geom_violin(alpha = 0.7, trim = TRUE, scale = "width",
@@ -366,8 +316,7 @@ if (nrow(gc_violin_data) > 0) {
       legend.position = "none",
       panel.grid.major.x = element_blank(),
       panel.grid.minor = element_blank(),
-      panel.border = element_rect(color = "gray80", fill = NA, linewidth = 0.5)
-    )
+      panel.border = element_rect(color = "gray80", fill = NA, linewidth = 0.5))
   
   ggsave(file.path(dir_plots, "violino_gc_por_classe.png"),
          plot_violino,

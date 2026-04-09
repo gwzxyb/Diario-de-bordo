@@ -1,0 +1,11 @@
+git clone https://github.com/piroonj/QmRLFS-finder.git
+
+cd QmRLFS-finder
+
+chmod +x QmRLFS-finder.py
+
+nano QmRLFS-finder.py
+
+#Altere de open(args.infile,"rU") para apenas open(args.infile,"r").
+
+python3 QmRLFS-finder.py -i Hsalinarum.fa                          -o ../Rloop_qmrlfs.bed                          -m m1,m2                          -bed                          --coordinate_base_zero

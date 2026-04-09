@@ -1,0 +1,8 @@
+git clone https://github.com/Georgakopoulos-Soares-lab/ZSeeker.git
+
+cd ZSeeker
+
+python3 -m zseeker.zseeker --fasta Hsalinarum.fa --output_dir ./ --threshold 10
+
+#filtrar 0.5 de score
+awk -F',' 'NR>1 { if($5 > 0.5) print $1, $2-1, $3, "ZDNA_HighProb_"NR-1, $5, "+" }' OFS="\t" Hsalinarum_zdna_score.csv > Z-DNA_zseek.bed

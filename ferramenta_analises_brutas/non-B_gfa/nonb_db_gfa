@@ -1,0 +1,14 @@
+git clone https://github.com/abcsFrederick/non-B_gfa.git
+
+cd non-B_gfa
+
+make
+
+# coloque o fasta na pasta
+
+./gfa -seq Hsalinarum.fa -out analise_completa -skipWGET
+
+#Passar tudo para bed
+for f in *.gff; do
+    awk '{if($1 !~ /^#/) print $1 "\t" $4-1 "\t" $5 "\t" $3 "\t.\t" $7}' "$f" > "${f%.gff}.bed"
+done

@@ -30,8 +30,8 @@ cat("Paralelização configurada com", num_cores, "cores\n")
 # nonb - non-B-form DNA
 
 # 1) Diretórios e preparação
-data_dir <- "/home/mcavalcante/igv/modificados"
-dir_base <- "/home/mcavalcante/Git limpo/sobreposicao/"
+data_dir <- "/home/mcavalcante/codigo/Diario-de-bordo/dados/igv/modificados"
+dir_base <- "/home/mcavalcante/codigo/Diario-de-bordo/resultados Hsalinarum"
 dir_resultados <- file.path(dir_base, "analise_nonB")  
 dir_plots <- file.path(dir_resultados, "plots")
 dir_tabelas <- file.path(dir_resultados, "tabelas") 
@@ -56,13 +56,26 @@ arquivos <- list.files(data_dir, full.names = TRUE)
 arq_gff <- arquivos[str_detect(arquivos, regex("Hsalinarum.*gff", ignore_case = TRUE))]
 arq_tss <- "/home/mcavalcante/dados_brutos/Hsalinarum_TSS.gtf"
 
+# CORRIGIDO: usar regex() para ignore_case
 arquivos_nonb <- arquivos[
-  str_detect(arquivos, regex("z-dna|nonb|triplex|r-loop|short_tandem|A-phased|G-quadruplex|Cruciform",
-                             ignore_case = TRUE)) &
-    str_detect(arquivos, regex("\\.(bed|gff3?)$", ignore_case = TRUE))]
+  str_detect(arquivos, regex("\\.bed$", ignore_case = TRUE)) &  
+    str_detect(arquivos, regex("z-dna|nonb|triplex|R-loop|short_tandem|A-phased|G-quadruplex|Cruciform",
+                               ignore_case = TRUE))]
 
-if(length(arq_gff) == 0) stop("arquivo GFF nao encontrado")
+if(length(arquivos_nonb) == 0) {
+  warning("Nenhum arquivo BED de estruturas não-B encontrado!")
+  cat("\nArquivos BED disponíveis:\n")
+  # CORRIGIDO: usar regex() também aqui
+  arquivos_bed <- arquivos[str_detect(arquivos, regex("\\.bed$", ignore_case = TRUE))]
+  print(arquivos_bed)
+} else {
+  cat("\nArquivos BED encontrados:\n")
+  print(basename(arquivos_nonb))
+}
+
+if(length(arq_gff) == 0) warning("arquivo GFF nao encontrado")
 if(length(arq_tss) == 0) warning("arquivo TSS nao encontrado, algumas análises serão puladas")
+
 
 # 4) Classificação por classe de DNA alternativo
 classificar_nonb <- function(arquivo) {
@@ -153,60 +166,127 @@ for (classe in names(arquivos_por_classe)) {
   cat("  ", classe, ":", n_arquivos, "arquivo(s)\n")}
 
 # 8) Calculando interseções por classe
-cat("\n8) Calculando interseções por classe...\n")
+
 calcular_interseccao_classe <- function(classe, arquivos_classe) {
   n_arquivos <- length(arquivos_classe)
+  
+  # Se só tem 1 arquivo, retorna ele mesmo
   if (n_arquivos == 1) {
     gr_intersect <- arquivos_classe[[1]]
-    return(list(classe = classe, gr_intersect = gr_intersect, n_intersect = length(gr_intersect), status = "único arquivo", arquivos = names(arquivos_classe)))}
-  gr_intersect <- arquivos_classe[[1]]
-  interseccao_valida <- TRUE
+    # Simplificar metadados para evitar problemas
+    mcols(gr_intersect) <- NULL
+    return(list(
+      classe = classe, 
+      gr_intersect = gr_intersect, 
+      n_intersect = length(gr_intersect), 
+      status = "único arquivo", 
+      arquivos = names(arquivos_classe)
+    ))
+  }
+  
+  # Para múltiplos arquivos, calcular interseção
+  # Converter todos para GRanges simples (sem metadados)
+  gr_simplificados <- list()
+  for (i in 1:n_arquivos) {
+    gr_temp <- arquivos_classe[[i]]
+    gr_simples <- GRanges(
+      seqnames = seqnames(gr_temp),
+      ranges = ranges(gr_temp),
+      strand = strand(gr_temp)
+    )
+    gr_simplificados[[i]] <- gr_simples
+  }
+  
+  # Calcular interseção progressiva
+  gr_intersect <- gr_simplificados[[1]]
   for (i in 2:n_arquivos) {
-    hits <- findOverlaps(gr_intersect, arquivos_classe[[i]])
-    if (length(hits) == 0) { interseccao_valida <- FALSE; break }
-    gr_intersect <- pintersect(gr_intersect[queryHits(hits)], arquivos_classe[[i]][subjectHits(hits)])
-    if (length(gr_intersect) == 0) { interseccao_valida <- FALSE; break }}
-  if (interseccao_valida && length(gr_intersect) > 0) {
-    gr_intersect <- reduce(gr_intersect)
-    return(list(classe = classe, gr_intersect = gr_intersect, n_intersect = length(gr_intersect), status = "interseção", arquivos = names(arquivos_classe)))
-  } else {
-    return(list(classe = classe, gr_intersect = GRanges(), n_intersect = 0, status = "vazio", arquivos = names(arquivos_classe)))}}
+    hits <- findOverlaps(gr_intersect, gr_simplificados[[i]])
+    if (length(hits) == 0) {
+      return(list(
+        classe = classe, 
+        gr_intersect = GRanges(), 
+        n_intersect = 0, 
+        status = "vazio", 
+        arquivos = names(arquivos_classe)
+      ))
+    }
+    gr_intersect <- pintersect(
+      gr_intersect[queryHits(hits)], 
+      gr_simplificados[[i]][subjectHits(hits)]
+    )
+    if (length(gr_intersect) == 0) {
+      return(list(
+        classe = classe, 
+        gr_intersect = GRanges(), 
+        n_intersect = 0, 
+        status = "vazio", 
+        arquivos = names(arquivos_classe)
+      ))
+    }
+  }
+  
+  gr_intersect <- reduce(gr_intersect)
+  
+  return(list(
+    classe = classe, 
+    gr_intersect = gr_intersect, 
+    n_intersect = length(gr_intersect), 
+    status = "interseção", 
+    arquivos = names(arquivos_classe)
+  ))
+}
 
+# Executar em paralelo
 classes <- names(arquivos_por_classe)
 resultados_interseccao <- foreach(classe = classes, .packages = c("GenomicRanges")) %dopar% {
-  calcular_interseccao_classe(classe, arquivos_por_classe[[classe]])}
+  calcular_interseccao_classe(classe, arquivos_por_classe[[classe]])
+}
 
+# Processar resultados
 nonb_por_classe <- list()
 resumo_intersecoes <- data.frame()
+
 for (res in resultados_interseccao) {
   classe <- res$classe
   cat("\n", classe, ":\n")
   cat("  Arquivos:", paste(res$arquivos, collapse = ", "), "\n")
+  
   if (res$n_intersect > 0) {
     nonb_por_classe[[classe]] <- res$gr_intersect
+    
+    # Adicionar metadados básicos
     mcols(res$gr_intersect)$classe <- classe
     mcols(res$gr_intersect)$n_arquivos_origem <- length(res$arquivos)
-    mcols(res$gr_intersect)$score <- 0
     mcols(res$gr_intersect)$name <- paste0(gsub("-", "_", classe), "_", sprintf("%04d", 1:res$n_intersect))
+    
+    # Salvar BED
     nome_bed <- file.path(dir_intersecoes, sprintf("nonB_%s_interseccao.bed", gsub("-", "_", classe)))
     export(res$gr_intersect, nome_bed, format = "BED")
     cat("  BED salvo:", basename(nome_bed), "\n")
     cat("  Regiões:", res$n_intersect, "\n")
+    
     resumo_intersecoes <- rbind(resumo_intersecoes, data.frame(
       Classe = classe,
       Regioes_Interseccao = res$n_intersect,
       Arquivos_Origem = length(res$arquivos),
       Arquivos = paste(res$arquivos, collapse = "; "),
-      stringsAsFactors = FALSE))
+      stringsAsFactors = FALSE
+    ))
   } else {
-    cat("  Interseção vazia\n")}}
+    cat("  Interseção vazia\n")
+  }
+}
 
+# Salvar resumo
 if (nrow(resumo_intersecoes) > 0) {
-  write.table(resumo_intersecoes, file.path(dir_intersecoes, "resumo_intersecoes_nonB.tsv"),
+  write.table(resumo_intersecoes, 
+              file.path(dir_intersecoes, "resumo_intersecoes_nonB.tsv"),
               sep = "\t", row.names = FALSE, quote = FALSE)
+  cat("\n Resumo final:\n")
   print(resumo_intersecoes)
   cat("\nTotal de classes com interseção:", nrow(resumo_intersecoes), "\n")
-  cat("Total de regiões em interseção:", sum(resumo_intersecoes$Regioes_Interseccao), "\n")}
+  cat("Total de regiões em interseção:", sum(resumo_intersecoes$Regioes_Interseccao), "\n")
+}
 # 9) Carregar GFF e TSS
 cat("\n9) Carregando GFF e TSS...\n")
 if(length(arq_gff) > 0) {

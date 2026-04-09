@@ -192,15 +192,25 @@ for (i in seq_len(nrow(nonb_classificado))) {
 }
 gr_list_nonb <- gr_list_nonb[sapply(gr_list_nonb, length) > 0]
 
-# 9) CONSOLIDAR NON-B POR CLASSE
+# 9) CONSOLIDAR NON-B POR CLASSE (INTERSEÇÃO/CONSENSO)
 gr_por_classe <- list()
 classes_com_dados <- unique(sapply(gr_list_nonb, function(x) unique(mcols(x)$classe)[1]))
+
 for (classe in classes_com_dados) {
-  arquivos_classe <- names(gr_list_nonb)[sapply(gr_list_nonb, function(x) unique(mcols(x)$classe)[1] == classe)]
-  grs_classe <- gr_list_nonb[arquivos_classe]
-  if (length(grs_classe) > 0) {
-    gr_por_classe[[classe]] <- Reduce(c, grs_classe)
-    cat(classe, ":", length(gr_por_classe[[classe]]), "regiões\n")
+  # Filtra a lista para pegar apenas os GRanges desta classe
+  grs_classe <- gr_list_nonb[sapply(gr_list_nonb, function(x) unique(mcols(x)$classe)[1] == classe)]
+  
+  if (length(grs_classe) > 1) {
+    # Se houver mais de um arquivo (ex: Triplex), faz a INTERSEÇÃO
+    # Isso resulta apenas nas regiões onde todos os arquivos concordam
+    gr_consenso <- Reduce(intersect, grs_classe)
+    mcols(gr_consenso)$classe <- classe
+    gr_por_classe[[classe]] <- gr_consenso
+    cat(classe, ": Gerado consenso de", length(gr_consenso), "regiões (Interseção de", length(grs_classe), "arquivos)\n")
+  } else if (length(grs_classe) == 1) {
+    # Se houver apenas um arquivo, usa ele integralmente
+    gr_por_classe[[classe]] <- grs_classe[[1]]
+    cat(classe, ":", length(gr_por_classe[[classe]]), "regiões (Arquivo único)\n")
   }
 }
 
@@ -292,106 +302,95 @@ if(length(genes_gr) > 0) {
   ggsave(file.path(dir_plots, "SMAP_vs_Genes_pizza.png"), p_genes, width = 10, height = 7, dpi = 300)
 }
 
-# 12) MATRIZ Hi-C vs Non-B (COM TABELA DE COORDENADAS)
-if(length(hic_interacoes) > 0 && length(gr_por_classe) > 0) {
-  anchors1 <- anchors(hic_interacoes, type = "first")
-  anchors2 <- anchors(hic_interacoes, type = "second")
+
+# 12
+# 1. Definir o total de âncoras genômicas únicas (N = 20.123)
+n_hic_total <- length(hic_anchors_gr)
+
+# 2. Criar data.frame para consolidar todos os resultados
+tabela_consolidada_nonB <- data.frame()
+
+cat("\n--- Iniciando Processamento de Interseções (Consenso) ---\n")
+
+for (classe in names(gr_consenso_list)) {
+  # Carregar o consensus da classe (DNA Non-B)
+  gr_NB <- gr_consenso_list[[classe]]
   
-  matriz_hic_nonb <- data.frame()
-  todas_intersecoes_hic <- data.frame()
+  # Encontrar todas as sobreposições entre Âncoras Hi-C e o DNA Non-B
+  # findOverlaps retorna um objeto de hits com pares (ancora, non-b)
+  hits <- findOverlaps(hic_anchors_gr, gr_NB)
   
-  for (classe in names(gr_por_classe)) {
-    nonb <- gr_por_classe[[classe]]
-    
-    # Âncora 1
-    ov1 <- findOverlaps(anchors1, nonb, minoverlap = 1)
-    n1 <- length(unique(queryHits(ov1)))
-    
-    if(length(ov1) > 0) {
-      df1 <- data.frame(
-        classe_nonb = classe,
-        tipo_ancora = "Âncora 1",
-        anchor_seq = as.character(seqnames(anchors1[queryHits(ov1)])),
-        anchor_start = start(anchors1[queryHits(ov1)]),
-        anchor_end = end(anchors1[queryHits(ov1)]),
-        nonb_seq = as.character(seqnames(nonb[subjectHits(ov1)])),
-        nonb_start = start(nonb[subjectHits(ov1)]),
-        nonb_end = end(nonb[subjectHits(ov1)]),
-        stringsAsFactors = FALSE)
-      todas_intersecoes_hic <- rbind(todas_intersecoes_hic, df1)
-    }
-    
-    # Âncora 2
-    ov2 <- findOverlaps(anchors2, nonb, minoverlap = 1)
-    n2 <- length(unique(queryHits(ov2)))
-    
-    if(length(ov2) > 0) {
-      df2 <- data.frame(
-        classe_nonb = classe,
-        tipo_ancora = "Âncora 2",
-        anchor_seq = as.character(seqnames(anchors2[queryHits(ov2)])),
-        anchor_start = start(anchors2[queryHits(ov2)]),
-        anchor_end = end(anchors2[queryHits(ov2)]),
-        nonb_seq = as.character(seqnames(nonb[subjectHits(ov2)])),
-        nonb_start = start(nonb[subjectHits(ov2)]),
-        nonb_end = end(nonb[subjectHits(ov2)]),
-        stringsAsFactors = FALSE)
-      todas_intersecoes_hic <- rbind(todas_intersecoes_hic, df2)
-    }
-    
-    matriz_hic_nonb <- rbind(matriz_hic_nonb,
-                             data.frame(hic_tipo = "Âncora 1", nonb_classe = classe, n_interseccoes = n1),
-                             data.frame(hic_tipo = "Âncora 2", nonb_classe = classe, n_interseccoes = n2))
-  }
+  # --- MÉTRICA 1: ÂNCORAS ÚNICAS (PRESENÇA) ---
+  # Quantas âncoras diferentes tocam pelo menos um Non-B desta classe
+  n_ancoras_unicas <- length(unique(queryHits(hits)))
+  percentual_presenca <- (n_ancoras_unicas / n_hic_total) * 100
   
-  if(nrow(todas_intersecoes_hic) > 0) {
-    write.csv(todas_intersecoes_hic, file.path(dir_tabelas, "HiC_vs_NonB_interseccoes_coordenadas.csv"), row.names = FALSE)
-  }
+  # --- MÉTRICA 2: PINGS TOTAIS (VOLUME/INTERSEÇÕES) ---
+  # Quantas vezes as estruturas "pingam" nas âncoras no total
+  # (Se uma âncora toca 3 estruturas, conta como 3 pings)
+  total_pings <- length(subjectHits(hits))
   
-  if(nrow(matriz_hic_nonb) > 0) {
-    write.csv(matriz_hic_nonb, file.path(dir_tabelas, "HiC_vs_NonB_matriz.csv"), row.names = FALSE)
-    
-    heatmap_hic <- ggplot(matriz_hic_nonb, aes(x = hic_tipo, y = nonb_classe, fill = n_interseccoes)) +
-      geom_tile(color = "white", linewidth = 1) +
-      geom_text(aes(label = ifelse(n_interseccoes > 0, n_interseccoes, "")),
-                color = "black", size = 4, fontface = "bold") +
-      scale_fill_gradient2(low = "#E3F2FD", mid = "#FFF3E0", high = cores_padrao["R-loop"],
-                           name = "Nº interseções") +
-      labs(title = "Hi-C vs Non-B",
-           subtitle = "Número de âncoras Hi-C que sobrepõem cada classe Non-B",
-           x = "Tipo de âncora Hi-C", 
-           y = "Classe Non-B") +
-      theme_minimal(base_size = 12) +
-      theme(axis.text.x = element_text(angle = 45, hjust = 1, face = "bold", size = 11),
-            axis.text.y = element_text(face = "bold", size = 11),
-            plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
-            plot.subtitle = element_text(hjust = 0.5, size = 12, color = "#5D6D7E"),
-            legend.position = "right")
-    ggsave(file.path(dir_plots, "heatmap_hic_vs_nonb.png"), heatmap_hic, width = 10, height = 8, dpi = 300)
-    
-    # GRÁFICO DE BARRAS Hi-C vs Non-B
-    resumo_hic <- matriz_hic_nonb %>%
-      group_by(nonb_classe) %>%
-      summarise(total_interseccoes = sum(n_interseccoes)) %>%
-      arrange(desc(total_interseccoes))
-    
-    p_hic_barras <- ggplot(resumo_hic, aes(x = reorder(nonb_classe, total_interseccoes), y = total_interseccoes, fill = nonb_classe)) +
-      geom_col(alpha = 0.9, width = 0.7, color = "black", linewidth = 0.3) +
-      geom_text(aes(label = total_interseccoes), hjust = -0.1, size = 4, fontface = "bold") +
-      coord_flip() +
-      scale_fill_manual(values = cores_padrao[intersect(names(cores_padrao), resumo_hic$nonb_classe)]) +
-      labs(title = "Hi-C vs Non-B",
-           subtitle = "Total de interseções de âncoras Hi-C com classes Non-B",
-           x = "Classe Non-B", 
-           y = "Número total de interseções") +
-      theme_artigo +
-      theme(legend.position = "none",
-            plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
-            axis.text.y = element_text(size = 11, face = "bold")) +
-      expand_limits(y = max(resumo_hic$total_interseccoes) * 1.2)
-    ggsave(file.path(dir_plots, "barras_hic_vs_nonb.png"), p_hic_barras, width = 10, height = 7, dpi = 300)
-  }
+  # --- MÉTRICA 3: DENSIDADE (MULTIPLICIDADE) ---
+  # Média de estruturas encontradas por ponto de contato atingido
+  media_pings <- ifelse(n_ancoras_unicas > 0, round(total_pings / n_ancoras_unicas, 2), 0)
+  
+  # Adicionar ao data.frame final
+  tabela_consolidada_nonB <- rbind(tabela_consolidada_nonB, data.frame(
+    Classe = classe,
+    Ancoras_Unicas = n_ancoras_unicas,
+    Percentual_Presenca = round(percentual_presenca, 2),
+    Total_Pings_Interseccao = total_pings,
+    Media_Pings_por_Ancora = media_pings,
+    stringsAsFactors = FALSE
+  ))
+  
+  cat(sprintf("Processado: %-15s | Únicas: %5d | Pings: %6d | Média: %.2f\n", 
+              classe, n_ancoras_unicas, total_pings, media_pings))
 }
+
+# 3. Ordenar a tabela pela presença (Âncoras Únicas) para facilitar a leitura
+tabela_consolidada_nonB <- tabela_consolidada_nonB[order(-tabela_consolidada_nonB$Ancoras_Unicas), ]
+
+# 4. Salvar e Exibir Resultados
+write.csv(tabela_consolidada_nonB, 
+          file.path(dir_tabelas, "analise_final_unicas_vs_pings_consenso.csv"), 
+          row.names = FALSE)
+
+cat("\n--- RESULTADOS FINAIS CONSOLIDADOS ---\n")
+print(tabela_consolidada_nonB)
+# ==============================================================================
+# GRÁFICO DE PINGS TOTAIS (INTERSEÇÕES TOTAIS)
+# ==============================================================================
+
+# Garantir que a tabela esteja ordenada pelo volume de pings
+tabela_plot_pings <- tabela_consolidada_nonB %>%
+  arrange(Total_Pings_Interseccao)
+
+# Criar o gráfico
+p_pings_totais <- ggplot(tabela_plot_pings, 
+                         aes(x = factor(Classe, levels = Classe), 
+                             y = Total_Pings_Interseccao, 
+                             fill = Classe)) +
+  geom_col(alpha = 0.9, width = 0.7, color = "black", linewidth = 0.3) +
+  # Adicionar o número total e a média de pings por âncora no rótulo
+  geom_text(aes(label = paste0(Total_Pings_Interseccao, " (avg: ", Media_Pings_por_Ancora, ")")), 
+            hjust = -0.1, size = 4, fontface = "bold") +
+  coord_flip() +
+  scale_fill_manual(values = cores_padrao) +
+  labs(title = "Hi-C vs Non-B (Total de Pings)",
+       subtitle = "Volume total de interseções (incluindo múltiplas ocorrências por âncora)",
+       x = "Classe Non-B", 
+       y = "Número Total de Interseções (Pings)") +
+  theme_artigo +
+  theme(legend.position = "none") +
+  # Expandir o limite para o texto não ser cortado
+  expand_limits(y = max(tabela_plot_pings$Total_Pings_Interseccao) * 1.3)
+
+# Salvar o gráfico
+ggsave(file.path(dir_plots, "barras_hic_pings_totais.png"), 
+       p_pings_totais, width = 10, height = 7, dpi = 300)
+
+cat("\nGráfico de Pings Totais gerado com sucesso!\n")
 
 # 13) SMAP vs Non-B (COM TABELA DE COORDENADAS)
 if(length(gr_por_classe) > 0) {

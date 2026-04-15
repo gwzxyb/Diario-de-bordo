@@ -2,7 +2,7 @@ Classe	Total_Regioes	Regioes_Interseccao	Arquivos_Origem	Arquivos	Percentual_Int
 A-phased	18	18	1	A-Phased_nonb	100
 Cruciform	12512	6503	2	Cruciform_einverted; Inverted_Repeat_and_Cruciform_nonb	52
 G-quadruplex	159	78	2	G-Quadruplex_gboost; G-Quadruplex_nonb	49.1
-R-loop	1827	0	NA	NA	0
+R-loop	1199	1199	1	R-loop_qmrlfs	100
 Short_tandem	1649	1649	1	Short_Tandem_nonb	100
 Triplex	1592	8	2	Triplex_nonb; Triplex_triplex	0.5
 Z-DNA	12977	1169	2	Z-DNA_nonb; Z-DNA_zseek	9

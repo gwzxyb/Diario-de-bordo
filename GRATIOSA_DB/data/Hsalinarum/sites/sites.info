@@ -1,0 +1,13 @@
+# condition	filename	startline	sep	start	end
+Z-DNA-nonb	Z-DNA_nonb.bed	1	\t	1	2
+Z-DNA-Kim	Z-DNA_Kim.bed	1	\t	1	2
+Z-DNA-zseek	Z-DNA_zseek.bed	1	\t	1	2
+G4-nonb	G-Quadruplex_nonb.bed	1	\t	1	2
+G4-gboost	G-Quadruplex_gboost.bed	1	\t	1	2
+R-loop	R-loop_qmrlfs.bed	1	\t	1	2
+Triplex-nonb	Triplex_nonb.bed	1	\t	1	2
+Triplex-triplex	Triplex_triplex.bed	1	\t	1	2
+Cruciform	Cruciform_einverted.bed	1	\t	1	2
+InvertedRepeat	Inverted_Repeat_and_Cruciform_nonb.bed	1	\t	1	2
+A-Phased	A-Phased_nonb.bed	1	\t	1	2
+ShortTandem	Short_Tandem_nonb.bed	1	\t	1	2

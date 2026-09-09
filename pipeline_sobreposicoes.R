@@ -15,13 +15,11 @@ library(data.table)
 library(viridis)
 library(Biostrings)
 
-# Configurar paralelização
-num_cores <- 12
+#paralelização
+num_cores <- 3
 cl <- makeCluster(num_cores)
 registerDoParallel(cl)
 cat("Paralelização configurada com", num_cores, "cores\n")
-
-# ------------- CORES PADRÃO -------------
 cores_padrao <- c(
   "Z-DNA" = "#F28AA0",
   "G-quadruplex" = "#366899",
@@ -36,11 +34,9 @@ cores_padrao <- c(
   "SMAP em genes" = "#81DACA",
   "SMAP fora de genes" = "#F28AA0")
 
-# Cores específicas para Odds Ratio
+# Cores 
 cor_significativo <- "#E41A1C"
 cor_nao_significativo <- "#377EB8"
-
-# Tema 
 theme_artigo <- theme_pubr() + 
   theme(legend.position = "bottom", 
         plot.title = element_text(hjust = 0.5, face = "bold", size = 16, color = "#2C3E50"),
@@ -63,6 +59,22 @@ dir_analise_nonb <- file.path(dir_base, "analise_nonB")
 dir.create(dir_plots, showWarnings = FALSE, recursive = TRUE)
 dir.create(dir_tabelas, showWarnings = FALSE, recursive = TRUE)
 dir.create(dir_intersecoes, showWarnings = FALSE, recursive = TRUE)
+
+carregar_granges <- function(arquivo) {
+  if (!file.exists(arquivo)) return(GRanges())
+  extensao <- tools::file_ext(arquivo)
+  tryCatch({
+    if (extensao %in% c("bed", "bedgraph")) {
+      gr <- import(arquivo, format = "BED")
+    } else if (extensao %in% c("gff", "gff3")) {
+      gr <- import(arquivo, format = "GFF")
+    } else {
+      return(GRanges())
+    }
+    seqlevels(gr) <- gsub("^chr", "", seqlevels(gr))
+    gr <- gr[width(gr) > 0]
+    return(gr)
+  }, error = function(e) return(GRanges()))}
 
 # 2) Genoma referencia
 fa_path <- "/home/mcavalcante/codigo/Diario-de-bordo/dados/Hsalinarum.fa"
@@ -199,14 +211,15 @@ carregar_granges <- function(arquivo) {
     return(gr)
   }, error = function(e) return(GRanges()))}
 
-# ============================================================
+# -----------------------------------------------
 # BLOCO 1: ANÁLISES COM HI-C
 if(length(hic_anchors_gr) > 0) {
-  # 1.1) Hi-C vs Non-B (PINGS TOTAIS)]
-  #"PING" é uma contagem bruta de eventos de sobreposição (um ping = um par âncora ↔ estrutura não-B)
+  # Hi-C vs Non-B (PINGS TOTAIS)
+  # "PING" é uma contagem bruta de eventos de sobreposição (um ping = um par âncora ↔ estrutura não-B)
   if(length(nonb_por_classe) > 0) {
     n_hic_total <- length(hic_anchors_gr)
     tabela_consolidada_nonB <- data.frame()
+    
     for (classe in names(nonb_por_classe)) {
       gr_NB <- nonb_por_classe[[classe]]
       hits <- findOverlaps(hic_anchors_gr, gr_NB)
@@ -214,6 +227,7 @@ if(length(hic_anchors_gr) > 0) {
       percentual_presenca <- (n_ancoras_unicas / n_hic_total) * 100
       total_pings <- length(subjectHits(hits))
       media_pings <- ifelse(n_ancoras_unicas > 0, round(total_pings / n_ancoras_unicas, 2), 0)
+      
       tabela_consolidada_nonB <- rbind(tabela_consolidada_nonB, data.frame(
         Classe = classe,
         Ancoras_Unicas = n_ancoras_unicas,
@@ -221,98 +235,102 @@ if(length(hic_anchors_gr) > 0) {
         Total_Pings_Interseccao = total_pings,
         Media_Pings_por_Ancora = media_pings,
         stringsAsFactors = FALSE))
-      cat(sprintf("  %-15s | Únicas: %5d | Pings: %6d | Média: %.2f\n", 
-                  classe, n_ancoras_unicas, total_pings, media_pings))}
+      
+      cat(sprintf("  %-15s | Únicas: %5d | Pings: %6d | Média: %.2f\n", classe, n_ancoras_unicas, total_pings, media_pings)) }
     
     if(nrow(tabela_consolidada_nonB) > 0) {
+      # Ordenar por número de âncoras únicas (decrescente)
       tabela_consolidada_nonB <- tabela_consolidada_nonB[order(-tabela_consolidada_nonB$Ancoras_Unicas), ]
       write.csv(tabela_consolidada_nonB, file.path(dir_tabelas, "analise_final_unicas_vs_pings_consenso.csv"), row.names = FALSE)
+      # Gráfico de pings totais (usando os nomes das colunas em português)
       tabela_plot_pings <- tabela_consolidada_nonB %>%
         arrange(Total_Pings_Interseccao)
+      
       p_pings_totais <- ggplot(tabela_plot_pings, 
-                               aes(x = factor(Classe, levels = Classe), y = Total_Pings_Interseccao, fill = Classe)) +
+                               aes(x = factor(Classe, levels = Classe), 
+                                   y = Total_Pings_Interseccao, 
+                                   fill = Classe)) +
         geom_col(alpha = 0.9, width = 0.7, color = "black", linewidth = 0.3) +
         geom_text(aes(label = paste0(Total_Pings_Interseccao, " (avg: ", Media_Pings_por_Ancora, ")")), 
                   hjust = -0.1, size = 4, fontface = "bold") +
         coord_flip() +
-        scale_fill_manual(values = cores_padrao) +
-        labs(title = "Hi-C vs Non-B: Total de Eventos de Sobreposição",
-             subtitle = "Volume total de interseções (incluindo múltiplas ocorrências por âncora)",
-             x = "Classe Non-B",  y = "Número total de pares (âncora ↔ estrutura não-B)") +
+        scale_fill_manual(values = cores_padrao) +  # Use sua paleta de cores definida
+        labs(title = "Hi-C vs Non-B: Total Overlap Events",
+             subtitle = "Total count of overlap events (multiple occurrences per anchor included)",
+             x = "Non-B Class", 
+             y = "Total number of pairs (anchor ↔ non-B structure)") +
         theme_artigo +
         theme(legend.position = "none") +
         expand_limits(y = max(tabela_plot_pings$Total_Pings_Interseccao) * 1.3)
       
       ggsave(file.path(dir_plots, "barras_hic_pings_totais.png"), 
              p_pings_totais, width = 10, height = 7, dpi = 300)
-      cat("  Gráfico de pings totais Hi-C vs Non-B salvo\n")}}
-  
-  # 1.2) SMAP vs Hi-C (PIZZA)
-  smap_hic_int <- findOverlaps(smap_gr, hic_anchors_gr)
-  smap_com_hic <- unique(queryHits(smap_hic_int))
-  
-  if(length(smap_hic_int) > 0) {
-    df_smap_hic_coord <- data.frame(
-      SMAP_seq = as.character(seqnames(smap_gr[queryHits(smap_hic_int)])),
-      SMAP_start = start(smap_gr[queryHits(smap_hic_int)]),
-      SMAP_end = end(smap_gr[queryHits(smap_hic_int)]),
-      Anchor_seq = as.character(seqnames(hic_anchors_gr[subjectHits(smap_hic_int)])),
-      Anchor_start = start(hic_anchors_gr[subjectHits(smap_hic_int)]),
-      Anchor_end = end(hic_anchors_gr[subjectHits(smap_hic_int)]),
-      stringsAsFactors = FALSE)
-    write.csv(df_smap_hic_coord, file.path(dir_tabelas, "SMAP_HiC_interseccao_coordenadas.csv"), row.names = FALSE)}
-  
-  df_hic_status <- data.frame(
-    Status = c("SMAP com interseção Hi-C", "SMAP sem interseção Hi-C"),
-    Contagem = c(length(smap_com_hic), length(smap_gr) - length(smap_com_hic)),
-    Percentual = c(round(100 * length(smap_com_hic) / length(smap_gr), 1),
-                   round(100 * (length(smap_gr) - length(smap_com_hic)) / length(smap_gr), 1)))
-  write.csv(df_hic_status, file.path(dir_tabelas, "SMAP_HiC_resumo.csv"), row.names = FALSE)
-  
-  p_smap_hic <- ggplot(df_hic_status, aes(x = 2, y = Contagem, fill = Status)) +
-    geom_col(width = 1, color = "white", linewidth = 0.5) + coord_polar(theta = "y") + xlim(0.5, 2.5) +
-    geom_text(aes(label = paste0(Contagem, " (", Percentual, "%)")), 
-              position = position_stack(vjust = 0.5), size = 4.5, fontface = "bold", color = "white") +
-    scale_fill_manual(values = c(cores_padrao["Com Hi-C"], cores_padrao["Sem Hi-C"])) +
-    labs(title = "SMAP vs Hi-C",
-         subtitle = paste("Total SMAP:", length(smap_gr), "| Total âncoras Hi-C:", length(hic_anchors_gr)),
-         fill = "Categoria") + 
-    theme_void() +
-    theme(legend.position = "right", 
-          legend.title = element_text(face = "bold", size = 12),
-          legend.text = element_text(size = 11),
-          plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
-          plot.subtitle = element_text(hjust = 0.5, size = 12, color = "#5D6D7E"))
-  
-  ggsave(file.path(dir_plots, "SMAP_vs_HiC_pizza.png"), p_smap_hic, width = 10, height = 7, dpi = 300)
-  cat("Gráfico SMAP vs Hi-C salvo\n")
-  
-  # 1.3) Distância SMAP-HiC  
-  dist_smap_hic <- distanceToNearest(smap_gr, hic_anchors_gr)
-  dist_vec <- mcols(dist_smap_hic)$distance / 1000
-  df_dist <- data.frame(Distancia_kb = dist_vec)
-  media <- mean(dist_vec, na.rm = TRUE)
-  mediana <- median(dist_vec, na.rm = TRUE)
-  max_y <- max(hist(dist_vec, plot=FALSE, breaks=40)$counts)
-  
-  p_dist_hic <- ggplot(df_dist, aes(x = Distancia_kb)) +
-    geom_histogram(bins = 40, fill = cores_padrao["G-quadruplex"], alpha = 0.7, color = "white", linewidth = 0.3) +
-    geom_vline(xintercept = media, color = cores_padrao["R-loop"], linetype = "dashed", linewidth = 1.2) +
-    geom_vline(xintercept = mediana, color = cores_padrao["Z-DNA"], linetype = "dotted", linewidth = 1.2) +
-    annotate("text", x = media + 3, y = max_y * 0.9, 
-             label = paste("Média =", round(media, 2), "kb"), 
-             color = cores_padrao["R-loop"], size = 4, hjust = 0, fontface = "bold") +
-    annotate("text", x = mediana + 3, y = max_y * 0.8, 
-             label = paste("Mediana =", round(mediana, 2), "kb"), 
-             color = cores_padrao["Z-DNA"], size = 4, hjust = 0, fontface = "bold") +
-    labs(title = "Distância de SMAP à âncora Hi-C mais próxima",
-         subtitle = paste("Total SMAP:", length(smap_gr), "| Total âncoras Hi-C:", length(hic_anchors_gr)),
-         x = "Distância (kb)",  y = "Frequência (número de SMAP)") +
-    theme_artigo + 
-    theme(plot.title = element_text(hjust = 0.5, face = "bold", size = 16))
-  ggsave(file.path(dir_plots, "distribuicao_distancias_SMAP_HiC.png"), p_dist_hic, width = 12, height = 7, dpi = 300)
-  cat("  Gráfico de distâncias SMAP-HiC salvo\n")}
-# 1.4)  Âncoras Únicas com Sobreposição 
+      cat("  Hi-C vs Non-B total pings plot saved\n")}}}
+# SMAP vs Hi-C (PIZZA)
+smap_hic_int <- findOverlaps(smap_gr, hic_anchors_gr)
+smap_com_hic <- unique(queryHits(smap_hic_int))
+
+if(length(smap_hic_int) > 0) {
+  df_smap_hic_coord <- data.frame(
+    SMAP_seq = as.character(seqnames(smap_gr[queryHits(smap_hic_int)])),
+    SMAP_start = start(smap_gr[queryHits(smap_hic_int)]),
+    SMAP_end = end(smap_gr[queryHits(smap_hic_int)]),
+    Anchor_seq = as.character(seqnames(hic_anchors_gr[subjectHits(smap_hic_int)])),
+    Anchor_start = start(hic_anchors_gr[subjectHits(smap_hic_int)]),
+    Anchor_end = end(hic_anchors_gr[subjectHits(smap_hic_int)]),
+    stringsAsFactors = FALSE)
+  write.csv(df_smap_hic_coord, file.path(dir_tabelas, "SMAP_HiC_interseccao_coordenadas.csv"), row.names = FALSE)}
+
+df_hic_status <- data.frame(
+  Status = c("SMAP com interseção Hi-C", "SMAP sem interseção Hi-C"),
+  Contagem = c(length(smap_com_hic), length(smap_gr) - length(smap_com_hic)),
+  Percentual = c(round(100 * length(smap_com_hic) / length(smap_gr), 1),
+                 round(100 * (length(smap_gr) - length(smap_com_hic)) / length(smap_gr), 1)))
+write.csv(df_hic_status, file.path(dir_tabelas, "SMAP_HiC_resumo.csv"), row.names = FALSE)
+
+p_smap_hic <- ggplot(df_hic_status, aes(x = 2, y = Contagem, fill = Status)) +
+  geom_col(width = 1, color = "white", linewidth = 0.5) + coord_polar(theta = "y") + xlim(0.5, 2.5) +
+  geom_text(aes(label = paste0(Contagem, " (", Percentual, "%)")), 
+            position = position_stack(vjust = 0.5), size = 4.5, fontface = "bold", color = "white") +
+  scale_fill_manual(values = c(cores_padrao["Com Hi-C"], cores_padrao["Sem Hi-C"])) +
+  labs(title = "SMAP vs Hi-C",
+       subtitle = paste("Total SMAP:", length(smap_gr), "| Total âncoras Hi-C:", length(hic_anchors_gr)),
+       fill = "Categoria") + 
+  theme_void() +
+  theme(legend.position = "right", 
+        legend.title = element_text(face = "bold", size = 12),
+        legend.text = element_text(size = 11),
+        plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
+        plot.subtitle = element_text(hjust = 0.5, size = 12, color = "#5D6D7E"))
+
+ggsave(file.path(dir_plots, "SMAP_vs_HiC_pizza.png"), p_smap_hic, width = 10, height = 7, dpi = 300)
+cat("Gráfico SMAP vs Hi-C salvo\n")
+# Distância SMAP-HiC  
+dist_smap_hic <- distanceToNearest(smap_gr, hic_anchors_gr)
+dist_vec <- mcols(dist_smap_hic)$distance / 1000
+df_dist <- data.frame(Distancia_kb = dist_vec)
+media <- mean(dist_vec, na.rm = TRUE)
+mediana <- median(dist_vec, na.rm = TRUE)
+max_y <- max(hist(dist_vec, plot=FALSE, breaks=40)$counts)
+
+p_dist_hic <- ggplot(df_dist, aes(x = Distancia_kb)) +
+  geom_histogram(bins = 40, fill = cores_padrao["G-quadruplex"], alpha = 0.7, color = "white", linewidth = 0.3) +
+  geom_vline(xintercept = media, color = cores_padrao["R-loop"], linetype = "dashed", linewidth = 1.2) +
+  geom_vline(xintercept = mediana, color = cores_padrao["Z-DNA"], linetype = "dotted", linewidth = 1.2) +
+  annotate("text", x = media + 3, y = max_y * 0.9, 
+           label = paste("Média =", round(media, 2), "kb"), 
+           color = cores_padrao["R-loop"], size = 4, hjust = 0, fontface = "bold") +
+  annotate("text", x = mediana + 3, y = max_y * 0.8, 
+           label = paste("Mediana =", round(mediana, 2), "kb"), 
+           color = cores_padrao["Z-DNA"], size = 4, hjust = 0, fontface = "bold") +
+  labs(title = "Distância de SMAP à âncora Hi-C mais próxima",
+       subtitle = paste("Total SMAP:", length(smap_gr), "| Total âncoras Hi-C:", length(hic_anchors_gr)),
+       x = "Distância (kb)",  y = "Frequência (número de SMAP)") +
+  theme_artigo + 
+  theme(plot.title = element_text(hjust = 0.5, face = "bold", size = 16))
+ggsave(file.path(dir_plots, "distribuicao_distancias_SMAP_HiC.png"), p_dist_hic, width = 12, height = 7, dpi = 300)
+cat("  Gráfico de distâncias SMAP-HiC salvo\n")
+# Âncoras Únicas com Sobreposição 
 # Preparar dados para o gráfico
 df_plot_ancoras <- tabela_consolidada_nonB %>%
   arrange(desc(Ancoras_Unicas)) %>%
@@ -395,7 +413,7 @@ df_fracao <- df_fracao[order(-df_fracao$Fracao_no_HiC), ]
 df_fracao$Label_fracao <- paste0(round(df_fracao$Fracao_no_HiC, 1), "%")
 df_fracao$Label_enrich <- ifelse(!is.na(df_fracao$Enriquecimento), sprintf("%.2f", df_fracao$Enriquecimento), "NA")
 
-# 1.6) Fração de cada classe no Hi-C
+# Fração de cada classe no Hi-C
 p_fracao <- ggplot(df_fracao, aes(x = reorder(Classe, Fracao_no_HiC), y = Fracao_no_HiC, fill = Classe)) +
   geom_col(alpha = 0.9, width = 0.7, color = "black", linewidth = 0.3) +
   geom_text(aes(label = Label_fracao), hjust = -0.1, size = 4, fontface = "bold") + coord_flip() +
@@ -410,48 +428,6 @@ p_fracao <- ggplot(df_fracao, aes(x = reorder(Classe, Fracao_no_HiC), y = Fracao
   expand_limits(y = max(df_fracao$Fracao_no_HiC) * 1.2)
 ggsave(file.path(dir_plots, "fracao_nonb_no_hic.png"), 
        p_fracao, width = 10, height = 7, dpi = 300)
-
-#1.7 Heatmap de Enriquecimento (Fold Enrichment)
-
-# Calcular matriz de enriquecimento entre classes Non-B
-n_classes <- length(names(gr_por_classe))
-nomes_classes <- names(gr_por_classe)
-
-matriz_enriquecimento <- matrix(1, nrow = n_classes, ncol = n_classes, dimnames = list(nomes_classes, nomes_classes))
-for(i in 1:n_classes) {
-  for(j in 1:n_classes) {
-    if(i != j) {
-      gr_i <- gr_por_classe[[nomes_classes[i]]]
-      gr_j <- gr_por_classe[[nomes_classes[j]]]
-      hits <- findOverlaps(gr_i, gr_j)
-      
-      if(length(hits) > 0) {
-        sobreposicao <- sum(width(pintersect(gr_i[queryHits(hits)], gr_j[subjectHits(hits)])))
-        esperado <- (tamanhos_classes[nomes_classes[j]] / genome_bp) * tamanhos_classes[nomes_classes[i]]
-        enriquecimento <- ifelse(esperado > 0, sobreposicao / esperado, 1)
-        matriz_enriquecimento[i, j] <- enriquecimento
-      } else {
-        matriz_enriquecimento[i, j] <- 0 }}}}
-
-# Adicionar Hi-C como uma dimensão extra
-if(length(hic_anchors_gr) > 0) {
-  # Criar matriz expandida
-  matriz_expandida <- matrix(1, nrow = n_classes + 1, ncol = n_classes + 1,
-                             dimnames = list(c(nomes_classes, "Hi-C"),  c(nomes_classes, "Hi-C")))
-  
-  # Preencher com valores das classes
-  matriz_expandida[1:n_classes, 1:n_classes] <- matriz_enriquecimento
-  # Preencher linha/coluna Hi-C
-  for(i in 1:n_classes) {
-    # Hi-C vs classe i
-    enriquecimento_hic <- df_fracao$Enriquecimento[i]
-    matriz_expandida["Hi-C", nomes_classes[i]] <- ifelse(is.na(enriquecimento_hic), 1, enriquecimento_hic)
-    matriz_expandida[nomes_classes[i], "Hi-C"] <- ifelse(is.na(enriquecimento_hic), 1, enriquecimento_hic)}
-  matriz_expandida["Hi-C", "Hi-C"] <- 1
-  matriz_plot <- matriz_expandida
-} else { matriz_plot <- matriz_enriquecimento}
-write.csv(matriz_plot, 
-          file.path(dir_tabelas, "matriz_enriquecimento_fold.csv"), row.names = TRUE)
 
 # Preparar dados para heatmap
 matriz_melt <- as.data.frame(as.table(matriz_plot))
@@ -523,11 +499,8 @@ tabela_completa <- df_fracao %>%
 
 write.csv(tabela_completa, file.path(dir_tabelas, "tabela_enriquecimento_nonb_hic.csv"), row.names = FALSE)
 print(tabela_completa)
-
-# ============================================================
 # BLOCO 2: ANÁLISES COMBINADAS (VENN E DISTÂNCIAS)
-
-# 2.1) VENN DIAGRAM (SMAP, Hi-C, CRUCIFORM)
+# VENN DIAGRAM (SMAP, Hi-C, CRUCIFORM)
 if(length(hic_anchors_gr) > 0 && "Cruciform" %in% names(nonb_por_classe)) {  
   cruciform_gr <- nonb_por_classe[["Cruciform"]]
   n_smap <- length(smap_gr)
@@ -536,12 +509,10 @@ if(length(hic_anchors_gr) > 0 && "Cruciform" %in% names(nonb_por_classe)) {
   n_smap_hic <- length(unique(queryHits(findOverlaps(smap_gr, hic_anchors_gr))))
   n_smap_cruc <- length(unique(queryHits(findOverlaps(smap_gr, cruciform_gr))))
   n_hic_cruc <- length(unique(queryHits(findOverlaps(hic_anchors_gr, cruciform_gr))))
-  
   smap_hic_hits <- unique(queryHits(findOverlaps(smap_gr, hic_anchors_gr)))
   n_tripla <- 0
   for(i in smap_hic_hits) {
     if(length(subjectHits(findOverlaps(smap_gr[i], cruciform_gr))) > 0) n_tripla <- n_tripla + 1}
-  
   df_venn <- data.frame(
     Conjunto = c("SMAP", "Hi-C", "Cruciform", "SMAP∩Hi-C", "SMAP∩Cruciform", "Hi-C∩Cruciform", "SMAP∩Hi-C∩Cruciform"),
     Contagem = c(n_smap, n_hic, n_cruc, n_smap_hic, n_smap_cruc, n_hic_cruc, n_tripla))
@@ -566,13 +537,12 @@ if(length(hic_anchors_gr) > 0 && "Cruciform" %in% names(nonb_por_classe)) {
   dev.off()
   cat("  Venn Diagram salvo\n")}
 
-# 2.2) DISTÂNCIAS MÉDIAS
+# DISTÂNCIAS MÉDIAS
 if(length(hic_anchors_gr) > 0 && "Cruciform" %in% names(nonb_por_classe)) {
   cruciform_gr <- nonb_por_classe[["Cruciform"]]
   dist_smap_hic <- distanceToNearest(smap_gr, hic_anchors_gr)
   dist_smap_cruc <- distanceToNearest(smap_gr, cruciform_gr)
   dist_hic_cruc <- distanceToNearest(hic_anchors_gr, cruciform_gr)
-  
   df_smap_hic_dist <- data.frame(
     SMAP_seq = as.character(seqnames(smap_gr[queryHits(dist_smap_hic)])),
     SMAP_start = start(smap_gr[queryHits(dist_smap_hic)]),
@@ -625,11 +595,9 @@ if(length(hic_anchors_gr) > 0 && "Cruciform" %in% names(nonb_por_classe)) {
   ggsave(file.path(dir_plots, "distancias_medias.png"), p_distancias, width = 9, height = 7, dpi = 300)
   cat("  Gráfico de distâncias médias salvo\n")}
 
-# ============================================================
-# SALVAR OBJETOS E FINALIZAR
+# SALVAR OBJETOS
 saveRDS(smap_gr, file.path(dir_resultados, "smap_gr.rds"))
 saveRDS(vng_gr, file.path(dir_resultados, "vng_gr.rds"))
 saveRDS(genes_gr, file.path(dir_resultados, "genes_gr.rds"))
 saveRDS(hic_anchors_gr, file.path(dir_resultados, "hic_anchors.rds"))
-
 stopCluster(cl)

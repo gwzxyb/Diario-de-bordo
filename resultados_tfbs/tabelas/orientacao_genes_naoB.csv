@@ -1,0 +1,49 @@
+feature,replicon,contexto,bp_NB_no_contexto,pct_NB_no_contexto,bp_total_no_contexto,pct_genoma_no_contexto,chi2,p_valor,sig
+A-Phased_nonb,NC_002607.1,divergente,77,30.31,439635,21.83,13.156,0.00431,*
+A-Phased_nonb,NC_002607.1,convergente,0,0.0,20869,1.04,13.156,0.00431,*
+A-Phased_nonb,NC_002607.1,tandem (co‑direcional),72,28.35,665802,33.05,13.156,0.00431,*
+A-Phased_nonb,NC_002607.1,sem_vizinho,105,41.34,887933,44.08,13.156,0.00431,*
+Cruciform_einverted,NC_002607.1,divergente,371362,21.58,439635,21.83,670.157,0.0,*
+Cruciform_einverted,NC_002607.1,convergente,18061,1.05,20869,1.04,670.157,0.0,*
+Cruciform_einverted,NC_002607.1,tandem (co‑direcional),573903,33.35,665802,33.05,670.157,0.0,*
+Cruciform_einverted,NC_002607.1,sem_vizinho,757557,44.02,887933,44.08,670.157,0.0,*
+G-Quadruplex_gboost,NC_002607.1,divergente,354,19.98,439635,21.83,33.343,0.0,*
+G-Quadruplex_gboost,NC_002607.1,convergente,21,1.19,20869,1.04,33.343,0.0,*
+G-Quadruplex_gboost,NC_002607.1,tandem (co‑direcional),698,39.39,665802,33.05,33.343,0.0,*
+G-Quadruplex_gboost,NC_002607.1,sem_vizinho,699,39.45,887933,44.08,33.343,0.0,*
+G-Quadruplex_nonb,NC_002607.1,divergente,356,18.91,439635,21.83,51.784,0.0,*
+G-Quadruplex_nonb,NC_002607.1,convergente,21,1.12,20869,1.04,51.784,0.0,*
+G-Quadruplex_nonb,NC_002607.1,tandem (co‑direcional),768,40.79,665802,33.05,51.784,0.0,*
+G-Quadruplex_nonb,NC_002607.1,sem_vizinho,738,39.19,887933,44.08,51.784,0.0,*
+Inverted_Repeat_and_Cruciform_nonb,NC_002607.1,divergente,33242,22.0,439635,21.83,139.325,0.0,*
+Inverted_Repeat_and_Cruciform_nonb,NC_002607.1,convergente,1630,1.08,20869,1.04,139.325,0.0,*
+Inverted_Repeat_and_Cruciform_nonb,NC_002607.1,tandem (co‑direcional),47941,31.72,665802,33.05,139.325,0.0,*
+Inverted_Repeat_and_Cruciform_nonb,NC_002607.1,sem_vizinho,68315,45.2,887933,44.08,139.325,0.0,*
+R-loop_qmrlfs,NC_002607.1,divergente,103320,23.18,439635,21.83,3842.461,0.0,*
+R-loop_qmrlfs,NC_002607.1,convergente,1156,0.26,20869,1.04,3842.461,0.0,*
+R-loop_qmrlfs,NC_002607.1,tandem (co‑direcional),146798,32.93,665802,33.05,3842.461,0.0,*
+R-loop_qmrlfs,NC_002607.1,sem_vizinho,194475,43.63,887933,44.08,3842.461,0.0,*
+Short_Tandem_nonb,NC_002607.1,divergente,3477,21.19,439635,21.83,10.108,0.01767,*
+Short_Tandem_nonb,NC_002607.1,convergente,140,0.85,20869,1.04,10.108,0.01767,*
+Short_Tandem_nonb,NC_002607.1,tandem (co‑direcional),5512,33.6,665802,33.05,10.108,0.01767,*
+Short_Tandem_nonb,NC_002607.1,sem_vizinho,7276,44.35,887933,44.08,10.108,0.01767,*
+Triplex_nonb,NC_002607.1,divergente,10321,21.37,439635,21.83,277.475,0.0,*
+Triplex_nonb,NC_002607.1,convergente,277,0.57,20869,1.04,277.475,0.0,*
+Triplex_nonb,NC_002607.1,tandem (co‑direcional),17367,35.96,665802,33.05,277.475,0.0,*
+Triplex_nonb,NC_002607.1,sem_vizinho,20331,42.1,887933,44.08,277.475,0.0,*
+Triplex_triplex,NC_002607.1,divergente,1177,24.37,439635,21.83,417.365,0.0,*
+Triplex_triplex,NC_002607.1,convergente,187,3.87,20869,1.04,417.365,0.0,*
+Triplex_triplex,NC_002607.1,tandem (co‑direcional),1394,28.86,665802,33.05,417.365,0.0,*
+Triplex_triplex,NC_002607.1,sem_vizinho,2072,42.9,887933,44.08,417.365,0.0,*
+Z-DNA_Kim,NC_002607.1,divergente,723,8.85,439635,21.83,2023.136,0.0,*
+Z-DNA_Kim,NC_002607.1,convergente,0,0.0,20869,1.04,2023.136,0.0,*
+Z-DNA_Kim,NC_002607.1,tandem (co‑direcional),1892,23.16,665802,33.05,2023.136,0.0,*
+Z-DNA_Kim,NC_002607.1,sem_vizinho,5553,67.98,887933,44.08,2023.136,0.0,*
+Z-DNA_nonb,NC_002607.1,divergente,2689,21.71,439635,21.83,131.006,0.0,*
+Z-DNA_nonb,NC_002607.1,convergente,31,0.25,20869,1.04,131.006,0.0,*
+Z-DNA_nonb,NC_002607.1,tandem (co‑direcional),4500,36.34,665802,33.05,131.006,0.0,*
+Z-DNA_nonb,NC_002607.1,sem_vizinho,5164,41.7,887933,44.08,131.006,0.0,*
+Z-DNA_zseek,NC_002607.1,divergente,217546,21.05,439635,21.83,4519.181,0.0,*
+Z-DNA_zseek,NC_002607.1,convergente,6447,0.62,20869,1.04,4519.181,0.0,*
+Z-DNA_zseek,NC_002607.1,tandem (co‑direcional),344616,33.34,665802,33.05,4519.181,0.0,*
+Z-DNA_zseek,NC_002607.1,sem_vizinho,464970,44.99,887933,44.08,4519.181,0.0,*

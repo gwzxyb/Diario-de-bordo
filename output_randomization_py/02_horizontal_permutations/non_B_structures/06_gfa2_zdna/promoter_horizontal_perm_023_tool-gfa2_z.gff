@@ -1,0 +1,819 @@
+##gff-version 3
+VNG_RS08925	ABCC	Z_DNA_Motif	415	424	.	+	.	ID=VNG_RS08925_415_424_ZDNA;length=10;score=101;composition=1A/4C/4G/0T;sequence=acgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS01455	ABCC	Z_DNA_Motif	455	465	.	+	.	ID=VNG_RS01455_455_465_ZDNA;length=11;score=92;composition=0A/4C/5G/1T;sequence=cgcgtgcgcgt;subset=1
+##gff-version 3
+VNG_RS06690	ABCC	Z_DNA_Motif	253	264	.	+	.	ID=VNG_RS06690_253_264_ZDNA;length=12;score=104;composition=2A/5C/4G/0T;sequence=acgcgcgcgcac;subset=1
+##gff-version 3
+VNG_RS01970	ABCC	Z_DNA_Motif	449	458	.	+	.	ID=VNG_RS01970_449_458_ZDNA;length=10;score=90;composition=1A/5C/3G/0T;sequence=cgcgcgcacg;subset=1
+##gff-version 3
+VNG_RS03800	ABCC	Z_DNA_Motif	76	85	.	+	.	ID=VNG_RS03800_76_85_ZDNA;length=10;score=79;composition=1A/5C/3G/0T;sequence=cgcgcacgca;subset=1
+##gff-version 3
+VNG_RS04900	ABCC	Z_DNA_Motif	120	129	.	+	.	ID=VNG_RS04900_120_129_ZDNA;length=10;score=46;composition=2A/3C/3G/1T;sequence=gcacacgtgc;subset=1
+##gff-version 3
+VNG_RS01735	ABCC	Z_DNA_Motif	83	97	.	+	.	ID=VNG_RS01735_83_97_ZDNA;length=15;score=153;composition=0A/6C/7G/1T;sequence=gcgcgcgtgcgcgcg;subset=1
+##gff-version 3
+VNG_RS01890	ABCC	Z_DNA_Motif	959	968	.	+	.	ID=VNG_RS01890_959_968_ZDNA;length=10;score=90;composition=0A/3C/5G/1T;sequence=gcgtgcgcgc;subset=1
+##gff-version 3
+VNG_RS06250	ABCC	Z_DNA_Motif	896	905	.	+	.	ID=VNG_RS06250_896_905_ZDNA;length=10;score=68;composition=1A/3C/4G/1T;sequence=gcgtgcacgc;subset=1
+##gff-version 3
+VNG_RS08215	ABCC	Z_DNA_Motif	32	42	.	+	.	ID=VNG_RS08215_32_42_ZDNA;length=11;score=70;composition=0A/3C/5G/2T;sequence=gtgcgcgtgca;subset=1
+##gff-version 3
+VNG_RS09715	ABCC	Z_DNA_Motif	882	892	.	+	.	ID=VNG_RS09715_882_892_ZDNA;length=11;score=70;composition=0A/3C/5G/2T;sequence=cgtgcgtgcgt;subset=1
+##gff-version 3
+VNG_RS03880	ABCC	Z_DNA_Motif	80	92	.	+	.	ID=VNG_RS03880_80_92_ZDNA;length=13;score=62;composition=2A/4C/4G/2T;sequence=acacgtgcgtgca;subset=1
+##gff-version 3
+VNG_RS10160	ABCC	Z_DNA_Motif	871	882	.	+	.	ID=VNG_RS10160_871_882_ZDNA;length=12;score=137;composition=0A/5C/6G/0T;sequence=gcgcgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS06005	ABCC	Z_DNA_Motif	557	567	.	+	.	ID=VNG_RS06005_557_567_ZDNA;length=11;score=103;composition=0A/4C/5G/1T;sequence=gcgcgcgtgcg;subset=1
+##gff-version 3
+VNG_RS06355	ABCC	Z_DNA_Motif	775	784	.	+	.	ID=VNG_RS06355_775_784_ZDNA;length=10;score=24;composition=0A/1C/4G/4T;sequence=tgtgtgtgca;subset=0
+##gff-version 3
+VNG_RS01995	ABCC	Z_DNA_Motif	886	895	.	+	.	ID=VNG_RS01995_886_895_ZDNA;length=10;score=79;composition=2A/4C/3G/0T;sequence=acgcacgcgc;subset=1
+##gff-version 3
+VNG_RS03355	ABCC	Z_DNA_Motif	465	474	.	+	.	ID=VNG_RS03355_465_474_ZDNA;length=10;score=90;composition=1A/4C/4G/0T;sequence=acgcgcgcgt;subset=1
+##gff-version 3
+VNG_RS03110	ABCC	Z_DNA_Motif	806	815	.	+	.	ID=VNG_RS03110_806_815_ZDNA;length=10;score=79;composition=1A/5C/3G/0T;sequence=cgcgcacgca;subset=1
+##gff-version 3
+VNG_RS00630	ABCC	Z_DNA_Motif	286	295	.	+	.	ID=VNG_RS00630_286_295_ZDNA;length=10;score=90;composition=1A/4C/4G/0T;sequence=gcgcgcacgc;subset=1
+##gff-version 3
+VNG_RS07090	ABCC	Z_DNA_Motif	530	540	.	+	.	ID=VNG_RS07090_530_540_ZDNA;length=11;score=26;composition=0A/0C/5G/5T;sequence=tgtgtgtgtgc;subset=0
+VNG_RS07090	ABCC	Z_DNA_Motif	876	885	.	+	.	ID=VNG_RS07090_876_885_ZDNA;length=10;score=79;composition=1A/5C/3G/0T;sequence=cgcgcgcaca;subset=1
+##gff-version 3
+VNG_RS09595	ABCC	Z_DNA_Motif	361	370	.	+	.	ID=VNG_RS09595_361_370_ZDNA;length=10;score=46;composition=1A/3C/3G/2T;sequence=cacgcgtgtg;subset=1
+VNG_RS09595	ABCC	Z_DNA_Motif	439	448	.	+	.	ID=VNG_RS09595_439_448_ZDNA;length=10;score=79;composition=1A/4C/3G/1T;sequence=tgcgcacgcg;subset=1
+VNG_RS09595	ABCC	Z_DNA_Motif	746	755	.	+	.	ID=VNG_RS09595_746_755_ZDNA;length=10;score=57;composition=1A/3C/3G/2T;sequence=tgcgtgcacg;subset=1
+##gff-version 3
+VNG_RS03985	ABCC	Z_DNA_Motif	139	148	.	+	.	ID=VNG_RS03985_139_148_ZDNA;length=10;score=46;composition=3A/4C/2G/0T;sequence=gcacacgcac;subset=1
+##gff-version 3
+VNG_RS01430	ABCC	Z_DNA_Motif	186	195	.	+	.	ID=VNG_RS01430_186_195_ZDNA;length=10;score=46;composition=3A/4C/2G/0T;sequence=gcacgcacac;subset=1
+##gff-version 3
+VNG_RS09835	ABCC	Z_DNA_Motif	162	171	.	+	.	ID=VNG_RS09835_162_171_ZDNA;length=10;score=90;composition=1A/5C/3G/0T;sequence=cgcgcgcacg;subset=1
+##gff-version 3
+VNG_RS05350	ABCC	Z_DNA_Motif	681	691	.	+	.	ID=VNG_RS05350_681_691_ZDNA;length=11;score=92;composition=1A/4C/4G/1T;sequence=tgcacgcgcgc;subset=1
+##gff-version 3
+VNG_RS04380	ABCC	Z_DNA_Motif	808	818	.	+	.	ID=VNG_RS04380_808_818_ZDNA;length=11;score=48;composition=4A/5C/1G/0T;sequence=acgcacacacg;subset=1
+##gff-version 3
+VNG_RS06260	ABCC	Z_DNA_Motif	514	523	.	+	.	ID=VNG_RS06260_514_523_ZDNA;length=10;score=79;composition=1A/3C/4G/1T;sequence=acgcgtgcgc;subset=1
+##gff-version 3
+VNG_RS02675	ABCC	Z_DNA_Motif	38	47	.	+	.	ID=VNG_RS02675_38_47_ZDNA;length=10;score=68;composition=1A/3C/4G/1T;sequence=gcacgcgtgc;subset=1
+##gff-version 3
+VNG_RS08120	ABCC	Z_DNA_Motif	219	229	.	+	.	ID=VNG_RS08120_219_229_ZDNA;length=11;score=70;composition=2A/4C/3G/1T;sequence=tgcacacgcgc;subset=1
+VNG_RS08120	ABCC	Z_DNA_Motif	844	854	.	+	.	ID=VNG_RS08120_844_854_ZDNA;length=11;score=81;composition=2A/5C/3G/0T;sequence=gcgcgcacacg;subset=1
+##gff-version 3
+VNG_RS08155	ABCC	Z_DNA_Motif	231	240	.	+	.	ID=VNG_RS08155_231_240_ZDNA;length=10;score=79;composition=1A/4C/3G/1T;sequence=tgcgcgcacg;subset=1
+##gff-version 3
+VNG_RS08950	ABCC	Z_DNA_Motif	847	857	.	+	.	ID=VNG_RS08950_847_857_ZDNA;length=11;score=70;composition=2A/4C/3G/1T;sequence=acgcgcacgtg;subset=1
+##gff-version 3
+VNG_RS07205	ABCC	Z_DNA_Motif	706	715	.	+	.	ID=VNG_RS07205_706_715_ZDNA;length=10;score=24;composition=1A/2C/3G/3T;sequence=tgtgtgcaca;subset=0
+##gff-version 3
+VNG_RS01095	ABCC	Z_DNA_Motif	880	889	.	+	.	ID=VNG_RS01095_880_889_ZDNA;length=10;score=46;composition=1A/2C/4G/2T;sequence=gcacgtgtgc;subset=1
+##gff-version 3
+VNG_RS07880	ABCC	Z_DNA_Motif	79	89	.	+	.	ID=VNG_RS07880_79_89_ZDNA;length=11;score=48;composition=3A/4C/2G/1T;sequence=acacgcacgtg;subset=1
+##gff-version 3
+VNG_RS04535	ABCC	Z_DNA_Motif	230	239	.	+	.	ID=VNG_RS04535_230_239_ZDNA;length=10;score=46;composition=1A/3C/3G/2T;sequence=cgtgcacgtg;subset=1
+VNG_RS04535	ABCC	Z_DNA_Motif	385	394	.	+	.	ID=VNG_RS04535_385_394_ZDNA;length=10;score=101;composition=0A/4C/4G/1T;sequence=tgcgcgcgcg;subset=1
+##gff-version 3
+VNG_RS02760	ABCC	Z_DNA_Motif	120	129	.	+	.	ID=VNG_RS02760_120_129_ZDNA;length=10;score=68;composition=2A/5C/2G/0T;sequence=cgcacacgcg;subset=1
+##gff-version 3
+VNG_RS08365	ABCC	Z_DNA_Motif	730	739	.	+	.	ID=VNG_RS08365_730_739_ZDNA;length=10;score=57;composition=0A/3C/4G/2T;sequence=cgcgtgtgca;subset=1
+##gff-version 3
+VNG_RS04270	ABCC	Z_DNA_Motif	99	108	.	+	.	ID=VNG_RS04270_99_108_ZDNA;length=10;score=57;composition=2A/5C/2G/0T;sequence=cacacgcgca;subset=1
+##gff-version 3
+VNG_RS00980	ABCC	Z_DNA_Motif	11	20	.	+	.	ID=VNG_RS00980_11_20_ZDNA;length=10;score=68;composition=1A/4C/3G/1T;sequence=cacgcgcgtg;subset=1
+VNG_RS00980	ABCC	Z_DNA_Motif	435	445	.	+	.	ID=VNG_RS00980_435_445_ZDNA;length=11;score=103;composition=0A/4C/5G/1T;sequence=cgtgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS09615	ABCC	Z_DNA_Motif	143	152	.	+	.	ID=VNG_RS09615_143_152_ZDNA;length=10;score=68;composition=2A/5C/2G/0T;sequence=cacacgcgcg;subset=1
+VNG_RS09615	ABCC	Z_DNA_Motif	682	692	.	+	.	ID=VNG_RS09615_682_692_ZDNA;length=11;score=92;composition=1A/4C/4G/1T;sequence=tgcacgcgcgc;subset=1
+##gff-version 3
+VNG_RS13970	ABCC	Z_DNA_Motif	350	359	.	+	.	ID=VNG_RS13970_350_359_ZDNA;length=10;score=79;composition=1A/4C/4G/0T;sequence=gcgcacgcgt;subset=1
+##gff-version 3
+VNG_RS08005	ABCC	Z_DNA_Motif	449	459	.	+	.	ID=VNG_RS08005_449_459_ZDNA;length=11;score=70;composition=0A/3C/5G/2T;sequence=gtgtgcgcgca;subset=1
+##gff-version 3
+VNG_RS08715	ABCC	Z_DNA_Motif	368	377	.	+	.	ID=VNG_RS08715_368_377_ZDNA;length=10;score=101;composition=0A/4C/4G/1T;sequence=tgcgcgcgcg;subset=1
+##gff-version 3
+VNG_RS08325	ABCC	Z_DNA_Motif	735	745	.	+	.	ID=VNG_RS08325_735_745_ZDNA;length=11;score=81;composition=2A/5C/3G/0T;sequence=cgcacgcgcac;subset=1
+##gff-version 3
+VNG_RS05190	ABCC	Z_DNA_Motif	212	221	.	+	.	ID=VNG_RS05190_212_221_ZDNA;length=10;score=68;composition=0A/2C/5G/2T;sequence=gcgcgtgtgc;subset=1
+##gff-version 3
+VNG_RS01785	ABCC	Z_DNA_Motif	289	299	.	+	.	ID=VNG_RS01785_289_299_ZDNA;length=11;score=59;composition=2A/4C/3G/1T;sequence=cgcacgtgcac;subset=1
+##gff-version 3
+VNG_RS06790	ABCC	Z_DNA_Motif	213	223	.	+	.	ID=VNG_RS06790_213_223_ZDNA;length=11;score=103;composition=1A/5C/4G/0T;sequence=gcgcgcacgcg;subset=1
+VNG_RS06790	ABCC	Z_DNA_Motif	966	975	.	+	.	ID=VNG_RS06790_966_975_ZDNA;length=10;score=68;composition=1A/4C/3G/1T;sequence=cacgcgtgcg;subset=1
+##gff-version 3
+VNG_RS03450	ABCC	Z_DNA_Motif	1	11	.	+	.	ID=VNG_RS03450_1_11_ZDNA;length=11;score=92;composition=1A/5C/4G/0T;sequence=gcgcgcacgca;subset=1
+VNG_RS03450	ABCC	Z_DNA_Motif	921	930	.	+	.	ID=VNG_RS03450_921_930_ZDNA;length=10;score=46;composition=0A/2C/4G/3T;sequence=cgtgcgtgtg;subset=1
+##gff-version 3
+VNG_RS08470	ABCC	Z_DNA_Motif	649	658	.	+	.	ID=VNG_RS08470_649_658_ZDNA;length=10;score=57;composition=1A/3C/3G/2T;sequence=tgcacgcgtg;subset=1
+##gff-version 3
+VNG_RS04485	ABCC	Z_DNA_Motif	427	440	.	+	.	ID=VNG_RS04485_427_440_ZDNA;length=14;score=118;composition=1A/5C/6G/1T;sequence=gtgcgcacgcgcgc;subset=1
+##gff-version 3
+VNG_RS01790	ABCC	Z_DNA_Motif	736	746	.	+	.	ID=VNG_RS01790_736_746_ZDNA;length=11;score=92;composition=2A/5C/3G/0T;sequence=acgcgcacgcg;subset=1
+##gff-version 3
+VNG_RS09010	ABCC	Z_DNA_Motif	898	909	.	+	.	ID=VNG_RS09010_898_909_ZDNA;length=12;score=137;composition=0A/6C/5G/0T;sequence=cgcgcgcgcgcg;subset=1
+##gff-version 3
+VNG_RS09570	ABCC	Z_DNA_Motif	255	266	.	+	.	ID=VNG_RS09570_255_266_ZDNA;length=12;score=71;composition=2A/5C/3G/1T;sequence=cacgcgtgcacg;subset=1
+VNG_RS09570	ABCC	Z_DNA_Motif	702	712	.	+	.	ID=VNG_RS09570_702_712_ZDNA;length=11;score=103;composition=0A/4C/5G/1T;sequence=gcgcgcgcgtg;subset=1
+##gff-version 3
+VNG_RS14630	ABCC	Z_DNA_Motif	61	70	.	+	.	ID=VNG_RS14630_61_70_ZDNA;length=10;score=68;composition=2A/5C/2G/0T;sequence=cgcgcacacg;subset=1
+##gff-version 3
+VNG_RS04355	ABCC	Z_DNA_Motif	832	842	.	+	.	ID=VNG_RS04355_832_842_ZDNA;length=11;score=103;composition=1A/5C/4G/0T;sequence=cgcgcacgcgc;subset=1
+##gff-version 3
+VNG_RS00870	ABCC	Z_DNA_Motif	865	874	.	+	.	ID=VNG_RS00870_865_874_ZDNA;length=10;score=57;composition=2A/4C/2G/1T;sequence=tgcacacgcg;subset=1
+##gff-version 3
+VNG_RS08450	ABCC	Z_DNA_Motif	245	254	.	+	.	ID=VNG_RS08450_245_254_ZDNA;length=10;score=112;composition=0A/4C/5G/0T;sequence=gcgcgcgcgc;subset=1
+VNG_RS08450	ABCC	Z_DNA_Motif	606	617	.	+	.	ID=VNG_RS08450_606_617_ZDNA;length=12;score=71;composition=1A/3C/5G/2T;sequence=gtgcgtgcgcac;subset=1
+##gff-version 3
+VNG_RS09295	ABCC	Z_DNA_Motif	645	654	.	+	.	ID=VNG_RS09295_645_654_ZDNA;length=10;score=68;composition=2A/4C/3G/0T;sequence=gcacacgcgc;subset=1
+##gff-version 3
+VNG_RS04675	ABCC	Z_DNA_Motif	504	513	.	+	.	ID=VNG_RS04675_504_513_ZDNA;length=10;score=35;composition=2A/2C/3G/2T;sequence=acgtgtgcac;subset=1
+VNG_RS04675	ABCC	Z_DNA_Motif	581	590	.	+	.	ID=VNG_RS04675_581_590_ZDNA;length=10;score=68;composition=0A/3C/4G/2T;sequence=tgcgtgcgca;subset=1
+##gff-version 3
+VNG_RS07500	ABCC	Z_DNA_Motif	53	67	.	+	.	ID=VNG_RS07500_53_67_ZDNA;length=15;score=109;composition=1A/5C/6G/2T;sequence=cgtgcacgcgcgtgc;subset=1
+##gff-version 3
+VNG_RS07015	ABCC	Z_DNA_Motif	787	798	.	+	.	ID=VNG_RS07015_787_798_ZDNA;length=12;score=115;composition=0A/4C/6G/1T;sequence=gcgcgtgcgcgc;subset=1
+##gff-version 3
+VNG_RS03165	ABCC	Z_DNA_Motif	652	661	.	+	.	ID=VNG_RS03165_652_661_ZDNA;length=10;score=57;composition=2A/3C/3G/1T;sequence=acacgcgtgc;subset=1
+##gff-version 3
+VNG_RS04705	ABCC	Z_DNA_Motif	699	708	.	+	.	ID=VNG_RS04705_699_708_ZDNA;length=10;score=13;composition=5A/4C/0G/0T;sequence=acacacacac;subset=0
+##gff-version 3
+VNG_RS02405	ABCC	Z_DNA_Motif	616	625	.	+	.	ID=VNG_RS02405_616_625_ZDNA;length=10;score=57;composition=1A/3C/4G/1T;sequence=gcgtgcacgt;subset=1
+VNG_RS02405	ABCC	Z_DNA_Motif	883	892	.	+	.	ID=VNG_RS02405_883_892_ZDNA;length=10;score=68;composition=2A/4C/3G/0T;sequence=acgcgcacgt;subset=1
+##gff-version 3
+VNG_RS04245	ABCC	Z_DNA_Motif	587	596	.	+	.	ID=VNG_RS04245_587_596_ZDNA;length=10;score=57;composition=0A/2C/5G/2T;sequence=gcgtgtgcgt;subset=1
+##gff-version 3
+VNG_RS04180	ABCC	Z_DNA_Motif	821	830	.	+	.	ID=VNG_RS04180_821_830_ZDNA;length=10;score=68;composition=0A/2C/5G/2T;sequence=gtgcgtgcgc;subset=1
+##gff-version 3
+VNG_RS06270	ABCC	Z_DNA_Motif	29	39	.	+	.	ID=VNG_RS06270_29_39_ZDNA;length=11;score=103;composition=0A/4C/5G/1T;sequence=tgcgcgcgcgt;subset=1
+##gff-version 3
+VNG_RS10240	ABCC	Z_DNA_Motif	48	58	.	+	.	ID=VNG_RS10240_48_58_ZDNA;length=11;score=81;composition=2A/5C/3G/0T;sequence=cacgcgcacgc;subset=1
+VNG_RS10240	ABCC	Z_DNA_Motif	73	82	.	+	.	ID=VNG_RS10240_73_82_ZDNA;length=10;score=79;composition=1A/4C/4G/0T;sequence=gcgcgcacgt;subset=1
+##gff-version 3
+VNG_RS00380	ABCC	Z_DNA_Motif	355	364	.	+	.	ID=VNG_RS00380_355_364_ZDNA;length=10;score=57;composition=2A/5C/2G/0T;sequence=cgcacgcaca;subset=1
+VNG_RS00380	ABCC	Z_DNA_Motif	677	689	.	+	.	ID=VNG_RS00380_677_689_ZDNA;length=13;score=106;composition=1A/5C/5G/1T;sequence=gcgcacgcgtgcg;subset=1
+##gff-version 3
+VNG_RS09360	ABCC	Z_DNA_Motif	733	744	.	+	.	ID=VNG_RS09360_733_744_ZDNA;length=12;score=104;composition=1A/6C/4G/0T;sequence=cgcgcacgcgca;subset=1
+##gff-version 3
+VNG_RS03480	ABCC	Z_DNA_Motif	244	253	.	+	.	ID=VNG_RS03480_244_253_ZDNA;length=10;score=46;composition=1A/3C/3G/2T;sequence=tgtgcacgca;subset=1
+##gff-version 3
+VNG_RS00330	ABCC	Z_DNA_Motif	482	492	.	+	.	ID=VNG_RS00330_482_492_ZDNA;length=11;score=70;composition=2A/5C/3G/0T;sequence=gcgcacgcaca;subset=1
+##gff-version 3
+VNG_RS02255	ABCC	Z_DNA_Motif	451	461	.	+	.	ID=VNG_RS02255_451_461_ZDNA;length=11;score=92;composition=0A/4C/5G/1T;sequence=cgcgtgcgcgt;subset=1
+VNG_RS02255	ABCC	Z_DNA_Motif	655	664	.	+	.	ID=VNG_RS02255_655_664_ZDNA;length=10;score=90;composition=0A/3C/5G/1T;sequence=gtgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS05785	ABCC	Z_DNA_Motif	300	309	.	+	.	ID=VNG_RS05785_300_309_ZDNA;length=10;score=57;composition=0A/3C/4G/2T;sequence=cgtgtgcgca;subset=1
+##gff-version 3
+VNG_RS02420	ABCC	Z_DNA_Motif	868	878	.	+	.	ID=VNG_RS02420_868_878_ZDNA;length=11;score=48;composition=3A/4C/2G/1T;sequence=acgtgcacacg;subset=1
+VNG_RS02420	ABCC	Z_DNA_Motif	890	900	.	+	.	ID=VNG_RS02420_890_900_ZDNA;length=11;score=59;composition=0A/2C/5G/3T;sequence=gcgtgcgtgtg;subset=1
+VNG_RS02420	ABCC	Z_DNA_Motif	904	913	.	+	.	ID=VNG_RS02420_904_913_ZDNA;length=10;score=57;composition=2A/3C/3G/1T;sequence=acgcgtgcac;subset=1
+##gff-version 3
+VNG_RS03400	ABCC	Z_DNA_Motif	518	528	.	+	.	ID=VNG_RS03400_518_528_ZDNA;length=11;score=81;composition=1A/4C/4G/1T;sequence=gcacgtgcgcg;subset=1
+##gff-version 3
+VNG_RS05500	ABCC	Z_DNA_Motif	490	500	.	+	.	ID=VNG_RS05500_490_500_ZDNA;length=11;score=125;composition=0A/5C/5G/0T;sequence=cgcgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS08860	ABCC	Z_DNA_Motif	671	680	.	+	.	ID=VNG_RS08860_671_680_ZDNA;length=10;score=57;composition=1A/4C/3G/1T;sequence=cgcgtgcaca;subset=1
+##gff-version 3
+VNG_RS02570	ABCC	Z_DNA_Motif	647	658	.	+	.	ID=VNG_RS02570_647_658_ZDNA;length=12;score=93;composition=0A/3C/6G/2T;sequence=gcgtgtgcgcgc;subset=1
+VNG_RS02570	ABCC	Z_DNA_Motif	825	834	.	+	.	ID=VNG_RS02570_825_834_ZDNA;length=10;score=46;composition=2A/3C/3G/1T;sequence=gtgcacacgc;subset=1
+##gff-version 3
+VNG_RS00945	ABCC	Z_DNA_Motif	778	787	.	+	.	ID=VNG_RS00945_778_787_ZDNA;length=10;score=57;composition=2A/4C/3G/0T;sequence=gcacacgcgt;subset=1
+##gff-version 3
+VNG_RS05315	ABCC	Z_DNA_Motif	847	862	.	+	.	ID=VNG_RS05315_847_862_ZDNA;length=16;score=187;composition=0A/7C/8G/0T;sequence=gcgcgcgcgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS05810	ABCC	Z_DNA_Motif	58	68	.	+	.	ID=VNG_RS05810_58_68_ZDNA;length=11;score=48;composition=0A/2C/5G/3T;sequence=gtgtgcgtgca;subset=1
+##gff-version 3
+VNG_RS09930	ABCC	Z_DNA_Motif	543	552	.	+	.	ID=VNG_RS09930_543_552_ZDNA;length=10;score=35;composition=4A/4C/1G/0T;sequence=acacacgcac;subset=1
+##gff-version 3
+VNG_RS00300	ABCC	Z_DNA_Motif	950	962	.	+	.	ID=VNG_RS00300_950_962_ZDNA;length=13;score=84;composition=0A/3C/6G/3T;sequence=tgcgtgtgcgcgt;subset=1
+##gff-version 3
+VNG_RS09995	ABCC	Z_DNA_Motif	527	536	.	+	.	ID=VNG_RS09995_527_536_ZDNA;length=10;score=68;composition=2A/4C/3G/0T;sequence=gcgcacgcac;subset=1
+##gff-version 3
+VNG_RS00695	ABCC	Z_DNA_Motif	570	579	.	+	.	ID=VNG_RS00695_570_579_ZDNA;length=10;score=112;composition=0A/5C/4G/0T;sequence=cgcgcgcgcg;subset=1
+VNG_RS00695	ABCC	Z_DNA_Motif	624	633	.	+	.	ID=VNG_RS00695_624_633_ZDNA;length=10;score=46;composition=0A/2C/4G/3T;sequence=tgtgtgcgca;subset=1
+##gff-version 3
+VNG_RS05795	ABCC	Z_DNA_Motif	380	389	.	+	.	ID=VNG_RS05795_380_389_ZDNA;length=10;score=68;composition=0A/3C/4G/2T;sequence=cgtgtgcgcg;subset=1
+##gff-version 3
+VNG_RS14385	ABCC	Z_DNA_Motif	81	91	.	+	.	ID=VNG_RS14385_81_91_ZDNA;length=11;score=81;composition=1A/4C/4G/1T;sequence=gcacgcgcgtg;subset=1
+##gff-version 3
+VNG_RS02095	ABCC	Z_DNA_Motif	27	36	.	+	.	ID=VNG_RS02095_27_36_ZDNA;length=10;score=90;composition=0A/4C/4G/1T;sequence=cgcgcgcgtg;subset=1
+VNG_RS02095	ABCC	Z_DNA_Motif	133	145	.	+	.	ID=VNG_RS02095_133_145_ZDNA;length=13;score=73;composition=1A/3C/5G/3T;sequence=tgcgcacgtgtgc;subset=1
+##gff-version 3
+VNG_RS07400	ABCC	Z_DNA_Motif	717	730	.	+	.	ID=VNG_RS07400_717_730_ZDNA;length=14;score=129;composition=0A/6C/6G/1T;sequence=cgtgcgcgcgcgca;subset=1
+VNG_RS07400	ABCC	Z_DNA_Motif	761	770	.	+	.	ID=VNG_RS07400_761_770_ZDNA;length=10;score=57;composition=1A/3C/3G/2T;sequence=tgcacgcgtg;subset=1
+##gff-version 3
+VNG_RS04360	ABCC	Z_DNA_Motif	178	189	.	+	.	ID=VNG_RS04360_178_189_ZDNA;length=12;score=93;composition=0A/3C/6G/2T;sequence=gcgcgtgcgtgc;subset=1
+##gff-version 3
+VNG_RS00155	ABCC	Z_DNA_Motif	485	494	.	+	.	ID=VNG_RS00155_485_494_ZDNA;length=10;score=46;composition=1A/2C/4G/2T;sequence=gcgtgtgcac;subset=1
+##gff-version 3
+VNG_RS06300	ABCC	Z_DNA_Motif	196	205	.	+	.	ID=VNG_RS06300_196_205_ZDNA;length=10;score=101;composition=0A/4C/5G/0T;sequence=gcgcgcgcgt;subset=1
+VNG_RS06300	ABCC	Z_DNA_Motif	460	470	.	+	.	ID=VNG_RS06300_460_470_ZDNA;length=11;score=92;composition=2A/5C/3G/0T;sequence=acgcacgcgcg;subset=1
+##gff-version 3
+VNG_RS06535	ABCC	Z_DNA_Motif	49	58	.	+	.	ID=VNG_RS06535_49_58_ZDNA;length=10;score=79;composition=0A/3C/4G/2T;sequence=tgcgtgcgcg;subset=1
+VNG_RS06535	ABCC	Z_DNA_Motif	237	247	.	+	.	ID=VNG_RS06535_237_247_ZDNA;length=11;score=70;composition=1A/3C/4G/2T;sequence=tgcgcgtgcac;subset=1
+VNG_RS06535	ABCC	Z_DNA_Motif	766	775	.	+	.	ID=VNG_RS06535_766_775_ZDNA;length=10;score=79;composition=1A/4C/4G/0T;sequence=gcacgcgcgt;subset=1
+##gff-version 3
+VNG_RS07290	ABCC	Z_DNA_Motif	319	328	.	+	.	ID=VNG_RS07290_319_328_ZDNA;length=10;score=68;composition=0A/3C/4G/2T;sequence=cgcgtgtgcg;subset=1
+##gff-version 3
+VNG_RS02860	ABCC	Z_DNA_Motif	379	388	.	+	.	ID=VNG_RS02860_379_388_ZDNA;length=10;score=35;composition=3A/5C/1G/0T;sequence=cgcacacaca;subset=1
+##gff-version 3
+VNG_RS01030	ABCC	Z_DNA_Motif	294	303	.	+	.	ID=VNG_RS01030_294_303_ZDNA;length=10;score=46;composition=2A/3C/3G/1T;sequence=gtgcacacgc;subset=1
+##gff-version 3
+VNG_RS13915	ABCC	Z_DNA_Motif	729	740	.	+	.	ID=VNG_RS13915_729_740_ZDNA;length=12;score=104;composition=2A/5C/4G/0T;sequence=acacgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS04930	ABCC	Z_DNA_Motif	516	525	.	+	.	ID=VNG_RS04930_516_525_ZDNA;length=10;score=35;composition=4A/4C/1G/0T;sequence=acacacgcac;subset=1
+##gff-version 3
+VNG_RS08285	ABCC	Z_DNA_Motif	890	902	.	+	.	ID=VNG_RS08285_890_902_ZDNA;length=13;score=106;composition=1A/5C/5G/1T;sequence=acgcgcgtgcgca;subset=1
+##gff-version 3
+VNG_RS05200	ABCC	Z_DNA_Motif	229	239	.	+	.	ID=VNG_RS05200_229_239_ZDNA;length=11;score=70;composition=2A/4C/3G/1T;sequence=acgcgtgcacg;subset=1
+##gff-version 3
+VNG_RS07545	ABCC	Z_DNA_Motif	21	34	.	+	.	ID=VNG_RS07545_21_34_ZDNA;length=14;score=96;composition=2A/6C/4G/1T;sequence=tgcgcacgcgcaca;subset=1
+##gff-version 3
+VNG_RS14215	ABCC	Z_DNA_Motif	680	689	.	+	.	ID=VNG_RS14215_680_689_ZDNA;length=10;score=68;composition=1A/3C/4G/1T;sequence=gtgcacgcgc;subset=1
+##gff-version 3
+VNG_RS03755	ABCC	Z_DNA_Motif	216	226	.	+	.	ID=VNG_RS03755_216_226_ZDNA;length=11;score=48;composition=4A/5C/1G/0T;sequence=acacacgcacg;subset=1
+VNG_RS03755	ABCC	Z_DNA_Motif	266	275	.	+	.	ID=VNG_RS03755_266_275_ZDNA;length=10;score=46;composition=2A/3C/3G/1T;sequence=gtgcacacgc;subset=1
+##gff-version 3
+VNG_RS06685	ABCC	Z_DNA_Motif	692	702	.	+	.	ID=VNG_RS06685_692_702_ZDNA;length=11;score=92;composition=1A/4C/4G/1T;sequence=tgcacgcgcgc;subset=1
+##gff-version 3
+VNG_RS14555	ABCC	Z_DNA_Motif	354	363	.	+	.	ID=VNG_RS14555_354_363_ZDNA;length=10;score=79;composition=0A/4C/4G/1T;sequence=cgcgtgcgca;subset=1
+##gff-version 3
+VNG_RS05490	ABCC	Z_DNA_Motif	137	147	.	+	.	ID=VNG_RS05490_137_147_ZDNA;length=11;score=70;composition=2A/5C/3G/0T;sequence=gcacgcacgca;subset=1
+##gff-version 3
+VNG_RS02780	ABCC	Z_DNA_Motif	282	291	.	+	.	ID=VNG_RS02780_282_291_ZDNA;length=10;score=90;composition=0A/4C/4G/1T;sequence=tgcgcgcgca;subset=1
+##gff-version 3
+VNG_RS08730	ABCC	Z_DNA_Motif	740	750	.	+	.	ID=VNG_RS08730_740_750_ZDNA;length=11;score=92;composition=1A/4C/4G/1T;sequence=acgcgcgtgcg;subset=1
+##gff-version 3
+VNG_RS09495	ABCC	Z_DNA_Motif	490	500	.	+	.	ID=VNG_RS09495_490_500_ZDNA;length=11;score=81;composition=2A/5C/3G/0T;sequence=cgcgcacacgc;subset=1
+##gff-version 3
+VNG_RS07000	ABCC	Z_DNA_Motif	590	604	.	+	.	ID=VNG_RS07000_590_604_ZDNA;length=15;score=131;composition=1A/6C/6G/1T;sequence=gcacgcgcgtgcgcg;subset=1
+##gff-version 3
+VNG_RS02855	ABCC	Z_DNA_Motif	590	599	.	+	.	ID=VNG_RS02855_590_599_ZDNA;length=10;score=57;composition=3A/4C/2G/0T;sequence=acgcacacgc;subset=1
+##gff-version 3
+VNG_RS06530	ABCC	Z_DNA_Motif	63	73	.	+	.	ID=VNG_RS06530_63_73_ZDNA;length=11;score=70;composition=3A/5C/2G/0T;sequence=acgcacacgcg;subset=1
+VNG_RS06530	ABCC	Z_DNA_Motif	80	89	.	+	.	ID=VNG_RS06530_80_89_ZDNA;length=10;score=46;composition=2A/4C/2G/1T;sequence=cgcacacgtg;subset=1
+VNG_RS06530	ABCC	Z_DNA_Motif	475	484	.	+	.	ID=VNG_RS06530_475_484_ZDNA;length=10;score=68;composition=2A/4C/3G/0T;sequence=acgcgcacgt;subset=1
+##gff-version 3
+VNG_RS07720	ABCC	Z_DNA_Motif	72	81	.	+	.	ID=VNG_RS07720_72_81_ZDNA;length=10;score=68;composition=1A/4C/3G/1T;sequence=tgcgcgcaca;subset=1
+##gff-version 3
+VNG_RS07790	ABCC	Z_DNA_Motif	4	13	.	+	.	ID=VNG_RS07790_4_13_ZDNA;length=10;score=57;composition=0A/3C/4G/2T;sequence=cgtgcgtgca;subset=1
+##gff-version 3
+VNG_RS01395	ABCC	Z_DNA_Motif	40	50	.	+	.	ID=VNG_RS01395_40_50_ZDNA;length=11;score=70;composition=0A/3C/5G/2T;sequence=gcgtgtgcgca;subset=1
+##gff-version 3
+VNG_RS02880	ABCC	Z_DNA_Motif	175	184	.	+	.	ID=VNG_RS02880_175_184_ZDNA;length=10;score=57;composition=1A/3C/4G/1T;sequence=gcacgcgtgt;subset=1
+##gff-version 3
+VNG_RS08785	ABCC	Z_DNA_Motif	526	535	.	+	.	ID=VNG_RS08785_526_535_ZDNA;length=10;score=68;composition=1A/3C/4G/1T;sequence=gtgcgcgcac;subset=1
+##gff-version 3
+VNG_RS07060	ABCC	Z_DNA_Motif	421	430	.	+	.	ID=VNG_RS07060_421_430_ZDNA;length=10;score=68;composition=0A/3C/4G/2T;sequence=cgtgcgtgcg;subset=1
+VNG_RS07060	ABCC	Z_DNA_Motif	505	519	.	+	.	ID=VNG_RS07060_505_519_ZDNA;length=15;score=109;composition=1A/5C/6G/2T;sequence=cgcacgtgtgcgcgc;subset=1
+VNG_RS07060	ABCC	Z_DNA_Motif	890	903	.	+	.	ID=VNG_RS07060_890_903_ZDNA;length=14;score=140;composition=0A/5C/7G/1T;sequence=gcgtgcgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS08260	ABCC	Z_DNA_Motif	332	342	.	+	.	ID=VNG_RS08260_332_342_ZDNA;length=11;score=59;composition=1A/3C/4G/2T;sequence=tgtgcacgcgt;subset=1
+##gff-version 3
+VNG_RS01295	ABCC	Z_DNA_Motif	691	701	.	+	.	ID=VNG_RS01295_691_701_ZDNA;length=11;score=70;composition=0A/2C/5G/3T;sequence=tgcgcgtgtgc;subset=1
+##gff-version 3
+VNG_RS02485	ABCC	Z_DNA_Motif	465	475	.	+	.	ID=VNG_RS02485_465_475_ZDNA;length=11;score=92;composition=1A/5C/4G/0T;sequence=gcacgcgcgca;subset=1
+##gff-version 3
+VNG_RS02110	ABCC	Z_DNA_Motif	166	175	.	+	.	ID=VNG_RS02110_166_175_ZDNA;length=10;score=68;composition=0A/3C/4G/2T;sequence=tgtgcgcgca;subset=1
+##gff-version 3
+VNG_RS05205	ABCC	Z_DNA_Motif	803	812	.	+	.	ID=VNG_RS05205_803_812_ZDNA;length=10;score=68;composition=1A/3C/4G/1T;sequence=gcgcacgtgc;subset=1
+##gff-version 3
+VNG_RS10145	ABCC	Z_DNA_Motif	869	878	.	+	.	ID=VNG_RS10145_869_878_ZDNA;length=10;score=57;composition=0A/2C/4G/3T;sequence=tgtgcgcgtg;subset=1
+##gff-version 3
+VNG_RS07225	ABCC	Z_DNA_Motif	346	356	.	+	.	ID=VNG_RS07225_346_356_ZDNA;length=11;score=92;composition=1A/5C/4G/0T;sequence=cacgcgcgcgt;subset=1
+##gff-version 3
+VNG_RS00750	ABCC	Z_DNA_Motif	307	318	.	+	.	ID=VNG_RS00750_307_318_ZDNA;length=12;score=93;composition=2A/5C/4G/0T;sequence=gcgcgcacgcac;subset=1
+##gff-version 3
+VNG_RS07635	ABCC	Z_DNA_Motif	783	792	.	+	.	ID=VNG_RS07635_783_792_ZDNA;length=10;score=68;composition=2A/4C/3G/0T;sequence=acgcgcacgt;subset=1
+##gff-version 3
+VNG_RS02605	ABCC	Z_DNA_Motif	159	168	.	+	.	ID=VNG_RS02605_159_168_ZDNA;length=10;score=79;composition=0A/4C/4G/1T;sequence=cgcgtgcgca;subset=1
+VNG_RS02605	ABCC	Z_DNA_Motif	340	349	.	+	.	ID=VNG_RS02605_340_349_ZDNA;length=10;score=79;composition=0A/3C/5G/1T;sequence=gcgcgcgtgt;subset=1
+VNG_RS02605	ABCC	Z_DNA_Motif	525	536	.	+	.	ID=VNG_RS02605_525_536_ZDNA;length=12;score=93;composition=2A/6C/3G/0T;sequence=cgcgcacacgcg;subset=1
+##gff-version 3
+VNG_RS09555	ABCC	Z_DNA_Motif	206	216	.	+	.	ID=VNG_RS09555_206_216_ZDNA;length=11;score=48;composition=3A/4C/2G/1T;sequence=acacacgtgcg;subset=1
+##gff-version 3
+VNG_RS02940	ABCC	Z_DNA_Motif	442	453	.	+	.	ID=VNG_RS02940_442_453_ZDNA;length=12;score=60;composition=3A/5C/3G/0T;sequence=gcgcacacacgt;subset=1
+##gff-version 3
+VNG_RS06350	ABCC	Z_DNA_Motif	837	847	.	+	.	ID=VNG_RS06350_837_847_ZDNA;length=11;score=92;composition=0A/4C/5G/1T;sequence=gtgcgcgcgca;subset=1
+##gff-version 3
+VNG_RS07930	ABCC	Z_DNA_Motif	231	240	.	+	.	ID=VNG_RS07930_231_240_ZDNA;length=10;score=112;composition=0A/5C/4G/0T;sequence=cgcgcgcgcg;subset=1
+##gff-version 3
+VNG_RS10000	ABCC	Z_DNA_Motif	369	379	.	+	.	ID=VNG_RS10000_369_379_ZDNA;length=11;score=70;composition=0A/3C/5G/2T;sequence=gcgtgcgtgca;subset=1
+##gff-version 3
+VNG_RS00680	ABCC	Z_DNA_Motif	623	632	.	+	.	ID=VNG_RS00680_623_632_ZDNA;length=10;score=79;composition=1A/5C/3G/0T;sequence=cgcgcacgca;subset=1
+##gff-version 3
+VNG_RS10425	ABCC	Z_DNA_Motif	696	707	.	+	.	ID=VNG_RS10425_696_707_ZDNA;length=12;score=71;composition=2A/4C/4G/1T;sequence=gcacgcgtgcac;subset=1
+VNG_RS10425	ABCC	Z_DNA_Motif	948	958	.	+	.	ID=VNG_RS10425_948_958_ZDNA;length=11;score=59;composition=2A/4C/3G/1T;sequence=cacgtgcacgc;subset=1
+##gff-version 3
+VNG_RS02765	ABCC	Z_DNA_Motif	50	59	.	+	.	ID=VNG_RS02765_50_59_ZDNA;length=10;score=90;composition=0A/3C/5G/1T;sequence=gtgcgcgcgc;subset=1
+VNG_RS02765	ABCC	Z_DNA_Motif	765	775	.	+	.	ID=VNG_RS02765_765_775_ZDNA;length=11;score=103;composition=0A/4C/5G/1T;sequence=tgcgcgcgcgt;subset=1
+VNG_RS02765	ABCC	Z_DNA_Motif	882	891	.	+	.	ID=VNG_RS02765_882_891_ZDNA;length=10;score=79;composition=2A/4C/3G/0T;sequence=acgcacgcgc;subset=1
+##gff-version 3
+VNG_RS05885	ABCC	Z_DNA_Motif	565	577	.	+	.	ID=VNG_RS05885_565_577_ZDNA;length=13;score=84;composition=1A/4C/5G/2T;sequence=gtgtgcacgcgcg;subset=1
+##gff-version 3
+VNG_RS14205	ABCC	Z_DNA_Motif	318	328	.	+	.	ID=VNG_RS14205_318_328_ZDNA;length=11;score=48;composition=2A/3C/3G/2T;sequence=tgcgtgcacac;subset=1
+VNG_RS14205	ABCC	Z_DNA_Motif	663	672	.	+	.	ID=VNG_RS14205_663_672_ZDNA;length=10;score=79;composition=1A/5C/3G/0T;sequence=cacgcgcgca;subset=1
+##gff-version 3
+VNG_RS07235	ABCC	Z_DNA_Motif	485	495	.	+	.	ID=VNG_RS07235_485_495_ZDNA;length=11;score=103;composition=1A/5C/4G/0T;sequence=cgcgcacgcgc;subset=1
+VNG_RS07235	ABCC	Z_DNA_Motif	840	849	.	+	.	ID=VNG_RS07235_840_849_ZDNA;length=10;score=112;composition=0A/4C/5G/0T;sequence=gcgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS09965	ABCC	Z_DNA_Motif	350	361	.	+	.	ID=VNG_RS09965_350_361_ZDNA;length=12;score=38;composition=0A/1C/6G/4T;sequence=gtgtgtgtgcgt;subset=1
+##gff-version 3
+VNG_RS08855	ABCC	Z_DNA_Motif	60	69	.	+	.	ID=VNG_RS08855_60_69_ZDNA;length=10;score=90;composition=0A/3C/5G/1T;sequence=gcgcgtgcgc;subset=1
+##gff-version 3
+VNG_RS10280	ABCC	Z_DNA_Motif	274	283	.	+	.	ID=VNG_RS10280_274_283_ZDNA;length=10;score=57;composition=1A/3C/4G/1T;sequence=gcacgcgtgt;subset=1
+VNG_RS10280	ABCC	Z_DNA_Motif	505	514	.	+	.	ID=VNG_RS10280_505_514_ZDNA;length=10;score=46;composition=1A/2C/4G/2T;sequence=acgcgtgtgt;subset=1
+##gff-version 3
+VNG_RS00415	ABCC	Z_DNA_Motif	643	653	.	+	.	ID=VNG_RS00415_643_653_ZDNA;length=11;score=125;composition=0A/5C/5G/0T;sequence=cgcgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS02800	ABCC	Z_DNA_Motif	360	369	.	+	.	ID=VNG_RS02800_360_369_ZDNA;length=10;score=68;composition=2A/4C/3G/0T;sequence=gcgcacacgc;subset=1
+##gff-version 3
+VNG_RS01255	ABCC	Z_DNA_Motif	318	327	.	+	.	ID=VNG_RS01255_318_327_ZDNA;length=10;score=35;composition=4A/4C/1G/0T;sequence=acacacacgc;subset=1
+VNG_RS01255	ABCC	Z_DNA_Motif	329	338	.	+	.	ID=VNG_RS01255_329_338_ZDNA;length=10;score=101;composition=0A/5C/4G/0T;sequence=cgcgcgcgca;subset=1
+##gff-version 3
+VNG_RS06455	ABCC	Z_DNA_Motif	93	102	.	+	.	ID=VNG_RS06455_93_102_ZDNA;length=10;score=68;composition=2A/4C/3G/0T;sequence=gcacgcacgc;subset=1
+##gff-version 3
+VNG_RS04115	ABCC	Z_DNA_Motif	840	849	.	+	.	ID=VNG_RS04115_840_849_ZDNA;length=10;score=46;composition=2A/4C/2G/1T;sequence=cgtgcacacg;subset=1
+##gff-version 3
+VNG_RS08085	ABCC	Z_DNA_Motif	457	466	.	+	.	ID=VNG_RS08085_457_466_ZDNA;length=10;score=46;composition=0A/1C/5G/3T;sequence=gtgtgcgtgc;subset=1
+##gff-version 3
+VNG_RS14370	ABCC	Z_DNA_Motif	373	383	.	+	.	ID=VNG_RS14370_373_383_ZDNA;length=11;score=70;composition=1A/3C/4G/2T;sequence=acgcgtgtgcg;subset=1
+##gff-version 3
+VNG_RS07995	ABCC	Z_DNA_Motif	258	267	.	+	.	ID=VNG_RS07995_258_267_ZDNA;length=10;score=57;composition=0A/2C/5G/2T;sequence=gcgtgcgtgt;subset=1
+VNG_RS07995	ABCC	Z_DNA_Motif	963	973	.	+	.	ID=VNG_RS07995_963_973_ZDNA;length=11;score=59;composition=2A/4C/3G/1T;sequence=cacacgcgtgc;subset=1
+##gff-version 3
+VNG_RS07360	ABCC	Z_DNA_Motif	460	469	.	+	.	ID=VNG_RS07360_460_469_ZDNA;length=10;score=46;composition=3A/4C/2G/0T;sequence=acacgcacgt;subset=1
+##gff-version 3
+VNG_RS07485	ABCC	Z_DNA_Motif	341	350	.	+	.	ID=VNG_RS07485_341_350_ZDNA;length=10;score=79;composition=0A/3C/4G/2T;sequence=tgcgcgcgtg;subset=1
+##gff-version 3
+VNG_RS03470	ABCC	Z_DNA_Motif	223	233	.	+	.	ID=VNG_RS03470_223_233_ZDNA;length=11;score=59;composition=1A/3C/4G/2T;sequence=tgcacgcgtgt;subset=1
+##gff-version 3
+VNG_RS06990	ABCC	Z_DNA_Motif	437	446	.	+	.	ID=VNG_RS06990_437_446_ZDNA;length=10;score=79;composition=1A/3C/4G/1T;sequence=acgcgcgtgc;subset=1
+VNG_RS06990	ABCC	Z_DNA_Motif	476	487	.	+	.	ID=VNG_RS06990_476_487_ZDNA;length=12;score=71;composition=1A/4C/4G/2T;sequence=tgtgcgcgcaca;subset=1
+VNG_RS06990	ABCC	Z_DNA_Motif	751	760	.	+	.	ID=VNG_RS06990_751_760_ZDNA;length=10;score=35;composition=4A/4C/1G/0T;sequence=acacacacgc;subset=1
+##gff-version 3
+VNG_RS01055	ABCC	Z_DNA_Motif	836	846	.	+	.	ID=VNG_RS01055_836_846_ZDNA;length=11;score=103;composition=1A/5C/4G/0T;sequence=gcacgcgcgcg;subset=1
+##gff-version 3
+VNG_RS08660	ABCC	Z_DNA_Motif	782	795	.	+	.	ID=VNG_RS08660_782_795_ZDNA;length=14;score=85;composition=3A/5C/4G/1T;sequence=acgcacacgcgtgc;subset=1
+##gff-version 3
+VNG_RS07065	ABCC	Z_DNA_Motif	807	818	.	+	.	ID=VNG_RS07065_807_818_ZDNA;length=12;score=115;composition=1A/5C/5G/0T;sequence=gcgcgcacgcgc;subset=1
+##gff-version 3
+VNG_RS09985	ABCC	Z_DNA_Motif	10	19	.	+	.	ID=VNG_RS09985_10_19_ZDNA;length=10;score=68;composition=0A/3C/4G/2T;sequence=cgcgcgtgtg;subset=1
+##gff-version 3
+VNG_RS04875	ABCC	Z_DNA_Motif	777	787	.	+	.	ID=VNG_RS04875_777_787_ZDNA;length=11;score=26;composition=4A/4C/1G/1T;sequence=acacacacgtg;subset=0
+##gff-version 3
+VNG_RS07755	ABCC	Z_DNA_Motif	308	317	.	+	.	ID=VNG_RS07755_308_317_ZDNA;length=10;score=68;composition=2A/4C/3G/0T;sequence=gcgcgcacac;subset=1
+VNG_RS07755	ABCC	Z_DNA_Motif	919	928	.	+	.	ID=VNG_RS07755_919_928_ZDNA;length=10;score=112;composition=0A/4C/5G/0T;sequence=gcgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS05740	ABCC	Z_DNA_Motif	36	45	.	+	.	ID=VNG_RS05740_36_45_ZDNA;length=10;score=68;composition=1A/3C/4G/1T;sequence=acgcgtgcgt;subset=1
+##gff-version 3
+VNG_RS10505	ABCC	Z_DNA_Motif	65	75	.	+	.	ID=VNG_RS10505_65_75_ZDNA;length=11;score=59;composition=0A/2C/5G/3T;sequence=gtgcgcgtgtg;subset=1
+##gff-version 3
+VNG_RS04670	ABCC	Z_DNA_Motif	104	113	.	+	.	ID=VNG_RS04670_104_113_ZDNA;length=10;score=57;composition=2A/3C/3G/1T;sequence=acgcgtgcac;subset=1
+##gff-version 3
+VNG_RS08640	ABCC	Z_DNA_Motif	269	278	.	+	.	ID=VNG_RS08640_269_278_ZDNA;length=10;score=68;composition=2A/4C/3G/0T;sequence=acgcgcacgt;subset=1
+VNG_RS08640	ABCC	Z_DNA_Motif	285	295	.	+	.	ID=VNG_RS08640_285_295_ZDNA;length=11;score=81;composition=2A/5C/3G/0T;sequence=acgcgcgcaca;subset=1
+##gff-version 3
+VNG_RS09465	ABCC	Z_DNA_Motif	612	621	.	+	.	ID=VNG_RS09465_612_621_ZDNA;length=10;score=90;composition=1A/5C/3G/0T;sequence=cgcgcgcacg;subset=1
+##gff-version 3
+VNG_RS03815	ABCC	Z_DNA_Motif	730	742	.	+	.	ID=VNG_RS03815_730_742_ZDNA;length=13;score=106;composition=0A/4C/6G/2T;sequence=tgcgcgtgcgcgt;subset=1
+VNG_RS03815	ABCC	Z_DNA_Motif	918	928	.	+	.	ID=VNG_RS03815_918_928_ZDNA;length=11;score=59;composition=1A/3C/4G/2T;sequence=tgcgcacgtgt;subset=1
+##gff-version 3
+VNG_RS04830	ABCC	Z_DNA_Motif	442	451	.	+	.	ID=VNG_RS04830_442_451_ZDNA;length=10;score=101;composition=0A/5C/4G/0T;sequence=cgcgcgcgca;subset=1
+##gff-version 3
+VNG_RS07885	ABCC	Z_DNA_Motif	228	239	.	+	.	ID=VNG_RS07885_228_239_ZDNA;length=12;score=82;composition=0A/3C/6G/2T;sequence=gcgcgtgtgcgt;subset=1
+##gff-version 3
+VNG_RS04950	ABCC	Z_DNA_Motif	2	12	.	+	.	ID=VNG_RS04950_2_12_ZDNA;length=11;score=103;composition=1A/5C/4G/0T;sequence=gcgcgcgcacg;subset=1
+VNG_RS04950	ABCC	Z_DNA_Motif	964	974	.	+	.	ID=VNG_RS04950_964_974_ZDNA;length=11;score=70;composition=2A/5C/3G/0T;sequence=gcgcgcacaca;subset=1
+##gff-version 3
+VNG_RS04795	ABCC	Z_DNA_Motif	407	416	.	+	.	ID=VNG_RS04795_407_416_ZDNA;length=10;score=68;composition=1A/3C/4G/1T;sequence=acgtgcgcgt;subset=1
+##gff-version 3
+VNG_RS07650	ABCC	Z_DNA_Motif	129	139	.	+	.	ID=VNG_RS07650_129_139_ZDNA;length=11;score=59;composition=1A/3C/4G/2T;sequence=gcacgtgtgcg;subset=1
+##gff-version 3
+VNG_RS08875	ABCC	Z_DNA_Motif	171	181	.	+	.	ID=VNG_RS08875_171_181_ZDNA;length=11;score=70;composition=2A/4C/3G/1T;sequence=tgcacacgcgc;subset=1
+##gff-version 3
+VNG_RS02905	ABCC	Z_DNA_Motif	118	127	.	+	.	ID=VNG_RS02905_118_127_ZDNA;length=10;score=101;composition=1A/4C/4G/0T;sequence=acgcgcgcgc;subset=1
+VNG_RS02905	ABCC	Z_DNA_Motif	945	954	.	+	.	ID=VNG_RS02905_945_954_ZDNA;length=10;score=24;composition=3A/4C/1G/1T;sequence=tgcacacaca;subset=0
+##gff-version 3
+VNG_RS00525	ABCC	Z_DNA_Motif	707	717	.	+	.	ID=VNG_RS00525_707_717_ZDNA;length=11;score=81;composition=2A/5C/3G/0T;sequence=gcgcgcacacg;subset=1
+##gff-version 3
+VNG_RS02700	ABCC	Z_DNA_Motif	128	137	.	+	.	ID=VNG_RS02700_128_137_ZDNA;length=10;score=57;composition=3A/4C/2G/0T;sequence=acgcgcacac;subset=1
+##gff-version 3
+VNG_RS06700	ABCC	Z_DNA_Motif	140	149	.	+	.	ID=VNG_RS06700_140_149_ZDNA;length=10;score=90;composition=1A/4C/4G/0T;sequence=gcgcgcgcac;subset=1
+VNG_RS06700	ABCC	Z_DNA_Motif	702	714	.	+	.	ID=VNG_RS06700_702_714_ZDNA;length=13;score=51;composition=3A/4C/3G/2T;sequence=acgtgcacacgtg;subset=1
+##gff-version 3
+VNG_RS01170	ABCC	Z_DNA_Motif	52	62	.	+	.	ID=VNG_RS01170_52_62_ZDNA;length=11;score=70;composition=2A/5C/3G/0T;sequence=gcgcgcacaca;subset=1
+##gff-version 3
+VNG_RS06955	ABCC	Z_DNA_Motif	427	436	.	+	.	ID=VNG_RS06955_427_436_ZDNA;length=10;score=112;composition=0A/5C/4G/0T;sequence=cgcgcgcgcg;subset=1
+##gff-version 3
+VNG_RS04255	ABCC	Z_DNA_Motif	32	41	.	+	.	ID=VNG_RS04255_32_41_ZDNA;length=10;score=57;composition=1A/4C/3G/1T;sequence=cgcacgtgca;subset=1
+VNG_RS04255	ABCC	Z_DNA_Motif	592	602	.	+	.	ID=VNG_RS04255_592_602_ZDNA;length=11;score=59;composition=1A/3C/4G/2T;sequence=gcacgtgtgcg;subset=1
+##gff-version 3
+VNG_RS01635	ABCC	Z_DNA_Motif	343	352	.	+	.	ID=VNG_RS01635_343_352_ZDNA;length=10;score=57;composition=2A/3C/3G/1T;sequence=acgtgcgcac;subset=1
+##gff-version 3
+VNG_RS00165	ABCC	Z_DNA_Motif	398	407	.	+	.	ID=VNG_RS00165_398_407_ZDNA;length=10;score=79;composition=1A/4C/4G/0T;sequence=gcgcacgcgt;subset=1
+##gff-version 3
+VNG_RS04555	ABCC	Z_DNA_Motif	367	377	.	+	.	ID=VNG_RS04555_367_377_ZDNA;length=11;score=70;composition=1A/4C/4G/1T;sequence=cacgtgcgcgt;subset=1
+##gff-version 3
+VNG_RS05425	ABCC	Z_DNA_Motif	35	47	.	+	.	ID=VNG_RS05425_35_47_ZDNA;length=13;score=95;composition=2A/5C/4G/1T;sequence=acgcgtgcacgcg;subset=1
+##gff-version 3
+VNG_RS05925	ABCC	Z_DNA_Motif	159	170	.	+	.	ID=VNG_RS05925_159_170_ZDNA;length=12;score=93;composition=1A/5C/4G/1T;sequence=cgcgtgcacgcg;subset=1
+##gff-version 3
+VNG_RS08525	ABCC	Z_DNA_Motif	379	389	.	+	.	ID=VNG_RS08525_379_389_ZDNA;length=11;score=48;composition=2A/3C/3G/2T;sequence=acacgcgtgtg;subset=1
+##gff-version 3
+VNG_RS09745	ABCC	Z_DNA_Motif	437	446	.	+	.	ID=VNG_RS09745_437_446_ZDNA;length=10;score=46;composition=3A/5C/1G/0T;sequence=cacacacgcg;subset=1
+##gff-version 3
+VNG_RS04095	ABCC	Z_DNA_Motif	973	983	.	+	.	ID=VNG_RS04095_973_983_ZDNA;length=11;score=70;composition=3A/5C/2G/0T;sequence=acacacgcgcg;subset=1
+##gff-version 3
+VNG_RS01440	ABCC	Z_DNA_Motif	723	732	.	+	.	ID=VNG_RS01440_723_732_ZDNA;length=10;score=57;composition=2A/3C/3G/1T;sequence=acgcgtgcac;subset=1
+##gff-version 3
+VNG_RS01015	ABCC	Z_DNA_Motif	916	925	.	+	.	ID=VNG_RS01015_916_925_ZDNA;length=10;score=57;composition=1A/4C/3G/1T;sequence=cgtgcgcaca;subset=1
+##gff-version 3
+VNG_RS06255	ABCC	Z_DNA_Motif	646	655	.	+	.	ID=VNG_RS06255_646_655_ZDNA;length=10;score=68;composition=1A/4C/3G/1T;sequence=tgcacgcgca;subset=1
+##gff-version 3
+VNG_RS07230	ABCC	Z_DNA_Motif	684	695	.	+	.	ID=VNG_RS07230_684_695_ZDNA;length=12;score=93;composition=1A/5C/4G/1T;sequence=cgtgcgcgcacg;subset=1
+##gff-version 3
+VNG_RS04810	ABCC	Z_DNA_Motif	230	240	.	+	.	ID=VNG_RS04810_230_240_ZDNA;length=11;score=81;composition=0A/3C/5G/2T;sequence=gtgtgcgcgcg;subset=1
+VNG_RS04810	ABCC	Z_DNA_Motif	427	439	.	+	.	ID=VNG_RS04810_427_439_ZDNA;length=13;score=106;composition=1A/5C/5G/1T;sequence=gcacgcgcgcgtg;subset=1
+##gff-version 3
+VNG_RS09955	ABCC	Z_DNA_Motif	129	142	.	+	.	ID=VNG_RS09955_129_142_ZDNA;length=14;score=96;composition=2A/6C/4G/1T;sequence=cacacgtgcgcgcg;subset=1
+##gff-version 3
+VNG_RS07480	ABCC	Z_DNA_Motif	766	777	.	+	.	ID=VNG_RS07480_766_777_ZDNA;length=12;score=93;composition=0A/4C/5G/2T;sequence=cgtgtgcgcgcg;subset=1
+##gff-version 3
+VNG_RS02240	ABCC	Z_DNA_Motif	270	279	.	+	.	ID=VNG_RS02240_270_279_ZDNA;length=10;score=90;composition=0A/3C/5G/1T;sequence=gtgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS01935	ABCC	Z_DNA_Motif	61	70	.	+	.	ID=VNG_RS01935_61_70_ZDNA;length=10;score=79;composition=2A/4C/3G/0T;sequence=acgcacgcgc;subset=1
+VNG_RS01935	ABCC	Z_DNA_Motif	245	254	.	+	.	ID=VNG_RS01935_245_254_ZDNA;length=10;score=24;composition=2A/3C/2G/2T;sequence=cacacgtgtg;subset=0
+VNG_RS01935	ABCC	Z_DNA_Motif	530	539	.	+	.	ID=VNG_RS01935_530_539_ZDNA;length=10;score=57;composition=2A/5C/2G/0T;sequence=cacgcacgca;subset=1
+##gff-version 3
+VNG_RS06910	ABCC	Z_DNA_Motif	105	115	.	+	.	ID=VNG_RS06910_105_115_ZDNA;length=11;score=70;composition=0A/2C/5G/3T;sequence=tgtgtgcgcgc;subset=1
+##gff-version 3
+VNG_RS05640	ABCC	Z_DNA_Motif	712	723	.	+	.	ID=VNG_RS05640_712_723_ZDNA;length=12;score=71;composition=3A/5C/3G/0T;sequence=acgcgcacacgt;subset=1
+##gff-version 3
+VNG_RS02320	ABCC	Z_DNA_Motif	966	975	.	+	.	ID=VNG_RS02320_966_975_ZDNA;length=10;score=57;composition=0A/2C/4G/3T;sequence=tgtgtgcgcg;subset=1
+##gff-version 3
+VNG_RS07615	ABCC	Z_DNA_Motif	270	280	.	+	.	ID=VNG_RS07615_270_280_ZDNA;length=11;score=103;composition=1A/5C/4G/0T;sequence=cgcacgcgcgc;subset=1
+##gff-version 3
+VNG_RS07035	ABCC	Z_DNA_Motif	667	676	.	+	.	ID=VNG_RS07035_667_676_ZDNA;length=10;score=68;composition=2A/5C/2G/0T;sequence=cgcacacgcg;subset=1
+##gff-version 3
+VNG_RS05635	ABCC	Z_DNA_Motif	412	421	.	+	.	ID=VNG_RS05635_412_421_ZDNA;length=10;score=90;composition=1A/5C/3G/0T;sequence=cgcacgcgcg;subset=1
+VNG_RS05635	ABCC	Z_DNA_Motif	566	575	.	+	.	ID=VNG_RS05635_566_575_ZDNA;length=10;score=101;composition=1A/4C/4G/0T;sequence=acgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS05365	ABCC	Z_DNA_Motif	197	206	.	+	.	ID=VNG_RS05365_197_206_ZDNA;length=10;score=68;composition=1A/3C/4G/1T;sequence=gcacgtgcgc;subset=1
+##gff-version 3
+VNG_RS03035	ABCC	Z_DNA_Motif	60	71	.	+	.	ID=VNG_RS03035_60_71_ZDNA;length=12;score=60;composition=2A/5C/3G/1T;sequence=cgcacgtgcaca;subset=1
+##gff-version 3
+VNG_RS01615	ABCC	Z_DNA_Motif	130	141	.	+	.	ID=VNG_RS01615_130_141_ZDNA;length=12;score=71;composition=0A/3C/5G/3T;sequence=cgtgcgtgcgtg;subset=1
+VNG_RS01615	ABCC	Z_DNA_Motif	756	765	.	+	.	ID=VNG_RS01615_756_765_ZDNA;length=10;score=46;composition=0A/2C/4G/3T;sequence=cgtgtgtgcg;subset=1
+##gff-version 3
+VNG_RS07375	ABCC	Z_DNA_Motif	146	156	.	+	.	ID=VNG_RS07375_146_156_ZDNA;length=11;score=59;composition=3A/5C/2G/0T;sequence=acgcacacgca;subset=1
+##gff-version 3
+VNG_RS00005	ABCC	Z_DNA_Motif	85	94	.	+	.	ID=VNG_RS00005_85_94_ZDNA;length=10;score=68;composition=1A/4C/3G/1T;sequence=cgtgcgcacg;subset=1
+##gff-version 3
+VNG_RS00435	ABCC	Z_DNA_Motif	99	109	.	+	.	ID=VNG_RS00435_99_109_ZDNA;length=11;score=92;composition=1A/5C/4G/0T;sequence=gcacgcgcgca;subset=1
+##gff-version 3
+VNG_RS04315	ABCC	Z_DNA_Motif	324	334	.	+	.	ID=VNG_RS04315_324_334_ZDNA;length=11;score=81;composition=0A/3C/5G/2T;sequence=cgtgtgcgcgc;subset=1
+##gff-version 3
+VNG_RS07495	ABCC	Z_DNA_Motif	506	515	.	+	.	ID=VNG_RS07495_506_515_ZDNA;length=10;score=46;composition=2A/3C/3G/1T;sequence=gcacacgtgc;subset=1
+##gff-version 3
+VNG_RS02790	ABCC	Z_DNA_Motif	601	610	.	+	.	ID=VNG_RS02790_601_610_ZDNA;length=10;score=57;composition=2A/5C/2G/0T;sequence=cacacgcgca;subset=1
+##gff-version 3
+VNG_RS03075	ABCC	Z_DNA_Motif	739	748	.	+	.	ID=VNG_RS03075_739_748_ZDNA;length=10;score=79;composition=1A/4C/4G/0T;sequence=gcgcacgcgt;subset=1
+##gff-version 3
+VNG_RS01945	ABCC	Z_DNA_Motif	89	98	.	+	.	ID=VNG_RS01945_89_98_ZDNA;length=10;score=68;composition=0A/3C/4G/2T;sequence=cgcgtgtgcg;subset=1
+VNG_RS01945	ABCC	Z_DNA_Motif	336	345	.	+	.	ID=VNG_RS01945_336_345_ZDNA;length=10;score=57;composition=2A/3C/3G/1T;sequence=acgcacgtgc;subset=1
+VNG_RS01945	ABCC	Z_DNA_Motif	538	547	.	+	.	ID=VNG_RS01945_538_547_ZDNA;length=10;score=68;composition=0A/3C/4G/2T;sequence=cgcgtgtgcg;subset=1
+##gff-version 3
+VNG_RS08145	ABCC	Z_DNA_Motif	860	869	.	+	.	ID=VNG_RS08145_860_869_ZDNA;length=10;score=46;composition=2A/3C/3G/1T;sequence=gtgcacgcac;subset=1
+##gff-version 3
+VNG_RS04790	ABCC	Z_DNA_Motif	172	182	.	+	.	ID=VNG_RS04790_172_182_ZDNA;length=11;score=92;composition=2A/5C/3G/0T;sequence=acgcgcacgcg;subset=1
+VNG_RS04790	ABCC	Z_DNA_Motif	626	635	.	+	.	ID=VNG_RS04790_626_635_ZDNA;length=10;score=79;composition=1A/4C/4G/0T;sequence=gcgcgcacgt;subset=1
+##gff-version 3
+VNG_RS00780	ABCC	Z_DNA_Motif	877	887	.	+	.	ID=VNG_RS00780_877_887_ZDNA;length=11;score=70;composition=2A/4C/3G/1T;sequence=acacgcgcgtg;subset=1
+##gff-version 3
+VNG_RS09020	ABCC	Z_DNA_Motif	913	924	.	+	.	ID=VNG_RS09020_913_924_ZDNA;length=12;score=115;composition=1A/5C/5G/0T;sequence=gcgcgcacgcgc;subset=1
+##gff-version 3
+VNG_RS01620	ABCC	Z_DNA_Motif	370	380	.	+	.	ID=VNG_RS01620_370_380_ZDNA;length=11;score=59;composition=3A/5C/2G/0T;sequence=acgcacacgca;subset=1
+VNG_RS01620	ABCC	Z_DNA_Motif	664	674	.	+	.	ID=VNG_RS01620_664_674_ZDNA;length=11;score=48;composition=2A/3C/3G/2T;sequence=tgcacacgtgc;subset=1
+VNG_RS01620	ABCC	Z_DNA_Motif	951	961	.	+	.	ID=VNG_RS01620_951_961_ZDNA;length=11;score=103;composition=0A/4C/5G/1T;sequence=gcgtgcgcgcg;subset=1
+##gff-version 3
+VNG_RS03040	ABCC	Z_DNA_Motif	252	261	.	+	.	ID=VNG_RS03040_252_261_ZDNA;length=10;score=57;composition=2A/5C/2G/0T;sequence=cgcgcacaca;subset=1
+##gff-version 3
+VNG_RS02685	ABCC	Z_DNA_Motif	380	389	.	+	.	ID=VNG_RS02685_380_389_ZDNA;length=10;score=35;composition=1A/2C/4G/2T;sequence=gtgcacgtgt;subset=1
+VNG_RS02685	ABCC	Z_DNA_Motif	402	413	.	+	.	ID=VNG_RS02685_402_413_ZDNA;length=12;score=82;composition=1A/4C/4G/2T;sequence=tgtgcgcacgcg;subset=1
+##gff-version 3
+VNG_RS05070	ABCC	Z_DNA_Motif	521	534	.	+	.	ID=VNG_RS05070_521_534_ZDNA;length=14;score=118;composition=2A/7C/4G/0T;sequence=cgcgcacacgcgcg;subset=1
+##gff-version 3
+VNG_RS04640	ABCC	Z_DNA_Motif	839	848	.	+	.	ID=VNG_RS04640_839_848_ZDNA;length=10;score=79;composition=2A/4C/3G/0T;sequence=acacgcgcgc;subset=1
+##gff-version 3
+VNG_RS01605	ABCC	Z_DNA_Motif	903	915	.	+	.	ID=VNG_RS01605_903_915_ZDNA;length=13;score=95;composition=2A/5C/4G/1T;sequence=tgcacgcgcgcac;subset=1
+##gff-version 3
+VNG_RS13310	ABCC	Z_DNA_Motif	616	626	.	+	.	ID=VNG_RS13310_616_626_ZDNA;length=11;score=59;composition=2A/4C/3G/1T;sequence=tgcgcacacgt;subset=1
+##gff-version 3
+VNG_RS01460	ABCC	Z_DNA_Motif	349	358	.	+	.	ID=VNG_RS01460_349_358_ZDNA;length=10;score=112;composition=0A/4C/5G/0T;sequence=gcgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS02600	ABCC	Z_DNA_Motif	23	32	.	+	.	ID=VNG_RS02600_23_32_ZDNA;length=10;score=90;composition=1A/5C/3G/0T;sequence=cgcgcacgcg;subset=1
+##gff-version 3
+VNG_RS03425	ABCC	Z_DNA_Motif	915	924	.	+	.	ID=VNG_RS03425_915_924_ZDNA;length=10;score=57;composition=1A/4C/3G/1T;sequence=cgtgcgcaca;subset=1
+##gff-version 3
+VNG_RS02975	ABCC	Z_DNA_Motif	553	562	.	+	.	ID=VNG_RS02975_553_562_ZDNA;length=10;score=46;composition=3A/4C/2G/0T;sequence=gcacacgcac;subset=1
+##gff-version 3
+VNG_RS02475	ABCC	Z_DNA_Motif	110	119	.	+	.	ID=VNG_RS02475_110_119_ZDNA;length=10;score=79;composition=0A/3C/5G/1T;sequence=gcgcgcgtgt;subset=1
+##gff-version 3
+VNG_RS05615	ABCC	Z_DNA_Motif	488	497	.	+	.	ID=VNG_RS05615_488_497_ZDNA;length=10;score=90;composition=0A/3C/5G/1T;sequence=gcgcgtgcgc;subset=1
+##gff-version 3
+VNG_RS01580	ABCC	Z_DNA_Motif	156	166	.	+	.	ID=VNG_RS01580_156_166_ZDNA;length=11;score=48;composition=2A/4C/3G/1T;sequence=gtgcacgcaca;subset=1
+VNG_RS01580	ABCC	Z_DNA_Motif	737	747	.	+	.	ID=VNG_RS01580_737_747_ZDNA;length=11;score=114;composition=0A/5C/5G/0T;sequence=cgcgcgcgcgt;subset=1
+##gff-version 3
+VNG_RS00370	ABCC	Z_DNA_Motif	217	226	.	+	.	ID=VNG_RS00370_217_226_ZDNA;length=10;score=57;composition=2A/3C/3G/1T;sequence=acacgtgcgc;subset=1
+##gff-version 3
+VNG_RS01775	ABCC	Z_DNA_Motif	880	892	.	+	.	ID=VNG_RS01775_880_892_ZDNA;length=13;score=106;composition=1A/5C/5G/1T;sequence=gcgtgcgcacgcg;subset=1
+##gff-version 3
+VNG_RS01385	ABCC	Z_DNA_Motif	850	860	.	+	.	ID=VNG_RS01385_850_860_ZDNA;length=11;score=48;composition=2A/4C/3G/1T;sequence=cacgcacgtgt;subset=1
+##gff-version 3
+VNG_RS04235	ABCC	Z_DNA_Motif	829	840	.	+	.	ID=VNG_RS04235_829_840_ZDNA;length=12;score=71;composition=2A/5C/3G/1T;sequence=cgcacgcacgtg;subset=1
+##gff-version 3
+VNG_RS08170	ABCC	Z_DNA_Motif	408	417	.	+	.	ID=VNG_RS08170_408_417_ZDNA;length=10;score=46;composition=3A/4C/2G/0T;sequence=gcacgcacac;subset=1
+##gff-version 3
+VNG_RS07150	ABCC	Z_DNA_Motif	21	31	.	+	.	ID=VNG_RS07150_21_31_ZDNA;length=11;score=81;composition=1A/4C/4G/1T;sequence=gcgcgcacgtg;subset=1
+##gff-version 3
+VNG_RS05520	ABCC	Z_DNA_Motif	805	815	.	+	.	ID=VNG_RS05520_805_815_ZDNA;length=11;score=81;composition=0A/3C/5G/2T;sequence=gtgcgcgtgcg;subset=1
+##gff-version 3
+VNG_RS09740	ABCC	Z_DNA_Motif	409	418	.	+	.	ID=VNG_RS09740_409_418_ZDNA;length=10;score=68;composition=0A/3C/4G/2T;sequence=cgtgtgcgcg;subset=1
+##gff-version 3
+VNG_RS03360	ABCC	Z_DNA_Motif	616	626	.	+	.	ID=VNG_RS03360_616_626_ZDNA;length=11;score=103;composition=1A/5C/4G/0T;sequence=cgcgcgcgcac;subset=1
+##gff-version 3
+VNG_RS06975	ABCC	Z_DNA_Motif	296	305	.	+	.	ID=VNG_RS06975_296_305_ZDNA;length=10;score=79;composition=1A/4C/4G/0T;sequence=gcgcgcacgt;subset=1
+##gff-version 3
+VNG_RS04365	ABCC	Z_DNA_Motif	211	225	.	+	.	ID=VNG_RS04365_211_225_ZDNA;length=15;score=65;composition=2A/4C/5G/3T;sequence=gtgtgcacacgtgcg;subset=1
+##gff-version 3
+VNG_RS14245	ABCC	Z_DNA_Motif	252	261	.	+	.	ID=VNG_RS14245_252_261_ZDNA;length=10;score=79;composition=0A/4C/4G/1T;sequence=cgcgcgtgca;subset=1
+##gff-version 3
+VNG_RS09520	ABCC	Z_DNA_Motif	958	967	.	+	.	ID=VNG_RS09520_958_967_ZDNA;length=10;score=68;composition=0A/2C/5G/2T;sequence=gtgcgcgtgc;subset=1
+##gff-version 3
+VNG_RS05955	ABCC	Z_DNA_Motif	153	162	.	+	.	ID=VNG_RS05955_153_162_ZDNA;length=10;score=68;composition=0A/2C/5G/2T;sequence=gcgcgtgtgc;subset=1
+##gff-version 3
+VNG_RS07740	ABCC	Z_DNA_Motif	45	55	.	+	.	ID=VNG_RS07740_45_55_ZDNA;length=11;score=48;composition=3A/5C/2G/0T;sequence=cgcacacacgt;subset=1
+##gff-version 3
+VNG_RS05780	ABCC	Z_DNA_Motif	178	187	.	+	.	ID=VNG_RS05780_178_187_ZDNA;length=10;score=24;composition=2A/3C/2G/2T;sequence=cacacgtgtg;subset=0
+VNG_RS05780	ABCC	Z_DNA_Motif	873	883	.	+	.	ID=VNG_RS05780_873_883_ZDNA;length=11;score=81;composition=2A/5C/3G/0T;sequence=gcacgcacgcg;subset=1
+##gff-version 3
+VNG_RS08955	ABCC	Z_DNA_Motif	156	167	.	+	.	ID=VNG_RS08955_156_167_ZDNA;length=12;score=71;composition=1A/4C/4G/2T;sequence=cgcacgcgtgtg;subset=1
+##gff-version 3
+VNG_RS00560	ABCC	Z_DNA_Motif	423	432	.	+	.	ID=VNG_RS00560_423_432_ZDNA;length=10;score=35;composition=3A/3C/2G/1T;sequence=acacgtgcac;subset=1
+##gff-version 3
+VNG_RS04965	ABCC	Z_DNA_Motif	487	496	.	+	.	ID=VNG_RS04965_487_496_ZDNA;length=10;score=79;composition=1A/3C/4G/1T;sequence=acgcgtgcgc;subset=1
+##gff-version 3
+VNG_RS06915	ABCC	Z_DNA_Motif	828	837	.	+	.	ID=VNG_RS06915_828_837_ZDNA;length=10;score=68;composition=1A/3C/4G/1T;sequence=acgcgcgtgt;subset=1
+##gff-version 3
+VNG_RS04580	ABCC	Z_DNA_Motif	292	301	.	+	.	ID=VNG_RS04580_292_301_ZDNA;length=10;score=79;composition=1A/4C/3G/1T;sequence=tgcgcgcacg;subset=1
+##gff-version 3
+VNG_RS08670	ABCC	Z_DNA_Motif	485	494	.	+	.	ID=VNG_RS08670_485_494_ZDNA;length=10;score=57;composition=2A/5C/2G/0T;sequence=cgcgcacaca;subset=1
+VNG_RS08670	ABCC	Z_DNA_Motif	723	733	.	+	.	ID=VNG_RS08670_723_733_ZDNA;length=11;score=103;composition=1A/5C/4G/0T;sequence=cacgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS04070	ABCC	Z_DNA_Motif	614	624	.	+	.	ID=VNG_RS04070_614_624_ZDNA;length=11;score=92;composition=0A/4C/5G/1T;sequence=gcgcgtgcgca;subset=1
+##gff-version 3
+VNG_RS00450	ABCC	Z_DNA_Motif	547	557	.	+	.	ID=VNG_RS00450_547_557_ZDNA;length=11;score=81;composition=2A/5C/3G/0T;sequence=cgcacacgcgc;subset=1
+##gff-version 3
+VNG_RS03805	ABCC	Z_DNA_Motif	165	174	.	+	.	ID=VNG_RS03805_165_174_ZDNA;length=10;score=57;composition=2A/3C/3G/1T;sequence=acgcgtgcac;subset=1
+VNG_RS03805	ABCC	Z_DNA_Motif	437	446	.	+	.	ID=VNG_RS03805_437_446_ZDNA;length=10;score=57;composition=2A/4C/3G/0T;sequence=gcgcacacgt;subset=1
+##gff-version 3
+VNG_RS09000	ABCC	Z_DNA_Motif	380	394	.	+	.	ID=VNG_RS09000_380_394_ZDNA;length=15;score=142;composition=0A/6C/7G/1T;sequence=gcgcgtgcgcgcgca;subset=1
+VNG_RS09000	ABCC	Z_DNA_Motif	911	923	.	+	.	ID=VNG_RS09000_911_923_ZDNA;length=13;score=84;composition=1A/4C/5G/2T;sequence=gcgtgcgcacgtg;subset=1
+##gff-version 3
+VNG_RS09610	ABCC	Z_DNA_Motif	705	716	.	+	.	ID=VNG_RS09610_705_716_ZDNA;length=12;score=71;composition=2A/5C/3G/1T;sequence=cgcacacgcgtg;subset=1
+##gff-version 3
+VNG_RS04655	ABCC	Z_DNA_Motif	100	111	.	+	.	ID=VNG_RS04655_100_111_ZDNA;length=12;score=71;composition=1A/3C/5G/2T;sequence=gtgtgcgcgcac;subset=1
+##gff-version 3
+VNG_RS04650	ABCC	Z_DNA_Motif	799	808	.	+	.	ID=VNG_RS04650_799_808_ZDNA;length=10;score=68;composition=0A/3C/4G/2T;sequence=cgcgtgcgtg;subset=1
+##gff-version 3
+VNG_RS05125	ABCC	Z_DNA_Motif	969	978	.	+	.	ID=VNG_RS05125_969_978_ZDNA;length=10;score=46;composition=3A/4C/2G/0T;sequence=gcgcacacac;subset=1
+##gff-version 3
+VNG_RS05180	ABCC	Z_DNA_Motif	969	978	.	+	.	ID=VNG_RS05180_969_978_ZDNA;length=10;score=46;composition=2A/4C/2G/1T;sequence=tgcacacgca;subset=1
+##gff-version 3
+VNG_RS09155	ABCC	Z_DNA_Motif	300	309	.	+	.	ID=VNG_RS09155_300_309_ZDNA;length=10;score=57;composition=1A/4C/3G/1T;sequence=cgtgcacgca;subset=1
+##gff-version 3
+VNG_RS00765	ABCC	Z_DNA_Motif	211	220	.	+	.	ID=VNG_RS00765_211_220_ZDNA;length=10;score=68;composition=0A/3C/4G/2T;sequence=tgcgtgcgca;subset=1
+VNG_RS00765	ABCC	Z_DNA_Motif	732	741	.	+	.	ID=VNG_RS00765_732_741_ZDNA;length=10;score=68;composition=1A/3C/4G/1T;sequence=gtgcacgcgc;subset=1
+##gff-version 3
+VNG_RS00065	ABCC	Z_DNA_Motif	660	670	.	+	.	ID=VNG_RS00065_660_670_ZDNA;length=11;score=37;composition=1A/2C/4G/3T;sequence=tgtgtgcacgt;subset=1
+##gff-version 3
+VNG_RS03530	ABCC	Z_DNA_Motif	503	513	.	+	.	ID=VNG_RS03530_503_513_ZDNA;length=11;score=81;composition=1A/4C/4G/1T;sequence=gcgcgtgcacg;subset=1
+##gff-version 3
+VNG_RS14390	ABCC	Z_DNA_Motif	43	52	.	+	.	ID=VNG_RS14390_43_52_ZDNA;length=10;score=68;composition=1A/4C/3G/1T;sequence=tgcgcacgca;subset=1
+##gff-version 3
+VNG_RS09815	ABCC	Z_DNA_Motif	687	696	.	+	.	ID=VNG_RS09815_687_696_ZDNA;length=10;score=68;composition=1A/3C/4G/1T;sequence=acgcgcgtgt;subset=1
+##gff-version 3
+VNG_RS04690	ABCC	Z_DNA_Motif	606	616	.	+	.	ID=VNG_RS04690_606_616_ZDNA;length=11;score=81;composition=1A/4C/4G/1T;sequence=gcacgcgtgcg;subset=1
+##gff-version 3
+VNG_RS03545	ABCC	Z_DNA_Motif	22	37	.	+	.	ID=VNG_RS03545_22_37_ZDNA;length=16;score=132;composition=0A/5C/7G/3T;sequence=tgtgtgcgcgcgcgcg;subset=1
+VNG_RS03545	ABCC	Z_DNA_Motif	633	643	.	+	.	ID=VNG_RS03545_633_643_ZDNA;length=11;score=81;composition=2A/5C/3G/0T;sequence=cgcgcacgcac;subset=1
+##gff-version 3
+VNG_RS06215	ABCC	Z_DNA_Motif	928	937	.	+	.	ID=VNG_RS06215_928_937_ZDNA;length=10;score=57;composition=1A/3C/3G/2T;sequence=tgcacgcgtg;subset=1
+##gff-version 3
+VNG_RS08175	ABCC	Z_DNA_Motif	775	787	.	+	.	ID=VNG_RS08175_775_787_ZDNA;length=13;score=106;composition=2A/6C/4G/0T;sequence=cgcgcgcacacgc;subset=1
+##gff-version 3
+VNG_RS02085	ABCC	Z_DNA_Motif	904	917	.	+	.	ID=VNG_RS02085_904_917_ZDNA;length=14;score=107;composition=1A/5C/5G/2T;sequence=tgcgcgcacgcgtg;subset=1
+##gff-version 3
+VNG_RS07970	ABCC	Z_DNA_Motif	82	92	.	+	.	ID=VNG_RS07970_82_92_ZDNA;length=11;score=48;composition=2A/4C/3G/1T;sequence=gcgtgcacaca;subset=1
+VNG_RS07970	ABCC	Z_DNA_Motif	546	555	.	+	.	ID=VNG_RS07970_546_555_ZDNA;length=10;score=35;composition=0A/2C/4G/3T;sequence=cgtgtgtgca;subset=1
+##gff-version 3
+VNG_RS01520	ABCC	Z_DNA_Motif	772	783	.	+	.	ID=VNG_RS01520_772_783_ZDNA;length=12;score=104;composition=1A/5C/5G/0T;sequence=gcgcgcgcacgt;subset=1
+##gff-version 3
+VNG_RS05285	ABCC	Z_DNA_Motif	277	287	.	+	.	ID=VNG_RS05285_277_287_ZDNA;length=11;score=92;composition=1A/4C/4G/1T;sequence=acgcgcgcgtg;subset=1
+##gff-version 3
+VNG_RS05670	ABCC	Z_DNA_Motif	208	217	.	+	.	ID=VNG_RS05670_208_217_ZDNA;length=10;score=46;composition=3A/4C/2G/0T;sequence=gcgcacacac;subset=1
+##gff-version 3
+VNG_RS07270	ABCC	Z_DNA_Motif	19	31	.	+	.	ID=VNG_RS07270_19_31_ZDNA;length=13;score=62;composition=1A/3C/5G/3T;sequence=gcgcacgtgtgtg;subset=1
+##gff-version 3
+VNG_RS00080	ABCC	Z_DNA_Motif	731	740	.	+	.	ID=VNG_RS00080_731_740_ZDNA;length=10;score=35;composition=2A/3C/3G/1T;sequence=gcacacgtgt;subset=1
+##gff-version 3
+VNG_RS05165	ABCC	Z_DNA_Motif	536	548	.	+	.	ID=VNG_RS05165_536_548_ZDNA;length=13;score=84;composition=0A/3C/6G/3T;sequence=gcgtgcgtgcgtg;subset=1
+##gff-version 3
+VNG_RS08265	ABCC	Z_DNA_Motif	579	590	.	+	.	ID=VNG_RS08265_579_590_ZDNA;length=12;score=104;composition=0A/4C/5G/2T;sequence=tgtgcgcgcgcg;subset=1
+##gff-version 3
+VNG_RS09575	ABCC	Z_DNA_Motif	684	699	.	+	.	ID=VNG_RS09575_684_699_ZDNA;length=16;score=132;composition=3A/7C/5G/0T;sequence=acgcacgcgcgcacgc;subset=1
+##gff-version 3
+VNG_RS09690	ABCC	Z_DNA_Motif	393	405	.	+	.	ID=VNG_RS09690_393_405_ZDNA;length=13;score=84;composition=1A/4C/5G/2T;sequence=gtgcgcacgtgcg;subset=1
+##gff-version 3
+VNG_RS01190	ABCC	Z_DNA_Motif	550	560	.	+	.	ID=VNG_RS01190_550_560_ZDNA;length=11;score=92;composition=0A/4C/5G/1T;sequence=gcgcgtgcgca;subset=1
+##gff-version 3
+VNG_RS02355	ABCC	Z_DNA_Motif	186	196	.	+	.	ID=VNG_RS02355_186_196_ZDNA;length=11;score=81;composition=2A/5C/3G/0T;sequence=gcgcacacgcg;subset=1
+VNG_RS02355	ABCC	Z_DNA_Motif	342	351	.	+	.	ID=VNG_RS02355_342_351_ZDNA;length=10;score=57;composition=1A/3C/3G/2T;sequence=tgcacgcgtg;subset=1
+##gff-version 3
+VNG_RS09375	ABCC	Z_DNA_Motif	809	818	.	+	.	ID=VNG_RS09375_809_818_ZDNA;length=10;score=68;composition=2A/5C/2G/0T;sequence=cgcacacgcg;subset=1
+##gff-version 3
+VNG_RS08625	ABCC	Z_DNA_Motif	269	281	.	+	.	ID=VNG_RS08625_269_281_ZDNA;length=13;score=95;composition=0A/4C/6G/2T;sequence=cgtgcgcgcgtgt;subset=1
+##gff-version 3
+VNG_RS08015	ABCC	Z_DNA_Motif	446	455	.	+	.	ID=VNG_RS08015_446_455_ZDNA;length=10;score=112;composition=0A/4C/5G/0T;sequence=gcgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS09355	ABCC	Z_DNA_Motif	393	402	.	+	.	ID=VNG_RS09355_393_402_ZDNA;length=10;score=57;composition=3A/4C/2G/0T;sequence=acgcacgcac;subset=1
+##gff-version 3
+VNG_RS02610	ABCC	Z_DNA_Motif	432	441	.	+	.	ID=VNG_RS02610_432_441_ZDNA;length=10;score=90;composition=0A/3C/5G/1T;sequence=gcgcgtgcgc;subset=1
+##gff-version 3
+VNG_RS07410	ABCC	Z_DNA_Motif	468	477	.	+	.	ID=VNG_RS07410_468_477_ZDNA;length=10;score=112;composition=0A/4C/5G/0T;sequence=gcgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS01435	ABCC	Z_DNA_Motif	29	38	.	+	.	ID=VNG_RS01435_29_38_ZDNA;length=10;score=24;composition=1A/1C/4G/3T;sequence=acgtgtgtgt;subset=0
+##gff-version 3
+VNG_RS10215	ABCC	Z_DNA_Motif	522	531	.	+	.	ID=VNG_RS10215_522_531_ZDNA;length=10;score=57;composition=1A/2C/4G/2T;sequence=acgtgtgcgc;subset=1
+##gff-version 3
+VNG_RS08760	ABCC	Z_DNA_Motif	440	451	.	+	.	ID=VNG_RS08760_440_451_ZDNA;length=12;score=104;composition=2A/5C/4G/0T;sequence=acacgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS04685	ABCC	Z_DNA_Motif	52	62	.	+	.	ID=VNG_RS04685_52_62_ZDNA;length=11;score=103;composition=0A/4C/5G/1T;sequence=cgcgcgtgcgc;subset=1
+##gff-version 3
+VNG_RS07165	ABCC	Z_DNA_Motif	3	13	.	+	.	ID=VNG_RS07165_3_13_ZDNA;length=11;score=125;composition=0A/5C/5G/0T;sequence=cgcgcgcgcgc;subset=1
+VNG_RS07165	ABCC	Z_DNA_Motif	277	287	.	+	.	ID=VNG_RS07165_277_287_ZDNA;length=11;score=103;composition=1A/5C/4G/0T;sequence=cgcgcgcacgc;subset=1
+##gff-version 3
+VNG_RS08065	ABCC	Z_DNA_Motif	489	503	.	+	.	ID=VNG_RS08065_489_503_ZDNA;length=15;score=87;composition=4A/7C/3G/0T;sequence=cacgcacgcacgcac;subset=1
+##gff-version 3
+VNG_RS02715	ABCC	Z_DNA_Motif	291	300	.	+	.	ID=VNG_RS02715_291_300_ZDNA;length=10;score=46;composition=2A/3C/3G/1T;sequence=gtgcgcacac;subset=1
+##gff-version 3
+VNG_RS04290	ABCC	Z_DNA_Motif	556	567	.	+	.	ID=VNG_RS04290_556_567_ZDNA;length=12;score=115;composition=1A/5C/5G/0T;sequence=gcgcgcgcgcac;subset=1
+VNG_RS04290	ABCC	Z_DNA_Motif	886	896	.	+	.	ID=VNG_RS04290_886_896_ZDNA;length=11;score=70;composition=1A/4C/4G/1T;sequence=cgtgcacgcgt;subset=1
+##gff-version 3
+VNG_RS10335	ABCC	Z_DNA_Motif	865	874	.	+	.	ID=VNG_RS10335_865_874_ZDNA;length=10;score=24;composition=2A/3C/2G/2T;sequence=cacacgtgtg;subset=0
+##gff-version 3
+VNG_RS03330	ABCC	Z_DNA_Motif	722	731	.	+	.	ID=VNG_RS03330_722_731_ZDNA;length=10;score=68;composition=1A/4C/3G/1T;sequence=cacgtgcgcg;subset=1
+##gff-version 3
+VNG_RS06825	ABCC	Z_DNA_Motif	558	569	.	+	.	ID=VNG_RS06825_558_569_ZDNA;length=12;score=60;composition=1A/3C/4G/3T;sequence=tgcgcacgtgtg;subset=1
+##gff-version 3
+VNG_RS06095	ABCC	Z_DNA_Motif	75	84	.	+	.	ID=VNG_RS06095_75_84_ZDNA;length=10;score=112;composition=0A/4C/5G/0T;sequence=gcgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS03890	ABCC	Z_DNA_Motif	406	415	.	+	.	ID=VNG_RS03890_406_415_ZDNA;length=10;score=57;composition=0A/2C/4G/3T;sequence=tgcgcgtgtg;subset=1
+##gff-version 3
+VNG_RS10065	ABCC	Z_DNA_Motif	316	326	.	+	.	ID=VNG_RS10065_316_326_ZDNA;length=11;score=59;composition=0A/2C/5G/3T;sequence=tgtgcgcgtgt;subset=1
+##gff-version 3
+VNG_RS07985	ABCC	Z_DNA_Motif	571	580	.	+	.	ID=VNG_RS07985_571_580_ZDNA;length=10;score=57;composition=1A/4C/3G/1T;sequence=cgcacgtgca;subset=1
+##gff-version 3
+VNG_RS05150	ABCC	Z_DNA_Motif	16	25	.	+	.	ID=VNG_RS05150_16_25_ZDNA;length=10;score=68;composition=2A/4C/3G/0T;sequence=gcacgcgcac;subset=1
+VNG_RS05150	ABCC	Z_DNA_Motif	246	256	.	+	.	ID=VNG_RS05150_246_256_ZDNA;length=11;score=59;composition=3A/5C/2G/0T;sequence=acacgcgcaca;subset=1
+VNG_RS05150	ABCC	Z_DNA_Motif	426	435	.	+	.	ID=VNG_RS05150_426_435_ZDNA;length=10;score=90;composition=0A/3C/5G/1T;sequence=gtgcgcgcgc;subset=1
+VNG_RS05150	ABCC	Z_DNA_Motif	848	858	.	+	.	ID=VNG_RS05150_848_858_ZDNA;length=11;score=37;composition=3A/4C/2G/1T;sequence=gcacacacgtg;subset=1
+##gff-version 3
+VNG_RS01065	ABCC	Z_DNA_Motif	289	298	.	+	.	ID=VNG_RS01065_289_298_ZDNA;length=10;score=112;composition=0A/4C/5G/0T;sequence=gcgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS05320	ABCC	Z_DNA_Motif	330	339	.	+	.	ID=VNG_RS05320_330_339_ZDNA;length=10;score=90;composition=0A/3C/5G/1T;sequence=gcgcgtgcgc;subset=1
+##gff-version 3
+VNG_RS07215	ABCC	Z_DNA_Motif	680	689	.	+	.	ID=VNG_RS07215_680_689_ZDNA;length=10;score=79;composition=1A/4C/3G/1T;sequence=tgcacgcgcg;subset=1
+##gff-version 3
+VNG_RS01950	ABCC	Z_DNA_Motif	649	658	.	+	.	ID=VNG_RS01950_649_658_ZDNA;length=10;score=57;composition=1A/3C/4G/1T;sequence=gtgcacgcgt;subset=1
+##gff-version 3
+VNG_RS01410	ABCC	Z_DNA_Motif	227	236	.	+	.	ID=VNG_RS01410_227_236_ZDNA;length=10;score=46;composition=2A/4C/2G/1T;sequence=cacgcacgtg;subset=1
+##gff-version 3
+VNG_RS07175	ABCC	Z_DNA_Motif	250	260	.	+	.	ID=VNG_RS07175_250_260_ZDNA;length=11;score=125;composition=0A/5C/5G/0T;sequence=gcgcgcgcgcg;subset=1
+##gff-version 3
+VNG_RS08235	ABCC	Z_DNA_Motif	32	44	.	+	.	ID=VNG_RS08235_32_44_ZDNA;length=13;score=117;composition=1A/5C/5G/1T;sequence=tgcacgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS08685	ABCC	Z_DNA_Motif	812	821	.	+	.	ID=VNG_RS08685_812_821_ZDNA;length=10;score=46;composition=1A/2C/4G/2T;sequence=gtgtgcacgc;subset=1
+##gff-version 3
+VNG_RS04860	ABCC	Z_DNA_Motif	150	160	.	+	.	ID=VNG_RS04860_150_160_ZDNA;length=11;score=70;composition=0A/3C/5G/2T;sequence=gtgcgtgcgca;subset=1
+VNG_RS04860	ABCC	Z_DNA_Motif	201	210	.	+	.	ID=VNG_RS04860_201_210_ZDNA;length=10;score=68;composition=2A/4C/3G/0T;sequence=gcacacgcgc;subset=1
+##gff-version 3
+VNG_RS03115	ABCC	Z_DNA_Motif	489	498	.	+	.	ID=VNG_RS03115_489_498_ZDNA;length=10;score=68;composition=1A/4C/3G/1T;sequence=cgcacgcgtg;subset=1
+##gff-version 3
+VNG_RS07430	ABCC	Z_DNA_Motif	14	23	.	+	.	ID=VNG_RS07430_14_23_ZDNA;length=10;score=112;composition=0A/4C/5G/0T;sequence=gcgcgcgcgc;subset=1
+VNG_RS07430	ABCC	Z_DNA_Motif	362	372	.	+	.	ID=VNG_RS07430_362_372_ZDNA;length=11;score=48;composition=2A/3C/3G/2T;sequence=tgtgcgcacac;subset=1
+##gff-version 3
+VNG_RS14570	ABCC	Z_DNA_Motif	737	746	.	+	.	ID=VNG_RS14570_737_746_ZDNA;length=10;score=57;composition=2A/5C/2G/0T;sequence=cacgcacgca;subset=1
+##gff-version 3
+VNG_RS03500	ABCC	Z_DNA_Motif	42	55	.	+	.	ID=VNG_RS03500_42_55_ZDNA;length=14;score=118;composition=2A/7C/4G/0T;sequence=cgcgcgcgcacacg;subset=1
+VNG_RS03500	ABCC	Z_DNA_Motif	161	172	.	+	.	ID=VNG_RS03500_161_172_ZDNA;length=12;score=104;composition=0A/5C/5G/1T;sequence=cgcgcgtgcgca;subset=1
+VNG_RS03500	ABCC	Z_DNA_Motif	690	699	.	+	.	ID=VNG_RS03500_690_699_ZDNA;length=10;score=57;composition=0A/2C/5G/2T;sequence=gcgtgtgcgt;subset=1
+##gff-version 3
+VNG_RS03675	ABCC	Z_DNA_Motif	494	506	.	+	.	ID=VNG_RS03675_494_506_ZDNA;length=13;score=84;composition=3A/6C/3G/0T;sequence=gcacacgcacgcg;subset=1
+##gff-version 3
+VNG_RS00565	ABCC	Z_DNA_Motif	731	741	.	+	.	ID=VNG_RS00565_731_741_ZDNA;length=11;score=59;composition=1A/3C/4G/2T;sequence=gtgtgcgcacg;subset=1
+VNG_RS00565	ABCC	Z_DNA_Motif	748	757	.	+	.	ID=VNG_RS00565_748_757_ZDNA;length=10;score=57;composition=0A/2C/4G/3T;sequence=tgcgcgtgtg;subset=1
+##gff-version 3
+VNG_RS06425	ABCC	Z_DNA_Motif	86	97	.	+	.	ID=VNG_RS06425_86_97_ZDNA;length=12;score=115;composition=0A/5C/5G/1T;sequence=cgcgcgtgcgcg;subset=1
+##gff-version 3
+VNG_RS01235	ABCC	Z_DNA_Motif	191	200	.	+	.	ID=VNG_RS01235_191_200_ZDNA;length=10;score=57;composition=0A/2C/4G/3T;sequence=tgtgtgcgcg;subset=1
+VNG_RS01235	ABCC	Z_DNA_Motif	207	217	.	+	.	ID=VNG_RS01235_207_217_ZDNA;length=11;score=48;composition=0A/1C/5G/4T;sequence=tgtgtgcgtgc;subset=1
+##gff-version 3
+VNG_RS01285	ABCC	Z_DNA_Motif	536	546	.	+	.	ID=VNG_RS01285_536_546_ZDNA;length=11;score=70;composition=2A/5C/3G/0T;sequence=gcgcacgcaca;subset=1
+VNG_RS01285	ABCC	Z_DNA_Motif	936	945	.	+	.	ID=VNG_RS01285_936_945_ZDNA;length=10;score=68;composition=2A/4C/3G/0T;sequence=gcacgcgcac;subset=1
+##gff-version 3
+VNG_RS00760	ABCC	Z_DNA_Motif	353	363	.	+	.	ID=VNG_RS00760_353_363_ZDNA;length=11;score=103;composition=1A/5C/4G/0T;sequence=cgcacgcgcgc;subset=1
+##gff-version 3
+VNG_RS02460	ABCC	Z_DNA_Motif	489	501	.	+	.	ID=VNG_RS02460_489_501_ZDNA;length=13;score=95;composition=2A/6C/4G/0T;sequence=gcacgcacgcgca;subset=1
+VNG_RS02460	ABCC	Z_DNA_Motif	670	679	.	+	.	ID=VNG_RS02460_670_679_ZDNA;length=10;score=79;composition=1A/4C/3G/1T;sequence=tgcacgcgcg;subset=1
+##gff-version 3
+VNG_RS08775	ABCC	Z_DNA_Motif	500	510	.	+	.	ID=VNG_RS08775_500_510_ZDNA;length=11;score=59;composition=1A/3C/4G/2T;sequence=cgcgtgtgcac;subset=1
+##gff-version 3
+VNG_RS09140	ABCC	Z_DNA_Motif	113	125	.	+	.	ID=VNG_RS09140_113_125_ZDNA;length=13;score=62;composition=2A/4C/4G/2T;sequence=gcacgtgcacgtg;subset=1
+VNG_RS09140	ABCC	Z_DNA_Motif	845	855	.	+	.	ID=VNG_RS09140_845_855_ZDNA;length=11;score=92;composition=0A/4C/5G/1T;sequence=gcgcgcgtgca;subset=1
+##gff-version 3
+VNG_RS14255	ABCC	Z_DNA_Motif	57	67	.	+	.	ID=VNG_RS14255_57_67_ZDNA;length=11;score=81;composition=2A/5C/3G/0T;sequence=cgcgcgcacac;subset=1
+VNG_RS14255	ABCC	Z_DNA_Motif	272	281	.	+	.	ID=VNG_RS14255_272_281_ZDNA;length=10;score=90;composition=0A/4C/4G/1T;sequence=cgcgtgcgcg;subset=1
+##gff-version 3
+VNG_RS01665	ABCC	Z_DNA_Motif	606	617	.	+	.	ID=VNG_RS01665_606_617_ZDNA;length=12;score=93;composition=1A/5C/4G/1T;sequence=cgcgcgtgcacg;subset=1
+##gff-version 3
+VNG_RS04815	ABCC	Z_DNA_Motif	793	802	.	+	.	ID=VNG_RS04815_793_802_ZDNA;length=10;score=46;composition=1A/3C/3G/2T;sequence=cacgtgcgtg;subset=1
+##gff-version 3
+VNG_RS02260	ABCC	Z_DNA_Motif	676	685	.	+	.	ID=VNG_RS02260_676_685_ZDNA;length=10;score=68;composition=1A/4C/3G/1T;sequence=cgcgcacgtg;subset=1
+##gff-version 3
+VNG_RS07865	ABCC	Z_DNA_Motif	548	559	.	+	.	ID=VNG_RS07865_548_559_ZDNA;length=12;score=115;composition=0A/5C/5G/1T;sequence=cgcgcgcgcgtg;subset=1
+##gff-version 3
+VNG_RS00545	ABCC	Z_DNA_Motif	194	203	.	+	.	ID=VNG_RS00545_194_203_ZDNA;length=10;score=46;composition=3A/5C/1G/0T;sequence=cacacacgcg;subset=1
+VNG_RS00545	ABCC	Z_DNA_Motif	704	713	.	+	.	ID=VNG_RS00545_704_713_ZDNA;length=10;score=57;composition=0A/2C/5G/2T;sequence=gtgcgcgtgt;subset=1
+##gff-version 3
+VNG_RS01550	ABCC	Z_DNA_Motif	683	692	.	+	.	ID=VNG_RS01550_683_692_ZDNA;length=10;score=68;composition=2A/4C/3G/0T;sequence=gcgcacacgc;subset=1
+##gff-version 3
+VNG_RS02650	ABCC	Z_DNA_Motif	342	351	.	+	.	ID=VNG_RS02650_342_351_ZDNA;length=10;score=35;composition=2A/3C/3G/1T;sequence=gtgcacacgt;subset=1
+##gff-version 3
+VNG_RS00520	ABCC	Z_DNA_Motif	351	360	.	+	.	ID=VNG_RS00520_351_360_ZDNA;length=10;score=46;composition=0A/1C/5G/3T;sequence=gtgcgtgtgc;subset=1
+##gff-version 3
+VNG_RS06295	ABCC	Z_DNA_Motif	17	26	.	+	.	ID=VNG_RS06295_17_26_ZDNA;length=10;score=68;composition=2A/5C/2G/0T;sequence=cgcacgcacg;subset=1
+##gff-version 3
+VNG_RS05600	ABCC	Z_DNA_Motif	644	655	.	+	.	ID=VNG_RS05600_644_655_ZDNA;length=12;score=82;composition=3A/5C/3G/0T;sequence=acacacgcgcgc;subset=1
+##gff-version 3
+VNG_RS03365	ABCC	Z_DNA_Motif	669	679	.	+	.	ID=VNG_RS03365_669_679_ZDNA;length=11;score=103;composition=1A/5C/4G/0T;sequence=gcgcacgcgcg;subset=1
+##gff-version 3
+VNG_RS05580	ABCC	Z_DNA_Motif	955	966	.	+	.	ID=VNG_RS05580_955_966_ZDNA;length=12;score=82;composition=2A/4C/4G/1T;sequence=acacgtgcgcgc;subset=1
+##gff-version 3
+VNG_RS09285	ABCC	Z_DNA_Motif	344	353	.	+	.	ID=VNG_RS09285_344_353_ZDNA;length=10;score=90;composition=0A/3C/5G/1T;sequence=gcgcgcgtgc;subset=1
+##gff-version 3
+VNG_RS02020	ABCC	Z_DNA_Motif	935	944	.	+	.	ID=VNG_RS02020_935_944_ZDNA;length=10;score=90;composition=1A/4C/4G/0T;sequence=gcgcgcacgc;subset=1
+##gff-version 3
+VNG_RS02440	ABCC	Z_DNA_Motif	354	364	.	+	.	ID=VNG_RS02440_354_364_ZDNA;length=11;score=103;composition=0A/4C/5G/1T;sequence=gcgcgtgcgcg;subset=1
+##gff-version 3
+VNG_RS09770	ABCC	Z_DNA_Motif	354	364	.	+	.	ID=VNG_RS09770_354_364_ZDNA;length=11;score=59;composition=2A/4C/3G/1T;sequence=acgtgcacgca;subset=1
+##gff-version 3
+VNG_RS01135	ABCC	Z_DNA_Motif	340	349	.	+	.	ID=VNG_RS01135_340_349_ZDNA;length=10;score=79;composition=1A/5C/3G/0T;sequence=cgcgcgcaca;subset=1
+##gff-version 3
+VNG_RS06940	ABCC	Z_DNA_Motif	96	105	.	+	.	ID=VNG_RS06940_96_105_ZDNA;length=10;score=90;composition=1A/4C/4G/0T;sequence=gcgcgcgcac;subset=1
+VNG_RS06940	ABCC	Z_DNA_Motif	684	695	.	+	.	ID=VNG_RS06940_684_695_ZDNA;length=12;score=104;composition=2A/5C/4G/0T;sequence=acgcgcgcacgc;subset=1
+##gff-version 3
+VNG_RS10005	ABCC	Z_DNA_Motif	418	427	.	+	.	ID=VNG_RS10005_418_427_ZDNA;length=10;score=101;composition=0A/4C/5G/0T;sequence=gcgcgcgcgt;subset=1
+##gff-version 3
+VNG_RS03415	ABCC	Z_DNA_Motif	57	66	.	+	.	ID=VNG_RS03415_57_66_ZDNA;length=10;score=79;composition=0A/3C/4G/2T;sequence=tgcgcgcgtg;subset=1
+##gff-version 3
+VNG_RS08000	ABCC	Z_DNA_Motif	433	447	.	+	.	ID=VNG_RS08000_433_447_ZDNA;length=15;score=109;composition=2A/6C/5G/1T;sequence=cgcgtgcgcgcacac;subset=1
+##gff-version 3
+VNG_RS02275	ABCC	Z_DNA_Motif	963	972	.	+	.	ID=VNG_RS02275_963_972_ZDNA;length=10;score=46;composition=1A/3C/3G/2T;sequence=tgcgtgcaca;subset=1
+##gff-version 3
+VNG_RS04010	ABCC	Z_DNA_Motif	213	222	.	+	.	ID=VNG_RS04010_213_222_ZDNA;length=10;score=79;composition=1A/5C/3G/0T;sequence=cgcgcgcaca;subset=1
+VNG_RS04010	ABCC	Z_DNA_Motif	810	819	.	+	.	ID=VNG_RS04010_810_819_ZDNA;length=10;score=57;composition=3A/4C/2G/0T;sequence=acacgcgcac;subset=1
+##gff-version 3
+VNG_RS10185	ABCC	Z_DNA_Motif	916	925	.	+	.	ID=VNG_RS10185_916_925_ZDNA;length=10;score=68;composition=2A/4C/3G/0T;sequence=acgcacgcgt;subset=1
+##gff-version 3
+VNG_RS00990	ABCC	Z_DNA_Motif	71	81	.	+	.	ID=VNG_RS00990_71_81_ZDNA;length=11;score=125;composition=0A/5C/5G/0T;sequence=cgcgcgcgcgc;subset=1
+##gff-version 3
+VNG_RS01360	ABCC	Z_DNA_Motif	643	655	.	+	.	ID=VNG_RS01360_643_655_ZDNA;length=13;score=106;composition=0A/4C/6G/2T;sequence=gcgcgcgcgtgtg;subset=1
+##gff-version 3
+VNG_RS10395	ABCC	Z_DNA_Motif	832	843	.	+	.	ID=VNG_RS10395_832_843_ZDNA;length=12;score=93;composition=0A/4C/5G/2T;sequence=cgtgtgcgcgcg;subset=1
+##gff-version 3
+VNG_RS03305	ABCC	Z_DNA_Motif	345	355	.	+	.	ID=VNG_RS03305_345_355_ZDNA;length=11;score=81;composition=2A/5C/3G/0T;sequence=cgcgcacacgc;subset=1
+##gff-version 3
+VNG_RS09515	ABCC	Z_DNA_Motif	126	137	.	+	.	ID=VNG_RS09515_126_137_ZDNA;length=12;score=82;composition=1A/4C/5G/1T;sequence=gcgcacgtgcgt;subset=1
+VNG_RS09515	ABCC	Z_DNA_Motif	264	275	.	+	.	ID=VNG_RS09515_264_275_ZDNA;length=12;score=71;composition=2A/5C/3G/1T;sequence=cgtgcgcacacg;subset=1
+##gff-version 3
+VNG_RS02195	ABCC	Z_DNA_Motif	751	760	.	+	.	ID=VNG_RS02195_751_760_ZDNA;length=10;score=90;composition=1A/4C/4G/0T;sequence=acgcgcgcgt;subset=1
+##gff-version 3
+VNG_RS01390	ABCC	Z_DNA_Motif	47	56	.	+	.	ID=VNG_RS01390_47_56_ZDNA;length=10;score=90;composition=0A/4C/4G/1T;sequence=cgcgtgcgcg;subset=1
+VNG_RS01390	ABCC	Z_DNA_Motif	789	798	.	+	.	ID=VNG_RS01390_789_798_ZDNA;length=10;score=79;composition=1A/3C/4G/1T;sequence=acgcgtgcgc;subset=1
+##gff-version 3
+VNG_RS01715	ABCC	Z_DNA_Motif	170	181	.	+	.	ID=VNG_RS01715_170_181_ZDNA;length=12;score=49;composition=1A/3C/4G/3T;sequence=cgcacgtgtgtg;subset=1
+##gff-version 3
+VNG_RS08105	ABCC	Z_DNA_Motif	625	635	.	+	.	ID=VNG_RS08105_625_635_ZDNA;length=11;score=70;composition=0A/2C/5G/3T;sequence=tgcgtgcgtgc;subset=1
+##gff-version 3
+VNG_RS06760	ABCC	Z_DNA_Motif	17	30	.	+	.	ID=VNG_RS06760_17_30_ZDNA;length=14;score=118;composition=1A/6C/5G/1T;sequence=cgcgcacgcgtgcg;subset=1

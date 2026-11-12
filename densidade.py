@@ -1,201 +1,254 @@
-import os, glob, re
+import os, re, sys
 import numpy as np
 import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
-from scipy.stats import gaussian_kde, ks_2samp, wasserstein_distance
+from scipy.stats import gaussian_kde
 
-#config 
-BASE_DIR = "./codigo/Diario-de-bordo"
-GFF_PATH = os.path.join(BASE_DIR, "dados/Hsalinarum.gff")
-TSS_GTF  = os.path.join(BASE_DIR, "dados/Hsalinarum_TSS.gtf")
-GFA_DIR  = os.path.join(BASE_DIR, "ferramenta_analises_brutas/non-B_gfa")
-NEW_TOOLS_DIR = os.path.join(BASE_DIR, "output_randomization_py/resultados")
+# ───────────────────────── config ─────────────────────────
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))   # coloque este script em Diario-de-bordo/
+RAND_DIR = os.path.join(BASE_DIR, "output_randomization_py")
+REF_DIR  = os.path.join(RAND_DIR, "00_reference")
+VERT_DIR = os.path.join(RAND_DIR, "01_vertical_permutations")
+HORI_DIR = os.path.join(RAND_DIR, "02_horizontal_permutations")
 OUT_DIR  = os.path.join(BASE_DIR, "resultados_densidade_nonb/plots_finais")
-WINDOWS = [150, 250, 500]
-FASTA_WINDOW = 250
+PNG_DIR  = os.path.join(OUT_DIR, "paineis_png")
+
+WINDOWS = [150, 250, 500]       # janelas upstream (-w a 0)
+FLANK_WINDOW = 500              # janela bilateral (-500 a +500)
+PROMOTER_TSS_POS = 500          # posição do TSS dentro dos promotores de 1000 pb (ASSUNÇÃO: centro)
+MAX_NOISE_POINTS = 200000       # subamostra do ruído p/ KDE rápido (não muda a densidade)
+
 os.makedirs(OUT_DIR, exist_ok=True)
-stats_records = []
+os.makedirs(PNG_DIR, exist_ok=True)
 
 plt.rcParams.update({
     "font.family": "sans-serif", "font.sans-serif": ["Arial", "Helvetica", "DejaVu Sans"],
     "font.size": 10, "axes.titlesize": 11, "axes.titleweight": "bold",
-    "axes.labelsize": 10, "legend.fontsize": 8, "figure.dpi": 150})
+    "axes.labelsize": 10, "legend.fontsize": 8, "figure.dpi": 150, "pdf.fonttype": 42})
 
-PALETTE = ["#0072B2", "#D55E00", "#009E73", "#CC79A7", "#E69F00", "#56B4E9", "#F0E442"]
 CLASS_ORDER_PRIORITY = ["G-Quadruplex", "Z-DNA", "Cruciform / Inverted Repeat", "R-Loop", "Slipped DNA (STR)"]
-GFA_MTYPE_LABELS = {
-    "GQ": "G-Quadruplex", "IR": "Cruciform/Inverted Repeat", "SD": "Slipped DNA",
-    "MR": "Mirror Repeat", "DR": "Direct Repeat", "Z": "Z-DNA", "APR": "A-Phased Repeat"}
+# nome da pasta (sem o prefixo numérico) -> classe
+FOLDER_CLASS = {
+    "g4boost_g4": "G-Quadruplex", "gfa2_g4": "G-Quadruplex",
+    "zseeker_zdna": "Z-DNA", "gfa2_zdna": "Z-DNA",
+    "qmrlfs_rloop": "R-Loop",
+    "einverted_cruciform": "Cruciform / Inverted Repeat", "gfa2_cruciform": "Cruciform / Inverted Repeat",
+    "gfa2_inverted_repeats": "Cruciform / Inverted Repeat",
+    "gfa2_triplex": "Triplex", "gfa2_slipped": "Slipped DNA", "gfa2_str": "Slipped DNA (STR)",
+    "gfa2_apr": "A-Phased Repeat", "gfa2_mirror_repeats": "Mirror Repeat", "gfa2_direct_repeats": "Direct Repeat"}
+REAL_COLORS = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b"]
 
-TOOL_CLASS_KEYWORDS = [
-    ("g4boost", "G-Quadruplex"), ("zseeker", "Z-DNA"), 
-    ("qmrlfs", "R-Loop"), ("einverted", "Cruciform / Inverted Repeat")]
-
-def classify_tool_folder(tool_name):
-    tl = tool_name.lower()
-    for kw, label in TOOL_CLASS_KEYWORDS:
-        if kw in tl: return label
-    return tool_name
-def discover_extra_tools():
-    if not os.path.isdir(NEW_TOOLS_DIR): return []
-    entries = []
-    for name in sorted(os.listdir(NEW_TOOLS_DIR)):
-        full = os.path.join(NEW_TOOLS_DIR, name)
-        if not os.path.isdir(full) or name.lower() == "gfa": continue
-        m = re.match(r"^(real|vertical|horizontal)_(.+)$", name, re.IGNORECASE)
-        clean_tool = m.group(2) if m else name
-        entries.append({"folder": name, "tool": clean_tool, "root": full})
-    return entries
-def build_class_sources():
-    sources = {}
-    for f in glob.glob(os.path.join(GFA_DIR, "real_motifs_*.tsv")):
-        m = re.search(r"real_motifs_(.+)\.tsv$", os.path.basename(f))
-        if m:
-            mtype = m.group(1)
-            label = GFA_MTYPE_LABELS.get(mtype.upper(), mtype)
-            sources.setdefault(label, []).append({"kind": "gfa", "mtype": mtype, "id": f"GFA({mtype})"})
-    
-    for entry in discover_extra_tools():
-        label = classify_tool_folder(entry["tool"])
-        sources.setdefault(label, []).append({"kind": "tool", "tool_root": entry["root"], "id": entry["tool"]})
-    return sources
-def ordered_class_names(sources):
-    return [c for c in CLASS_ORDER_PRIORITY if c in sources] + sorted(c for c in sources if c not in CLASS_ORDER_PRIORITY)
-
-# PARSERS 
-def parse_gff(path):
-    genes = {}
-    with open(path) as fh:
+# ───────────────────────── parsers ─────────────────────────
+def read_fasta_lengths(path):
+    lens, name = {}, None
+    if not os.path.exists(path): return lens
+    with open(path, errors="ignore") as fh:
         for line in fh:
-            if line.startswith("#"): continue
-            cols = line.rstrip("\n").split("\t")
-            if len(cols) < 9 or cols[2] != "gene": continue
-            m = re.search(r'locus_tag=(VNG_RS[^;]+)', cols[8])
-            if m: genes[m.group(1)] = {"start": int(cols[3]), "stop": int(cols[4]), "strand": cols[6]}
-    return genes
-def parse_tss(path):
-    records = []
-    with open(path) as fh:
-        for line in fh:
-            if line.startswith("#") or len((cols := line.rstrip("\n").split("\t"))) < 9: continue
-            if 'tss_class "P"' in cols[8]:
-                records.append({"pos": int(cols[3]), "strand": cols[6]})
-    return records
-def get_positions(provider, prefix):
-    dists, gpos = [], []
-    if provider["kind"] == "gfa":
-        path = os.path.join(GFA_DIR, f"{prefix}_motifs_{provider['mtype']}.tsv")
-        if os.path.exists(path):
-            try:
-                df = pd.read_csv(path, sep="\t")
-                if not df.empty:
-                    mids = (df["Start"] + df["Stop"]) / 2
-                    if prefix == "real": gpos = mids.tolist()
-                    else: dists = (mids - FASTA_WINDOW).tolist()
-            except: pass
-    else:
-        for root, _, files in os.walk(provider["tool_root"]):
-            for fname in files:
-                if prefix in os.path.join(root, fname).lower():
-                    try:
-                        df = pd.read_csv(os.path.join(root, fname), sep=None, engine="python", comment="#")
-                        s_col, e_col = [c for c in df.columns if 'start' in str(c).lower()], [c for c in df.columns if 'end' in str(c).lower() or 'stop' in str(c).lower()]
-                        if s_col and e_col:
-                            mids = (pd.to_numeric(df[s_col[0]], errors="coerce") + pd.to_numeric(df[e_col[0]], errors="coerce")) / 2
-                            dists.extend((mids.dropna() - FASTA_WINDOW).tolist())
-                    except: pass
-    return np.array(dists), np.array(gpos)
-def calc_distances_and_bins(gpos, tss_list, genes):
-    dists, pcts = [], []
-    if len(gpos) > 0:
-        tss_pos, tss_strand = np.array([t["pos"] for t in tss_list]), np.array([t["strand"] for t in tss_list])
-        for m in gpos:
-            i = np.argmin(np.abs(tss_pos - m))
-            dists.append(m - tss_pos[i] if tss_strand[i] == "+" else tss_pos[i] - m)
-            for tag, g in genes.items():
-                if g["start"] <= m <= g["stop"]:
-                    size = g["stop"] - g["start"]
-                    pcts.append(((m - g["start"]) / size * 100) if g["strand"] == "+" else ((g["stop"] - m) / size * 100))
-                    break
-    return np.array(dists), np.array(pcts)
+            line = line.strip()
+            if line.startswith(">"):
+                name = line[1:].split()[0]; lens[name] = 0
+            elif name:
+                lens[name] += len(line)
+    return lens
 
-# calculo e plot
+def read_gene_ids(path):
+    if not os.path.exists(path): return []
+    with open(path) as fh:
+        return [l.strip() for l in fh if l.strip()]
+
+def parse_einverted(path, gene_ids):
+    """EMBOSS einverted (.out): ponto médio de cada bloco 'Score' (entre os dois braços)."""
+    recs, name, coords = [], None, []
+    def flush():
+        if name and coords: recs.append((name, (min(coords) + max(coords)) / 2))
+    with open(path, errors="ignore") as fh:
+        for line in fh:
+            m = re.match(r"=+\s*(\S+)\s*=+\s*$", line.strip())
+            if m:
+                flush(); coords = []
+                tok = m.group(1); ms = re.match(r"seq_(\d+)$", tok)
+                if ms:
+                    i = int(ms.group(1)) - 1
+                    name = gene_ids[i] if 0 <= i < len(gene_ids) else tok
+                else:
+                    name = tok
+                continue
+            if line.startswith(": Score"):
+                flush(); coords = []; continue
+            m = re.match(r"^\s*(\d+)\s+[A-Za-z\-]+\s+(\d+)\s*$", line)
+            if m: coords += [int(m.group(1)), int(m.group(2))]
+    flush()
+    return recs
+
+def parse_positional(path, gene_ids):
+    """Retorna [(nome_da_sequencia, ponto_medio)] para .bed/.gff/.csv/.tsv/.out."""
+    recs, ext = [], os.path.splitext(path)[1].lower()
+    try:
+        if ext == ".out":
+            return parse_einverted(path, gene_ids)
+        if ext in (".bed", ".gff"):
+            with open(path, errors="ignore") as fh:
+                for line in fh:
+                    if not line.strip() or line.startswith(("#", "track", "browser")): continue
+                    p = line.rstrip("\n").split("\t")
+                    if len(p) < 3: continue
+                    try: s, e = float(p[1]), float(p[2])
+                    except ValueError:
+                        if len(p) < 5: continue
+                        try: s, e = float(p[3]), float(p[4])      # GFF padrão (9 colunas)
+                        except ValueError: continue
+                    recs.append((p[0], (s + e) / 2))
+        elif ext in (".csv", ".tsv"):
+            if os.path.getsize(path) == 0: return recs
+            df = pd.read_csv(path, sep=None, engine="python", comment="#")
+            if df.empty: return recs
+            cols = {str(c).lower().strip(): c for c in df.columns}
+            s_c = next((cols[c] for c in cols if "start" in c), None)
+            e_c = next((cols[c] for c in cols if "end" in c or "stop" in c), None)
+            if s_c is None or e_c is None: return recs
+            n_c = next((cols[c] for c in cols if c in
+                        ("sequence_name", "seqname", "seq_name", "name", "id", "locus_tag", "seqid", "chrom")),
+                       df.columns[0])
+            s = pd.to_numeric(df[s_c], errors="coerce"); e = pd.to_numeric(df[e_c], errors="coerce")
+            for nm, a, b in zip(df[n_c].astype(str), s, e):
+                if pd.notna(a) and pd.notna(b): recs.append((nm, (a + b) / 2))
+    except Exception as ex:
+        print(f"  [aviso] falha ao ler {path}: {ex}")
+    return recs
+
+def collect_sets(tool_dir, gene_ids, token, expect_perm):
+    """{id_replica: [(nome, mid)]}. Entre variantes duplicadas (ex.: G4Boost vs tool-g4boost)
+    de uma mesma réplica, fica a que tem mais posições."""
+    sets = {}
+    if not os.path.isdir(tool_dir): return sets
+    for root, _, files in os.walk(tool_dir):
+        for f in sorted(files):
+            fl = f.lower()
+            if token not in fl or "all_total" in fl or "g4scores" in fl: continue
+            if fl.endswith((".fasta", ".fa", ".npy")): continue
+            m = re.search(r"perm_?(\d+)", fl)
+            if expect_perm and not m: continue
+            if not expect_perm and m: continue
+            key = m.group(1) if m else "real"
+            recs = parse_positional(os.path.join(root, f), gene_ids)
+            if len(recs) > len(sets.get(key, [])): sets[key] = recs
+    return sets
+
+# ───────────────────────── carga dos dados ─────────────────────────
+def load_all():
+    gene_ids = read_gene_ids(os.path.join(REF_DIR, "gene_ids.txt"))
+    cds_len = read_fasta_lengths(os.path.join(REF_DIR, "real_cds_sequences.fasta"))
+    folders = set()
+    for d in (REF_DIR, VERT_DIR, HORI_DIR):
+        root = os.path.join(d, "non_B_structures")
+        if os.path.isdir(root): folders |= set(os.listdir(root))
+    classes = {}
+    print("\nResumo de motivos por ferramenta (promotor):")
+    for folder in sorted(folders):
+        tid = re.sub(r"^\d+_", "", folder)
+        ref = os.path.join(REF_DIR, "non_B_structures", folder)
+        real_sets = collect_sets(ref, gene_ids, "promoter", expect_perm=False)
+        real = [mid - PROMOTER_TSS_POS for _, mid in real_sets.get("real", [])]
+        vert, hori = [], []
+        for s in collect_sets(os.path.join(VERT_DIR, "non_B_structures", folder), gene_ids, "promoter", True).values():
+            vert += [mid - PROMOTER_TSS_POS for _, mid in s]
+        for s in collect_sets(os.path.join(HORI_DIR, "non_B_structures", folder), gene_ids, "promoter", True).values():
+            hori += [mid - PROMOTER_TSS_POS for _, mid in s]
+        cds_sets = collect_sets(ref, gene_ids, "cds", expect_perm=False)
+        pct = [mid / cds_len[nm] * 100 for nm, mid in cds_sets.get("real", [])
+               if nm in cds_len and cds_len[nm] > 0 and 0 <= mid <= cds_len[nm]]
+        print(f"  {folder:28s} real={len(real):6d}  vert={len(vert):8d}  hori={len(hori):8d}  corpo={len(pct):6d}")
+        if not real and not pct: continue
+        cname = FOLDER_CLASS.get(tid, tid)
+        classes.setdefault(cname, []).append({
+            "id": tid, "real_tss": np.array(real), "real_bin": np.array(pct),
+            "vert": np.array(vert), "hori": np.array(hori)})
+    return classes
+
+def ordered_class_names(classes):
+    return [c for c in CLASS_ORDER_PRIORITY if c in classes] + sorted(c for c in classes if c not in CLASS_ORDER_PRIORITY)
+
+# ───────────────────────── cálculo e plot ─────────────────────────
 def calc_kde(positions, x_min, x_max, scale=1e4):
     grid = np.linspace(x_min, x_max, 200)
     if len(positions) < 5: return grid, np.zeros(200)
     try: return grid, gaussian_kde(positions, bw_method="scott")(grid) * scale
-    except: return grid, np.zeros(200)
-def plot_panel(ax, providers, window, tss_list, genes, color, is_bin=False):
-    all_vert, all_hori = [], []
-    real_colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728"]
-    
-    for i, p in enumerate(providers):
-        _, gpos_real = get_positions(p, "real")
-        d_vert, _ = get_positions(p, "vertical")
-        d_hori, _ = get_positions(p, "horizontal")
-        
-        d_real, p_real = calc_distances_and_bins(gpos_real, tss_list, genes)
-        data = p_real if is_bin else d_real
-        w_data = data[(data >= 0) & (data <= 100)] if is_bin else data[(data >= -window) & (data <= 0)]
-        
-        all_vert.extend(d_vert)
-        all_hori.extend(d_hori)
-        
-        if len(w_data) > 0:
-            c = real_colors[i % len(real_colors)]
-            x, y = calc_kde(w_data, 0 if is_bin else -window, 100 if is_bin else 0, scale=1 if is_bin else 1e4)
-            ax.plot(x, y, color=c, ls="-", lw=2, label=f"Real: {p['id']} (n={len(w_data)})")
+    except Exception: return grid, np.zeros(200)
 
-    # Plota Ruído Agrupado
-    if not is_bin:
-        w_vert = np.array(all_vert)[(np.array(all_vert) >= -window) & (np.array(all_vert) <= 0)]
-        w_hori = np.array(all_hori)[(np.array(all_hori) >= -window) & (np.array(all_hori) <= 0)]
-        
-        if len(w_vert) > 0:
-            x, y = calc_kde(w_vert, -window, 0)
-            ax.plot(x, y, color="gray", ls="--", lw=1.5, alpha=0.8, label=f"Vertical Pooled (n={len(w_vert)})")
-        if len(w_hori) > 0:
-            x, y = calc_kde(w_hori, -window, 0)
-            ax.plot(x, y, color="gray", ls=":", lw=1.5, alpha=0.8, label=f"Horizontal Pooled (n={len(w_hori)})")
-            
-    ax.spines["top"].set_visible(False)
-    ax.spines["right"].set_visible(False)
-    # Legenda movida para baixo para não cobrir o gráfico
-    ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.2), ncol=1, frameon=False, fontsize=7)
+def pooled(provs, key, lo, hi):
+    arr = np.concatenate([p[key] for p in provs]) if provs else np.array([])
+    return arr[(arr >= lo) & (arr <= hi)]
+
+def render_panel(ax, cname, provs, kind, window, show_ylabel=True):
+    """kind: 'up' (-w..0), 'flank' (-w..+w), 'bin' (corpo do gene, 0..100%)."""
+    if kind == "bin": lo, hi = 0, 100
+    elif kind == "up": lo, hi = -window, 0
+    else: lo, hi = -window, window
+    for i, p in enumerate(provs):
+        d = p["real_bin"] if kind == "bin" else p["real_tss"]
+        w = d[(d >= lo) & (d <= hi)]
+        if len(w) > 0:
+            x, y = calc_kde(w, lo, hi, scale=1 if kind == "bin" else 1e4)
+            ax.plot(x, y, color=REAL_COLORS[i % len(REAL_COLORS)], lw=2, label=f"Real: {p['id']} (n={len(w)})")
+    if kind != "bin":
+        rng = np.random.default_rng(0)
+        for key, ls, lab in (("vert", "--", "Vertical Pooled"), ("hori", ":", "Horizontal Pooled")):
+            w = pooled(provs, key, lo, hi)
+            if len(w) > 0:
+                n = len(w)
+                if n > MAX_NOISE_POINTS: w = rng.choice(w, MAX_NOISE_POINTS, replace=False)
+                x, y = calc_kde(w, lo, hi)
+                ax.plot(x, y, color="gray", ls=ls, lw=1.5, alpha=0.8, label=f"{lab} (n={n})")
+    if kind == "up":
+        ax.set_title(f"{cname} (-{window} bp)"); ax.set_xlim(-window, 0)
+        ax.set_xlabel("Distância ao TSS (bp)")
+    elif kind == "flank":
+        ax.set_title(f"{cname} (±{window} bp)"); ax.set_xlim(-window, window)
+        ax.axvline(0, color="black", lw=0.8, alpha=0.6)
+        ax.set_xlabel("Distância ao TSS (bp)")
+    else:
+        ax.set_title(f"{cname} (Corpo do Gene)"); ax.set_xlim(0, 100)
+        ax.set_xlabel("Progresso no Gene (%)")
+    if show_ylabel:
+        ax.set_ylabel("Densidade (%)" if kind == "bin" else "Densidade prob. (×10⁻⁴)")
+    ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=1, frameon=False, fontsize=7)
+
+def slug(s): return re.sub(r"[^A-Za-z0-9]+", "_", s).strip("_")
 
 def make_plots():
-    tss_list = parse_tss(TSS_GTF)
-    genes = parse_gff(GFF_PATH)
-    sources = build_class_sources()
-    class_names = ordered_class_names(sources)
-    colors = {n: PALETTE[i % len(PALETTE)] for i, n in enumerate(class_names)}
-    
-    fig = plt.figure(figsize=(18, 4.5 * len(class_names)))
-    gs = gridspec.GridSpec(len(class_names), 4, wspace=0.3, hspace=0.7) # 4 colunas agora (inclui bins)
-    
-    for row, class_name in enumerate(class_names):
-        provs = sources[class_name]
-        # Colunas 0 a 2: Janelas Promotoras
-        for col, window in enumerate(WINDOWS):
-            ax = fig.add_subplot(gs[row, col])
-            plot_panel(ax, provs, window, tss_list, genes, colors[class_name], is_bin=False)
-            ax.set_title(f"{class_name} (-{window} bp)")
-            ax.set_xlim(-window, 0)
-            if col == 0: ax.set_ylabel("Densidade prob. (×10⁻⁴)")
-        # Coluna 3: Bins do Corpo do Gene
-        ax_bin = fig.add_subplot(gs[row, 3])
-        plot_panel(ax_bin, provs, None, tss_list, genes, colors[class_name], is_bin=True)
-        ax_bin.set_title(f"{class_name} (Corpo do Gene)")
-        ax_bin.set_xlim(0, 100)
-        ax_bin.set_xlabel("Progresso no Gene (%)")
+    classes = load_all()
+    if not classes:
+        print("\n✗ Nenhum motivo real encontrado. Pastas procuradas:")
+        for d in (REF_DIR, VERT_DIR, HORI_DIR): print("  ", os.path.join(d, "non_B_structures"))
+        sys.exit(1)
+    names = ordered_class_names(classes)
+    panels = [("up", w) for w in WINDOWS] + [("flank", FLANK_WINDOW), ("bin", None)]
 
-    out_uni = os.path.join(OUT_DIR, "todas_classes_ferramentas_separadas.pdf")
-    fig.suptitle("Distribuição posicional (Ferramentas Separadas + Bins do Gene)", fontsize=14, y=0.98)
-    fig.savefig(out_uni, bbox_inches="tight")
+    fig = plt.figure(figsize=(22, 4.5 * len(names)))
+    gs = gridspec.GridSpec(len(names), len(panels), wspace=0.3, hspace=0.7)
+    for row, cname in enumerate(names):
+        provs = classes[cname]
+        for col, (kind, w) in enumerate(panels):
+            ax = fig.add_subplot(gs[row, col])
+            render_panel(ax, cname, provs, kind, w, show_ylabel=(col == 0))
+            # PNG individual do painel
+            tag = f"{kind}{w}" if w else "corpo_gene"
+            f2, ax2 = plt.subplots(figsize=(5.5, 4.6))
+            render_panel(ax2, cname, provs, kind, w)
+            f2.savefig(os.path.join(PNG_DIR, f"{slug(cname)}_{tag}.png"), dpi=300, bbox_inches="tight")
+            plt.close(f2)
+
+    fig.suptitle("Distribuição posicional (ferramentas separadas + ±500 bp do TSS + corpo do gene)", fontsize=14, y=0.98)
+    out_pdf = os.path.join(OUT_DIR, "todas_classes_ferramentas_separadas.pdf")
+    fig.savefig(out_pdf, bbox_inches="tight")
+    fig.savefig(out_pdf.replace(".pdf", ".png"), dpi=200, bbox_inches="tight")
     plt.close(fig)
-    print(f"\n✓ Gráfico final gerado com sucesso: {out_uni}")
+    print(f"\n✓ Figura completa: {out_pdf}")
+    print(f"✓ Painéis individuais (PNG): {PNG_DIR}")
+
 if __name__ == "__main__":
     make_plots()

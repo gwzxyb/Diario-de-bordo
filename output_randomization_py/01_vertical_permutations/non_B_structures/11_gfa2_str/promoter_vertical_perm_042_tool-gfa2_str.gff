@@ -1,0 +1,378 @@
+##gff-version 3
+VNG_RS01970	ABCC	Short_Tandem_Repeat	340	349	.	+	.	ID=VNG_RS01970_340_349_STR;length=3;x3+1;type=0;composition=0A/1C/2G/0T;sequence=cggcggcggc
+##gff-version 3
+VNG_RS09935	ABCC	Short_Tandem_Repeat	15	24	.	+	.	ID=VNG_RS09935_15_24_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcg
+##gff-version 3
+VNG_RS09715	ABCC	Short_Tandem_Repeat	938	947	.	+	.	ID=VNG_RS09715_938_947_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcg
+##gff-version 3
+VNG_RS09405	ABCC	Short_Tandem_Repeat	761	770	.	+	.	ID=VNG_RS09405_761_770_STR;length=3;x3+1;type=0;composition=0A/1C/2G/0T;sequence=cggcggcggc
+##gff-version 3
+VNG_RS01050	ABCC	Short_Tandem_Repeat	775	785	.	+	.	ID=VNG_RS01050_775_785_STR;length=3;x3+2;type=0;composition=0A/2C/1G/0T;sequence=gccgccgccgc
+##gff-version 3
+VNG_RS01475	ABCC	Short_Tandem_Repeat	146	157	.	+	.	ID=VNG_RS01475_146_157_STR;length=4;x3+0;type=1;composition=0A/1C/3G/0T;sequence=gcgggcgggcgg
+##gff-version 3
+VNG_RS01315	ABCC	Short_Tandem_Repeat	360	369	.	+	.	ID=VNG_RS01315_360_369_STR;length=3;x3+1;type=6;composition=0A/0C/2G/1T;sequence=gtggtggtgg
+##gff-version 3
+VNG_RS04550	ABCC	Short_Tandem_Repeat	161	171	.	+	.	ID=VNG_RS04550_161_171_STR;length=2;x5+1;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcgc
+##gff-version 3
+VNG_RS08155	ABCC	Short_Tandem_Repeat	236	245	.	+	.	ID=VNG_RS08155_236_245_STR;length=3;x3+1;type=0;composition=0A/2C/1G/0T;sequence=ccgccgccgc
+##gff-version 3
+VNG_RS08950	ABCC	Short_Tandem_Repeat	318	328	.	+	.	ID=VNG_RS08950_318_328_STR;length=3;x3+2;type=0;composition=0A/1C/2G/0T;sequence=ggcggcggcgg
+##gff-version 3
+VNG_RS01095	ABCC	Short_Tandem_Repeat	43	52	.	+	.	ID=VNG_RS01095_43_52_STR;length=3;x3+1;type=6;composition=0A/2C/1G/0T;sequence=cgccgccgcc
+##gff-version 3
+VNG_RS07880	ABCC	Short_Tandem_Repeat	445	454	.	+	.	ID=VNG_RS07880_445_454_STR;length=3;x3+1;type=0;composition=0A/2C/1G/0T;sequence=gccgccgccg
+##gff-version 3
+VNG_RS05435	ABCC	Short_Tandem_Repeat	744	757	.	+	.	ID=VNG_RS05435_744_757_STR;length=4;x3+2;type=1;composition=0A/3C/1G/0T;sequence=cccgcccgcccgcc
+##gff-version 3
+VNG_RS01290	ABCC	Short_Tandem_Repeat	712	722	.	+	.	ID=VNG_RS01290_712_722_STR;length=3;x3+2;type=0;composition=0A/2C/1G/0T;sequence=ccgccgccgcc
+##gff-version 3
+VNG_RS06235	ABCC	Short_Tandem_Repeat	1	10	.	+	.	ID=VNG_RS06235_1_10_STR;length=1;x10+0;type=4;composition=0A/0C/1G/0T;sequence=gggggggggg
+##gff-version 3
+VNG_RS06775	ABCC	Short_Tandem_Repeat	701	710	.	+	.	ID=VNG_RS06775_701_710_STR;length=3;x3+1;type=0;composition=0A/2C/1G/0T;sequence=ccgccgccgc
+##gff-version 3
+VNG_RS00980	ABCC	Short_Tandem_Repeat	317	329	.	+	.	ID=VNG_RS00980_317_329_STR;length=3;x4+1;type=0;composition=0A/1C/2G/0T;sequence=cggcggcggcggc
+##gff-version 3
+VNG_RS07370	ABCC	Short_Tandem_Repeat	907	916	.	+	.	ID=VNG_RS07370_907_916_STR;length=3;x3+1;type=6;composition=0A/1C/2G/0T;sequence=gcggcggcgg
+##gff-version 3
+VNG_RS02495	ABCC	Short_Tandem_Repeat	103	115	.	+	.	ID=VNG_RS02495_103_115_STR;length=4;x3+1;type=5;composition=0A/2C/2G/0T;sequence=gccggccggccgg
+##gff-version 3
+VNG_RS07820	ABCC	Short_Tandem_Repeat	513	522	.	+	.	ID=VNG_RS07820_513_522_STR;length=3;x3+1;type=0;composition=1A/0C/2G/0T;sequence=ggaggaggag
+##gff-version 3
+VNG_RS00035	ABCC	Short_Tandem_Repeat	57	67	.	+	.	ID=VNG_RS00035_57_67_STR;length=3;x3+2;type=2;composition=0A/1C/1G/1T;sequence=cgtcgtcgtcg
+##gff-version 3
+VNG_RS07320	ABCC	Short_Tandem_Repeat	970	983	.	+	.	ID=VNG_RS07320_970_983_STR;length=4;x3+2;type=1;composition=0A/2C/1G/1T;sequence=gtccgtccgtccgt
+##gff-version 3
+VNG_RS09840	ABCC	Short_Tandem_Repeat	329	338	.	+	.	ID=VNG_RS09840_329_338_STR;length=3;x3+1;type=0;composition=0A/1C/2G/0T;sequence=cggcggcggc
+##gff-version 3
+VNG_RS01865	ABCC	Short_Tandem_Repeat	667	676	.	+	.	ID=VNG_RS01865_667_676_STR;length=3;x3+1;type=0;composition=0A/2C/0G/1T;sequence=tcctcctcct
+##gff-version 3
+VNG_RS05530	ABCC	Short_Tandem_Repeat	513	522	.	+	.	ID=VNG_RS05530_513_522_STR;length=3;x3+1;type=6;composition=0A/1C/2G/0T;sequence=gcggcggcgg
+##gff-version 3
+VNG_RS04935	ABCC	Short_Tandem_Repeat	744	753	.	+	.	ID=VNG_RS04935_744_753_STR;length=3;x3+1;type=0;composition=0A/1C/2G/0T;sequence=ggcggcggcg
+##gff-version 3
+VNG_RS08910	ABCC	Short_Tandem_Repeat	673	687	.	+	.	ID=VNG_RS08910_673_687_STR;length=4;x3+3;type=1;composition=1A/3C/0G/0T;sequence=cccacccacccaccc
+##gff-version 3
+VNG_RS02405	ABCC	Short_Tandem_Repeat	900	911	.	+	.	ID=VNG_RS02405_900_911_STR;length=4;x3+0;type=1;composition=0A/1C/3G/0T;sequence=gcgggcgggcgg
+##gff-version 3
+VNG_RS04245	ABCC	Short_Tandem_Repeat	357	366	.	+	.	ID=VNG_RS04245_357_366_STR;length=3;x3+1;type=0;composition=0A/1C/2G/0T;sequence=ggcggcggcg
+##gff-version 3
+VNG_RS07025	ABCC	Short_Tandem_Repeat	154	164	.	+	.	ID=VNG_RS07025_154_164_STR;length=3;x3+2;type=6;composition=0A/1C/2G/0T;sequence=gcggcggcggc
+##gff-version 3
+VNG_RS01680	ABCC	Short_Tandem_Repeat	693	702	.	+	.	ID=VNG_RS01680_693_702_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=gcgcgcgcgc
+##gff-version 3
+VNG_RS05455	ABCC	Short_Tandem_Repeat	119	129	.	+	.	ID=VNG_RS05455_119_129_STR;length=2;x5+1;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcgc
+##gff-version 3
+VNG_RS03810	ABCC	Short_Tandem_Repeat	943	954	.	+	.	ID=VNG_RS03810_943_954_STR;length=4;x3+0;type=5;composition=0A/2C/2G/0T;sequence=gccggccggccg
+##gff-version 3
+VNG_RS03400	ABCC	Short_Tandem_Repeat	336	345	.	+	.	ID=VNG_RS03400_336_345_STR;length=3;x3+1;type=6;composition=1A/2C/0G/0T;sequence=caccaccacc
+VNG_RS03400	ABCC	Short_Tandem_Repeat	546	556	.	+	.	ID=VNG_RS03400_546_556_STR;length=3;x3+2;type=0;composition=1A/1C/1G/0T;sequence=cgacgacgacg
+##gff-version 3
+VNG_RS01330	ABCC	Short_Tandem_Repeat	3	14	.	+	.	ID=VNG_RS01330_3_14_STR;length=3;x4+0;type=0;composition=1A/2C/0G/0T;sequence=accaccaccacc
+##gff-version 3
+VNG_RS08250	ABCC	Short_Tandem_Repeat	540	549	.	+	.	ID=VNG_RS08250_540_549_STR;length=3;x3+1;type=0;composition=0A/1C/2G/0T;sequence=cggcggcggc
+##gff-version 3
+VNG_RS04240	ABCC	Short_Tandem_Repeat	303	312	.	+	.	ID=VNG_RS04240_303_312_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcg
+##gff-version 3
+VNG_RS03210	ABCC	Short_Tandem_Repeat	544	555	.	+	.	ID=VNG_RS03210_544_555_STR;length=4;x3+0;type=1;composition=0A/2C/1G/1T;sequence=cctgcctgcctg
+##gff-version 3
+VNG_RS06435	ABCC	Short_Tandem_Repeat	786	795	.	+	.	ID=VNG_RS06435_786_795_STR;length=3;x3+1;type=0;composition=0A/2C/1G/0T;sequence=gccgccgccg
+##gff-version 3
+VNG_RS08565	ABCC	Short_Tandem_Repeat	770	784	.	+	.	ID=VNG_RS08565_770_784_STR;length=5;x3+0;type=0;composition=0A/2C/3G/0T;sequence=cgcggcgcggcgcgg
+##gff-version 3
+VNG_RS05595	ABCC	Short_Tandem_Repeat	149	162	.	+	.	ID=VNG_RS05595_149_162_STR;length=2;x7+0;type=11;composition=0A/1C/1G/0T;sequence=gcgcgcgcgcgcgc
+##gff-version 3
+VNG_RS00335	ABCC	Short_Tandem_Repeat	220	229	.	+	.	ID=VNG_RS00335_220_229_STR;length=3;x3+1;type=0;composition=0A/1C/2G/0T;sequence=cggcggcggc
+##gff-version 3
+VNG_RS00155	ABCC	Short_Tandem_Repeat	305	314	.	+	.	ID=VNG_RS00155_305_314_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcg
+##gff-version 3
+VNG_RS05245	ABCC	Short_Tandem_Repeat	47	57	.	+	.	ID=VNG_RS05245_47_57_STR;length=3;x3+2;type=6;composition=0A/1C/2G/0T;sequence=gcggcggcggc
+##gff-version 3
+VNG_RS06300	ABCC	Short_Tandem_Repeat	262	271	.	+	.	ID=VNG_RS06300_262_271_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=gcgcgcgcgc
+##gff-version 3
+VNG_RS02860	ABCC	Short_Tandem_Repeat	286	295	.	+	.	ID=VNG_RS02860_286_295_STR;length=3;x3+1;type=0;composition=0A/1C/1G/1T;sequence=gtcgtcgtcg
+VNG_RS02860	ABCC	Short_Tandem_Repeat	617	626	.	+	.	ID=VNG_RS02860_617_626_STR;length=3;x3+1;type=6;composition=0A/2C/1G/0T;sequence=cgccgccgcc
+##gff-version 3
+VNG_RS01525	ABCC	Short_Tandem_Repeat	227	238	.	+	.	ID=VNG_RS01525_227_238_STR;length=1;x12+0;type=4;composition=0A/1C/0G/0T;sequence=cccccccccccc
+##gff-version 3
+VNG_RS04265	ABCC	Short_Tandem_Repeat	34	43	.	+	.	ID=VNG_RS04265_34_43_STR;length=3;x3+1;type=6;composition=0A/1C/2G/0T;sequence=gcggcggcgg
+##gff-version 3
+VNG_RS05200	ABCC	Short_Tandem_Repeat	567	577	.	+	.	ID=VNG_RS05200_567_577_STR;length=3;x3+2;type=0;composition=1A/0C/2G/0T;sequence=ggaggaggagg
+##gff-version 3
+VNG_RS06695	ABCC	Short_Tandem_Repeat	230	240	.	+	.	ID=VNG_RS06695_230_240_STR;length=2;x5+1;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcgc
+##gff-version 3
+VNG_RS06685	ABCC	Short_Tandem_Repeat	386	395	.	+	.	ID=VNG_RS06685_386_395_STR;length=3;x3+1;type=0;composition=0A/1C/0G/2T;sequence=cttcttcttc
+##gff-version 3
+VNG_RS06265	ABCC	Short_Tandem_Repeat	653	663	.	+	.	ID=VNG_RS06265_653_663_STR;length=2;x5+1;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcgc
+##gff-version 3
+VNG_RS07080	ABCC	Short_Tandem_Repeat	785	794	.	+	.	ID=VNG_RS07080_785_794_STR;length=3;x3+1;type=0;composition=1A/0C/2G/0T;sequence=aggaggagga
+##gff-version 3
+VNG_RS07720	ABCC	Short_Tandem_Repeat	82	91	.	+	.	ID=VNG_RS07720_82_91_STR;length=3;x3+1;type=0;composition=0A/1C/2G/0T;sequence=ggcggcggcg
+VNG_RS07720	ABCC	Short_Tandem_Repeat	626	635	.	+	.	ID=VNG_RS07720_626_635_STR;length=2;x5+0;type=3;composition=1A/1C/0G/0T;sequence=acacacacac
+##gff-version 3
+VNG_RS08890	ABCC	Short_Tandem_Repeat	120	129	.	+	.	ID=VNG_RS08890_120_129_STR;length=3;x3+1;type=0;composition=0A/1C/1G/1T;sequence=ctgctgctgc
+##gff-version 3
+VNG_RS07060	ABCC	Short_Tandem_Repeat	325	336	.	+	.	ID=VNG_RS07060_325_336_STR;length=4;x3+0;type=1;composition=2A/2C/0G/0T;sequence=aaccaaccaacc
+VNG_RS07060	ABCC	Short_Tandem_Repeat	951	960	.	+	.	ID=VNG_RS07060_951_960_STR;length=3;x3+1;type=6;composition=0A/2C/1G/0T;sequence=cgccgccgcc
+##gff-version 3
+VNG_RS10120	ABCC	Short_Tandem_Repeat	754	763	.	+	.	ID=VNG_RS10120_754_763_STR;length=3;x3+1;type=0;composition=1A/1C/1G/0T;sequence=cagcagcagc
+##gff-version 3
+VNG_RS03905	ABCC	Short_Tandem_Repeat	328	337	.	+	.	ID=VNG_RS03905_328_337_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcg
+VNG_RS03905	ABCC	Short_Tandem_Repeat	534	546	.	+	.	ID=VNG_RS03905_534_546_STR;length=4;x3+1;type=1;composition=0A/1C/2G/1T;sequence=ggctggctggctg
+##gff-version 3
+VNG_RS02485	ABCC	Short_Tandem_Repeat	395	404	.	+	.	ID=VNG_RS02485_395_404_STR;length=3;x3+1;type=6;composition=0A/2C/1G/0T;sequence=cgccgccgcc
+VNG_RS02485	ABCC	Short_Tandem_Repeat	903	912	.	+	.	ID=VNG_RS02485_903_912_STR;length=3;x3+1;type=6;composition=0A/1C/2G/0T;sequence=gcggcggcgg
+##gff-version 3
+VNG_RS02110	ABCC	Short_Tandem_Repeat	227	237	.	+	.	ID=VNG_RS02110_227_237_STR;length=3;x3+2;type=0;composition=0A/0C/2G/1T;sequence=tggtggtggtg
+##gff-version 3
+VNG_RS10410	ABCC	Short_Tandem_Repeat	116	125	.	+	.	ID=VNG_RS10410_116_125_STR;length=3;x3+1;type=0;composition=0A/1C/1G/1T;sequence=ctgctgctgc
+##gff-version 3
+VNG_RS02345	ABCC	Short_Tandem_Repeat	427	436	.	+	.	ID=VNG_RS02345_427_436_STR;length=1;x10+0;type=4;composition=0A/1C/0G/0T;sequence=cccccccccc
+##gff-version 3
+VNG_RS10145	ABCC	Short_Tandem_Repeat	897	906	.	+	.	ID=VNG_RS10145_897_906_STR;length=3;x3+1;type=0;composition=0A/1C/1G/1T;sequence=gctgctgctg
+##gff-version 3
+VNG_RS05130	ABCC	Short_Tandem_Repeat	125	135	.	+	.	ID=VNG_RS05130_125_135_STR;length=1;x11+0;type=4;composition=0A/1C/0G/0T;sequence=ccccccccccc
+##gff-version 3
+VNG_RS02605	ABCC	Short_Tandem_Repeat	667	677	.	+	.	ID=VNG_RS02605_667_677_STR;length=1;x11+0;type=4;composition=0A/1C/0G/0T;sequence=ccccccccccc
+##gff-version 3
+VNG_RS00175	ABCC	Short_Tandem_Repeat	557	568	.	+	.	ID=VNG_RS00175_557_568_STR;length=4;x3+0;type=1;composition=0A/3C/1G/0T;sequence=gcccgcccgccc
+##gff-version 3
+VNG_RS01230	ABCC	Short_Tandem_Repeat	580	589	.	+	.	ID=VNG_RS01230_580_589_STR;length=3;x3+1;type=2;composition=1A/1C/1G/0T;sequence=acgacgacga
+##gff-version 3
+VNG_RS10250	ABCC	Short_Tandem_Repeat	158	168	.	+	.	ID=VNG_RS10250_158_168_STR;length=3;x3+2;type=2;composition=1A/1C/1G/0T;sequence=gcagcagcagc
+##gff-version 3
+VNG_RS05330	ABCC	Short_Tandem_Repeat	637	646	.	+	.	ID=VNG_RS05330_637_646_STR;length=3;x3+1;type=0;composition=1A/1C/1G/0T;sequence=gacgacgacg
+##gff-version 3
+VNG_RS10425	ABCC	Short_Tandem_Repeat	599	608	.	+	.	ID=VNG_RS10425_599_608_STR;length=3;x3+1;type=6;composition=0A/2C/1G/0T;sequence=cgccgccgcc
+##gff-version 3
+VNG_RS08810	ABCC	Short_Tandem_Repeat	200	210	.	+	.	ID=VNG_RS08810_200_210_STR;length=1;x11+0;type=4;composition=0A/1C/0G/0T;sequence=ccccccccccc
+##gff-version 3
+VNG_RS05885	ABCC	Short_Tandem_Repeat	354	363	.	+	.	ID=VNG_RS05885_354_363_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcg
+##gff-version 3
+VNG_RS14205	ABCC	Short_Tandem_Repeat	641	650	.	+	.	ID=VNG_RS14205_641_650_STR;length=3;x3+1;type=0;composition=0A/1C/2G/0T;sequence=cggcggcggc
+##gff-version 3
+VNG_RS05465	ABCC	Short_Tandem_Repeat	32	41	.	+	.	ID=VNG_RS05465_32_41_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcg
+##gff-version 3
+VNG_RS09965	ABCC	Short_Tandem_Repeat	872	883	.	+	.	ID=VNG_RS09965_872_883_STR;length=1;x12+0;type=4;composition=0A/1C/0G/0T;sequence=cccccccccccc
+##gff-version 3
+VNG_RS00415	ABCC	Short_Tandem_Repeat	507	516	.	+	.	ID=VNG_RS00415_507_516_STR;length=3;x3+1;type=0;composition=1A/0C/1G/1T;sequence=gatgatgatg
+##gff-version 3
+VNG_RS01415	ABCC	Short_Tandem_Repeat	972	981	.	+	.	ID=VNG_RS01415_972_981_STR;length=3;x3+1;type=6;composition=0A/1C/2G/0T;sequence=gcggcggcgg
+##gff-version 3
+VNG_RS14370	ABCC	Short_Tandem_Repeat	39	49	.	+	.	ID=VNG_RS14370_39_49_STR;length=3;x3+2;type=0;composition=1A/1C/1G/0T;sequence=cgacgacgacg
+VNG_RS14370	ABCC	Short_Tandem_Repeat	849	859	.	+	.	ID=VNG_RS14370_849_859_STR;length=3;x3+2;type=2;composition=0A/1C/1G/1T;sequence=cgtcgtcgtcg
+##gff-version 3
+VNG_RS05460	ABCC	Short_Tandem_Repeat	725	735	.	+	.	ID=VNG_RS05460_725_735_STR;length=2;x5+1;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcgc
+##gff-version 3
+VNG_RS03715	ABCC	Short_Tandem_Repeat	689	699	.	+	.	ID=VNG_RS03715_689_699_STR;length=3;x3+2;type=0;composition=0A/2C/1G/0T;sequence=gccgccgccgc
+##gff-version 3
+VNG_RS05960	ABCC	Short_Tandem_Repeat	395	405	.	+	.	ID=VNG_RS05960_395_405_STR;length=1;x11+0;type=4;composition=0A/1C/0G/0T;sequence=ccccccccccc
+VNG_RS05960	ABCC	Short_Tandem_Repeat	518	529	.	+	.	ID=VNG_RS05960_518_529_STR;length=3;x4+0;type=0;composition=0A/2C/0G/1T;sequence=cctcctcctcct
+##gff-version 3
+VNG_RS00220	ABCC	Short_Tandem_Repeat	240	249	.	+	.	ID=VNG_RS00220_240_249_STR;length=1;x10+0;type=4;composition=0A/0C/1G/0T;sequence=gggggggggg
+##gff-version 3
+VNG_RS06500	ABCC	Short_Tandem_Repeat	289	298	.	+	.	ID=VNG_RS06500_289_298_STR;length=1;x10+0;type=4;composition=0A/1C/0G/0T;sequence=cccccccccc
+##gff-version 3
+VNG_RS10505	ABCC	Short_Tandem_Repeat	324	335	.	+	.	ID=VNG_RS10505_324_335_STR;length=1;x12+0;type=4;composition=0A/0C/1G/0T;sequence=gggggggggggg
+##gff-version 3
+VNG_RS13390	ABCC	Short_Tandem_Repeat	822	831	.	+	.	ID=VNG_RS13390_822_831_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=gcgcgcgcgc
+##gff-version 3
+VNG_RS04830	ABCC	Short_Tandem_Repeat	747	758	.	+	.	ID=VNG_RS04830_747_758_STR;length=1;x12+0;type=4;composition=0A/1C/0G/0T;sequence=cccccccccccc
+##gff-version 3
+VNG_RS01305	ABCC	Short_Tandem_Repeat	676	685	.	+	.	ID=VNG_RS01305_676_685_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=gcgcgcgcgc
+VNG_RS01305	ABCC	Short_Tandem_Repeat	977	986	.	+	.	ID=VNG_RS01305_977_986_STR;length=3;x3+1;type=0;composition=0A/1C/0G/2T;sequence=ttcttcttct
+##gff-version 3
+VNG_RS00725	ABCC	Short_Tandem_Repeat	751	760	.	+	.	ID=VNG_RS00725_751_760_STR;length=3;x3+1;type=0;composition=0A/2C/1G/0T;sequence=gccgccgccg
+##gff-version 3
+VNG_RS08525	ABCC	Short_Tandem_Repeat	51	60	.	+	.	ID=VNG_RS08525_51_60_STR;length=3;x3+1;type=0;composition=0A/1C/2G/0T;sequence=ggcggcggcg
+##gff-version 3
+VNG_RS01915	ABCC	Short_Tandem_Repeat	751	760	.	+	.	ID=VNG_RS01915_751_760_STR;length=3;x3+1;type=6;composition=0A/2C/1G/0T;sequence=cgccgccgcc
+##gff-version 3
+VNG_RS09855	ABCC	Short_Tandem_Repeat	753	762	.	+	.	ID=VNG_RS09855_753_762_STR;length=3;x3+1;type=6;composition=0A/2C/1G/0T;sequence=cgccgccgcc
+##gff-version 3
+VNG_RS07145	ABCC	Short_Tandem_Repeat	769	779	.	+	.	ID=VNG_RS07145_769_779_STR;length=2;x5+1;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcgc
+##gff-version 3
+VNG_RS04940	ABCC	Short_Tandem_Repeat	492	503	.	+	.	ID=VNG_RS04940_492_503_STR;length=4;x3+0;type=1;composition=2A/0C/1G/1T;sequence=taagtaagtaag
+##gff-version 3
+VNG_RS10315	ABCC	Short_Tandem_Repeat	508	517	.	+	.	ID=VNG_RS10315_508_517_STR;length=3;x3+1;type=0;composition=1A/1C/1G/0T;sequence=agcagcagca
+##gff-version 3
+VNG_RS07735	ABCC	Short_Tandem_Repeat	662	671	.	+	.	ID=VNG_RS07735_662_671_STR;length=3;x3+1;type=0;composition=0A/2C/1G/0T;sequence=ccgccgccgc
+##gff-version 3
+VNG_RS04810	ABCC	Short_Tandem_Repeat	97	107	.	+	.	ID=VNG_RS04810_97_107_STR;length=3;x3+2;type=0;composition=0A/2C/1G/0T;sequence=gccgccgccgc
+##gff-version 3
+VNG_RS07530	ABCC	Short_Tandem_Repeat	435	444	.	+	.	ID=VNG_RS07530_435_444_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=gcgcgcgcgc
+##gff-version 3
+VNG_RS03520	ABCC	Short_Tandem_Repeat	563	574	.	+	.	ID=VNG_RS03520_563_574_STR;length=3;x4+0;type=6;composition=0A/1C/2G/0T;sequence=gcggcggcggcg
+##gff-version 3
+VNG_RS02240	ABCC	Short_Tandem_Repeat	125	135	.	+	.	ID=VNG_RS02240_125_135_STR;length=3;x3+2;type=2;composition=1A/1C/1G/0T;sequence=acgacgacgac
+##gff-version 3
+VNG_RS03680	ABCC	Short_Tandem_Repeat	723	732	.	+	.	ID=VNG_RS03680_723_732_STR;length=3;x3+1;type=6;composition=0A/1C/2G/0T;sequence=gcggcggcgg
+##gff-version 3
+VNG_RS01935	ABCC	Short_Tandem_Repeat	787	796	.	+	.	ID=VNG_RS01935_787_796_STR;length=3;x3+1;type=0;composition=1A/2C/0G/0T;sequence=accaccacca
+##gff-version 3
+VNG_RS04220	ABCC	Short_Tandem_Repeat	749	758	.	+	.	ID=VNG_RS04220_749_758_STR;length=3;x3+1;type=2;composition=1A/1C/1G/0T;sequence=gcagcagcag
+##gff-version 3
+VNG_RS10210	ABCC	Short_Tandem_Repeat	722	732	.	+	.	ID=VNG_RS10210_722_732_STR;length=1;x11+0;type=4;composition=0A/0C/1G/0T;sequence=ggggggggggg
+##gff-version 3
+VNG_RS09810	ABCC	Short_Tandem_Repeat	347	359	.	+	.	ID=VNG_RS09810_347_359_STR;length=4;x3+1;type=1;composition=1A/1C/2G/0T;sequence=ggcaggcaggcag
+##gff-version 3
+VNG_RS03730	ABCC	Short_Tandem_Repeat	218	227	.	+	.	ID=VNG_RS03730_218_227_STR;length=3;x3+1;type=0;composition=0A/0C/2G/1T;sequence=tggtggtggt
+##gff-version 3
+VNG_RS07615	ABCC	Short_Tandem_Repeat	151	163	.	+	.	ID=VNG_RS07615_151_163_STR;length=1;x13+0;type=4;composition=0A/0C/1G/0T;sequence=ggggggggggggg
+VNG_RS07615	ABCC	Short_Tandem_Repeat	346	357	.	+	.	ID=VNG_RS07615_346_357_STR;length=4;x3+0;type=1;composition=1A/2C/1G/0T;sequence=gaccgaccgacc
+##gff-version 3
+VNG_RS09760	ABCC	Short_Tandem_Repeat	122	133	.	+	.	ID=VNG_RS09760_122_133_STR;length=4;x3+0;type=1;composition=1A/1C/2G/0T;sequence=caggcaggcagg
+##gff-version 3
+VNG_RS02635	ABCC	Short_Tandem_Repeat	945	958	.	+	.	ID=VNG_RS02635_945_958_STR;length=3;x4+2;type=0;composition=0A/1C/2G/0T;sequence=cggcggcggcggcg
+##gff-version 3
+VNG_RS07495	ABCC	Short_Tandem_Repeat	228	240	.	+	.	ID=VNG_RS07495_228_240_STR;length=4;x3+1;type=1;composition=2A/2C/0G/0T;sequence=ccaaccaaccaac
+##gff-version 3
+VNG_RS03410	ABCC	Short_Tandem_Repeat	837	846	.	+	.	ID=VNG_RS03410_837_846_STR;length=3;x3+1;type=0;composition=0A/1C/2G/0T;sequence=ggcggcggcg
+##gff-version 3
+VNG_RS01620	ABCC	Short_Tandem_Repeat	697	708	.	+	.	ID=VNG_RS01620_697_708_STR;length=1;x12+0;type=4;composition=0A/1C/0G/0T;sequence=cccccccccccc
+##gff-version 3
+VNG_RS14185	ABCC	Short_Tandem_Repeat	363	374	.	+	.	ID=VNG_RS14185_363_374_STR;length=4;x3+0;type=1;composition=0A/3C/1G/0T;sequence=cccgcccgcccg
+##gff-version 3
+VNG_RS06420	ABCC	Short_Tandem_Repeat	574	585	.	+	.	ID=VNG_RS06420_574_585_STR;length=4;x3+0;type=1;composition=0A/3C/1G/0T;sequence=cgcccgcccgcc
+##gff-version 3
+VNG_RS07860	ABCC	Short_Tandem_Repeat	276	285	.	+	.	ID=VNG_RS07860_276_285_STR;length=3;x3+1;type=0;composition=0A/2C/1G/0T;sequence=ccgccgccgc
+##gff-version 3
+VNG_RS03670	ABCC	Short_Tandem_Repeat	393	402	.	+	.	ID=VNG_RS03670_393_402_STR;length=3;x3+1;type=0;composition=0A/2C/1G/0T;sequence=gccgccgccg
+VNG_RS03670	ABCC	Short_Tandem_Repeat	722	732	.	+	.	ID=VNG_RS03670_722_732_STR;length=3;x3+2;type=2;composition=0A/1C/1G/1T;sequence=cgtcgtcgtcg
+##gff-version 3
+VNG_RS14565	ABCC	Short_Tandem_Repeat	534	544	.	+	.	ID=VNG_RS14565_534_544_STR;length=2;x5+1;type=11;composition=0A/1C/1G/0T;sequence=gcgcgcgcgcg
+##gff-version 3
+VNG_RS01580	ABCC	Short_Tandem_Repeat	686	696	.	+	.	ID=VNG_RS01580_686_696_STR;length=3;x3+2;type=6;composition=0A/1C/2G/0T;sequence=gcggcggcggc
+##gff-version 3
+VNG_RS04030	ABCC	Short_Tandem_Repeat	396	406	.	+	.	ID=VNG_RS04030_396_406_STR;length=3;x3+2;type=6;composition=0A/1C/2G/0T;sequence=gcggcggcggc
+##gff-version 3
+VNG_RS05250	ABCC	Short_Tandem_Repeat	409	420	.	+	.	ID=VNG_RS05250_409_420_STR;length=4;x3+0;type=1;composition=2A/1C/1G/0T;sequence=cagacagacaga
+##gff-version 3
+VNG_RS01625	ABCC	Short_Tandem_Repeat	25	34	.	+	.	ID=VNG_RS01625_25_34_STR;length=3;x3+1;type=0;composition=0A/1C/1G/1T;sequence=gctgctgctg
+##gff-version 3
+VNG_RS01385	ABCC	Short_Tandem_Repeat	228	237	.	+	.	ID=VNG_RS01385_228_237_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=gcgcgcgcgc
+##gff-version 3
+VNG_RS09740	ABCC	Short_Tandem_Repeat	1	12	.	+	.	ID=VNG_RS09740_1_12_STR;length=1;x12+0;type=4;composition=0A/1C/0G/0T;sequence=cccccccccccc
+##gff-version 3
+VNG_RS04365	ABCC	Short_Tandem_Repeat	207	216	.	+	.	ID=VNG_RS04365_207_216_STR;length=3;x3+1;type=0;composition=0A/1C/2G/0T;sequence=ggcggcggcg
+##gff-version 3
+VNG_RS03735	ABCC	Short_Tandem_Repeat	499	508	.	+	.	ID=VNG_RS03735_499_508_STR;length=1;x10+0;type=4;composition=0A/0C/1G/0T;sequence=gggggggggg
+##gff-version 3
+VNG_RS07740	ABCC	Short_Tandem_Repeat	291	300	.	+	.	ID=VNG_RS07740_291_300_STR;length=1;x10+0;type=4;composition=0A/1C/0G/0T;sequence=cccccccccc
+##gff-version 3
+VNG_RS13350	ABCC	Short_Tandem_Repeat	672	683	.	+	.	ID=VNG_RS13350_672_683_STR;length=4;x3+0;type=1;composition=0A/3C/1G/0T;sequence=ccgcccgcccgc
+##gff-version 3
+VNG_RS09210	ABCC	Short_Tandem_Repeat	664	673	.	+	.	ID=VNG_RS09210_664_673_STR;length=1;x10+0;type=4;composition=0A/0C/1G/0T;sequence=gggggggggg
+##gff-version 3
+VNG_RS09610	ABCC	Short_Tandem_Repeat	821	833	.	+	.	ID=VNG_RS09610_821_833_STR;length=4;x3+1;type=9;composition=0A/2C/2G/0T;sequence=ccggccggccggc
+##gff-version 3
+VNG_RS08465	ABCC	Short_Tandem_Repeat	17	26	.	+	.	ID=VNG_RS08465_17_26_STR;length=3;x3+1;type=0;composition=0A/1C/2G/0T;sequence=cggcggcggc
+##gff-version 3
+VNG_RS08430	ABCC	Short_Tandem_Repeat	615	624	.	+	.	ID=VNG_RS08430_615_624_STR;length=3;x3+1;type=0;composition=0A/2C/1G/0T;sequence=gccgccgccg
+##gff-version 3
+VNG_RS00065	ABCC	Short_Tandem_Repeat	632	641	.	+	.	ID=VNG_RS00065_632_641_STR;length=3;x3+1;type=6;composition=0A/2C/1G/0T;sequence=cgccgccgcc
+VNG_RS00065	ABCC	Short_Tandem_Repeat	874	883	.	+	.	ID=VNG_RS00065_874_883_STR;length=1;x10+0;type=4;composition=0A/1C/0G/0T;sequence=cccccccccc
+##gff-version 3
+VNG_RS07445	ABCC	Short_Tandem_Repeat	756	765	.	+	.	ID=VNG_RS07445_756_765_STR;length=3;x3+1;type=0;composition=0A/2C/1G/0T;sequence=gccgccgccg
+##gff-version 3
+VNG_RS03530	ABCC	Short_Tandem_Repeat	983	992	.	+	.	ID=VNG_RS03530_983_992_STR;length=3;x3+1;type=6;composition=0A/1C/2G/0T;sequence=gcggcggcgg
+##gff-version 3
+VNG_RS01400	ABCC	Short_Tandem_Repeat	841	850	.	+	.	ID=VNG_RS01400_841_850_STR;length=3;x3+1;type=6;composition=1A/2C/0G/0T;sequence=caccaccacc
+##gff-version 3
+VNG_RS03545	ABCC	Short_Tandem_Repeat	145	155	.	+	.	ID=VNG_RS03545_145_155_STR;length=3;x3+2;type=0;composition=0A/2C/1G/0T;sequence=ccgccgccgcc
+##gff-version 3
+VNG_RS02085	ABCC	Short_Tandem_Repeat	589	598	.	+	.	ID=VNG_RS02085_589_598_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=gcgcgcgcgc
+VNG_RS02085	ABCC	Short_Tandem_Repeat	686	695	.	+	.	ID=VNG_RS02085_686_695_STR;length=3;x3+1;type=6;composition=0A/2C/1G/0T;sequence=cgccgccgcc
+##gff-version 3
+VNG_RS06375	ABCC	Short_Tandem_Repeat	962	971	.	+	.	ID=VNG_RS06375_962_971_STR;length=3;x3+1;type=0;composition=1A/2C/0G/0T;sequence=accaccacca
+##gff-version 3
+VNG_RS05165	ABCC	Short_Tandem_Repeat	880	889	.	+	.	ID=VNG_RS05165_880_889_STR;length=3;x3+1;type=4;composition=1A/0C/2G/0T;sequence=gaggaggagg
+##gff-version 3
+VNG_RS01190	ABCC	Short_Tandem_Repeat	253	266	.	+	.	ID=VNG_RS01190_253_266_STR;length=4;x3+2;type=1;composition=2A/1C/1G/0T;sequence=acgaacgaacgaac
+VNG_RS01190	ABCC	Short_Tandem_Repeat	760	771	.	+	.	ID=VNG_RS01190_760_771_STR;length=3;x4+0;type=6;composition=0A/1C/2G/0T;sequence=gcggcggcggcg
+##gff-version 3
+VNG_RS08015	ABCC	Short_Tandem_Repeat	348	357	.	+	.	ID=VNG_RS08015_348_357_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=gcgcgcgcgc
+##gff-version 3
+VNG_RS02135	ABCC	Short_Tandem_Repeat	579	590	.	+	.	ID=VNG_RS02135_579_590_STR;length=4;x3+0;type=1;composition=1A/2C/1G/0T;sequence=ccagccagccag
+##gff-version 3
+VNG_RS06465	ABCC	Short_Tandem_Repeat	675	684	.	+	.	ID=VNG_RS06465_675_684_STR;length=3;x3+1;type=6;composition=0A/2C/1G/0T;sequence=cgccgccgcc
+##gff-version 3
+VNG_RS04685	ABCC	Short_Tandem_Repeat	295	305	.	+	.	ID=VNG_RS04685_295_305_STR;length=3;x3+2;type=6;composition=0A/2C/1G/0T;sequence=cgccgccgccg
+##gff-version 3
+VNG_RS03330	ABCC	Short_Tandem_Repeat	180	189	.	+	.	ID=VNG_RS03330_180_189_STR;length=3;x3+1;type=0;composition=0A/1C/2G/0T;sequence=ggcggcggcg
+VNG_RS03330	ABCC	Short_Tandem_Repeat	678	687	.	+	.	ID=VNG_RS03330_678_687_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcg
+##gff-version 3
+VNG_RS03950	ABCC	Short_Tandem_Repeat	427	436	.	+	.	ID=VNG_RS03950_427_436_STR;length=3;x3+1;type=0;composition=1A/0C/2G/0T;sequence=aggaggagga
+##gff-version 3
+VNG_RS04825	ABCC	Short_Tandem_Repeat	45	54	.	+	.	ID=VNG_RS04825_45_54_STR;length=3;x3+1;type=0;composition=1A/1C/1G/0T;sequence=agcagcagca
+##gff-version 3
+VNG_RS08880	ABCC	Short_Tandem_Repeat	961	970	.	+	.	ID=VNG_RS08880_961_970_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcg
+##gff-version 3
+VNG_RS01065	ABCC	Short_Tandem_Repeat	328	341	.	+	.	ID=VNG_RS01065_328_341_STR;length=4;x3+2;type=1;composition=0A/3C/0G/1T;sequence=ctccctccctccct
+##gff-version 3
+VNG_RS01155	ABCC	Short_Tandem_Repeat	105	118	.	+	.	ID=VNG_RS01155_105_118_STR;length=2;x7+0;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcgcgcg
+##gff-version 3
+VNG_RS07175	ABCC	Short_Tandem_Repeat	790	801	.	+	.	ID=VNG_RS07175_790_801_STR;length=4;x3+0;type=9;composition=0A/2C/2G/0T;sequence=ccggccggccgg
+##gff-version 3
+VNG_RS04880	ABCC	Short_Tandem_Repeat	815	824	.	+	.	ID=VNG_RS04880_815_824_STR;length=3;x3+1;type=0;composition=0A/2C/1G/0T;sequence=ccgccgccgc
+##gff-version 3
+VNG_RS02745	ABCC	Short_Tandem_Repeat	631	640	.	+	.	ID=VNG_RS02745_631_640_STR;length=3;x3+1;type=4;composition=1A/0C/2G/0T;sequence=gaggaggagg
+##gff-version 3
+VNG_RS04515	ABCC	Short_Tandem_Repeat	581	592	.	+	.	ID=VNG_RS04515_581_592_STR;length=3;x4+0;type=0;composition=0A/1C/2G/0T;sequence=cggcggcggcgg
+VNG_RS04515	ABCC	Short_Tandem_Repeat	726	735	.	+	.	ID=VNG_RS04515_726_735_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcg
+##gff-version 3
+VNG_RS03500	ABCC	Short_Tandem_Repeat	216	225	.	+	.	ID=VNG_RS03500_216_225_STR;length=1;x10+0;type=4;composition=0A/0C/1G/0T;sequence=gggggggggg
+##gff-version 3
+VNG_RS00565	ABCC	Short_Tandem_Repeat	807	816	.	+	.	ID=VNG_RS00565_807_816_STR;length=1;x10+0;type=4;composition=0A/1C/0G/0T;sequence=cccccccccc
+##gff-version 3
+VNG_RS01235	ABCC	Short_Tandem_Repeat	442	451	.	+	.	ID=VNG_RS01235_442_451_STR;length=1;x10+0;type=4;composition=0A/0C/1G/0T;sequence=gggggggggg
+##gff-version 3
+VNG_RS09140	ABCC	Short_Tandem_Repeat	725	739	.	+	.	ID=VNG_RS09140_725_739_STR;length=5;x3+0;type=0;composition=0A/2C/3G/0T;sequence=cggcgcggcgcggcg
+##gff-version 3
+VNG_RS04815	ABCC	Short_Tandem_Repeat	663	673	.	+	.	ID=VNG_RS04815_663_673_STR;length=1;x11+0;type=4;composition=0A/1C/0G/0T;sequence=ccccccccccc
+##gff-version 3
+VNG_RS05900	ABCC	Short_Tandem_Repeat	309	318	.	+	.	ID=VNG_RS05900_309_318_STR;length=3;x3+1;type=0;composition=0A/2C/1G/0T;sequence=gccgccgccg
+##gff-version 3
+VNG_RS00670	ABCC	Short_Tandem_Repeat	440	450	.	+	.	ID=VNG_RS00670_440_450_STR;length=2;x5+1;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcgc
+##gff-version 3
+VNG_RS05770	ABCC	Short_Tandem_Repeat	57	67	.	+	.	ID=VNG_RS05770_57_67_STR;length=3;x3+2;type=0;composition=0A/1C/1G/1T;sequence=tcgtcgtcgtc
+##gff-version 3
+VNG_RS09060	ABCC	Short_Tandem_Repeat	813	823	.	+	.	ID=VNG_RS09060_813_823_STR;length=3;x3+2;type=0;composition=0A/1C/2G/0T;sequence=cggcggcggcg
+##gff-version 3
+VNG_RS00520	ABCC	Short_Tandem_Repeat	561	570	.	+	.	ID=VNG_RS00520_561_570_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcg
+##gff-version 3
+VNG_RS10180	ABCC	Short_Tandem_Repeat	734	743	.	+	.	ID=VNG_RS10180_734_743_STR;length=3;x3+1;type=0;composition=0A/1C/2G/0T;sequence=ggcggcggcg
+##gff-version 3
+VNG_RS05580	ABCC	Short_Tandem_Repeat	365	376	.	+	.	ID=VNG_RS05580_365_376_STR;length=3;x4+0;type=0;composition=0A/2C/1G/0T;sequence=ccgccgccgccg
+##gff-version 3
+VNG_RS02020	ABCC	Short_Tandem_Repeat	274	283	.	+	.	ID=VNG_RS02020_274_283_STR;length=3;x3+1;type=6;composition=0A/1C/2G/0T;sequence=gcggcggcgg
+##gff-version 3
+VNG_RS09540	ABCC	Short_Tandem_Repeat	636	647	.	+	.	ID=VNG_RS09540_636_647_STR;length=4;x3+0;type=1;composition=0A/1C/2G/1T;sequence=gtcggtcggtcg
+##gff-version 3
+VNG_RS04955	ABCC	Short_Tandem_Repeat	563	572	.	+	.	ID=VNG_RS04955_563_572_STR;length=3;x3+1;type=2;composition=1A/1C/1G/0T;sequence=gcagcagcag
+##gff-version 3
+VNG_RS06905	ABCC	Short_Tandem_Repeat	680	690	.	+	.	ID=VNG_RS06905_680_690_STR;length=2;x5+1;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcgc
+##gff-version 3
+VNG_RS14130	ABCC	Short_Tandem_Repeat	641	651	.	+	.	ID=VNG_RS14130_641_651_STR;length=3;x3+2;type=2;composition=1A/1C/1G/0T;sequence=gcagcagcagc
+##gff-version 3
+VNG_RS07600	ABCC	Short_Tandem_Repeat	39	48	.	+	.	ID=VNG_RS07600_39_48_STR;length=3;x3+1;type=0;composition=0A/1C/2G/0T;sequence=cggcggcggc
+VNG_RS07600	ABCC	Short_Tandem_Repeat	584	593	.	+	.	ID=VNG_RS07600_584_593_STR;length=1;x10+0;type=4;composition=0A/0C/1G/0T;sequence=gggggggggg
+##gff-version 3
+VNG_RS03380	ABCC	Short_Tandem_Repeat	552	561	.	+	.	ID=VNG_RS03380_552_561_STR;length=3;x3+1;type=6;composition=1A/2C/0G/0T;sequence=caccaccacc
+##gff-version 3
+VNG_RS07135	ABCC	Short_Tandem_Repeat	866	877	.	+	.	ID=VNG_RS07135_866_877_STR;length=4;x3+0;type=9;composition=0A/2C/2G/0T;sequence=ggccggccggcc
+##gff-version 3
+VNG_RS00205	ABCC	Short_Tandem_Repeat	624	633	.	+	.	ID=VNG_RS00205_624_633_STR;length=2;x5+0;type=11;composition=0A/1C/1G/0T;sequence=cgcgcgcgcg
+##gff-version 3
+VNG_RS10365	ABCC	Short_Tandem_Repeat	803	813	.	+	.	ID=VNG_RS10365_803_813_STR;length=3;x3+2;type=0;composition=0A/2C/1G/0T;sequence=gccgccgccgc
+##gff-version 3
+VNG_RS06840	ABCC	Short_Tandem_Repeat	217	227	.	+	.	ID=VNG_RS06840_217_227_STR;length=3;x3+2;type=0;composition=0A/2C/1G/0T;sequence=ccgccgccgcc
+##gff-version 3
+VNG_RS00245	ABCC	Short_Tandem_Repeat	127	136	.	+	.	ID=VNG_RS00245_127_136_STR;length=3;x3+1;type=6;composition=0A/1C/2G/0T;sequence=gcggcggcgg
+##gff-version 3
+VNG_RS10500	ABCC	Short_Tandem_Repeat	388	397	.	+	.	ID=VNG_RS10500_388_397_STR;length=3;x3+1;type=0;composition=0A/2C/1G/0T;sequence=gccgccgccg
+##gff-version 3
+VNG_RS05050	ABCC	Short_Tandem_Repeat	331	340	.	+	.	ID=VNG_RS05050_331_340_STR;length=3;x3+1;type=6;composition=0A/2C/1G/0T;sequence=cgccgccgcc
+VNG_RS05050	ABCC	Short_Tandem_Repeat	749	758	.	+	.	ID=VNG_RS05050_749_758_STR;length=3;x3+1;type=6;composition=0A/2C/1G/0T;sequence=cgccgccgcc
+##gff-version 3
+VNG_RS05760	ABCC	Short_Tandem_Repeat	264	273	.	+	.	ID=VNG_RS05760_264_273_STR;length=3;x3+1;type=6;composition=0A/1C/2G/0T;sequence=gcggcggcgg

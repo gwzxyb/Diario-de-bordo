@@ -1,30 +1,4 @@
 #!/usr/bin/env python3
-"""
-Análises de TFBs (ChIP-seq) e estruturas de DNA não-B em Halobacterium salinarum.
-
-Análises incluídas (após modificações):
-  1.  Cobertura genômica por replicon
-  2.  Promotores COM vs SEM estrutura → recrutamento de TFB (qui-quadrado)
-  3.  Cobertura de TFB no promotor × estrutura (Mann‑Whitney, normalizado por kb)
-  4.  Expressão gênica × estrutura + TFB no promotor (Mann‑Whitney)
-  5.  Orientação de genes vizinhos e estruturas não‑B (tandem/divergente/convergente)
-  6.  Proximidade de estruturas não‑B a elementos de inserção (IS)
-  7.  Estruturas não‑B a até 50 bp de TFBs (mapeamento fino)
-  8.  asRNAs e estruturas de fita simples / R‑loops
-  9.  Contatos Hi‑C (lollipop razão rico/pobre)
- 10.  Perfil posicional no TSS (±500 bp, contagem absoluta; individual + por classe)
- 11.  Distribuição de distâncias mínimas estrutura–TFB (real vs aleatório; KS)
- 12.  Enriquecimento de k‑mers em promotores COM vs SEM estrutura (Fisher + FDR)
- 13.  Perfil sobreposto de todas as estruturas no TSS (figura única, absoluto + normalizado)
- 14.  Genes com/sem 5’UTR (donut)
- 15.  Distribuição do tamanho das 5’UTRs
- 16.  Distribuição posicional non‑B por região gênica – detalhada (Promotor→5’UTR→decis)
- 17.  Distribuição posicional non‑B – agrupada (Promotor/5’UTR/Corpo)
- 18.  Contagem de predições por ferramenta (log)
- 19.  Conteúdo GC por classe
- 20.  Tamanho dos intervalos por classe
-"""
-
 import os
 import csv
 import warnings
@@ -41,11 +15,6 @@ from Bio import SeqIO
 from GRATIOSA import Genome
 
 warnings.filterwarnings("ignore")
-
-# =============================================================================
-# CONFIGURAÇÕES
-# =============================================================================
-
 BASE      = "/home/mcavalcante/codigo/Diario-de-bordo/GRATIOSA_DB/data/Hsalinarum/"
 CHROMS    = ["NC_002607.1", "NC_001869.1", "NC_002608.1"]
 OUT_DIR   = "resultados_tfbs"
@@ -57,11 +26,9 @@ HIC_FILE  = os.path.join(BASE, "hic/hi-c.bedpe")
 REPLICON_LABELS = {
     "NC_002607.1": "Cromossomo principal",
     "NC_001869.1": "Plasmídeo pNRC100",
-    "NC_002608.1": "Plasmídeo pNRC200",
-}
+    "NC_002608.1": "Plasmídeo pNRC200",}
 
 SS_STRUCTURES = {"R-loop_qmrlfs", "G-Quadruplex_gboost", "G-Quadruplex_nonb"}
-
 PROMOTER_WINDOW = 250
 TSS_FLANK       = 500
 TFB_PROX        = 50
@@ -79,13 +46,8 @@ plt.rcParams.update({
     "axes.titlesize"   : 11,
     "axes.titleweight" : "bold",
     "axes.spines.top"  : False,
-    "axes.spines.right": False,
-})
-
-# =============================================================================
+    "axes.spines.right": False,})
 # UTILITÁRIOS
-# =============================================================================
-
 def _make_dirs():
     for sub in ("tabelas", "figuras"):
         os.makedirs(os.path.join(OUT_DIR, sub), exist_ok=True)
@@ -218,8 +180,7 @@ CLASS_COLORS = {
     "Short_Tandem" : "#9467bd",
     "A-Phased"     : "#8c564b",
     "Cruciform"    : "#e377c2",
-    "Outros"       : "#7f7f7f",
-}
+    "Outros"       : "#7f7f7f",}
 
 def _bar_by_class(feats, valores, ylabel, title, outpath,
                   sigs=None, hline=None, hline_label=None):
@@ -251,10 +212,7 @@ def _bar_by_class(feats, valores, ylabel, title, outpath,
     plt.close(fig)
     print(f"  [FIG] {outpath}")
 
-# =============================================================================
-# ANÁLISE 1 — COBERTURA GENÔMICA (original, não alterada)
-# =============================================================================
-
+#COBERTURA GENÔMICA 
 def analise_cobertura_genomica(genome, non_b_files):
     print("\n[1] Cobertura genômica das estruturas não-B...")
     rows = []
@@ -294,10 +252,7 @@ def analise_cobertura_genomica(genome, non_b_files):
     plt.close(fig)
     print(f"  [FIG] {out}")
 
-# =============================================================================
-# ANÁLISE 2 — PROMOTORES COM vs SEM ESTRUTURA (original)
-# =============================================================================
-
+# PROMOTORES COM vs SEM ESTRUTURA
 def analise_promotores_tfb(genome, genes_main, non_b_files):
     print("\n[2] TFBs em promotores com vs sem estrutura...")
     rows = []
@@ -352,16 +307,8 @@ def analise_promotores_tfb(genome, genes_main, non_b_files):
             "Cromossomo principal  |  * = p < 0,05 (qui-quadrado)",
             os.path.join(OUT_DIR, "figuras", "promotores_TFB.png"),
             sigs=[r[10] for r in rows_main])
-
-# =============================================================================
-# ANÁLISE 3 (antiga coocorrência) – REMOVIDA
-# =============================================================================
-# (removida completamente)
-
-# =============================================================================
+            
 # ANÁLISE 4 — COBERTURA DE TFB NO PROMOTOR (NORMALIZADA POR kb)
-# =============================================================================
-
 def analise_nTFB_por_gene(genome, genes_main, non_b_files):
     print("\n[4] Cobertura de TFB no promotor (TFB/kb) × estrutura...")
     rows = []
@@ -412,10 +359,7 @@ def analise_nTFB_por_gene(genome, genes_main, non_b_files):
             os.path.join(OUT_DIR, "figuras", "nTFB_por_gene.png"),
             sigs=[r[10] for r in rows_main])
 
-# =============================================================================
-# ANÁLISE 5 — EXPRESSÃO GÊNICA (original)
-# =============================================================================
-
+# ANÁLISE 5 — EXPRESSÃO GÊNICA ?
 def analise_expressao_genica(genome, genes_main, non_b_files):
     print("\n[5] Expressão gênica × estrutura + TFB no promotor...")
     try:
@@ -505,11 +449,7 @@ def analise_expressao_genica(genome, genes_main, non_b_files):
         fig.savefig(out, dpi=150)
         plt.close(fig)
         print(f"  [FIG] {out}")
-
-# =============================================================================
-# ANÁLISE 6 — ORIENTAÇÃO (renomeado co‑direcional → tandem)
-# =============================================================================
-
+# ANÁLISE 6 — ORIENTAÇÃO 
 def analise_orientacao_genes(genome, genes_main, non_b_files):
     """
     Classifica o espaço intergênico pelo contexto de orientação dos genes
@@ -596,11 +536,7 @@ def analise_orientacao_genes(genome, genes_main, non_b_files):
     fig.savefig(out, dpi=150)
     plt.close(fig)
     print(f"  [FIG] {out}")
-
-# =============================================================================
 # ANÁLISE 7 — PROXIMIDADE IS (original)
-# =============================================================================
-
 def analise_proximidade_IS(genome, non_b_files):
     print(f"\n[7] Proximidade de estruturas não-B a elementos IS (±{IS_WINDOW} bp)...")
     is_path = os.path.join(ANNOT_DIR, "IS_fixed.gff3")
@@ -661,10 +597,7 @@ def analise_proximidade_IS(genome, non_b_files):
             os.path.join(OUT_DIR, "figuras", "proximidade_IS.png"),
             sigs=sigs, hline=1.0, hline_label="Densidade igual dentro/fora de IS")
 
-# =============================================================================
 # ANÁLISE 8 — NÃO‑B PERTO DE TFB (original)
-# =============================================================================
-
 def analise_naoB_perto_TFB(genome, non_b_files):
     print(f"\n[8] Estruturas não-B a até {TFB_PROX} bp de TFBs...")
     rows = []
@@ -736,10 +669,7 @@ def analise_naoB_perto_TFB(genome, non_b_files):
         plt.close(fig)
         print(f"  [FIG] {out}")
 
-# =============================================================================
-# ANÁLISE 9 — asRNA (original)
-# =============================================================================
-
+# ANÁLISE 9 — asRNA 
 def analise_asRNA_estruturas(genome, non_b_files):
     print("\n[9] asRNAs e estruturas de fita simples / R-loops...")
     asrna_path = os.path.join(ANNOT_DIR, "asRNAs.gff3")
@@ -804,10 +734,7 @@ def analise_asRNA_estruturas(genome, non_b_files):
             os.path.join(OUT_DIR, "figuras", "asRNA_estruturas.png"),
             sigs=sigs, hline=1.0, hline_label="Razão = 1 (densidade igual)")
 
-# =============================================================================
-# ANÁLISE 10 — Hi‑C (LOLLIPOP da razão Grupo1/Grupo3)
-# =============================================================================
-
+# ANÁLISE 10 — Hi‑C 
 def analise_hic_naoB(genome, non_b_files):
     print(f"\n[10] Contatos Hi-C × riqueza em estruturas não-B (bin {HIC_BIN} bp)...")
     if not os.path.exists(HIC_FILE):
@@ -918,10 +845,7 @@ def analise_hic_naoB(genome, non_b_files):
     plt.close(fig)
     print(f"  [FIG] {out}")
 
-# =============================================================================
-# ANÁLISE 11 — PERFIL POSICIONAL NO TSS (original)
-# =============================================================================
-
+# ANÁLISE 11 — PERFIL POSICIONAL NO TSS 
 def analise_perfil_posicional(genome, genes_main, non_b_files):
     print(f"\n[11] Perfil posicional no TSS (±{TSS_FLANK} bp, contagem absoluta)...")
     chrom   = "NC_002607.1"
@@ -996,10 +920,7 @@ def analise_perfil_posicional(genome, genes_main, non_b_files):
         print(f"  [FIG] {out}")
     return perfis
 
-# =============================================================================
-# ANÁLISE 12 — DISTÂNCIA TFB (original)
-# =============================================================================
-
+# ANÁLISE 12 — DISTÂNCIA TFB 
 def analise_distancia_TFB(genome, non_b_files):
     print("\n[12] Distribuição de distâncias mínimas estrutura–TFB...")
     chrom   = "NC_002607.1"
@@ -1043,10 +964,7 @@ def analise_distancia_TFB(genome, non_b_files):
                 "mediana_dist_bp", "media_dist_bp",
                 "dist_min_bp", "dist_max_bp"], rows)
 
-# =============================================================================
-# ANÁLISE 13 — k‑MERS (original)
-# =============================================================================
-
+# ANÁLISE 13 — k‑MERS 
 def analise_enriquecimento_kmer(genome, genes_main, non_b_files):
     print(f"\n[13] Enriquecimento de {KMER_SIZE}-mers em promotores COM vs SEM estrutura...")
     chrom   = "NC_002607.1"
@@ -1153,10 +1071,8 @@ def analise_enriquecimento_kmer(genome, genes_main, non_b_files):
         else:
             print(f"  [INFO] Nenhum k-mer significativo após FDR para {feature}")
 
-# =============================================================================
-# ANÁLISE 14 — PERFIL SOBREPOSTO (original)
-# =============================================================================
 
+# ANÁLISE 14 — PERFIL SOBREPOSTO 
 def analise_perfil_sobreposto(perfis):
     print(f"\n[14] Perfil sobreposto de todas as estruturas no TSS (±{TSS_FLANK} bp)...")
     if not perfis:
@@ -1199,9 +1115,7 @@ def analise_perfil_sobreposto(perfis):
     plt.close(fig)
     print(f"  [FIG] {out}")
 
-# =============================================================================
-# NOVAS ANÁLISES (derivadas do pipeline R)
-# =============================================================================
+# ..
 
 def load_cds_intervals(annot_path, chrom):
     """Retorna dicionário: gene_id -> (cds_start, cds_end, strand) usando o atributo Parent."""
@@ -1271,7 +1185,7 @@ def compute_gene_utr_info(genes_main, cds_dict, chrom):
         }
     return info
 
-# --- Análise 15 (R1): Donut genes com/sem 5'UTR real ---
+#  Donut genes com/sem 5'UTR real ---
 def analise_genes_sem_utr(genes_utr_info):
     print("\n[15] Genes com vs sem 5'UTR (donut)...")
     real = sum(1 for v in genes_utr_info.values() if v["is_real"])
@@ -1289,7 +1203,7 @@ def analise_genes_sem_utr(genes_utr_info):
     plt.close(fig)
     print(f"  [FIG] {out}")
 
-# --- Análise 16 (R2): Histograma do tamanho das 5'UTRs reais ---
+#  Histograma do tamanho das 5'UTRs reais 
 def analise_utr_size_hist(genes_utr_info):
     print("\n[16] Distribuição do tamanho das 5'UTRs (histograma)...")
     real_lengths = [v["length"] for v in genes_utr_info.values() if v["is_real"]]
@@ -1312,7 +1226,7 @@ def analise_utr_size_hist(genes_utr_info):
     plt.close(fig)
     print(f"  [FIG] {out}")
 
-# --- Análise 17 (R4): Distribuição posicional detalhada (empilhado por classe) ---
+# --- Análise 17 (R4): Distribuição posicional detalhada 
 def analise_posicional_gene_regions_detailed(genome, genes_main, genes_utr_info, non_b_files):
     print("\n[17] Distribuição posicional non-B por região gênica (detalhada)...")
     chrom = "NC_002607.1"
@@ -1616,15 +1530,12 @@ def analise_interval_sizes(non_b_files):
     plt.close(fig)
     print(f"  [FIG] {out}")
 
-# =============================================================================
-# MAIN (atualizado)
-# =============================================================================
-
+#main
 def main():
     _make_dirs()
-    print("=" * 70)
+   
     print("ANÁLISES DE TFB × ESTRUTURAS NÃO‑B — Halobacterium salinarum NRC-1")
-    print("=" * 70)
+   
 
     print("\nCarregando genoma e anotação...")
     g = Genome.Genome("Hsalinarum")
@@ -1664,12 +1575,8 @@ def main():
     analise_prediction_counts(non_b_files)                # 19
     analise_gc_content(g, non_b_files)                    # 20
     analise_interval_sizes(non_b_files)                   # 21
-
-    print("\n" + "=" * 70)
     print("CONCLUÍDO")
     print(f"  Tabelas → {OUT_DIR}/tabelas/")
     print(f"  Figuras → {OUT_DIR}/figuras/")
-    print("=" * 70)
-
 if __name__ == "__main__":
     main()

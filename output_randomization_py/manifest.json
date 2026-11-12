@@ -1,0 +1,18 @@
+{
+    "seed": 42,
+    "main_chromosome": "NC_002607.1",
+    "upstream_bp": 500,
+    "n_permutations": 100,
+    "input_files": {
+        "genome": "/home/mcavalcante/codigo/Diario-de-bordo/dados/Hsalinarum.fa",
+        "tss": "/home/mcavalcante/codigo/Diario-de-bordo/dados/Hsalinarum_TSS.gtf"
+    },
+    "metrics": {
+        "total_genes": 1021,
+        "upstream_bp": 500,
+        "n_permutations": 100,
+        "gc_percent_real": 67.04,
+        "corr_AT_vertical": 1.0,
+        "corr_AT_horizontal": -0.0096
+    }
+}

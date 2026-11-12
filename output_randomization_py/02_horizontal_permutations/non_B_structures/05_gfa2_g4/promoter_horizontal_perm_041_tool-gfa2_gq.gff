@@ -1,0 +1,710 @@
+##gff-version 3
+VNG_RS10135	ABCC	G_Quadruplex_Motif	93	112	.	-	.	ID=VNG_RS10135_93_112_GQ;islands=2;runs=4;max=3;composition=0A/2C/14G/4T;sequence=gggccttttggggggggggg
+VNG_RS10135	ABCC	G_Quadruplex_Motif	489	504	.	-	.	ID=VNG_RS10135_489_504_GQ;islands=4;runs=4;max=3;composition=1A/2C/13G/0T;sequence=gggcgggaggggcggg
+VNG_RS10135	ABCC	G_Quadruplex_Motif	745	762	.	-	.	ID=VNG_RS10135_745_762_GQ;islands=2;runs=4;max=3;composition=2A/2C/14G/0T;sequence=gggggggcaacggggggg
+##gff-version 3
+VNG_RS01455	ABCC	G_Quadruplex_Motif	819	847	.	+	.	ID=VNG_RS01455_819_847_GQ;islands=4;runs=5;max=4;composition=4A/5C/19G/0T;sequence=ggggcgggggggcccaagcggggaagggg
+##gff-version 3
+VNG_RS03245	ABCC	G_Quadruplex_Motif	17	41	.	-	.	ID=VNG_RS03245_17_41_GQ;islands=4;runs=4;max=3;composition=3A/4C/15G/3T;sequence=gggcgggtccatgggaggtagcggg
+VNG_RS03245	ABCC	G_Quadruplex_Motif	646	673	.	-	.	ID=VNG_RS03245_646_673_GQ;islands=4;runs=4;max=3;composition=3A/10C/15G/0T;sequence=gggcacagggccccggggccacgcgggg
+##gff-version 3
+VNG_RS04900	ABCC	G_Quadruplex_Motif	904	930	.	+	.	ID=VNG_RS04900_904_930_GQ;islands=5;runs=5;max=3;composition=4A/3C/17G/2T;sequence=gggattggggccggggaaaggggcggg
+##gff-version 3
+VNG_RS04665	ABCC	G_Quadruplex_Motif	155	172	.	-	.	ID=VNG_RS04665_155_172_GQ;islands=4;runs=4;max=3;composition=1A/3C/13G/1T;sequence=gggtgggcgggagccggg
+##gff-version 3
+VNG_RS09580	ABCC	G_Quadruplex_Motif	302	323	.	+	.	ID=VNG_RS09580_302_323_GQ;islands=3;runs=4;max=3;composition=1A/3C/15G/2T;sequence=ggggccgggggggacggttggg
+VNG_RS09580	ABCC	G_Quadruplex_Motif	391	414	.	+	.	ID=VNG_RS09580_391_414_GQ;islands=4;runs=4;max=3;composition=2A/3C/16G/2T;sequence=gggccatgggggcgaggggtgggg
+##gff-version 3
+VNG_RS06865	ABCC	G_Quadruplex_Motif	250	273	.	+	.	ID=VNG_RS06865_250_273_GQ;islands=4;runs=4;max=3;composition=3A/2C/15G/3T;sequence=gggatgggagggggtctgagcggg
+##gff-version 3
+VNG_RS09935	ABCC	G_Quadruplex_Motif	178	201	.	-	.	ID=VNG_RS09935_178_201_GQ;islands=3;runs=4;max=3;composition=1A/5C/16G/2T;sequence=gggggggcctcggggggtaccggg
+##gff-version 3
+VNG_RS00505	ABCC	G_Quadruplex_Motif	336	356	.	-	.	ID=VNG_RS00505_336_356_GQ;islands=4;runs=4;max=3;composition=0A/4C/12G/5T;sequence=gggttgggttcgggctccggg
+##gff-version 3
+VNG_RS10160	ABCC	G_Quadruplex_Motif	231	256	.	-	.	ID=VNG_RS10160_231_256_GQ;islands=3;runs=4;max=3;composition=3A/7C/15G/1T;sequence=gggggggacgtcccggggaacccggg
+##gff-version 3
+VNG_RS00710	ABCC	G_Quadruplex_Motif	327	355	.	+	.	ID=VNG_RS00710_327_355_GQ;islands=5;runs=5;max=3;composition=3A/2C/20G/3T;sequence=gggggtagggcgtgggggcagtgggaggg
+##gff-version 3
+VNG_RS01050	ABCC	G_Quadruplex_Motif	543	565	.	+	.	ID=VNG_RS01050_543_565_GQ;islands=4;runs=4;max=3;composition=3A/3C/14G/2T;sequence=gggcaccggggatagggtggggg
+##gff-version 3
+VNG_RS01995	ABCC	G_Quadruplex_Motif	634	654	.	+	.	ID=VNG_RS01995_634_654_GQ;islands=4;runs=4;max=3;composition=1A/4C/13G/2T;sequence=gggagggccgggcgttcgggg
+##gff-version 3
+VNG_RS01475	ABCC	G_Quadruplex_Motif	855	880	.	+	.	ID=VNG_RS01475_855_880_GQ;islands=4;runs=5;max=3;composition=0A/5C/19G/1T;sequence=gggggccggggggggcgggtcgcggg
+##gff-version 3
+VNG_RS00770	ABCC	G_Quadruplex_Motif	204	231	.	+	.	ID=VNG_RS00770_204_231_GQ;islands=4;runs=4;max=3;composition=5A/5C/15G/2T;sequence=ggggagatgggcccaagggacgctgggg
+##gff-version 3
+VNG_RS00630	ABCC	G_Quadruplex_Motif	304	328	.	+	.	ID=VNG_RS00630_304_328_GQ;islands=4;runs=4;max=3;composition=6A/3C/15G/0T;sequence=ggggggacaagggagggacgacggg
+##gff-version 3
+VNG_RS02965	ABCC	G_Quadruplex_Motif	199	214	.	+	.	ID=VNG_RS02965_199_214_GQ;islands=2;runs=4;max=3;composition=1A/0C/14G/0T;sequence=gggagggggggggggg
+VNG_RS02965	ABCC	G_Quadruplex_Motif	385	409	.	-	.	ID=VNG_RS02965_385_409_GQ;islands=4;runs=4;max=3;composition=2A/4C/16G/3T;sequence=ggggagagggcgggttgccctgggg
+##gff-version 3
+VNG_RS08595	ABCC	G_Quadruplex_Motif	32	61	.	+	.	ID=VNG_RS08595_32_61_GQ;islands=5;runs=5;max=3;composition=2A/5C/20G/2T;sequence=gggcggggggcgggcgactgtgggcagggg
+VNG_RS08595	ABCC	G_Quadruplex_Motif	132	153	.	+	.	ID=VNG_RS08595_132_153_GQ;islands=4;runs=4;max=3;composition=2A/5C/12G/2T;sequence=gggtcgggaagggccctgcggg
+##gff-version 3
+VNG_RS09055	ABCC	G_Quadruplex_Motif	615	646	.	-	.	ID=VNG_RS09055_615_646_GQ;islands=4;runs=4;max=4;composition=4A/7C/20G/1T;sequence=gggggacaaccgggggctccaggggcgggggg
+##gff-version 3
+VNG_RS01430	ABCC	G_Quadruplex_Motif	608	639	.	+	.	ID=VNG_RS01430_608_639_GQ;islands=4;runs=4;max=3;composition=7A/5C/18G/1T;sequence=gggagaaggggcagactaggggccgcggaggg
+##gff-version 3
+VNG_RS07520	ABCC	G_Quadruplex_Motif	881	896	.	+	.	ID=VNG_RS07520_881_896_GQ;islands=4;runs=4;max=3;composition=2A/1C/12G/0T;sequence=gggagggagggcgggg
+##gff-version 3
+VNG_RS02675	ABCC	G_Quadruplex_Motif	506	527	.	+	.	ID=VNG_RS02675_506_527_GQ;islands=4;runs=4;max=3;composition=0A/3C/16G/2T;sequence=ggggtgggcgtgggggccgggg
+VNG_RS02675	ABCC	G_Quadruplex_Motif	862	890	.	-	.	ID=VNG_RS02675_862_890_GQ;islands=5;runs=5;max=3;composition=4A/6C/18G/1T;sequence=gggaagtgggagcgggacccggggccggg
+##gff-version 3
+VNG_RS07130	ABCC	G_Quadruplex_Motif	492	515	.	+	.	ID=VNG_RS07130_492_515_GQ;islands=4;runs=4;max=3;composition=2A/2C/16G/3T;sequence=gggcggtagggtgatgggcggggg
+VNG_RS07130	ABCC	G_Quadruplex_Motif	594	624	.	+	.	ID=VNG_RS07130_594_624_GQ;islands=4;runs=5;max=3;composition=3A/4C/21G/2T;sequence=ggggggggatacgggtcaggggcgcgggggg
+##gff-version 3
+VNG_RS08950	ABCC	G_Quadruplex_Motif	395	418	.	-	.	ID=VNG_RS08950_395_418_GQ;islands=3;runs=4;max=3;composition=0A/5C/17G/2T;sequence=gggcgtctcggggggccggggggg
+##gff-version 3
+VNG_RS14265	ABCC	G_Quadruplex_Motif	600	625	.	+	.	ID=VNG_RS14265_600_625_GQ;islands=4;runs=4;max=3;composition=2A/4C/18G/1T;sequence=gggccgagggcggggggcggtgaggg
+##gff-version 3
+VNG_RS07205	ABCC	G_Quadruplex_Motif	353	384	.	-	.	ID=VNG_RS07205_353_384_GQ;islands=5;runs=5;max=3;composition=4A/7C/19G/2T;sequence=ggggccgccgggagggtagcggggctaacggg
+##gff-version 3
+VNG_RS01175	ABCC	G_Quadruplex_Motif	947	978	.	-	.	ID=VNG_RS01175_947_978_GQ;islands=4;runs=4;max=3;composition=7A/6C/17G/2T;sequence=gggcatggaagggcagaatgggcacgccgggg
+##gff-version 3
+VNG_RS06235	ABCC	G_Quadruplex_Motif	424	448	.	+	.	ID=VNG_RS06235_424_448_GQ;islands=4;runs=4;max=3;composition=0A/4C/17G/3T;sequence=gggggctgggtgcgggctgcggggg
+##gff-version 3
+VNG_RS05335	ABCC	G_Quadruplex_Motif	581	607	.	-	.	ID=VNG_RS05335_581_607_GQ;islands=4;runs=4;max=3;composition=0A/7C/16G/4T;sequence=ggggctccggggcgtgggctctcgggg
+##gff-version 3
+VNG_RS09755	ABCC	G_Quadruplex_Motif	923	952	.	+	.	ID=VNG_RS09755_923_952_GQ;islands=4;runs=5;max=3;composition=3A/3C/19G/4T;sequence=ggggttctagcggggagtgggacggggggg
+##gff-version 3
+VNG_RS13970	ABCC	G_Quadruplex_Motif	634	654	.	-	.	ID=VNG_RS13970_634_654_GQ;islands=3;runs=4;max=3;composition=2A/2C/17G/0T;sequence=gggggggggaacgggcggggg
+##gff-version 3
+VNG_RS08045	ABCC	G_Quadruplex_Motif	54	72	.	+	.	ID=VNG_RS08045_54_72_GQ;islands=3;runs=4;max=3;composition=2A/3C/13G/0T;sequence=gggagacgggccggggggg
+##gff-version 3
+VNG_RS08005	ABCC	G_Quadruplex_Motif	339	360	.	-	.	ID=VNG_RS08005_339_360_GQ;islands=3;runs=4;max=3;composition=3A/1C/17G/1T;sequence=gggggggggcggtagggaaggg
+VNG_RS08005	ABCC	G_Quadruplex_Motif	435	474	.	-	.	ID=VNG_RS08005_435_474_GQ;islands=6;runs=6;max=3;composition=3A/9C/26G/2T;sequence=ggggcgggcgaccgggctcggcgggagggccaggtggggg
+##gff-version 3
+VNG_RS07370	ABCC	G_Quadruplex_Motif	101	128	.	+	.	ID=VNG_RS07370_101_128_GQ;islands=4;runs=4;max=3;composition=1A/7C/17G/2T;sequence=ggggcgcagccgggggcggggctctggg
+##gff-version 3
+VNG_RS05290	ABCC	G_Quadruplex_Motif	266	301	.	-	.	ID=VNG_RS05290_266_301_GQ;islands=5;runs=6;max=3;composition=3A/6C/23G/4T;sequence=gggtgggccagcgcgggtagggggggtaccggtggg
+##gff-version 3
+VNG_RS02495	ABCC	G_Quadruplex_Motif	56	86	.	+	.	ID=VNG_RS02495_56_86_GQ;islands=5;runs=5;max=3;composition=4A/8C/17G/1T;sequence=gggccgggcgtagcgggacaacgggcgcggg
+VNG_RS02495	ABCC	G_Quadruplex_Motif	675	708	.	+	.	ID=VNG_RS02495_675_708_GQ;islands=5;runs=5;max=3;composition=2A/10C/19G/2T;sequence=gggagcgcccggggcagggcgcggggctcctggg
+##gff-version 3
+VNG_RS08715	ABCC	G_Quadruplex_Motif	42	63	.	+	.	ID=VNG_RS08715_42_63_GQ;islands=4;runs=4;max=3;composition=2A/4C/13G/2T;sequence=gggtggggcactccgggagggg
+VNG_RS08715	ABCC	G_Quadruplex_Motif	191	243	.	+	.	ID=VNG_RS08715_191_243_GQ;islands=7;runs=7;max=3;composition=8A/12C/28G/4T;sequence=gggcacgactgggtcgggcgccgaggggatcatcggggggagcgggacacggg
+##gff-version 3
+VNG_RS05190	ABCC	G_Quadruplex_Motif	871	892	.	+	.	ID=VNG_RS05190_871_892_GQ;islands=4;runs=4;max=3;composition=3A/2C/15G/1T;sequence=ggggctgggcagagggaggggg
+##gff-version 3
+VNG_RS09145	ABCC	G_Quadruplex_Motif	219	241	.	-	.	ID=VNG_RS09145_219_241_GQ;islands=4;runs=4;max=3;composition=3A/4C/15G/1T;sequence=gggcgggagggggacagcctggg
+VNG_RS09145	ABCC	G_Quadruplex_Motif	506	531	.	-	.	ID=VNG_RS09145_506_531_GQ;islands=4;runs=4;max=3;composition=5A/1C/16G/4T;sequence=gggtagggaagtgggatagcgtgggg
+##gff-version 3
+VNG_RS10360	ABCC	G_Quadruplex_Motif	448	478	.	+	.	ID=VNG_RS10360_448_478_GQ;islands=6;runs=7;max=3;composition=2A/4C/22G/2T;sequence=gggtacgggtgggaggggggggccgggcggg
+##gff-version 3
+VNG_RS02690	ABCC	G_Quadruplex_Motif	710	738	.	-	.	ID=VNG_RS02690_710_738_GQ;islands=4;runs=4;max=3;composition=4A/4C/17G/4T;sequence=gggggacacgggggccattatgggtgggg
+##gff-version 3
+VNG_RS09010	ABCC	G_Quadruplex_Motif	868	890	.	-	.	ID=VNG_RS09010_868_890_GQ;islands=3;runs=4;max=3;composition=1A/3C/17G/2T;sequence=gggggggtgacgtgggccggggg
+##gff-version 3
+VNG_RS05240	ABCC	G_Quadruplex_Motif	179	198	.	+	.	ID=VNG_RS05240_179_198_GQ;islands=3;runs=4;max=3;composition=1A/2C/16G/0T;sequence=gggcgggggggagcgggggg
+##gff-version 3
+VNG_RS07895	ABCC	G_Quadruplex_Motif	915	933	.	-	.	ID=VNG_RS07895_915_933_GQ;islands=4;runs=4;max=3;composition=1A/4C/12G/2T;sequence=gggtgggtagggccccggg
+##gff-version 3
+VNG_RS04675	ABCC	G_Quadruplex_Motif	391	417	.	+	.	ID=VNG_RS04675_391_417_GQ;islands=4;runs=4;max=3;composition=2A/4C/16G/4T;sequence=gggagcctgggtggggcgtcagtgggg
+VNG_RS04675	ABCC	G_Quadruplex_Motif	562	587	.	-	.	ID=VNG_RS04675_562_587_GQ;islands=4;runs=4;max=3;composition=5A/4C/15G/2T;sequence=gggaccgggcgtgacagggaatgggg
+##gff-version 3
+VNG_RS05530	ABCC	G_Quadruplex_Motif	672	694	.	+	.	ID=VNG_RS05530_672_694_GQ;islands=4;runs=4;max=3;composition=1A/3C/14G/4T;sequence=ggggttctgggactgggggcggg
+##gff-version 3
+VNG_RS07500	ABCC	G_Quadruplex_Motif	600	637	.	+	.	ID=VNG_RS07500_600_637_GQ;islands=6;runs=6;max=3;composition=2A/6C/22G/7T;sequence=gggagggccggtgtgggtttctgggccggggcagtggg
+##gff-version 3
+VNG_RS03165	ABCC	G_Quadruplex_Motif	559	580	.	-	.	ID=VNG_RS03165_559_580_GQ;islands=4;runs=4;max=3;composition=2A/4C/15G/1T;sequence=gggaggcccaggggcgggtggg
+VNG_RS03165	ABCC	G_Quadruplex_Motif	758	790	.	-	.	ID=VNG_RS03165_758_790_GQ;islands=4;runs=4;max=3;composition=4A/9C/18G/2T;sequence=gggacgcagggatgtcccgggccgcgcaggggg
+##gff-version 3
+VNG_RS08910	ABCC	G_Quadruplex_Motif	778	800	.	-	.	ID=VNG_RS08910_778_800_GQ;islands=4;runs=4;max=3;composition=2A/4C/15G/2T;sequence=gggctggggagcagggtgccggg
+##gff-version 3
+VNG_RS08790	ABCC	G_Quadruplex_Motif	939	959	.	+	.	ID=VNG_RS08790_939_959_GQ;islands=4;runs=4;max=3;composition=3A/3C/12G/2T;sequence=ggggacagggttgggaccggg
+VNG_RS08790	ABCC	G_Quadruplex_Motif	270	295	.	-	.	ID=VNG_RS08790_270_295_GQ;islands=4;runs=4;max=3;composition=2A/6C/16G/2T;sequence=gggagcggggattgggcggccccggg
+##gff-version 3
+VNG_RS09860	ABCC	G_Quadruplex_Motif	35	60	.	+	.	ID=VNG_RS09860_35_60_GQ;islands=4;runs=4;max=3;composition=5A/5C/15G/0T;sequence=gggaagggaccggggcagaccggggg
+VNG_RS09860	ABCC	G_Quadruplex_Motif	425	446	.	+	.	ID=VNG_RS09860_425_446_GQ;islands=4;runs=4;max=3;composition=1A/3C/12G/5T;sequence=gggtcgggacctgggtgttggg
+##gff-version 3
+VNG_RS05080	ABCC	G_Quadruplex_Motif	754	783	.	-	.	ID=VNG_RS05080_754_783_GQ;islands=4;runs=4;max=3;composition=4A/6C/18G/2T;sequence=ggggtccagggccgatgggggcacgagggg
+##gff-version 3
+VNG_RS04180	ABCC	G_Quadruplex_Motif	567	595	.	+	.	ID=VNG_RS04180_567_595_GQ;islands=4;runs=4;max=3;composition=2A/9C/15G/2T;sequence=gggcgtagccggggcacctcgggcgcggg
+VNG_RS04180	ABCC	G_Quadruplex_Motif	635	655	.	-	.	ID=VNG_RS04180_635_655_GQ;islands=4;runs=4;max=3;composition=3A/3C/13G/2T;sequence=ggggcgggactcgggataggg
+##gff-version 3
+VNG_RS01490	ABCC	G_Quadruplex_Motif	853	880	.	+	.	ID=VNG_RS01490_853_880_GQ;islands=3;runs=4;max=3;composition=2A/7C/17G/1T;sequence=ggggcaggcgggctccccaggggggggg
+##gff-version 3
+VNG_RS07875	ABCC	G_Quadruplex_Motif	144	173	.	+	.	ID=VNG_RS07875_144_173_GQ;islands=4;runs=4;max=3;composition=4A/4C/16G/5T;sequence=gggcgcatagggatacgggcggtttggggg
+##gff-version 3
+VNG_RS02810	ABCC	G_Quadruplex_Motif	428	455	.	+	.	ID=VNG_RS02810_428_455_GQ;islands=4;runs=4;max=3;composition=3A/3C/16G/5T;sequence=gggttaagcgggtgagtggggccgtggg
+VNG_RS02810	ABCC	G_Quadruplex_Motif	393	417	.	-	.	ID=VNG_RS02810_393_417_GQ;islands=4;runs=4;max=3;composition=3A/3C/16G/3T;sequence=gggtctatgggggcagcggggaggg
+##gff-version 3
+VNG_RS09360	ABCC	G_Quadruplex_Motif	615	645	.	-	.	ID=VNG_RS09360_615_645_GQ;islands=4;runs=5;max=3;composition=2A/8C/19G/2T;sequence=gggccgatccgggtgccaggggggggccggg
+##gff-version 3
+VNG_RS13990	ABCC	G_Quadruplex_Motif	576	609	.	+	.	ID=VNG_RS13990_576_609_GQ;islands=5;runs=5;max=3;composition=4A/6C/20G/3T;sequence=ggggtcggcgggccgacgggctgtagggagaggg
+##gff-version 3
+VNG_RS01705	ABCC	G_Quadruplex_Motif	611	636	.	+	.	ID=VNG_RS01705_611_636_GQ;islands=4;runs=4;max=3;composition=2A/6C/16G/1T;sequence=gggcgcgcggggcgagtagggccggg
+##gff-version 3
+VNG_RS00330	ABCC	G_Quadruplex_Motif	785	815	.	-	.	ID=VNG_RS00330_785_815_GQ;islands=5;runs=5;max=3;composition=4A/6C/18G/3T;sequence=gggacacgccgggcgcgggttgggtaagggg
+##gff-version 3
+VNG_RS03970	ABCC	G_Quadruplex_Motif	659	686	.	+	.	ID=VNG_RS03970_659_686_GQ;islands=5;runs=5;max=3;composition=0A/6C/19G/2T;sequence=gggcgggcgggcctgggcggtcgggggg
+VNG_RS03970	ABCC	G_Quadruplex_Motif	922	955	.	+	.	ID=VNG_RS03970_922_955_GQ;islands=5;runs=5;max=3;composition=1A/10C/18G/4T;sequence=gggggccccttgggctctgggcagggcgccgggg
+VNG_RS03970	ABCC	G_Quadruplex_Motif	816	842	.	-	.	ID=VNG_RS03970_816_842_GQ;islands=5;runs=5;max=3;composition=1A/3C/20G/3T;sequence=gggggtagggggctcgggtggggcggg
+##gff-version 3
+VNG_RS05455	ABCC	G_Quadruplex_Motif	600	622	.	-	.	ID=VNG_RS05455_600_622_GQ;islands=4;runs=4;max=3;composition=1A/4C/16G/2T;sequence=gggggtcgccgggcagggtgggg
+##gff-version 3
+VNG_RS01150	ABCC	G_Quadruplex_Motif	768	791	.	+	.	ID=VNG_RS01150_768_791_GQ;islands=4;runs=4;max=3;composition=1A/5C/15G/2T;sequence=ggggtgccacggggcgggcgtggg
+##gff-version 3
+VNG_RS03840	ABCC	G_Quadruplex_Motif	355	379	.	-	.	ID=VNG_RS03840_355_379_GQ;islands=4;runs=5;max=3;composition=2A/2C/17G/4T;sequence=gggattccgggggggtggggtaggg
+##gff-version 3
+VNG_RS08860	ABCC	G_Quadruplex_Motif	804	835	.	+	.	ID=VNG_RS08860_804_835_GQ;islands=4;runs=5;max=3;composition=4A/5C/21G/1T;sequence=gggggggccgaggcgggacggggtaggcaggg
+##gff-version 3
+VNG_RS02570	ABCC	G_Quadruplex_Motif	395	418	.	-	.	ID=VNG_RS02570_395_418_GQ;islands=3;runs=4;max=3;composition=2A/3C/16G/3T;sequence=gggcgtcggggcagtatggggggg
+##gff-version 3
+VNG_RS06985	ABCC	G_Quadruplex_Motif	195	219	.	-	.	ID=VNG_RS06985_195_219_GQ;islands=4;runs=4;max=3;composition=1A/6C/17G/1T;sequence=gggcgggccggctcgggggcgaggg
+##gff-version 3
+VNG_RS00945	ABCC	G_Quadruplex_Motif	418	444	.	+	.	ID=VNG_RS00945_418_444_GQ;islands=4;runs=4;max=3;composition=3A/3C/17G/3T;sequence=gggggaactggtgggtgggacggcggg
+VNG_RS00945	ABCC	G_Quadruplex_Motif	594	630	.	-	.	ID=VNG_RS00945_594_630_GQ;islands=5;runs=5;max=3;composition=1A/10C/20G/6T;sequence=ggggtcctgcgggagcggcgggtttctcgggcccggg
+##gff-version 3
+VNG_RS05810	ABCC	G_Quadruplex_Motif	52	81	.	-	.	ID=VNG_RS05810_52_81_GQ;islands=4;runs=4;max=3;composition=5A/5C/18G/2T;sequence=gggggtcacacgggactggggacagggggg
+##gff-version 3
+VNG_RS02500	ABCC	G_Quadruplex_Motif	954	972	.	+	.	ID=VNG_RS02500_954_972_GQ;islands=3;runs=4;max=3;composition=0A/3C/14G/1T;sequence=ggggggggcgctgggcggg
+##gff-version 3
+VNG_RS09930	ABCC	G_Quadruplex_Motif	120	169	.	-	.	ID=VNG_RS09930_120_169_GQ;islands=8;runs=8;max=3;composition=5A/11C/33G/1T;sequence=gggcgcgggccgggacagcgcggggggtaaggggggagggcgggcccggg
+##gff-version 3
+VNG_RS01330	ABCC	G_Quadruplex_Motif	315	330	.	-	.	ID=VNG_RS01330_315_330_GQ;islands=2;runs=4;max=3;composition=0A/1C/15G/0T;sequence=ggggggggcggggggg
+##gff-version 3
+VNG_RS04370	ABCC	G_Quadruplex_Motif	400	422	.	+	.	ID=VNG_RS04370_400_422_GQ;islands=4;runs=4;max=3;composition=2A/4C/16G/0T;sequence=ggggcgggggacgcaggggcggg
+##gff-version 3
+VNG_RS09040	ABCC	G_Quadruplex_Motif	310	337	.	+	.	ID=VNG_RS09040_310_337_GQ;islands=4;runs=4;max=3;composition=3A/5C/18G/1T;sequence=ggggggagggcgtccggggagccagggg
+##gff-version 3
+VNG_RS05095	ABCC	G_Quadruplex_Motif	767	789	.	-	.	ID=VNG_RS05095_767_789_GQ;islands=4;runs=4;max=3;composition=2A/2C/15G/4T;sequence=gggggcgggatatgggtgtcggg
+##gff-version 3
+VNG_RS06365	ABCC	G_Quadruplex_Motif	387	415	.	-	.	ID=VNG_RS06365_387_415_GQ;islands=5;runs=5;max=3;composition=1A/8C/18G/2T;sequence=gggcctccggggtcgggacgggcggcggg
+##gff-version 3
+VNG_RS08920	ABCC	G_Quadruplex_Motif	606	621	.	-	.	ID=VNG_RS08920_606_621_GQ;islands=2;runs=4;max=3;composition=1A/0C/15G/0T;sequence=gggggggagggggggg
+##gff-version 3
+VNG_RS05245	ABCC	G_Quadruplex_Motif	797	825	.	-	.	ID=VNG_RS05245_797_825_GQ;islands=4;runs=4;max=3;composition=4A/10C/14G/1T;sequence=gggccacaccgggacaccccgggggtggg
+##gff-version 3
+VNG_RS06535	ABCC	G_Quadruplex_Motif	133	157	.	-	.	ID=VNG_RS06535_133_157_GQ;islands=4;runs=4;max=3;composition=2A/6C/16G/1T;sequence=gggggacgggcagtcgggcccgggg
+##gff-version 3
+VNG_RS01030	ABCC	G_Quadruplex_Motif	750	786	.	+	.	ID=VNG_RS01030_750_786_GQ;islands=5;runs=6;max=4;composition=4A/5C/24G/3T;sequence=ggggtcccggaggggaacgggggggggatgggctggg
+##gff-version 3
+VNG_RS08285	ABCC	G_Quadruplex_Motif	45	70	.	+	.	ID=VNG_RS08285_45_70_GQ;islands=4;runs=4;max=3;composition=0A/9C/14G/2T;sequence=gggctgggccccccggggtggccggg
+##gff-version 3
+VNG_RS04265	ABCC	G_Quadruplex_Motif	375	399	.	-	.	ID=VNG_RS04265_375_399_GQ;islands=4;runs=4;max=3;composition=3A/4C/17G/1T;sequence=ggggcgcgggcagggcaaggtgggg
+##gff-version 3
+VNG_RS05200	ABCC	G_Quadruplex_Motif	552	575	.	-	.	ID=VNG_RS05200_552_575_GQ;islands=4;runs=4;max=3;composition=1A/4C/16G/3T;sequence=ggggggtcctggggctgggacggg
+##gff-version 3
+VNG_RS00400	ABCC	G_Quadruplex_Motif	953	976	.	+	.	ID=VNG_RS00400_953_976_GQ;islands=3;runs=4;max=3;composition=0A/6C/15G/2T;sequence=gggtctccggggcccggggggggg
+##gff-version 3
+VNG_RS07835	ABCC	G_Quadruplex_Motif	295	316	.	-	.	ID=VNG_RS07835_295_316_GQ;islands=4;runs=4;max=3;composition=0A/6C/13G/3T;sequence=ggggcgggtcctcctgggcggg
+##gff-version 3
+VNG_RS09325	ABCC	G_Quadruplex_Motif	263	295	.	-	.	ID=VNG_RS09325_263_295_GQ;islands=4;runs=4;max=3;composition=5A/5C/22G/1T;sequence=gggccgcaggggtgcaggcgggggaaggagggg
+VNG_RS09325	ABCC	G_Quadruplex_Motif	556	580	.	-	.	ID=VNG_RS09325_556_580_GQ;islands=4;runs=4;max=3;composition=0A/4C/19G/2T;sequence=gggctggtgggccgggggcgggggg
+VNG_RS09325	ABCC	G_Quadruplex_Motif	954	974	.	-	.	ID=VNG_RS09325_954_974_GQ;islands=4;runs=4;max=3;composition=2A/4C/13G/2T;sequence=gggacggggctcgggtcaggg
+##gff-version 3
+VNG_RS03755	ABCC	G_Quadruplex_Motif	722	755	.	+	.	ID=VNG_RS03755_722_755_GQ;islands=4;runs=5;max=3;composition=6A/4C/19G/4T;sequence=gggacttacggggtgtaagagggggggagccggg
+##gff-version 3
+VNG_RS05470	ABCC	G_Quadruplex_Motif	410	444	.	+	.	ID=VNG_RS05470_410_444_GQ;islands=4;runs=5;max=3;composition=6A/9C/19G/0T;sequence=gggggggacggacgggacgaagcgggacccccggg
+VNG_RS05470	ABCC	G_Quadruplex_Motif	503	518	.	-	.	ID=VNG_RS05470_503_518_GQ;islands=3;runs=4;max=3;composition=0A/2C/13G/1T;sequence=gggcgggtcggggggg
+##gff-version 3
+VNG_RS06685	ABCC	G_Quadruplex_Motif	142	164	.	-	.	ID=VNG_RS06685_142_164_GQ;islands=4;runs=4;max=3;composition=0A/6C/17G/0T;sequence=gggcccgcgggcgggggcggggg
+VNG_RS06685	ABCC	G_Quadruplex_Motif	964	1000	.	-	.	ID=VNG_RS06685_964_1000_GQ;islands=5;runs=5;max=3;composition=2A/10C/21G/4T;sequence=gggggcagcgggccgccttgggaggccgggttccggg
+##gff-version 3
+VNG_RS02780	ABCC	G_Quadruplex_Motif	343	376	.	-	.	ID=VNG_RS02780_343_376_GQ;islands=5;runs=5;max=3;composition=3A/7C/22G/2T;sequence=gggcgagcatggggcgggggcccgagggcgtggg
+##gff-version 3
+VNG_RS00130	ABCC	G_Quadruplex_Motif	522	545	.	+	.	ID=VNG_RS00130_522_545_GQ;islands=3;runs=4;max=3;composition=5A/1C/16G/1T;sequence=gggtgaggcagggggggaaagggg
+##gff-version 3
+VNG_RS06115	ABCC	G_Quadruplex_Motif	461	490	.	+	.	ID=VNG_RS06115_461_490_GQ;islands=4;runs=4;max=3;composition=6A/4C/17G/2T;sequence=gggcggggacgtcagggggacgaatagggg
+VNG_RS06115	ABCC	G_Quadruplex_Motif	857	879	.	+	.	ID=VNG_RS06115_857_879_GQ;islands=4;runs=4;max=3;composition=2A/3C/15G/2T;sequence=ggggattggggcgcgagggcggg
+##gff-version 3
+VNG_RS01070	ABCC	G_Quadruplex_Motif	101	128	.	+	.	ID=VNG_RS01070_101_128_GQ;islands=4;runs=4;max=3;composition=4A/4C/15G/4T;sequence=gggacgatggggcattctcgggggaggg
+##gff-version 3
+VNG_RS09495	ABCC	G_Quadruplex_Motif	73	92	.	-	.	ID=VNG_RS09495_73_92_GQ;islands=4;runs=4;max=3;composition=3A/1C/13G/3T;sequence=gggcgggagtgggatatggg
+##gff-version 3
+VNG_RS07000	ABCC	G_Quadruplex_Motif	359	389	.	-	.	ID=VNG_RS07000_359_389_GQ;islands=5;runs=5;max=3;composition=3A/4C/20G/4T;sequence=gggcaagggccgtggtgggttgggacggggg
+##gff-version 3
+VNG_RS05065	ABCC	G_Quadruplex_Motif	468	497	.	-	.	ID=VNG_RS05065_468_497_GQ;islands=5;runs=5;max=3;composition=3A/3C/20G/4T;sequence=gggtgttgggaggccggggcggggaatggg
+##gff-version 3
+VNG_RS02855	ABCC	G_Quadruplex_Motif	507	529	.	-	.	ID=VNG_RS02855_507_529_GQ;islands=4;runs=4;max=3;composition=2A/1C/16G/4T;sequence=ggggttgggggatcgggtagggg
+##gff-version 3
+VNG_RS06530	ABCC	G_Quadruplex_Motif	601	621	.	-	.	ID=VNG_RS06530_601_621_GQ;islands=4;runs=4;max=3;composition=1A/4C/14G/2T;sequence=gggagggtccccgggggtggg
+##gff-version 3
+VNG_RS07060	ABCC	G_Quadruplex_Motif	618	639	.	-	.	ID=VNG_RS07060_618_639_GQ;islands=4;runs=4;max=3;composition=2A/4C/14G/2T;sequence=gggtagagggctgggcccgggg
+##gff-version 3
+VNG_RS10120	ABCC	G_Quadruplex_Motif	390	408	.	+	.	ID=VNG_RS10120_390_408_GQ;islands=3;runs=4;max=3;composition=0A/2C/14G/2T;sequence=ggggtggggggggtccggg
+##gff-version 3
+VNG_RS01720	ABCC	G_Quadruplex_Motif	680	709	.	-	.	ID=VNG_RS01720_680_709_GQ;islands=4;runs=4;max=3;composition=3A/4C/19G/4T;sequence=gggcgaaggcggggcgggtagtcttggggg
+VNG_RS01720	ABCC	G_Quadruplex_Motif	853	896	.	-	.	ID=VNG_RS01720_853_896_GQ;islands=6;runs=6;max=3;composition=4A/9C/27G/4T;sequence=ggggggcgtcgggcaacagggcgccgcgggtggcttgggagggg
+##gff-version 3
+VNG_RS03905	ABCC	G_Quadruplex_Motif	931	959	.	+	.	ID=VNG_RS03905_931_959_GQ;islands=4;runs=4;max=3;composition=2A/5C/15G/6T;sequence=gggtgtcttgggccgacggggattcgggg
+##gff-version 3
+VNG_RS02485	ABCC	G_Quadruplex_Motif	94	119	.	-	.	ID=VNG_RS02485_94_119_GQ;islands=4;runs=4;max=3;composition=2A/6C/14G/4T;sequence=gggacatcccgggcggggttcgtggg
+##gff-version 3
+VNG_RS02110	ABCC	G_Quadruplex_Motif	284	309	.	+	.	ID=VNG_RS02110_284_309_GQ;islands=4;runs=4;max=3;composition=5A/3C/13G/4T;sequence=gggcttacgggcagggaatgtagggg
+##gff-version 3
+VNG_RS00655	ABCC	G_Quadruplex_Motif	465	488	.	+	.	ID=VNG_RS00655_465_488_GQ;islands=3;runs=4;max=3;composition=3A/1C/17G/2T;sequence=gggagattgcgggagggggggggg
+##gff-version 3
+VNG_RS01060	ABCC	G_Quadruplex_Motif	270	296	.	+	.	ID=VNG_RS01060_270_296_GQ;islands=4;runs=4;max=3;composition=3A/6C/14G/3T;sequence=gggacgtgccgggatgggcatgccggg
+##gff-version 3
+VNG_RS01325	ABCC	G_Quadruplex_Motif	926	947	.	-	.	ID=VNG_RS01325_926_947_GQ;islands=3;runs=4;max=3;composition=1A/4C/15G/2T;sequence=gggtgagcgggggggcctcggg
+##gff-version 3
+VNG_RS00750	ABCC	G_Quadruplex_Motif	476	499	.	-	.	ID=VNG_RS00750_476_499_GQ;islands=4;runs=4;max=3;composition=1A/4C/18G/1T;sequence=ggggggaggggtgcgggcccgggg
+##gff-version 3
+VNG_RS08840	ABCC	G_Quadruplex_Motif	376	403	.	+	.	ID=VNG_RS08840_376_403_GQ;islands=4;runs=4;max=3;composition=4A/6C/17G/0T;sequence=gggcgcgcgggcggaggcgggaacaggg
+##gff-version 3
+VNG_RS04785	ABCC	G_Quadruplex_Motif	912	940	.	+	.	ID=VNG_RS04785_912_940_GQ;islands=4;runs=4;max=4;composition=2A/3C/20G/3T;sequence=ggggagcgtggggctggtgggggacgggg
+##gff-version 3
+VNG_RS09825	ABCC	G_Quadruplex_Motif	2	29	.	-	.	ID=VNG_RS09825_2_29_GQ;islands=4;runs=5;max=4;composition=0A/6C/20G/2T;sequence=gggggctcggggctgggggggcccgggg
+VNG_RS09825	ABCC	G_Quadruplex_Motif	191	218	.	-	.	ID=VNG_RS09825_191_218_GQ;islands=4;runs=4;max=3;composition=0A/3C/20G/5T;sequence=gggccggtgggtggttggggggtgcggg
+##gff-version 3
+VNG_RS02605	ABCC	G_Quadruplex_Motif	523	550	.	-	.	ID=VNG_RS02605_523_550_GQ;islands=4;runs=4;max=3;composition=4A/5C/15G/4T;sequence=gggagactctgggtagggatggcccggg
+VNG_RS02605	ABCC	G_Quadruplex_Motif	622	643	.	-	.	ID=VNG_RS02605_622_643_GQ;islands=4;runs=4;max=3;composition=2A/3C/15G/2T;sequence=gggctgggagggcagcggtggg
+##gff-version 3
+VNG_RS02705	ABCC	G_Quadruplex_Motif	794	812	.	-	.	ID=VNG_RS02705_794_812_GQ;islands=3;runs=4;max=3;composition=1A/2C/15G/1T;sequence=gggcgcgggggggtagggg
+VNG_RS02705	ABCC	G_Quadruplex_Motif	877	896	.	-	.	ID=VNG_RS02705_877_896_GQ;islands=3;runs=4;max=3;composition=1A/3C/14G/2T;sequence=gggtgggggggccatcgggg
+##gff-version 3
+VNG_RS07180	ABCC	G_Quadruplex_Motif	137	160	.	-	.	ID=VNG_RS07180_137_160_GQ;islands=4;runs=4;max=3;composition=2A/6C/14G/2T;sequence=gggcgggtgcaagtgggccccggg
+##gff-version 3
+VNG_RS01230	ABCC	G_Quadruplex_Motif	942	970	.	+	.	ID=VNG_RS01230_942_970_GQ;islands=4;runs=5;max=3;composition=2A/7C/17G/2T;sequence=gggggggccgggctaggggtccccgaggg
+##gff-version 3
+VNG_RS05540	ABCC	G_Quadruplex_Motif	139	159	.	-	.	ID=VNG_RS05540_139_159_GQ;islands=4;runs=4;max=3;composition=2A/3C/16G/0T;sequence=gggcggggcggggggcaaggg
+VNG_RS05540	ABCC	G_Quadruplex_Motif	948	968	.	-	.	ID=VNG_RS05540_948_968_GQ;islands=4;runs=4;max=3;composition=0A/6C/13G/2T;sequence=gggccccgggccgggtgtggg
+##gff-version 3
+VNG_RS09255	ABCC	G_Quadruplex_Motif	294	324	.	-	.	ID=VNG_RS09255_294_324_GQ;islands=4;runs=4;max=3;composition=3A/5C/17G/6T;sequence=gggctggtcgggaaacctgggtcgtggtggg
+##gff-version 3
+VNG_RS01270	ABCC	G_Quadruplex_Motif	705	725	.	+	.	ID=VNG_RS01270_705_725_GQ;islands=4;runs=4;max=3;composition=0A/4C/13G/3T;sequence=gggttggggcgccgggctggg
+VNG_RS01270	ABCC	G_Quadruplex_Motif	945	972	.	+	.	ID=VNG_RS01270_945_972_GQ;islands=4;runs=4;max=3;composition=5A/5C/17G/0T;sequence=ggggggacaaaggggcgggcccgagggg
+##gff-version 3
+VNG_RS07235	ABCC	G_Quadruplex_Motif	509	538	.	+	.	ID=VNG_RS07235_509_538_GQ;islands=4;runs=4;max=3;composition=5A/8C/15G/1T;sequence=ggggacccggagggcacgcatgggccaggg
+##gff-version 3
+VNG_RS08855	ABCC	G_Quadruplex_Motif	645	664	.	+	.	ID=VNG_RS08855_645_664_GQ;islands=4;runs=4;max=3;composition=2A/3C/14G/0T;sequence=gggaggggagcgggccgggg
+##gff-version 3
+VNG_RS02585	ABCC	G_Quadruplex_Motif	443	463	.	+	.	ID=VNG_RS02585_443_463_GQ;islands=4;runs=4;max=3;composition=2A/1C/13G/4T;sequence=gggtgggagggtcatggtggg
+VNG_RS02585	ABCC	G_Quadruplex_Motif	642	658	.	-	.	ID=VNG_RS02585_642_658_GQ;islands=4;runs=4;max=3;composition=1A/2C/12G/2T;sequence=gggatcgggcgggtggg
+##gff-version 3
+VNG_RS09605	ABCC	G_Quadruplex_Motif	200	240	.	+	.	ID=VNG_RS09605_200_240_GQ;islands=6;runs=6;max=3;composition=5A/10C/21G/4T;sequence=gggtctccagggtcgggcacgccgggacagggggtcagggg
+VNG_RS09605	ABCC	G_Quadruplex_Motif	513	538	.	+	.	ID=VNG_RS09605_513_538_GQ;islands=4;runs=4;max=3;composition=1A/4C/17G/3T;sequence=ggggctgggccggcggggttggaggg
+##gff-version 3
+VNG_RS00415	ABCC	G_Quadruplex_Motif	585	610	.	+	.	ID=VNG_RS00415_585_610_GQ;islands=4;runs=4;max=3;composition=5A/7C/13G/0T;sequence=gggcagggggaccacgggaacccggg
+##gff-version 3
+VNG_RS01310	ABCC	G_Quadruplex_Motif	88	117	.	-	.	ID=VNG_RS01310_88_117_GQ;islands=5;runs=5;max=3;composition=3A/5C/20G/2T;sequence=ggggcacgggctcgggggtaggggcagggg
+VNG_RS01310	ABCC	G_Quadruplex_Motif	555	571	.	-	.	ID=VNG_RS01310_555_571_GQ;islands=3;runs=4;max=3;composition=0A/3C/14G/0T;sequence=gggggggcgggccgggg
+##gff-version 3
+VNG_RS02800	ABCC	G_Quadruplex_Motif	307	331	.	+	.	ID=VNG_RS02800_307_331_GQ;islands=4;runs=4;max=3;composition=4A/3C/14G/3T;sequence=gggggtgatagggctacgggacggg
+VNG_RS02800	ABCC	G_Quadruplex_Motif	266	300	.	-	.	ID=VNG_RS02800_266_300_GQ;islands=5;runs=5;max=3;composition=7A/7C/17G/4T;sequence=gggatccatcggggtgggacgtcgggacaacaggg
+##gff-version 3
+VNG_RS06455	ABCC	G_Quadruplex_Motif	102	151	.	-	.	ID=VNG_RS06455_102_151_GQ;islands=7;runs=7;max=3;composition=4A/14C/28G/4T;sequence=gggcttgccgggcgagaccgggcgggcgtgggccccgacgggacgtgggg
+VNG_RS06455	ABCC	G_Quadruplex_Motif	182	205	.	-	.	ID=VNG_RS06455_182_205_GQ;islands=5;runs=5;max=3;composition=2A/5C/17G/0T;sequence=gggcagcggggccgggagggcggg
+##gff-version 3
+VNG_RS14160	ABCC	G_Quadruplex_Motif	575	603	.	-	.	ID=VNG_RS14160_575_603_GQ;islands=4;runs=4;max=3;composition=3A/8C/15G/3T;sequence=gggacccgggctaaggggggcccttcggg
+##gff-version 3
+VNG_RS01415	ABCC	G_Quadruplex_Motif	679	720	.	-	.	ID=VNG_RS01415_679_720_GQ;islands=5;runs=5;max=3;composition=5A/6C/26G/5T;sequence=gggcactcagggggtggtagggagcggtggggtgcagcgggg
+##gff-version 3
+VNG_RS08085	ABCC	G_Quadruplex_Motif	546	582	.	+	.	ID=VNG_RS08085_546_582_GQ;islands=5;runs=6;max=3;composition=2A/3C/26G/5T;sequence=gggttggggggtagcgggggggagggggcgtgtcggg
+##gff-version 3
+VNG_RS09300	ABCC	G_Quadruplex_Motif	364	391	.	-	.	ID=VNG_RS09300_364_391_GQ;islands=4;runs=4;max=3;composition=2A/6C/20G/0T;sequence=gggaggcgcgggcggacgcggggcgggg
+VNG_RS09300	ABCC	G_Quadruplex_Motif	739	763	.	-	.	ID=VNG_RS09300_739_763_GQ;islands=4;runs=4;max=3;composition=5A/4C/16G/0T;sequence=gggcgcaaggggcgggagagacggg
+##gff-version 3
+VNG_RS07995	ABCC	G_Quadruplex_Motif	679	704	.	-	.	ID=VNG_RS07995_679_704_GQ;islands=4;runs=4;max=3;composition=4A/4C/15G/3T;sequence=gggaagggctgtggggccaacgtggg
+##gff-version 3
+VNG_RS05910	ABCC	G_Quadruplex_Motif	98	135	.	-	.	ID=VNG_RS05910_98_135_GQ;islands=5;runs=5;max=3;composition=2A/11C/21G/4T;sequence=gggccccggggccgtctggggggctcgtgggcaacggg
+##gff-version 3
+VNG_RS02770	ABCC	G_Quadruplex_Motif	206	244	.	+	.	ID=VNG_RS02770_206_244_GQ;islands=5;runs=5;max=3;composition=3A/8C/22G/5T;sequence=ggggtcccgggtgtggtcggggaggcacagggcctgggg
+##gff-version 3
+VNG_RS06500	ABCC	G_Quadruplex_Motif	470	496	.	+	.	ID=VNG_RS06500_470_496_GQ;islands=4;runs=4;max=3;composition=3A/3C/18G/2T;sequence=gggggaccgggggttgacgggggaggg
+##gff-version 3
+VNG_RS10245	ABCC	G_Quadruplex_Motif	707	729	.	+	.	ID=VNG_RS10245_707_729_GQ;islands=4;runs=4;max=3;composition=2A/4C/14G/2T;sequence=gggagggtcgtgcgggccgaggg
+VNG_RS10245	ABCC	G_Quadruplex_Motif	911	937	.	-	.	ID=VNG_RS10245_911_937_GQ;islands=4;runs=4;max=3;composition=2A/5C/17G/3T;sequence=ggggcgcgggagatgggccctggtggg
+##gff-version 3
+VNG_RS03050	ABCC	G_Quadruplex_Motif	828	849	.	+	.	ID=VNG_RS03050_828_849_GQ;islands=4;runs=4;max=3;composition=3A/5C/11G/2T;sequence=gggaccctgggatacgggcggg
+##gff-version 3
+VNG_RS08765	ABCC	G_Quadruplex_Motif	62	86	.	+	.	ID=VNG_RS08765_62_86_GQ;islands=4;runs=4;max=3;composition=3A/3C/16G/2T;sequence=gggcttgggacagggcggagggggg
+##gff-version 3
+VNG_RS09985	ABCC	G_Quadruplex_Motif	495	533	.	-	.	ID=VNG_RS09985_495_533_GQ;islands=5;runs=5;max=3;composition=5A/9C/22G/3T;sequence=ggggtgagacggggcctgggacaccccgggggactgggg
+##gff-version 3
+VNG_RS03815	ABCC	G_Quadruplex_Motif	447	467	.	+	.	ID=VNG_RS03815_447_467_GQ;islands=5;runs=5;max=3;composition=1A/3C/14G/2T;sequence=gggtagggcgggcgggtcggg
+##gff-version 3
+VNG_RS13390	ABCC	G_Quadruplex_Motif	472	499	.	-	.	ID=VNG_RS13390_472_499_GQ;islands=4;runs=4;max=3;composition=2A/10C/13G/3T;sequence=gggcactctcgggcgccgggtccacggg
+##gff-version 3
+VNG_RS04830	ABCC	G_Quadruplex_Motif	471	492	.	+	.	ID=VNG_RS04830_471_492_GQ;islands=4;runs=4;max=3;composition=3A/4C/13G/1T;sequence=gggtagggcgggagacgccggg
+##gff-version 3
+VNG_RS07885	ABCC	G_Quadruplex_Motif	493	517	.	+	.	ID=VNG_RS07885_493_517_GQ;islands=3;runs=4;max=3;composition=3A/5C/14G/2T;sequence=gggccgccgggggggatgtcaaggg
+##gff-version 3
+VNG_RS04795	ABCC	G_Quadruplex_Motif	939	959	.	-	.	ID=VNG_RS04795_939_959_GQ;islands=4;runs=4;max=3;composition=0A/4C/12G/5T;sequence=gggtctgggcgggtccttggg
+##gff-version 3
+VNG_RS09490	ABCC	G_Quadruplex_Motif	128	153	.	+	.	ID=VNG_RS09490_128_153_GQ;islands=4;runs=4;max=3;composition=5A/5C/14G/1T;sequence=gggacgggggaaccagtgggccaggg
+##gff-version 3
+VNG_RS02700	ABCC	G_Quadruplex_Motif	431	454	.	+	.	ID=VNG_RS02700_431_454_GQ;islands=4;runs=4;max=3;composition=1A/6C/16G/0T;sequence=ggggggcccgggcgccggggaggg
+##gff-version 3
+VNG_RS09480	ABCC	G_Quadruplex_Motif	825	845	.	-	.	ID=VNG_RS09480_825_845_GQ;islands=2;runs=4;max=3;composition=1A/4C/15G/1T;sequence=gggggggatccccgggggggg
+##gff-version 3
+VNG_RS06700	ABCC	G_Quadruplex_Motif	788	814	.	+	.	ID=VNG_RS06700_788_814_GQ;islands=4;runs=4;max=3;composition=3A/5C/17G/1T;sequence=ggggcgatcgcgggagaggggccgggg
+##gff-version 3
+VNG_RS05905	ABCC	G_Quadruplex_Motif	784	816	.	-	.	ID=VNG_RS05905_784_816_GQ;islands=4;runs=5;max=3;composition=3A/8C/19G/3T;sequence=gggcgccgtcgggtctcgggccgaaaggggggg
+##gff-version 3
+VNG_RS06955	ABCC	G_Quadruplex_Motif	454	475	.	+	.	ID=VNG_RS06955_454_475_GQ;islands=3;runs=4;max=3;composition=1A/4C/15G/1T;sequence=gggcgggggggcctgagcgggg
+##gff-version 3
+VNG_RS04555	ABCC	G_Quadruplex_Motif	157	182	.	-	.	ID=VNG_RS04555_157_182_GQ;islands=4;runs=4;max=3;composition=1A/9C/15G/1T;sequence=gggcgccgggtcccccagggcggggg
+##gff-version 3
+VNG_RS04570	ABCC	G_Quadruplex_Motif	578	609	.	-	.	ID=VNG_RS04570_578_609_GQ;islands=4;runs=4;max=3;composition=2A/6C/22G/2T;sequence=ggggtggcccgggctgagggaggcggcggggg
+##gff-version 3
+VNG_RS09855	ABCC	G_Quadruplex_Motif	183	212	.	-	.	ID=VNG_RS09855_183_212_GQ;islands=4;runs=4;max=3;composition=3A/6C/16G/5T;sequence=gggggcctgattgggcacgggtactgcggg
+##gff-version 3
+VNG_RS08615	ABCC	G_Quadruplex_Motif	726	749	.	+	.	ID=VNG_RS08615_726_749_GQ;islands=4;runs=4;max=3;composition=1A/5C/15G/2T;sequence=gggcggcgccgggagggctgtggg
+##gff-version 3
+VNG_RS01440	ABCC	G_Quadruplex_Motif	126	143	.	-	.	ID=VNG_RS01440_126_143_GQ;islands=4;runs=4;max=3;composition=0A/4C/13G/1T;sequence=gggcggggctgggccggg
+##gff-version 3
+VNG_RS01015	ABCC	G_Quadruplex_Motif	790	812	.	+	.	ID=VNG_RS01015_790_812_GQ;islands=4;runs=4;max=3;composition=2A/5C/13G/2T;sequence=ggggcccttgggaagggcgcggg
+##gff-version 3
+VNG_RS07230	ABCC	G_Quadruplex_Motif	236	259	.	-	.	ID=VNG_RS07230_236_259_GQ;islands=4;runs=4;max=3;composition=4A/6C/14G/0T;sequence=gggacccgggagccgggcgaaggg
+##gff-version 3
+VNG_RS10315	ABCC	G_Quadruplex_Motif	803	828	.	+	.	ID=VNG_RS10315_803_828_GQ;islands=4;runs=4;max=3;composition=4A/6C/12G/3T;sequence=gggagggtcccagagggtcctacggg
+VNG_RS10315	ABCC	G_Quadruplex_Motif	494	528	.	-	.	ID=VNG_RS10315_494_528_GQ;islands=5;runs=5;max=3;composition=2A/8C/22G/3T;sequence=gggccttgggtcaggccgggggcgggcgagcgggg
+##gff-version 3
+VNG_RS00920	ABCC	G_Quadruplex_Motif	457	481	.	-	.	ID=VNG_RS00920_457_481_GQ;islands=3;runs=4;max=3;composition=1A/4C/15G/5T;sequence=gggtacttgggggggcgcgtctggg
+##gff-version 3
+VNG_RS09565	ABCC	G_Quadruplex_Motif	97	123	.	+	.	ID=VNG_RS09565_97_123_GQ;islands=4;runs=4;max=3;composition=5A/5C/13G/3T;sequence=gggacgcaagggatgggctatccgggg
+VNG_RS09565	ABCC	G_Quadruplex_Motif	540	560	.	+	.	ID=VNG_RS09565_540_560_GQ;islands=3;runs=4;max=3;composition=3A/2C/14G/1T;sequence=gggtcgggggggagcgaaggg
+##gff-version 3
+VNG_RS03520	ABCC	G_Quadruplex_Motif	788	810	.	-	.	ID=VNG_RS03520_788_810_GQ;islands=4;runs=4;max=3;composition=4A/3C/14G/2T;sequence=gggtagggacgtagggacgcggg
+##gff-version 3
+VNG_RS01935	ABCC	G_Quadruplex_Motif	365	395	.	+	.	ID=VNG_RS01935_365_395_GQ;islands=6;runs=6;max=3;composition=3A/2C/23G/2T;sequence=gggtgggaggggggcgtgggggcgggaaggg
+##gff-version 3
+VNG_RS04505	ABCC	G_Quadruplex_Motif	242	265	.	-	.	ID=VNG_RS04505_242_265_GQ;islands=4;runs=5;max=3;composition=1A/5C/18G/0T;sequence=gggccacgggcgggggggcggggg
+VNG_RS04505	ABCC	G_Quadruplex_Motif	526	545	.	-	.	ID=VNG_RS04505_526_545_GQ;islands=4;runs=4;max=3;composition=3A/3C/13G/1T;sequence=gggagggcgggtgaccaggg
+##gff-version 3
+VNG_RS06910	ABCC	G_Quadruplex_Motif	553	578	.	+	.	ID=VNG_RS06910_553_578_GQ;islands=4;runs=4;max=3;composition=2A/5C/13G/5T;sequence=gggttgcagggcgtcccgggtatggg
+VNG_RS06910	ABCC	G_Quadruplex_Motif	803	825	.	+	.	ID=VNG_RS06910_803_825_GQ;islands=3;runs=4;max=3;composition=0A/3C/15G/4T;sequence=ggggcgggggcttttcggggggg
+##gff-version 3
+VNG_RS05640	ABCC	G_Quadruplex_Motif	343	362	.	+	.	ID=VNG_RS05640_343_362_GQ;islands=4;runs=4;max=3;composition=2A/3C/13G/1T;sequence=gggcggggccaagggtgggg
+##gff-version 3
+VNG_RS05135	ABCC	G_Quadruplex_Motif	20	47	.	+	.	ID=VNG_RS05135_20_47_GQ;islands=4;runs=4;max=3;composition=1A/6C/15G/5T;sequence=gggggcctgggcctgactgggttcgggg
+##gff-version 3
+VNG_RS02320	ABCC	G_Quadruplex_Motif	467	493	.	-	.	ID=VNG_RS02320_467_493_GQ;islands=4;runs=5;max=3;composition=3A/2C/21G/1T;sequence=gggagggcgcaggagggggggtggggg
+##gff-version 3
+VNG_RS07615	ABCC	G_Quadruplex_Motif	845	882	.	-	.	ID=VNG_RS07615_845_882_GQ;islands=5;runs=5;max=3;composition=4A/12C/22G/0T;sequence=ggggccacgggcccgggcggaagcgggccccagggggg
+##gff-version 3
+VNG_RS05635	ABCC	G_Quadruplex_Motif	261	289	.	+	.	ID=VNG_RS05635_261_289_GQ;islands=4;runs=4;max=3;composition=2A/10C/14G/2T;sequence=gggcgccagggcgccagcgggtcctcggg
+VNG_RS05635	ABCC	G_Quadruplex_Motif	419	436	.	-	.	ID=VNG_RS05635_419_436_GQ;islands=4;runs=4;max=3;composition=1A/4C/13G/0T;sequence=gggccgggccgggagggg
+##gff-version 3
+VNG_RS09760	ABCC	G_Quadruplex_Motif	927	941	.	+	.	ID=VNG_RS09760_927_941_GQ;islands=2;runs=4;max=3;composition=0A/1C/13G/0T;sequence=gggggggcggggggg
+##gff-version 3
+VNG_RS05365	ABCC	G_Quadruplex_Motif	495	521	.	-	.	ID=VNG_RS05365_495_521_GQ;islands=4;runs=4;max=3;composition=3A/8C/14G/2T;sequence=gggaactcgggcccgtgggacccgggg
+##gff-version 3
+VNG_RS07375	ABCC	G_Quadruplex_Motif	47	66	.	+	.	ID=VNG_RS07375_47_66_GQ;islands=4;runs=4;max=3;composition=2A/1C/13G/3T;sequence=gggtggggtagggatcgggg
+##gff-version 3
+VNG_RS00320	ABCC	G_Quadruplex_Motif	243	266	.	-	.	ID=VNG_RS00320_243_266_GQ;islands=4;runs=4;max=3;composition=3A/2C/14G/5T;sequence=ggggttgggacgatgggttacggg
+##gff-version 3
+VNG_RS00005	ABCC	G_Quadruplex_Motif	558	584	.	+	.	ID=VNG_RS00005_558_584_GQ;islands=4;runs=4;max=3;composition=4A/3C/14G/5T;sequence=gggacgggggttcctgggtagaatggg
+##gff-version 3
+VNG_RS05155	ABCC	G_Quadruplex_Motif	843	867	.	-	.	ID=VNG_RS05155_843_867_GQ;islands=3;runs=4;max=3;composition=4A/4C/17G/0T;sequence=ggggcagagaggggcccaggggggg
+##gff-version 3
+VNG_RS08345	ABCC	G_Quadruplex_Motif	655	686	.	+	.	ID=VNG_RS08345_655_686_GQ;islands=5;runs=5;max=3;composition=3A/6C/18G/4T;sequence=gggagccggggtgtcgggccagggcattgggg
+##gff-version 3
+VNG_RS01945	ABCC	G_Quadruplex_Motif	209	238	.	+	.	ID=VNG_RS01945_209_238_GQ;islands=4;runs=4;max=3;composition=4A/4C/19G/2T;sequence=gggggagtagccgggtcggggaaggcgggg
+VNG_RS01945	ABCC	G_Quadruplex_Motif	680	706	.	+	.	ID=VNG_RS01945_680_706_GQ;islands=4;runs=4;max=3;composition=2A/6C/16G/2T;sequence=ggggccacgggtccgagggggctgggg
+##gff-version 3
+VNG_RS04790	ABCC	G_Quadruplex_Motif	115	136	.	+	.	ID=VNG_RS04790_115_136_GQ;islands=4;runs=5;max=3;composition=1A/1C/17G/2T;sequence=gggggggtgggagtgggcgggg
+##gff-version 3
+VNG_RS03040	ABCC	G_Quadruplex_Motif	366	390	.	+	.	ID=VNG_RS03040_366_390_GQ;islands=3;runs=4;max=3;composition=2A/4C/15G/3T;sequence=gggtcagtgggggggtcccgagggg
+##gff-version 3
+VNG_RS07765	ABCC	G_Quadruplex_Motif	180	206	.	+	.	ID=VNG_RS07765_180_206_GQ;islands=4;runs=4;max=3;composition=1A/6C/16G/3T;sequence=gggggtggtgccgggccgggcctaggg
+##gff-version 3
+VNG_RS09510	ABCC	G_Quadruplex_Motif	939	962	.	+	.	ID=VNG_RS09510_939_962_GQ;islands=4;runs=4;max=3;composition=2A/4C/14G/3T;sequence=gggcgggtgtagggacccgtgggg
+##gff-version 3
+VNG_RS10170	ABCC	G_Quadruplex_Motif	506	528	.	-	.	ID=VNG_RS10170_506_528_GQ;islands=3;runs=4;max=3;composition=1A/1C/19G/2T;sequence=gggggtggcgggggggagtgggg
+##gff-version 3
+VNG_RS04845	ABCC	G_Quadruplex_Motif	248	278	.	+	.	ID=VNG_RS04845_248_278_GQ;islands=5;runs=5;max=3;composition=3A/8C/17G/2T;sequence=gggccccacgggcagggcggggtctaggggg
+##gff-version 3
+VNG_RS09165	ABCC	G_Quadruplex_Motif	966	987	.	-	.	ID=VNG_RS09165_966_987_GQ;islands=4;runs=4;max=3;composition=0A/5C/16G/1T;sequence=ggggtggggccgggcgccgggg
+##gff-version 3
+VNG_RS07040	ABCC	G_Quadruplex_Motif	34	55	.	+	.	ID=VNG_RS07040_34_55_GQ;islands=4;runs=4;max=3;composition=2A/8C/11G/0T;sequence=gggccacccgggcccgggaggg
+VNG_RS07040	ABCC	G_Quadruplex_Motif	383	405	.	+	.	ID=VNG_RS07040_383_405_GQ;islands=4;runs=5;max=3;composition=1A/3C/17G/1T;sequence=gggcgggccggggggggtagggg
+##gff-version 3
+VNG_RS01605	ABCC	G_Quadruplex_Motif	394	412	.	+	.	ID=VNG_RS01605_394_412_GQ;islands=3;runs=4;max=3;composition=1A/4C/13G/0T;sequence=gggcgcgggaccggggggg
+##gff-version 3
+VNG_RS09230	ABCC	G_Quadruplex_Motif	103	132	.	+	.	ID=VNG_RS09230_103_132_GQ;islands=5;runs=5;max=3;composition=4A/3C/18G/4T;sequence=ggggagtgggccgtagggtgggaatgcggg
+VNG_RS09230	ABCC	G_Quadruplex_Motif	180	207	.	+	.	ID=VNG_RS09230_180_207_GQ;islands=5;runs=5;max=3;composition=2A/7C/17G/1T;sequence=gggcggggagggtggcaccgggcccggg
+##gff-version 3
+VNG_RS07860	ABCC	G_Quadruplex_Motif	925	954	.	+	.	ID=VNG_RS07860_925_954_GQ;islands=4;runs=4;max=3;composition=0A/10C/17G/2T;sequence=gggggctcgccggggcgtcgggccccgggg
+##gff-version 3
+VNG_RS05590	ABCC	G_Quadruplex_Motif	797	820	.	+	.	ID=VNG_RS05590_797_820_GQ;islands=4;runs=4;max=3;composition=1A/5C/15G/2T;sequence=ggggcacgggctgcgggtggcggg
+##gff-version 3
+VNG_RS02000	ABCC	G_Quadruplex_Motif	160	188	.	+	.	ID=VNG_RS02000_160_188_GQ;islands=4;runs=4;max=3;composition=5A/8C/14G/1T;sequence=gggcaacacagggagcggggcgcctcggg
+##gff-version 3
+VNG_RS07380	ABCC	G_Quadruplex_Motif	711	745	.	-	.	ID=VNG_RS07380_711_745_GQ;islands=4;runs=4;max=3;composition=3A/6C/19G/7T;sequence=gggcagacgtgggttgcttcgggctagtcgggggg
+##gff-version 3
+VNG_RS04820	ABCC	G_Quadruplex_Motif	1	36	.	+	.	ID=VNG_RS04820_1_36_GQ;islands=5;runs=5;max=3;composition=4A/9C/18G/4T;sequence=gggacagggtgctgggccgactagggccgtgccggg
+##gff-version 3
+VNG_RS05615	ABCC	G_Quadruplex_Motif	775	798	.	+	.	ID=VNG_RS05615_775_798_GQ;islands=4;runs=4;max=3;composition=1A/3C/16G/3T;sequence=gggggccgggaggggtcggttggg
+##gff-version 3
+VNG_RS02910	ABCC	G_Quadruplex_Motif	812	836	.	-	.	ID=VNG_RS02910_812_836_GQ;islands=4;runs=4;max=3;composition=2A/6C/16G/1T;sequence=gggggcccgacgggtgggcacgggg
+##gff-version 3
+VNG_RS01815	ABCC	G_Quadruplex_Motif	39	59	.	-	.	ID=VNG_RS01815_39_59_GQ;islands=3;runs=4;max=3;composition=3A/2C/14G/2T;sequence=gggtagatgggggggcacggg
+##gff-version 3
+VNG_RS01965	ABCC	G_Quadruplex_Motif	888	905	.	-	.	ID=VNG_RS01965_888_905_GQ;islands=3;runs=4;max=3;composition=3A/1C/14G/0T;sequence=gggggggagaagggcggg
+##gff-version 3
+VNG_RS03155	ABCC	G_Quadruplex_Motif	960	994	.	+	.	ID=VNG_RS03155_960_994_GQ;islands=4;runs=5;max=3;composition=5A/6C/19G/4T;sequence=ggggggggtaaattggggcagtagggccgcccggg
+##gff-version 3
+VNG_RS03185	ABCC	G_Quadruplex_Motif	480	503	.	+	.	ID=VNG_RS03185_480_503_GQ;islands=4;runs=4;max=3;composition=4A/2C/16G/1T;sequence=gggcgagatgggagggcggagggg
+##gff-version 3
+VNG_RS01085	ABCC	G_Quadruplex_Motif	800	829	.	-	.	ID=VNG_RS01085_800_829_GQ;islands=4;runs=4;max=3;composition=2A/7C/18G/3T;sequence=ggggggccatctcgggggtggggacccggg
+##gff-version 3
+VNG_RS04365	ABCC	G_Quadruplex_Motif	955	990	.	+	.	ID=VNG_RS04365_955_990_GQ;islands=4;runs=4;max=3;composition=5A/5C/21G/4T;sequence=ggggggccggctgggcacatgggggaatggatgggg
+##gff-version 3
+VNG_RS09520	ABCC	G_Quadruplex_Motif	596	615	.	+	.	ID=VNG_RS09520_596_615_GQ;islands=4;runs=4;max=3;composition=1A/4C/12G/2T;sequence=gggtgccgggatcgggcggg
+VNG_RS09520	ABCC	G_Quadruplex_Motif	769	790	.	+	.	ID=VNG_RS09520_769_790_GQ;islands=3;runs=4;max=3;composition=2A/2C/17G/0T;sequence=ggggcaggggggggacgggggg
+##gff-version 3
+VNG_RS04585	ABCC	G_Quadruplex_Motif	349	376	.	-	.	ID=VNG_RS04585_349_376_GQ;islands=4;runs=4;max=3;composition=2A/6C/18G/2T;sequence=gggcggacggggcccagttgggcggggg
+VNG_RS04585	ABCC	G_Quadruplex_Motif	419	441	.	-	.	ID=VNG_RS04585_419_441_GQ;islands=3;runs=4;max=3;composition=1A/3C/16G/3T;sequence=gggagggggggcgcttctggggg
+##gff-version 3
+VNG_RS00390	ABCC	G_Quadruplex_Motif	788	814	.	-	.	ID=VNG_RS00390_788_814_GQ;islands=5;runs=5;max=3;composition=1A/6C/17G/3T;sequence=ggggcgggcgcctgggtcatgggcggg
+##gff-version 3
+VNG_RS03640	ABCC	G_Quadruplex_Motif	522	543	.	-	.	ID=VNG_RS03640_522_543_GQ;islands=4;runs=4;max=3;composition=3A/3C/16G/0T;sequence=ggggcggggacagggaggcggg
+##gff-version 3
+VNG_RS07870	ABCC	G_Quadruplex_Motif	753	777	.	-	.	ID=VNG_RS07870_753_777_GQ;islands=3;runs=4;max=3;composition=1A/5C/17G/2T;sequence=gggcccccagggtgtgggggggggg
+##gff-version 3
+VNG_RS07390	ABCC	G_Quadruplex_Motif	929	950	.	+	.	ID=VNG_RS07390_929_950_GQ;islands=3;runs=4;max=3;composition=1A/2C/16G/2T;sequence=ggggagtgctgggcgggggggg
+##gff-version 3
+VNG_RS09210	ABCC	G_Quadruplex_Motif	859	884	.	+	.	ID=VNG_RS09210_859_884_GQ;islands=4;runs=4;max=3;composition=2A/4C/17G/2T;sequence=gggaggtgggggcctgcgggacgggg
+##gff-version 3
+VNG_RS03910	ABCC	G_Quadruplex_Motif	407	436	.	+	.	ID=VNG_RS03910_407_436_GQ;islands=5;runs=5;max=3;composition=6A/3C/16G/4T;sequence=gggtgggatagggcatacggggactgaggg
+##gff-version 3
+VNG_RS05705	ABCC	G_Quadruplex_Motif	943	962	.	+	.	ID=VNG_RS05705_943_962_GQ;islands=4;runs=4;max=3;composition=0A/5C/13G/1T;sequence=gggcgcgggcgccgggtggg
+##gff-version 3
+VNG_RS09000	ABCC	G_Quadruplex_Motif	559	583	.	-	.	ID=VNG_RS09000_559_583_GQ;islands=3;runs=4;max=3;composition=0A/4C/18G/3T;sequence=ggggggggctgcgggtgccggtggg
+##gff-version 3
+VNG_RS09610	ABCC	G_Quadruplex_Motif	599	624	.	+	.	ID=VNG_RS09610_599_624_GQ;islands=4;runs=4;max=3;composition=0A/7C/14G/4T;sequence=gggccttcgcgggcgggccgtgtggg
+VNG_RS09610	ABCC	G_Quadruplex_Motif	762	778	.	+	.	ID=VNG_RS09610_762_778_GQ;islands=2;runs=4;max=3;composition=0A/0C/15G/1T;sequence=gggtggggggggggggg
+##gff-version 3
+VNG_RS09390	ABCC	G_Quadruplex_Motif	55	78	.	-	.	ID=VNG_RS09390_55_78_GQ;islands=4;runs=4;max=3;composition=1A/5C/17G/1T;sequence=gggcggcgggcgagcgggcgtggg
+##gff-version 3
+VNG_RS04650	ABCC	G_Quadruplex_Motif	269	290	.	+	.	ID=VNG_RS04650_269_290_GQ;islands=4;runs=4;max=3;composition=4A/1C/15G/1T;sequence=gggaagtggggaagggcggggg
+VNG_RS04650	ABCC	G_Quadruplex_Motif	396	416	.	+	.	ID=VNG_RS04650_396_416_GQ;islands=4;runs=4;max=3;composition=2A/3C/14G/1T;sequence=ggggagggaccgggtgcgggg
+VNG_RS04650	ABCC	G_Quadruplex_Motif	162	180	.	-	.	ID=VNG_RS04650_162_180_GQ;islands=4;runs=4;max=3;composition=1A/2C/16G/0T;sequence=ggggggcgggaggggcggg
+##gff-version 3
+VNG_RS08430	ABCC	G_Quadruplex_Motif	745	765	.	-	.	ID=VNG_RS08430_745_765_GQ;islands=4;runs=4;max=3;composition=3A/1C/14G/3T;sequence=gggagggtgtgcagggatggg
+VNG_RS08430	ABCC	G_Quadruplex_Motif	951	981	.	-	.	ID=VNG_RS08430_951_981_GQ;islands=5;runs=5;max=3;composition=1A/6C/20G/4T;sequence=gggctggttgggggcgggcgcctgggacggg
+##gff-version 3
+VNG_RS05180	ABCC	G_Quadruplex_Motif	537	567	.	+	.	ID=VNG_RS05180_537_567_GQ;islands=5;runs=5;max=3;composition=5A/3C/18G/4T;sequence=gggacgggttagtgggcgagggtacaggggg
+##gff-version 3
+VNG_RS00795	ABCC	G_Quadruplex_Motif	862	882	.	+	.	ID=VNG_RS00795_862_882_GQ;islands=3;runs=4;max=3;composition=3A/3C/13G/1T;sequence=gggccacgggggggatgaggg
+##gff-version 3
+VNG_RS03125	ABCC	G_Quadruplex_Motif	110	133	.	-	.	ID=VNG_RS03125_110_133_GQ;islands=4;runs=4;max=3;composition=2A/5C/15G/2T;sequence=gggagcgggcatgccggggtcggg
+VNG_RS03125	ABCC	G_Quadruplex_Motif	467	493	.	-	.	ID=VNG_RS03125_467_493_GQ;islands=3;runs=4;max=3;composition=4A/4C/17G/2T;sequence=ggggtcaacaggggggggcgctgaggg
+##gff-version 3
+VNG_RS03530	ABCC	G_Quadruplex_Motif	559	589	.	-	.	ID=VNG_RS03530_559_589_GQ;islands=5;runs=5;max=3;composition=2A/7C/20G/2T;sequence=gggcagcgctggggtgggcgggccgagcggg
+##gff-version 3
+VNG_RS14390	ABCC	G_Quadruplex_Motif	495	517	.	-	.	ID=VNG_RS14390_495_517_GQ;islands=4;runs=4;max=3;composition=3A/1C/16G/3T;sequence=gggtgtaggggcagggaggtggg
+##gff-version 3
+VNG_RS05550	ABCC	G_Quadruplex_Motif	801	821	.	-	.	ID=VNG_RS05550_801_821_GQ;islands=4;runs=4;max=3;composition=2A/4C/13G/2T;sequence=ggggacgggtgggtccacggg
+##gff-version 3
+VNG_RS01400	ABCC	G_Quadruplex_Motif	771	790	.	+	.	ID=VNG_RS01400_771_790_GQ;islands=3;runs=4;max=3;composition=2A/1C/15G/1T;sequence=ggggggggcggggagtaggg
+##gff-version 3
+VNG_RS07210	ABCC	G_Quadruplex_Motif	819	848	.	-	.	ID=VNG_RS07210_819_848_GQ;islands=4;runs=4;max=3;composition=3A/7C/17G/3T;sequence=gggccttgccggggtcagccaggggagggg
+##gff-version 3
+VNG_RS08980	ABCC	G_Quadruplex_Motif	48	85	.	-	.	ID=VNG_RS08980_48_85_GQ;islands=5;runs=6;max=4;composition=5A/4C/27G/2T;sequence=gggtaagggggccagatggggcgagggggggcgggggg
+##gff-version 3
+VNG_RS00635	ABCC	G_Quadruplex_Motif	458	479	.	+	.	ID=VNG_RS00635_458_479_GQ;islands=4;runs=4;max=3;composition=0A/4C/13G/4T;sequence=gggttgggccgcggggtctggg
+##gff-version 3
+VNG_RS07970	ABCC	G_Quadruplex_Motif	763	783	.	-	.	ID=VNG_RS07970_763_783_GQ;islands=4;runs=4;max=3;composition=1A/3C/14G/3T;sequence=gggctgtgggtcggggcaggg
+##gff-version 3
+VNG_RS01520	ABCC	G_Quadruplex_Motif	881	902	.	+	.	ID=VNG_RS01520_881_902_GQ;islands=4;runs=4;max=3;composition=1A/3C/16G/1T;sequence=gggcgcgggacgggggtggggg
+##gff-version 3
+VNG_RS01225	ABCC	G_Quadruplex_Motif	864	894	.	-	.	ID=VNG_RS01225_864_894_GQ;islands=6;runs=6;max=3;composition=1A/4C/24G/2T;sequence=ggggcggcgggcgggggtgtgggcgggaggg
+##gff-version 3
+VNG_RS09920	ABCC	G_Quadruplex_Motif	863	913	.	+	.	ID=VNG_RS09920_863_913_GQ;islands=7;runs=8;max=3;composition=5A/14C/30G/1T;sequence=gggaggagggccctgcggggcgcgggaccccaagggggggccggggccggg
+##gff-version 3
+VNG_RS08265	ABCC	G_Quadruplex_Motif	778	809	.	-	.	ID=VNG_RS08265_778_809_GQ;islands=5;runs=5;max=3;composition=3A/6C/20G/3T;sequence=gggctgggagccaggggcctatgggcgggggg
+##gff-version 3
+VNG_RS09690	ABCC	G_Quadruplex_Motif	191	225	.	+	.	ID=VNG_RS09690_191_225_GQ;islands=5;runs=5;max=3;composition=2A/7C/23G/2T;sequence=gggggtgcggggccacggagggcgggcctgggggg
+##gff-version 3
+VNG_RS09940	ABCC	G_Quadruplex_Motif	219	263	.	-	.	ID=VNG_RS09940_219_263_GQ;islands=6;runs=6;max=3;composition=8A/10C/23G/4T;sequence=gggctgggaaagtaagggcacgcgggtactagggcccggccgggg
+##gff-version 3
+VNG_RS09375	ABCC	G_Quadruplex_Motif	341	382	.	+	.	ID=VNG_RS09375_341_382_GQ;islands=6;runs=7;max=3;composition=7A/7C/26G/1T;sequence=gggggggggcctgggaagagggaccgagggcgggccagaggg
+##gff-version 3
+VNG_RS00700	ABCC	G_Quadruplex_Motif	510	532	.	+	.	ID=VNG_RS00700_510_532_GQ;islands=4;runs=4;max=3;composition=2A/4C/13G/3T;sequence=gggcgggtcgggtatgaccgggg
+##gff-version 3
+VNG_RS02385	ABCC	G_Quadruplex_Motif	395	418	.	-	.	ID=VNG_RS02385_395_418_GQ;islands=4;runs=4;max=3;composition=2A/4C/14G/4T;sequence=gggacgtgggtcctcgtgggaggg
+##gff-version 3
+VNG_RS08625	ABCC	G_Quadruplex_Motif	796	818	.	-	.	ID=VNG_RS08625_796_818_GQ;islands=4;runs=4;max=3;composition=2A/7C/14G/0T;sequence=gggcgggaacggccgggcccggg
+##gff-version 3
+VNG_RS08015	ABCC	G_Quadruplex_Motif	327	357	.	-	.	ID=VNG_RS08015_327_357_GQ;islands=5;runs=5;max=3;composition=4A/4C/19G/4T;sequence=gggctagggccagagggatgcgggtggtggg
+VNG_RS08015	ABCC	G_Quadruplex_Motif	665	683	.	-	.	ID=VNG_RS08015_665_683_GQ;islands=3;runs=4;max=4;composition=1A/0C/17G/1T;sequence=ggggaggggtggggggggg
+##gff-version 3
+VNG_RS08150	ABCC	G_Quadruplex_Motif	2	27	.	+	.	ID=VNG_RS08150_2_27_GQ;islands=4;runs=4;max=3;composition=3A/5C/15G/2T;sequence=gggggcgtgctcgggacagggcaggg
+##gff-version 3
+VNG_RS09355	ABCC	G_Quadruplex_Motif	745	773	.	-	.	ID=VNG_RS09355_745_773_GQ;islands=4;runs=4;max=3;composition=4A/3C/18G/4T;sequence=gggtgtgtccgggacgggaagaggtgggg
+##gff-version 3
+VNG_RS09960	ABCC	G_Quadruplex_Motif	98	119	.	-	.	ID=VNG_RS09960_98_119_GQ;islands=4;runs=4;max=3;composition=0A/5C/15G/2T;sequence=gggtgggctgcggcgggccggg
+##gff-version 3
+VNG_RS06245	ABCC	G_Quadruplex_Motif	19	44	.	+	.	ID=VNG_RS06245_19_44_GQ;islands=4;runs=4;max=3;composition=2A/3C/18G/2T;sequence=ggggatcgggcggcgggggtaggggg
+##gff-version 3
+VNG_RS08705	ABCC	G_Quadruplex_Motif	402	419	.	+	.	ID=VNG_RS08705_402_419_GQ;islands=4;runs=4;max=3;composition=2A/1C/13G/1T;sequence=ggggcaggggagggtggg
+##gff-version 3
+VNG_RS01600	ABCC	G_Quadruplex_Motif	872	897	.	-	.	ID=VNG_RS01600_872_897_GQ;islands=4;runs=4;max=3;composition=2A/3C/18G/3T;sequence=ggggagggggttggcagggtccgggg
+##gff-version 3
+VNG_RS01435	ABCC	G_Quadruplex_Motif	44	69	.	-	.	ID=VNG_RS01435_44_69_GQ;islands=4;runs=4;max=3;composition=2A/6C/16G/2T;sequence=gggctacgggcgcgggagcgtcgggg
+VNG_RS01435	ABCC	G_Quadruplex_Motif	699	730	.	-	.	ID=VNG_RS01435_699_730_GQ;islands=5;runs=5;max=3;composition=5A/6C/20G/1T;sequence=gggagtccggggcgggcgaggggagacacggg
+##gff-version 3
+VNG_RS09735	ABCC	G_Quadruplex_Motif	273	311	.	-	.	ID=VNG_RS09735_273_311_GQ;islands=6;runs=6;max=3;composition=2A/8C/25G/4T;sequence=gggagcgggcgggccgggcgttgcgggggctgcgtaggg
+VNG_RS09735	ABCC	G_Quadruplex_Motif	489	512	.	-	.	ID=VNG_RS09735_489_512_GQ;islands=4;runs=4;max=3;composition=4A/3C/16G/1T;sequence=gggtgggagacagggaggccgggg
+VNG_RS09735	ABCC	G_Quadruplex_Motif	959	985	.	-	.	ID=VNG_RS09735_959_985_GQ;islands=4;runs=5;max=3;composition=2A/4C/19G/2T;sequence=ggggtcgcggggggggcaatgggcggg
+##gff-version 3
+VNG_RS10275	ABCC	G_Quadruplex_Motif	617	644	.	-	.	ID=VNG_RS10275_617_644_GQ;islands=5;runs=5;max=3;composition=1A/5C/20G/2T;sequence=gggcgggcggggggtggcccagggtggg
+VNG_RS10275	ABCC	G_Quadruplex_Motif	660	696	.	-	.	ID=VNG_RS10275_660_696_GQ;islands=4;runs=5;max=3;composition=4A/9C/22G/2T;sequence=gggcctacatggggcccaggcgggggggaccgggggg
+VNG_RS10275	ABCC	G_Quadruplex_Motif	952	978	.	-	.	ID=VNG_RS10275_952_978_GQ;islands=3;runs=4;max=3;composition=2A/6C/16G/3T;sequence=gggcaccccggggtcggattggggggg
+##gff-version 3
+VNG_RS04685	ABCC	G_Quadruplex_Motif	794	822	.	-	.	ID=VNG_RS04685_794_822_GQ;islands=4;runs=4;max=3;composition=0A/11C/15G/3T;sequence=gggcccccctgggtcggggtgcccgcggg
+##gff-version 3
+VNG_RS07165	ABCC	G_Quadruplex_Motif	468	494	.	-	.	ID=VNG_RS07165_468_494_GQ;islands=4;runs=4;max=3;composition=3A/6C/17G/1T;sequence=gggggagggcgccgccgggcgataggg
+VNG_RS07165	ABCC	G_Quadruplex_Motif	598	632	.	-	.	ID=VNG_RS07165_598_632_GQ;islands=4;runs=5;max=3;composition=2A/5C/25G/3T;sequence=gggacggtgagggtgcggcggggcgtcgggggggg
+##gff-version 3
+VNG_RS08065	ABCC	G_Quadruplex_Motif	187	212	.	-	.	ID=VNG_RS08065_187_212_GQ;islands=4;runs=4;max=3;composition=2A/5C/16G/3T;sequence=gggacgcgtgggtgacgccgggtggg
+##gff-version 3
+VNG_RS08190	ABCC	G_Quadruplex_Motif	762	784	.	-	.	ID=VNG_RS08190_762_784_GQ;islands=4;runs=4;max=3;composition=1A/2C/18G/2T;sequence=ggggaggcgggggtggggctggg
+##gff-version 3
+VNG_RS04290	ABCC	G_Quadruplex_Motif	585	605	.	-	.	ID=VNG_RS04290_585_605_GQ;islands=4;runs=4;max=3;composition=2A/4C/14G/1T;sequence=ggggcgggcctgcagggaggg
+##gff-version 3
+VNG_RS10115	ABCC	G_Quadruplex_Motif	82	102	.	+	.	ID=VNG_RS10115_82_102_GQ;islands=3;runs=4;max=3;composition=2A/2C/15G/1T;sequence=gggcggggtacgagggggggg
+##gff-version 3
+VNG_RS05645	ABCC	G_Quadruplex_Motif	518	547	.	+	.	ID=VNG_RS05645_518_547_GQ;islands=4;runs=5;max=3;composition=1A/6C/21G/1T;sequence=ggggcagggggggccgtgccggggggcggg
+##gff-version 3
+VNG_RS05610	ABCC	G_Quadruplex_Motif	766	793	.	-	.	ID=VNG_RS05610_766_793_GQ;islands=5;runs=5;max=3;composition=3A/5C/15G/5T;sequence=gggtgggcctgggtcctatagggcaggg
+##gff-version 3
+VNG_RS09820	ABCC	G_Quadruplex_Motif	360	385	.	+	.	ID=VNG_RS09820_360_385_GQ;islands=4;runs=4;max=3;composition=3A/4C/15G/3T;sequence=gggaggggtgcctcgggaatgcgggg
+##gff-version 3
+VNG_RS01645	ABCC	G_Quadruplex_Motif	8	29	.	+	.	ID=VNG_RS01645_8_29_GQ;islands=3;runs=4;max=3;composition=2A/3C/13G/3T;sequence=gggggggatagggtccgtcggg
+VNG_RS01645	ABCC	G_Quadruplex_Motif	830	851	.	-	.	ID=VNG_RS01645_830_851_GQ;islands=4;runs=4;max=3;composition=3A/2C/15G/2T;sequence=gggtcagatggggagggcgggg
+##gff-version 3
+VNG_RS01165	ABCC	G_Quadruplex_Motif	257	283	.	+	.	ID=VNG_RS01165_257_283_GQ;islands=5;runs=5;max=3;composition=6A/3C/15G/2T;sequence=gggaaagacgggagggtcgggactggg
+##gff-version 3
+VNG_RS07105	ABCC	G_Quadruplex_Motif	589	611	.	-	.	ID=VNG_RS07105_589_611_GQ;islands=4;runs=4;max=3;composition=1A/5C/16G/1T;sequence=gggggtccgggcgagggccgggg
+##gff-version 3
+VNG_RS06095	ABCC	G_Quadruplex_Motif	205	221	.	+	.	ID=VNG_RS06095_205_221_GQ;islands=4;runs=4;max=3;composition=1A/2C/12G/1T;sequence=gggcgggcgggtagggg
+VNG_RS06095	ABCC	G_Quadruplex_Motif	271	296	.	+	.	ID=VNG_RS06095_271_296_GQ;islands=4;runs=4;max=3;composition=4A/4C/16G/1T;sequence=gggcggacctgggaggggcagagggg
+##gff-version 3
+VNG_RS07985	ABCC	G_Quadruplex_Motif	150	175	.	-	.	ID=VNG_RS07985_150_175_GQ;islands=4;runs=4;max=3;composition=3A/2C/17G/4T;sequence=gggcatggtgggtcgtggagggaggg
+##gff-version 3
+VNG_RS05790	ABCC	G_Quadruplex_Motif	730	763	.	+	.	ID=VNG_RS05790_730_763_GQ;islands=5;runs=5;max=3;composition=5A/5C/20G/3T;sequence=ggggctagctgggagggagctgacgggcggaggg
+##gff-version 3
+VNG_RS00550	ABCC	G_Quadruplex_Motif	327	347	.	+	.	ID=VNG_RS00550_327_347_GQ;islands=3;runs=4;max=3;composition=1A/6C/12G/1T;sequence=gggccagggggggcccctggg
+VNG_RS00550	ABCC	G_Quadruplex_Motif	715	762	.	-	.	ID=VNG_RS00550_715_762_GQ;islands=6;runs=7;max=3;composition=6A/10C/26G/6T;sequence=gggcccagcagggatgggttacctgggctccgggggggtggaacgggg
+##gff-version 3
+VNG_RS07745	ABCC	G_Quadruplex_Motif	106	145	.	-	.	ID=VNG_RS07745_106_145_GQ;islands=5;runs=5;max=4;composition=2A/10C/27G/1T;sequence=gggccggggcgccgagggggactggccggggcggcggggg
+##gff-version 3
+VNG_RS08880	ABCC	G_Quadruplex_Motif	771	789	.	+	.	ID=VNG_RS08880_771_789_GQ;islands=4;runs=4;max=3;composition=2A/1C/14G/1T;sequence=gggggaggggtagggcggg
+VNG_RS08880	ABCC	G_Quadruplex_Motif	705	733	.	-	.	ID=VNG_RS08880_705_733_GQ;islands=5;runs=5;max=3;composition=4A/3C/18G/4T;sequence=gggatcgggtgtagggcggggcatgaggg
+VNG_RS08880	ABCC	G_Quadruplex_Motif	835	859	.	-	.	ID=VNG_RS08880_835_859_GQ;islands=4;runs=4;max=3;composition=1A/7C/15G/2T;sequence=gggtggcccgggcaccgggcgtggg
+##gff-version 3
+VNG_RS01065	ABCC	G_Quadruplex_Motif	149	169	.	-	.	ID=VNG_RS01065_149_169_GQ;islands=4;runs=4;max=3;composition=3A/3C/13G/2T;sequence=gggagggtgggccatgcaggg
+VNG_RS01065	ABCC	G_Quadruplex_Motif	241	262	.	-	.	ID=VNG_RS01065_241_262_GQ;islands=4;runs=4;max=3;composition=3A/3C/15G/1T;sequence=gggagagggcacgggtcggggg
+##gff-version 3
+VNG_RS02755	ABCC	G_Quadruplex_Motif	167	197	.	-	.	ID=VNG_RS02755_167_197_GQ;islands=4;runs=4;max=3;composition=4A/7C/19G/1T;sequence=ggggcgctcggggacgccaagggaggcgggg
+##gff-version 3
+VNG_RS06540	ABCC	G_Quadruplex_Motif	797	824	.	+	.	ID=VNG_RS06540_797_824_GQ;islands=4;runs=4;max=3;composition=4A/3C/15G/5T;sequence=gggttaggggtgtcgtgggcaacgaggg
+VNG_RS06540	ABCC	G_Quadruplex_Motif	571	594	.	-	.	ID=VNG_RS06540_571_594_GQ;islands=4;runs=5;max=3;composition=2A/1C/19G/2T;sequence=gggaagggctgggggggtgggggg
+##gff-version 3
+VNG_RS07215	ABCC	G_Quadruplex_Motif	188	219	.	-	.	ID=VNG_RS07215_188_219_GQ;islands=5;runs=5;max=3;composition=3A/7C/19G/3T;sequence=ggggaccgggagggcctgcttgggccggaggg
+##gff-version 3
+VNG_RS01950	ABCC	G_Quadruplex_Motif	302	333	.	-	.	ID=VNG_RS01950_302_333_GQ;islands=5;runs=5;max=3;composition=1A/8C/20G/3T;sequence=gggtgcggccgggctgccgggctgggacgggg
+##gff-version 3
+VNG_RS08235	ABCC	G_Quadruplex_Motif	700	728	.	-	.	ID=VNG_RS08235_700_728_GQ;islands=4;runs=4;max=3;composition=3A/5C/17G/4T;sequence=gggacgggcaggtacggggctgtcgtggg
+##gff-version 3
+VNG_RS07365	ABCC	G_Quadruplex_Motif	690	719	.	-	.	ID=VNG_RS07365_690_719_GQ;islands=5;runs=5;max=3;composition=1A/7C/20G/2T;sequence=gggggtagcccggggcgggcctggggcggg
+##gff-version 3
+VNG_RS02745	ABCC	G_Quadruplex_Motif	319	345	.	+	.	ID=VNG_RS02745_319_345_GQ;islands=5;runs=5;max=3;composition=2A/4C/17G/3T;sequence=gggtaccgggcgtgggaggggtcgggg
+##gff-version 3
+VNG_RS04860	ABCC	G_Quadruplex_Motif	585	607	.	-	.	ID=VNG_RS04860_585_607_GQ;islands=5;runs=5;max=3;composition=3A/2C/17G/1T;sequence=gggacgggtgggaggggacgggg
+##gff-version 3
+VNG_RS07525	ABCC	G_Quadruplex_Motif	847	870	.	-	.	ID=VNG_RS07525_847_870_GQ;islands=4;runs=4;max=3;composition=3A/3C/14G/4T;sequence=gggcgtcttgggtcagggagaggg
+##gff-version 3
+VNG_RS14570	ABCC	G_Quadruplex_Motif	431	460	.	-	.	ID=VNG_RS14570_431_460_GQ;islands=4;runs=4;max=3;composition=4A/7C/18G/1T;sequence=gggaccccgtggggcggagggccggaaggg
+VNG_RS14570	ABCC	G_Quadruplex_Motif	500	524	.	-	.	ID=VNG_RS14570_500_524_GQ;islands=4;runs=4;max=3;composition=2A/3C/16G/4T;sequence=gggcggacttggggcgggttgaggg
+##gff-version 3
+VNG_RS01105	ABCC	G_Quadruplex_Motif	471	495	.	-	.	ID=VNG_RS01105_471_495_GQ;islands=4;runs=4;max=3;composition=0A/6C/18G/1T;sequence=gggggcggcgccgggcgggcgtggg
+VNG_RS01105	ABCC	G_Quadruplex_Motif	967	991	.	-	.	ID=VNG_RS01105_967_991_GQ;islands=4;runs=4;max=3;composition=3A/4C/14G/4T;sequence=gggggcgggttcgggctcaataggg
+##gff-version 3
+VNG_RS08865	ABCC	G_Quadruplex_Motif	741	770	.	+	.	ID=VNG_RS08865_741_770_GQ;islands=4;runs=4;max=3;composition=4A/4C/18G/3T;sequence=ggggcccggggggactgagggtagtgaggg
+##gff-version 3
+VNG_RS01880	ABCC	G_Quadruplex_Motif	139	159	.	+	.	ID=VNG_RS01880_139_159_GQ;islands=3;runs=4;max=3;composition=1A/1C/15G/3T;sequence=ggggcggggggggtgtatggg
+##gff-version 3
+VNG_RS09280	ABCC	G_Quadruplex_Motif	339	363	.	-	.	ID=VNG_RS09280_339_363_GQ;islands=4;runs=4;max=3;composition=3A/3C/15G/4T;sequence=gggtggcggggtcttgggcaaaggg
+VNG_RS09280	ABCC	G_Quadruplex_Motif	837	871	.	-	.	ID=VNG_RS09280_837_871_GQ;islands=4;runs=4;max=4;composition=8A/4C/21G/2T;sequence=ggggaacgtcgggggaagaaggggactgacggggg
+##gff-version 3
+VNG_RS08400	ABCC	G_Quadruplex_Motif	475	500	.	-	.	ID=VNG_RS08400_475_500_GQ;islands=4;runs=4;max=3;composition=1A/6C/17G/2T;sequence=gggtggaccgggcgggtggcccgggg
+##gff-version 3
+VNG_RS08775	ABCC	G_Quadruplex_Motif	622	669	.	+	.	ID=VNG_RS08775_622_669_GQ;islands=6;runs=7;max=3;composition=3A/9C/30G/5T;sequence=ggggagggggggcgctggggcccgagggcgcggtgggctttagcgggg
+VNG_RS08775	ABCC	G_Quadruplex_Motif	928	966	.	+	.	ID=VNG_RS08775_928_966_GQ;islands=5;runs=5;max=3;composition=3A/9C/20G/6T;sequence=gggccatgggatctgctgggagcggcgggcgctctgggg
+##gff-version 3
+VNG_RS01665	ABCC	G_Quadruplex_Motif	868	893	.	+	.	ID=VNG_RS01665_868_893_GQ;islands=3;runs=4;max=3;composition=1A/4C/16G/4T;sequence=gggggggggtcgatgggcttcgcggg
+##gff-version 3
+VNG_RS08225	ABCC	G_Quadruplex_Motif	286	306	.	+	.	ID=VNG_RS08225_286_306_GQ;islands=4;runs=4;max=3;composition=2A/3C/12G/3T;sequence=gggcctcgatgggagggtggg
+##gff-version 3
+VNG_RS09680	ABCC	G_Quadruplex_Motif	636	658	.	+	.	ID=VNG_RS09680_636_658_GQ;islands=4;runs=4;max=3;composition=1A/5C/14G/2T;sequence=ggggcctgggcggtgggccaggg
+##gff-version 3
+VNG_RS01550	ABCC	G_Quadruplex_Motif	355	378	.	-	.	ID=VNG_RS01550_355_378_GQ;islands=4;runs=4;max=3;composition=2A/4C/16G/2T;sequence=gggtgcagggagggcggctgcggg
+##gff-version 3
+VNG_RS00925	ABCC	G_Quadruplex_Motif	108	124	.	-	.	ID=VNG_RS00925_108_124_GQ;islands=3;runs=4;max=3;composition=1A/1C/13G/2T;sequence=gggttgggggggcaggg
+##gff-version 3
+VNG_RS04055	ABCC	G_Quadruplex_Motif	432	459	.	+	.	ID=VNG_RS04055_432_459_GQ;islands=4;runs=4;max=3;composition=4A/5C/17G/1T;sequence=ggggcacggggagagggctgcgacgggg
+##gff-version 3
+VNG_RS02650	ABCC	G_Quadruplex_Motif	181	203	.	-	.	ID=VNG_RS02650_181_203_GQ;islands=4;runs=4;max=3;composition=2A/3C/15G/3T;sequence=gggtggggtcggagggtcacggg
+##gff-version 3
+VNG_RS00520	ABCC	G_Quadruplex_Motif	670	690	.	-	.	ID=VNG_RS00520_670_690_GQ;islands=4;runs=4;max=3;composition=0A/1C/16G/4T;sequence=ggggtggggtgctgggtgggg
+##gff-version 3
+VNG_RS10020	ABCC	G_Quadruplex_Motif	868	892	.	+	.	ID=VNG_RS10020_868_892_GQ;islands=4;runs=4;max=3;composition=2A/4C/14G/4T;sequence=gggcgtggcgggtgggctactaggg
+##gff-version 3
+VNG_RS08385	ABCC	G_Quadruplex_Motif	629	657	.	+	.	ID=VNG_RS08385_629_657_GQ;islands=4;runs=4;max=3;composition=4A/5C/16G/3T;sequence=gggcagagggctagcgtgggcggactggg
+VNG_RS08385	ABCC	G_Quadruplex_Motif	789	806	.	+	.	ID=VNG_RS08385_789_806_GQ;islands=4;runs=4;max=3;composition=5A/0C/11G/1T;sequence=gggaatgggagggaaggg
+VNG_RS08385	ABCC	G_Quadruplex_Motif	947	983	.	+	.	ID=VNG_RS08385_947_983_GQ;islands=5;runs=5;max=3;composition=6A/7C/22G/1T;sequence=gggggcgaggggcccggcagggctcaagggagagggg
+##gff-version 3
+VNG_RS03365	ABCC	G_Quadruplex_Motif	235	267	.	+	.	ID=VNG_RS03365_235_267_GQ;islands=5;runs=5;max=3;composition=5A/6C/19G/2T;sequence=ggggccgcggggccaaggggtcgaaagggtggg
+##gff-version 3
+VNG_RS01250	ABCC	G_Quadruplex_Motif	246	288	.	+	.	ID=VNG_RS01250_246_288_GQ;islands=7;runs=7;max=3;composition=3A/10C/25G/4T;sequence=gggcggggacgcgggtgggtgaagggccgctgtgggccccggg
+##gff-version 3
+VNG_RS05580	ABCC	G_Quadruplex_Motif	578	604	.	-	.	ID=VNG_RS05580_578_604_GQ;islands=4;runs=4;max=3;composition=1A/4C/17G/5T;sequence=gggcgcgtgggggtggggttcatcggg
+##gff-version 3
+VNG_RS05175	ABCC	G_Quadruplex_Motif	446	480	.	-	.	ID=VNG_RS05175_446_480_GQ;islands=4;runs=5;max=3;composition=5A/5C/22G/3T;sequence=gggtggaggagggaaccgcggggcacttggggggg
+##gff-version 3
+VNG_RS00350	ABCC	G_Quadruplex_Motif	408	432	.	+	.	ID=VNG_RS00350_408_432_GQ;islands=5;runs=5;max=3;composition=0A/6C/17G/1T;sequence=ggggctgccggggcgggcgggcggg
+##gff-version 3
+VNG_RS09540	ABCC	G_Quadruplex_Motif	887	913	.	-	.	ID=VNG_RS09540_887_913_GQ;islands=4;runs=4;max=3;composition=3A/3C/17G/4T;sequence=gggggtaagtgggagtcgggcgtcggg
+##gff-version 3
+VNG_RS06905	ABCC	G_Quadruplex_Motif	369	391	.	-	.	ID=VNG_RS06905_369_391_GQ;islands=3;runs=4;max=3;composition=2A/4C/17G/0T;sequence=gggcgaacgcgggggcggggggg
+##gff-version 3
+VNG_RS05915	ABCC	G_Quadruplex_Motif	443	466	.	+	.	ID=VNG_RS05915_443_466_GQ;islands=4;runs=4;max=3;composition=3A/4C/13G/3T;sequence=gggcttggggtcgggcaagacggg
+##gff-version 3
+VNG_RS03555	ABCC	G_Quadruplex_Motif	946	962	.	-	.	ID=VNG_RS03555_946_962_GQ;islands=3;runs=4;max=3;composition=0A/2C/13G/2T;sequence=gggggggttgggccggg
+##gff-version 3
+VNG_RS09400	ABCC	G_Quadruplex_Motif	927	962	.	-	.	ID=VNG_RS09400_927_962_GQ;islands=5;runs=5;max=4;composition=2A/6C/21G/7T;sequence=gggaggggtcgtccggggtctctggggtcagtgggg
+##gff-version 3
+VNG_RS01135	ABCC	G_Quadruplex_Motif	709	733	.	-	.	ID=VNG_RS01135_709_733_GQ;islands=4;runs=5;max=3;composition=3A/3C/18G/1T;sequence=ggggaacctgggggggcgggagggg
+##gff-version 3
+VNG_RS08720	ABCC	G_Quadruplex_Motif	806	832	.	+	.	ID=VNG_RS08720_806_832_GQ;islands=4;runs=4;max=3;composition=2A/7C/15G/2T;sequence=gggggccgggcgcagggtgtcaccggg
+##gff-version 3
+VNG_RS03435	ABCC	G_Quadruplex_Motif	621	639	.	+	.	ID=VNG_RS03435_621_639_GQ;islands=4;runs=4;max=3;composition=1A/3C/13G/1T;sequence=gggtagcgggcgggcgggg
+##gff-version 3
+VNG_RS06940	ABCC	G_Quadruplex_Motif	86	110	.	-	.	ID=VNG_RS06940_86_110_GQ;islands=4;runs=4;max=3;composition=1A/6C/16G/2T;sequence=gggggcgggttcgccagggccgggg
+VNG_RS06940	ABCC	G_Quadruplex_Motif	747	770	.	-	.	ID=VNG_RS06940_747_770_GQ;islands=4;runs=4;max=3;composition=3A/5C/13G/3T;sequence=gggaatacgggccgtcgggtcggg
+##gff-version 3
+VNG_RS09560	ABCC	G_Quadruplex_Motif	392	413	.	-	.	ID=VNG_RS09560_392_413_GQ;islands=4;runs=4;max=3;composition=3A/3C/14G/2T;sequence=gggcataagggcgtggggcggg
+##gff-version 3
+VNG_RS08000	ABCC	G_Quadruplex_Motif	194	221	.	-	.	ID=VNG_RS08000_194_221_GQ;islands=4;runs=4;max=3;composition=1A/5C/16G/6T;sequence=gggatttcgcgggggtctggggcctggg
+##gff-version 3
+VNG_RS00990	ABCC	G_Quadruplex_Motif	610	633	.	+	.	ID=VNG_RS00990_610_633_GQ;islands=4;runs=4;max=3;composition=5A/2C/15G/1T;sequence=gggaggaggggatgggaccgaggg
+##gff-version 3
+VNG_RS00690	ABCC	G_Quadruplex_Motif	803	823	.	-	.	ID=VNG_RS00690_803_823_GQ;islands=4;runs=4;max=3;composition=1A/2C/17G/1T;sequence=ggggtgggcgggggaggcggg
+##gff-version 3
+VNG_RS06225	ABCC	G_Quadruplex_Motif	892	915	.	-	.	ID=VNG_RS06225_892_915_GQ;islands=4;runs=4;max=3;composition=1A/3C/17G/3T;sequence=gggggcggagggtggggcttcggg
+##gff-version 3
+VNG_RS07135	ABCC	G_Quadruplex_Motif	383	407	.	-	.	ID=VNG_RS07135_383_407_GQ;islands=4;runs=4;max=3;composition=1A/4C/16G/4T;sequence=gggcggggggccggggtatcttggg
+##gff-version 3
+VNG_RS04090	ABCC	G_Quadruplex_Motif	815	838	.	-	.	ID=VNG_RS04090_815_838_GQ;islands=4;runs=4;max=3;composition=2A/6C/16G/0T;sequence=gggcaagccggggcgggccggggg
+##gff-version 3
+VNG_RS03305	ABCC	G_Quadruplex_Motif	878	904	.	-	.	ID=VNG_RS03305_878_904_GQ;islands=4;runs=4;max=3;composition=3A/4C/17G/3T;sequence=gggaggtgcggggacctctggggaggg
+##gff-version 3
+VNG_RS04080	ABCC	G_Quadruplex_Motif	432	457	.	+	.	ID=VNG_RS04080_432_457_GQ;islands=4;runs=4;max=3;composition=3A/4C/15G/3T;sequence=gggtccggggactggggcgaatgggg
+##gff-version 3
+VNG_RS09515	ABCC	G_Quadruplex_Motif	489	513	.	-	.	ID=VNG_RS09515_489_513_GQ;islands=4;runs=4;max=3;composition=1A/5C/16G/3T;sequence=ggggtttaggggcgccgggccgggg
+##gff-version 3
+VNG_RS00375	ABCC	G_Quadruplex_Motif	625	657	.	-	.	ID=VNG_RS00375_625_657_GQ;islands=5;runs=6;max=3;composition=3A/3C/23G/4T;sequence=gggagctgggagggggggtgtgggggtaccggg
+##gff-version 3
+VNG_RS05050	ABCC	G_Quadruplex_Motif	259	280	.	+	.	ID=VNG_RS05050_259_280_GQ;islands=4;runs=4;max=3;composition=2A/3C/13G/3T;sequence=gggtgccgggagttcgggaggg
+##gff-version 3
+VNG_RS01715	ABCC	G_Quadruplex_Motif	713	736	.	+	.	ID=VNG_RS01715_713_736_GQ;islands=4;runs=4;max=3;composition=3A/4C/14G/2T;sequence=ggggcgggaagctgggcagctggg
+VNG_RS01715	ABCC	G_Quadruplex_Motif	912	928	.	+	.	ID=VNG_RS01715_912_928_GQ;islands=4;runs=4;max=3;composition=1A/3C/12G/0T;sequence=gggcgggcggggcaggg
+##gff-version 3
+VNG_RS05570	ABCC	G_Quadruplex_Motif	592	616	.	-	.	ID=VNG_RS05570_592_616_GQ;islands=3;runs=4;max=3;composition=2A/5C/17G/1T;sequence=gggggtgccgggcgcaacggggggg
